@@ -27,9 +27,9 @@ export default [
     icon: "HomeIcon",
   },
   {
-    url: "/kb",
+    url: "/knowledge-base",
     name: "Knowledge Base",
-    slug: "kb",
+    slug: "knowledge-base",
     icon: "HelpCircleIcon",
   },
 ]

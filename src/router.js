@@ -46,9 +46,17 @@ const router = new Router({
                 component: () => import('./views/Home.vue')
               },
               {
-                path: '/kb',
+                path: '/knowledge-base',
                 name: 'knowledge-base',
-                component: () => import('./views/KB.vue')
+                component: () => import('./views/KnowledgeBase.vue'),
+                meta: {
+                  breadcrumb: [
+                    {title: 'Home', url: '/'},
+                    {title: 'KnowledgeBase', active: true},
+                  ],
+                  pageTitle: 'Knowledge Base',
+                  rule: 'editor'
+                },
               },
             ],
         },
