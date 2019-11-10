@@ -23,7 +23,8 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const router = new Router({
-    mode: 'history',
+    // Electron works only in hash mode.
+    mode: 'hash',
     base: process.env.BASE_URL,
     scrollBehavior () {
         return { x: 0, y: 0 }
