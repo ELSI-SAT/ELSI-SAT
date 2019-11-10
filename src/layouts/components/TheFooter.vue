@@ -12,6 +12,9 @@
 <template functional>
     <footer class="the-footer flex-wrap justify-between" :class="classes">
         <span>ELSI-SAT <a href="#">Datenschutz</a> • <a href="#">Impressum</a></span>
+        <span class="md:flex hidden items-center">
+              <span>Version&nbsp;</span> {{ $options.methods.myappVersion() }}
+          </span>
     </footer>
 </template>
 
@@ -22,6 +25,14 @@ export default {
         classes: {
             type: String,
         },
-    }
+    },
+  methods: {
+    myappVersion() {
+      console.log("node_env: " + process.env.NODE_ENV)
+      console.log("version: " + process.env.VUE_APP_VERSION)
+
+      return process.env.VUE_APP_VERSION;
+    },
+  },
 }
 </script>

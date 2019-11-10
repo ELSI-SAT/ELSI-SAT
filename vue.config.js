@@ -7,6 +7,8 @@
   Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 
+// @see https://cli.vuejs.org/guide/mode-and-env.html#using-env-variables-in-client-side-code
+process.env.VUE_APP_VERSION = require('./package.json').version
 
 module.exports = {
   publicPath: '/',
