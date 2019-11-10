@@ -22,6 +22,10 @@
               <span class="cursor-pointer">{{ category.name }}</span>
             </li>
           </ul>
+
+          <!--
+          <button @click="goto('11')">Go to #11</button>
+          -->
         </vx-card>
       </div>
     </div>
@@ -33,6 +37,7 @@
           <vs-collapse-item v-for="(que,index) in filteredFaq"
                             class="faq-bg rounded-lg"
                             :class="{'mt-0': !index}"
+                            :ref="que.id"
                             :key="que.id">
 
             <div slot="header">
@@ -178,7 +183,14 @@
         });
       }
     },
-    methods: {},
+    methods: {
+      goto(refName) {
+        const element = this.$refs[refName][0];
+        const top = element.$el.offsetTop;
+
+        window.scrollTo(0, top);
+      }
+    },
     components: {}
   }
 </script>
