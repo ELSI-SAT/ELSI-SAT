@@ -46,7 +46,7 @@
                                 </li>
                                 <li class="px-4 flex items-start cursor-pointer hover:text-primary" @click="moveTo('trash')" v-if="mailFilter != 'trash'">
                                     <feather-icon icon="TrashIcon" svg-classes="h-5 w-5"></feather-icon>
-                                    <span class="ml-3">Trash</span>
+                                    <span class="ml-3">Nicht relevant</span>
                                 </li>
                             </ul>
                         </vs-dropdown-menu>

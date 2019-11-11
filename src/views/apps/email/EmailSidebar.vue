@@ -53,7 +53,7 @@
                 <!-- trash -->
                 <router-link tag="span" :to="`${baseUrl}/trash`" class="flex items-center mt-4 mb-2 cursor-pointer" :class="{'text-primary': mailFilter == 'trash'}">
                     <feather-icon icon="TrashIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'trash'}, 'h-6 w-6']"></feather-icon>
-                    <span class="text-lg ml-3">Trash</span>
+                    <span class="text-lg ml-3">Nicht relevant</span>
                 </router-link>
             </div>
             <vs-divider></vs-divider>
