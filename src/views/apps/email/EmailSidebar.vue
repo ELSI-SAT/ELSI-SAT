@@ -1,6 +1,6 @@
 <!-- =========================================================================================
     File Name: EmailSidebar.vue
-    Description: Email Application Sidebar(Filter) (Inbox)
+    Description: Email Application Sidebar(Filter) (Unbeantwortet)
     ----------------------------------------------------------------------------------------
     Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
       Author: Pixinvent
@@ -20,7 +20,7 @@
                 <router-link tag="span" :to="`${baseUrl}/inbox`" class="flex justify-between items-center cursor-pointer" :class="{'text-primary': mailFilter == 'inbox'}">
                     <div class="flex items-center mb-2">
                         <feather-icon icon="MailIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'inbox'}, 'h-6 w-6']"></feather-icon>
-                        <span class="text-lg ml-3">Inbox</span>
+                        <span class="text-lg ml-3">Unbeantwortet</span>
                     </div>
                     <template v-if="emailMeta.unreadMails">
                       <vs-chip class="number" color="primary" v-if="emailMeta.unreadMails.folder.inbox.length > 0">{{ emailMeta.unreadMails.folder.inbox.length }}</vs-chip>

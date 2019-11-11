@@ -1,6 +1,6 @@
 <!-- =========================================================================================
     File Name: Email.vue
-    Description: Email Application (Inbox)
+    Description: Email Application (Unbeantwortet)
     ----------------------------------------------------------------------------------------
     Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
       Author: Pixinvent
@@ -38,7 +38,7 @@
                             <ul class="my-2">
                                 <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('inbox')" v-if="mailFilter != 'inbox'">
                                     <feather-icon icon="MailIcon" svg-classes="h-5 w-5" />
-                                    <span class="ml-3">Inbox</span>
+                                    <span class="ml-3">Unbeantwortet</span>
                                 </li>
                                 <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('draft')" v-if="mailFilter != 'draft'">
                                     <feather-icon icon="Edit2Icon" svg-classes="h-5 w-5"></feather-icon>
