@@ -56,7 +56,7 @@
                                 </vs-dropdown-menu>
                             </vs-dropdown>
 
-                            <feather-icon icon="MailIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4" @click="$emit('markUnread')"></feather-icon>
+                            <feather-icon icon="MailIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4"></feather-icon>
                             <feather-icon v-if="currentMail.mailFolder != 'trash'" icon="TrashIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4" @click="$emit('removeMail')"></feather-icon>
                             <feather-icon icon="ChevronsLeftIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('previousMail')" />
                             <feather-icon icon="ChevronsRightIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('nextMail')" />
@@ -193,10 +193,6 @@ export default {
   components: {
     VuePerfectScrollbar,
     EmailMailCard
-  },
-  updated() {
-    if (!this.currentMail) return
-    if (this.currentMail.unread && this.isSidebarActive) this.$store.dispatch('email/setUnread', { emailIds: [this.openMailId], unread: false });
   },
 }
 

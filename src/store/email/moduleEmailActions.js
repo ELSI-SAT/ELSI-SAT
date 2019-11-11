@@ -53,26 +53,6 @@ export default {
     // Move mails to another folder
     moveMailsTo({commit}, payload) {
       commit("MOVE_MAILS_TO", payload)
-      commit("UPDATE_UNREAD_META_ON_MOVE", payload)
-    },
-  
-    // Set mails flag unread to true
-    setUnread({ commit }, payload) {
-      return new Promise((resolve, reject) => {
-        axios.post("/api/apps/email/mark-unread", { emailIds: payload.emailIds, unreadFlag: payload.unreadFlag })
-          .then((response) => {
-            commit("SET_UNREAD", payload)
-
-            // Remove this if you are getting meta like us
-            // Use your own method to update email meta if you are fetching email meta
-            commit("UPDATE_UNREAD_META", payload)
-            resolve(response)
-          })
-          .catch((error) => { reject(error) })
-      })
-    },
-
-  
     },
   
   // Toggle isStarred flag in mail

@@ -84,10 +84,6 @@
                         </vs-dropdown-menu>
                     </vs-dropdown>
 
-                    <feather-icon icon="MailIcon"
-                                  class="ml-5 cursor-pointer"
-                                  svg-classes="h-6 w-6"
-                                  @click="updateMarkUnread" />
                     <feather-icon v-if="mailFilter != 'trash'"
                                   icon="TrashIcon"
                                   class="cursor-pointer ml-5"
@@ -124,7 +120,6 @@
             :openMailId      = "openMailId"
             :isSidebarActive = "isSidebarActive"
             :mailFilter      = "mailFilter"
-            @markUnread      = "updateSingleMarkUnread"
             @removeMail      = "removeOpenMail"
             @previousMail    = "previousMail"
             @nextMail        = "nextMail"
@@ -229,11 +224,6 @@ export default {
       this.selectedMails = [this.openMailId]
       this.moveTo(to)
     },
-    updateMarkUnread() {
-      const payload = { emailIds: this.selectedMails, unreadFlag: true }
-      this.$store.dispatch('email/setUnread', payload)
-      this.selectedMails = []
-    },
     removeOpenMail() {
       this.selectedMails = [this.openMailId]
       this.moveTo('trashed')
@@ -250,11 +240,6 @@ export default {
     previousMail() {
       const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
       if (this.mails[currentMailIndex - 1]) this.openMailId = this.mails[currentMailIndex - 1].id
-    },
-    updateSingleMarkUnread() {
-      this.selectedMails = [this.openMailId]
-      this.updateMarkUnread()
-      this.isSidebarActive = false
     },
     closeMailViewSidebar() {
       this.isSidebarActive = false

@@ -65,16 +65,3 @@ mock.onGet("/api/apps/email/meta").reply(() => {
 })
 
 
-// POST : Mark as Unread
-mock.onPost("/api/apps/email/mark-unread").reply((request) => {
-  const mailsToUpdate = JSON.parse(request.data).emailIds
-
-  mailsToUpdate.forEach((mailId) => {
-    const mailIndex = data.emails.findIndex((mail) => mail.id == mailId)
-    data.emails[mailIndex].unread = JSON.parse(request.data).unreadFlag
-  })
-
-  return [200]
-})
-
-

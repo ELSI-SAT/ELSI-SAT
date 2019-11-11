@@ -33,12 +33,6 @@ export default {
             else state.mails[mailIndex].labels.splice(index, 1)
         })
     },
-    SET_UNREAD(state, payload) {
-        payload.emailIds.forEach((mailId) => {
-          const mailIndex = state.mails.findIndex((mail) => mail.id == mailId)
-          if(mailIndex !== -1) state.mails[mailIndex].unread = payload.unreadFlag
-        })
-    },
 
     MOVE_MAILS_TO(state, payload) {
       payload.emailIds.forEach((mailId) => {
@@ -78,23 +72,4 @@ export default {
         }
       }
     },
-    UPDATE_UNREAD_META_ON_MOVE(state, payload) {
-
-      if(payload.to === "draft") {
-        state.meta.draftMails = state.meta.draftMails.concat(payload.emailIds)
-        return
-      }
-
-      payload.emailIds.forEach((mailId) => {
-        let mail = state.mails.find((mail) => mail.id == mailId)
-
-        if(mail.unread) {
-          const cf_unread_mails = state.meta.unreadMails.folder[state.mail_filter]
-          if(cf_unread_mails) {
-            cf_unread_mails.splice( cf_unread_mails.indexOf(mailId), 1)
-          }
-          if(state.meta.unreadMails.folder[payload.to]) state.meta.unreadMails.folder[payload.to].push(mailId)
-        }
-      })
-    }
 }
