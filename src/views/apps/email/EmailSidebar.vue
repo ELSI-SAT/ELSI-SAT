@@ -37,7 +37,7 @@
                 <router-link tag="span" :to="`${baseUrl}/draft`" class="flex justify-between items-center mt-4 cursor-pointer" :class="{'text-primary': mailFilter == 'draft'}">
                     <div class="flex items-center mb-2">
                         <feather-icon icon="Edit2Icon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'draft'}, 'h-6 w-6']"></feather-icon>
-                        <span class="text-lg ml-3">Draft</span>
+                        <span class="text-lg ml-3">Entwurf</span>
                     </div>
                     <template v-if="emailMeta.draftMails">
                       <vs-chip class="number" color="warning" v-if="emailMeta.draftMails.length > 0">{{ emailMeta.draftMails.length }}</vs-chip>

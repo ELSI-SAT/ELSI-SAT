@@ -36,7 +36,7 @@
                                         </li>
                                         <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('draft')" v-if="currentMail.mailFolder != 'draft'">
                                             <feather-icon icon="Edit2Icon" svg-classes="h-5 w-5"></feather-icon>
-                                            <span class="ml-3">Draft</span>
+                                            <span class="ml-3">Entwurf</span>
                                         </li>
                                         <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('spam')" v-if="currentMail.mailFolder != 'spam'">
                                             <feather-icon icon="InfoIcon" svg-classes="h-5 w-5"></feather-icon>
