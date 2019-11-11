@@ -52,20 +52,6 @@
                         </vs-dropdown-menu>
                     </vs-dropdown>
 
-                    <vs-dropdown vs-custom-content vs-trigger-click class="cursor-pointer">
-
-                        <feather-icon icon="TagIcon" class="cursor-pointer ml-5" svg-classes="h-6 w-6"></feather-icon>
-
-                        <vs-dropdown-menu >
-                                <ul>
-                                    <li v-for="(label, index) in emailTags" :key="index" class="px-2 py-1 cursor-pointer" @click="updateLabels(label.value)">
-                                        <div class="h-3 w-3 inline-block rounded-full mr-3" :class="'bg-' + label.color"></div>
-                                        <span>{{ label.text }}</span>
-                                    </li>
-                                </ul>
-                        </vs-dropdown-menu>
-                    </vs-dropdown>
-
                     <feather-icon icon="MailIcon" class="ml-5 cursor-pointer" svg-classes="h-6 w-6" @click="updateMarkUnread" />
 
                     <feather-icon v-if="mailFilter != 'trash'" icon="TrashIcon" class="cursor-pointer ml-5" svg-classes="h-6 w-6" @click="moveTo('trash')" />
