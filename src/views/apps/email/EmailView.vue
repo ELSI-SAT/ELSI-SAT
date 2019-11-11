@@ -104,14 +104,7 @@
 
                     <div class="vx-row" style="margin-top: 2.2rem">
                         <div class="vx-col w-full pb-10">
-                            <vx-card>
-                                <div class="vx-row">
-                                    <div class="vx-col w-full flex justify-between">
-                                        <span class="text-lg">Click here to <span class="text-primary font-semibold cursor-pointer">Reply</span> or <span class="text-primary font-semibold cursor-pointer">Forward</span></span>
-                                        <feather-icon icon="PaperclipIcon"></feather-icon>
-                                    </div>
-                                </div>
-                            </vx-card>
+
                         </div>
                     </div>
                 </div>
