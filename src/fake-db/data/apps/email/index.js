@@ -537,16 +537,6 @@ mock.onGet("/api/apps/email/meta").reply(() => {
 })
 
 
-// POST : Move Mails to another folder
-mock.onPost("/api/apps/email/move-mails").reply((request) => {
-  const mailsToMove = JSON.parse(request.data).emailIds
-
-  data.emails.forEach((mail) => {
-    if(mailsToMove.includes(mail.id)) mail.mailFolder = JSON.parse(request.data).mailFolder
-  })
-
-  return [200]
-})
 
 // POST : Update Mails Labels
 mock.onPost("/api/apps/email/update-labels").reply((request) => {

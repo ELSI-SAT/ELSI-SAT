@@ -51,21 +51,11 @@ export default {
     },
 
     // Move mails to another folder
-    moveMailsTo({ commit }, payload) {
-      return new Promise((resolve, reject) => {
-        axios.post("/api/apps/email/move-mails", { emailIds: payload.emailIds, mailFolder: payload.to })
-          .then((response) => {
-            commit("MOVE_MAILS_TO", payload)
-            commit("UPDATE_UNREAD_META_ON_MOVE", payload)
-            resolve(response)
-          })
-          .catch((error) => { reject(error) })
-      })
+    moveMailsTo({commit}, payload) {
+      commit("MOVE_MAILS_TO", payload)
+      commit("UPDATE_UNREAD_META_ON_MOVE", payload)
     },
-
-
-    },
-
+  
     // Set mails flag unread to true
     setUnread({ commit }, payload) {
       return new Promise((resolve, reject) => {
