@@ -50,17 +50,6 @@
                     <span class="text-lg ml-3">Markiert</span>
                 </router-link>
 
-                <!-- spam -->
-                <router-link tag="span" :to="`${baseUrl}/spam`" class="flex items-center justify-between items-center mt-4 cursor-pointer" :class="{'text-primary': mailFilter == 'spam'}">
-                    <div class="flex items-center mb-2">
-                        <feather-icon icon="InfoIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'spam'}, 'h-6 w-6']"></feather-icon>
-                        <span class="text-lg ml-3">Spam</span>
-                    </div>
-                    <template v-if="emailMeta.unreadMails">
-                      <vs-chip class="number" color="danger" v-if="emailMeta.unreadMails.folder.spam.length > 0">{{ emailMeta.unreadMails.folder.spam.length }}</vs-chip>
-                    </template>
-                </router-link>
-
                 <!-- trash -->
                 <router-link tag="span" :to="`${baseUrl}/trash`" class="flex items-center mt-4 mb-2 cursor-pointer" :class="{'text-primary': mailFilter == 'trash'}">
                     <feather-icon icon="TrashIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'trash'}, 'h-6 w-6']"></feather-icon>

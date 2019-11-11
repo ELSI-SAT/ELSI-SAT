@@ -92,7 +92,6 @@ let data = {
           unread: false,
         },
       ],
-      mailFolder: 'spam',
       unread: false,
     },
     {
@@ -128,7 +127,6 @@ let data = {
       "labels": ["private"],
       "time": "Tue Dec 12 2018 11:55:00 GMT+0000 (GMT)",
       "replies": [],
-      "mailFolder": "spam",
       "unread": true
     },
     {
@@ -344,7 +342,6 @@ let data = {
       "labels": ["personal"],
       "time": "Tue Jan 09 2018 10:55:00 GMT+0000 (GMT)",
       "replies": [],
-      "mailFolder": "spam",
       "unread": false
     },
     {
@@ -362,7 +359,6 @@ let data = {
       "labels": ["personal"],
       "time": "Tue Jan 10 2018 10:55:00 GMT+0000 (GMT)",
       "replies": [],
-      "mailFolder": "spam",
       "unread": false
     },
     {
@@ -380,7 +376,6 @@ let data = {
       "labels": ["personal"],
       "time": "Tue Jan 11 2018 10:55:00 GMT+0000 (GMT)",
       "replies": [],
-      "mailFolder": "spam",
       "unread": true
     },
     {
@@ -398,7 +393,6 @@ let data = {
       "labels": ["private"],
       "time": "Tue Jan 12 2018 10:55:00 GMT+0000 (GMT)",
       "replies": [],
-      "mailFolder": "spam",
       "unread": true
     },
     {
@@ -494,7 +488,6 @@ mock.onGet("api/apps/email/mails").reply((request) => {
     if (filter === "draft") return email.mailFolder === "draft"
     if (filter === "starred") return email.isStarred && email.mailFolder !== "trash"
     if (filter === "trash") return email.mailFolder === "trash"
-    if (filter === "spam") return email.mailFolder === "spam"
     else return email.mailFolder != "trash" && email.labels.includes(filter)
 
   }).reverse()
@@ -510,7 +503,7 @@ mock.onGet("api/apps/email/tags").reply(() => {
 // GET : Unread Mails
 mock.onGet("/api/apps/email/meta").reply(() => {
 
-  let countUnreadMailFolders = ["inbox", "spam"]
+  let countUnreadMailFolders = ["inbox"]
 
   let meta = {
     unreadMails: {
