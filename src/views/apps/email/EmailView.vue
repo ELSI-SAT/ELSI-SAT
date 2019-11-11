@@ -50,7 +50,7 @@
                             <vs-dropdown vs-custom-content vs-trigger-click class="cursor-pointer">
                                 <feather-icon icon="TagIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4"></feather-icon>
                                 <vs-dropdown-menu style="z-index: 40001">
-                                        <vs-dropdown-item v-for="(label, index) in emailTags" :key="index">
+                                        <vs-dropdown-item v-for="(label, index) in mailTags" :key="index">
                                             <vs-checkbox @click.stop :vs-value="label.value" v-model="currentMailLabels">{{ label.text }}</vs-checkbox>
                                         </vs-dropdown-item>
                                 </vs-dropdown-menu>
@@ -127,7 +127,7 @@ import EmailMailCard from "./EmailMailCard.vue"
 
 export default {
   props: {
-    emailTags: {
+    mailTags: {
       type: Array,
       required: true,
     },

@@ -120,7 +120,7 @@
 
         <!-- EMAIL VIEW SIDEBAR -->
         <email-view
-            :emailTags       = "emailTags"
+            :mailTags       = "mailTags"
             :openMailId      = "openMailId"
             :isSidebarActive = "isSidebarActive"
             :mailFilter      = "mailFilter"
@@ -175,7 +175,7 @@ export default {
     mailFilter() {
       return this.$route.params.filter
     },
-    emailTags() {
+    mailTags() {
       return this.$store.state.email.mailTags
     },
     searchQuery: {

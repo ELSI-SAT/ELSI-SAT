@@ -25,7 +25,7 @@ mock.onGet("api/apps/email/mails").reply((request) => {
 
 // GET : Emails
 mock.onGet("api/apps/email/tags").reply(() => {
-  return [200, data.emailTags]
+  return [200, data.mailTags]
 })
 
 // GET : Unread Mails
