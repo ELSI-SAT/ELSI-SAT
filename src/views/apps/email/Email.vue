@@ -9,60 +9,110 @@
 
 
 <template>
-    <div id="email-app" class="border border-solid d-theme-border-grey-light rounded relative overflow-hidden">
+    <div id="email-app"
+         class="border border-solid d-theme-border-grey-light rounded relative overflow-hidden">
 
-        <vs-sidebar class="items-no-padding" parent="#email-app" :click-not-close="clickNotClose" :hidden-background="clickNotClose" v-model="isEmailSidebarActive">
-            <email-sidebar :emailTags="emailTags" @closeSidebar="toggleEmailSidebar" :mailFilter="mailFilter" />
+        <vs-sidebar class="items-no-padding"
+                    parent="#email-app"
+                    :click-not-close="clickNotClose"
+                    :hidden-background="clickNotClose"
+                    v-model="isEmailSidebarActive">
+            <email-sidebar :mailTags="mailTags"
+                           @closeSidebar="toggleEmailSidebar"
+                           :mailFilter="mailFilter" />
         </vs-sidebar>
 
-        <div :class="{'sidebar-spacer': clickNotClose}" class="app-fixed-height border border-solid d-theme-border-grey-light border-r-0 border-t-0 border-b-0">
+        <div :class="{'sidebar-spacer': clickNotClose}"
+             class="app-fixed-height border border-solid d-theme-border-grey-light border-r-0 border-t-0 border-b-0">
 
             <!-- SEARCH BAR -->
             <div class="flex border d-theme-dark-bg items-center">
-                <feather-icon class="md:inline-flex lg:hidden ml-4 mr-4 cursor-pointer" icon="MenuIcon" @click.stop="toggleEmailSidebar(true)"/>
-                <vs-input icon-no-border icon="icon-search" size="large" icon-pack="feather" placeholder="Suche" v-model="searchQuery" class="vs-input-no-border vs-input-no-shdow-focus w-full" />
+                <feather-icon class="md:inline-flex lg:hidden ml-4 mr-4 cursor-pointer"
+                              @click.stop="toggleEmailSidebar(true)"/>
+                <vs-input icon-no-border icon="icon-search"
+                          size="large"
+                          icon-pack="feather"
+                          placeholder="Suche"
+                          v-model="searchQuery"
+                          class="vs-input-no-border vs-input-no-shdow-focus w-full" />
             </div>
 
             <!-- EMAIL ACTION BAR -->
             <div class="email__actions flex items-center flex-wrap justify-between p-4 border border-r-0 border-l-0 border-solid d-theme-border-grey-light">
                 <div class="flex items-center">
-                    <vs-checkbox v-model="selectAllCheckBox" icon-pack="feather" :icon="selectAllIcon" class="select-all-chexkbox ml-0">Alle auswählen</vs-checkbox>
+                    <vs-checkbox v-model="selectAllCheckBox"
+                                 icon-pack="feather"
+                                :icon="selectAllIcon"
+                                class="select-all-chexkbox ml-0">
+                      Alle auswählen
+                    </vs-checkbox>
                 </div>
                 <div class="flex">
 
-                    <vs-dropdown vs-custom-content vs-trigger-click class="cursor-pointer" v-if="mailFilter != 'answered'">
+                    <vs-dropdown vs-custom-content vs-trigger-click
+                                 class="cursor-pointer"
+                                 v-if="mailFilter != 'answered'">
 
-                        <feather-icon icon="FolderIcon" class="cursor-pointer" svg-classes="h-6 w-6"></feather-icon>
+                        <feather-icon icon="FolderIcon"
+                                      class="cursor-pointer"
+                                      svg-classes="h-6 w-6"></feather-icon>
 
                         <vs-dropdown-menu>
                             <ul class="my-2">
-                                <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('inbox')" v-if="mailFilter != 'inbox'">
-                                    <feather-icon icon="MailIcon" svg-classes="h-5 w-5" />
+                                <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary"
+                                    @click="moveTo('inbox')"
+                                    v-if="mailFilter != 'inbox'">
+                                    <feather-icon icon="MailIcon"
+                                                  svg-classes="h-5 w-5" />
                                     <span class="ml-3">Offene Fragen</span>
                                 </li>
-                                <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('draft')" v-if="mailFilter != 'draft'">
-                                    <feather-icon icon="Edit2Icon" svg-classes="h-5 w-5"></feather-icon>
+                                <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary"
+                                    @click="moveTo('draft')"
+                                    v-if="mailFilter != 'draft'">
+                                    <feather-icon icon="Edit2Icon"
+                                                  svg-classes="h-5 w-5"></feather-icon>
                                     <span class="ml-3">Entwurf</span>
                                 </li>
-                                <li class="px-4 flex items-start cursor-pointer hover:text-primary" @click="moveTo('trash')" v-if="mailFilter != 'trash'">
-                                    <feather-icon icon="TrashIcon" svg-classes="h-5 w-5"></feather-icon>
+                                <li class="px-4 flex items-start cursor-pointer hover:text-primary"
+                                    @click="moveTo('trash')"
+                                    v-if="mailFilter != 'trash'">
+                                    <feather-icon icon="TrashIcon"
+                                                  svg-classes="h-5 w-5"></feather-icon>
                                     <span class="ml-3">Nicht relevant</span>
                                 </li>
                             </ul>
                         </vs-dropdown-menu>
                     </vs-dropdown>
 
-                    <feather-icon icon="MailIcon" class="ml-5 cursor-pointer" svg-classes="h-6 w-6" @click="updateMarkUnread" />
-
-                    <feather-icon v-if="mailFilter != 'trash'" icon="TrashIcon" class="cursor-pointer ml-5" svg-classes="h-6 w-6" @click="moveTo('trash')" />
+                    <feather-icon icon="MailIcon"
+                                  class="ml-5 cursor-pointer"
+                                  svg-classes="h-6 w-6"
+                                  @click="updateMarkUnread" />
+                    <feather-icon v-if="mailFilter != 'trash'"
+                                  icon="TrashIcon"
+                                  class="cursor-pointer ml-5"
+                                  svg-classes="h-6 w-6"
+                                  @click="moveTo('trash')" />
                 </div>
             </div>
 
             <!-- EMAILS LIST -->
-            <VuePerfectScrollbar class="email-content-scroll-area" :settings="settings" ref="mailListPS">
-                <transition-group name="list-enter-up" class="email__mails" tag="ul" appear>
-                    <li class="cursor-pointer email__mail-item" v-for="(mail, index) in mails" :key="String(mailFilter) + String(mail.id)" @click.stop="updateOpenMail(mail.id)" :style="{transitionDelay: (index * 0.1) + 's'}">
-                        <mail-item :mail="mail" :isSelected="isMailSelected(mail.id)" @addToSelected="addToSelectedMails" @removeSelected="removeSelectedMail" />
+            <VuePerfectScrollbar class="email-content-scroll-area"
+                                 :settings="settings"
+                                 ref="mailListPS">
+                <transition-group name="list-enter-up"
+                                  class="email__mails"
+                                  tag="ul"
+                                  appear>
+                    <li class="cursor-pointer email__mail-item"
+                        v-for="(mail, index) in mails"
+                        :key="String(mailFilter) + String(mail.id)"
+                        @click.stop="updateOpenMail(mail.id)"
+                        :style="{transitionDelay: (index * 0.1) + 's'}">
+                        <mail-item :mail="mail"
+                                   :isSelected="isMailSelected(mail.id)"
+                                   @addToSelected="addToSelectedMails"
+                                   @removeSelected="removeSelectedMail" />
                     </li>
                 </transition-group>
             </VuePerfectScrollbar>
