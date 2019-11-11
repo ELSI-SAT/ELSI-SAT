@@ -27,15 +27,15 @@ export default [
     icon: "HomeIcon",
   },
   {
-    url: "/knowledge-base",
-    name: "Knowledge Base",
-    slug: "knowledge-base",
-    icon: "HelpCircleIcon",
-  },
-  {
     url: "/apps/email",
     name: "Fragenkatalog",
     slug: "email",
     icon: "EditIcon",
+  },
+  {
+    url: "/knowledge-base",
+    name: "Knowledge Base",
+    slug: "knowledge-base",
+    icon: "HelpCircleIcon",
   },
 ]
