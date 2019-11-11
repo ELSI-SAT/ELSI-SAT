@@ -241,7 +241,7 @@ export default {
     },
     toggleIsStarred() {
       const payload = { mailId: this.currentMail.id, value: !this.currentMail.isStarred }
-      this.$store.dispatch('email/toggleIsMailStarred', payload)
+      this.$store.dispatch('email/toggleIsStarred', payload)
     },
     nextMail() {
       const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
