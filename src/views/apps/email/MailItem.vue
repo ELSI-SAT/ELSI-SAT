@@ -23,23 +23,11 @@
                     <div class="email__labels hidden sm:flex items-center">
                         <div class="h-2 w-2 rounded-full mr-2" :class="'bg-' + labelColor(label)" v-for="(label, index) in mail.labels" :key="index"></div>
                     </div>
-                    <span>{{ mail.time | date }}</span>
                 </div>
             </div>
         </div>
         <!-- /MAIL ROW 1 -->
-
-        <!-- MAIL ROW 2 : MSG & ACTIONS -->
-        <div class="flex w-full">
-            <div class="flex items-center ml-1">
-                <vs-checkbox v-model="isSelectedMail" @click.stop class="vs-checkbox-small ml-0 mr-1"></vs-checkbox>
-                <feather-icon icon="StarIcon" class="cursor-pointer" :svgClasses="[{'text-warning fill-current stroke-current': mail.isStarred}, 'w-5', 'h-5']" @click.stop="toggleIsStarred"></feather-icon>
-            </div>
-            <div class="mail__message truncate ml-3">
-                <span>{{ mail.message | filter_tags }}</span>
-            </div>
-        </div>
-        <!-- /MAIL ROW 2 -->
+      
     </div>
 </template>
 
