@@ -12,8 +12,6 @@
 
         <!-- MAIL ROW 1 : META -->
         <div class="flex w-full">
-            <vs-avatar class="sender__avatar flex-shrink-0 mr-3 border-2 border-solid border-white" :src="mail.img" size="40px"></vs-avatar>
-
             <div class="flex w-full justify-between items-start">
                 <div class="mail__details">
                     <h5 class="mb-1" :class="{'font-semibold': mail.unread}">{{ mail.sender_name }}</h5>

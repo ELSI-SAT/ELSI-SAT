@@ -14,9 +14,6 @@
       <div class="vx-col w-full border-b border-l-0 border-r-0 border-t-0 d-theme-border-grey-light border-solid flex justify-between flex items-center">
         <!-- Sender Details -->
         <div class="flex items-center">
-          <div>
-            <vs-avatar class="sender__avatar--single flex-shrink-0 mr-3 border-2 border-solid border-white" :src="props.mailContent.img" size="65px" />
-          </div>
 
           <div class="flex flex-col">
             <h5 class="mb-1">{{ props.mailContent.sender_name }}</h5>
