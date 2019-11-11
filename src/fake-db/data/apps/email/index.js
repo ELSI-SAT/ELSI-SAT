@@ -65,27 +65,6 @@ mock.onGet("/api/apps/email/meta").reply(() => {
 })
 
 
-
-// POST : Update Mails Labels
-mock.onPost("/api/apps/email/update-labels").reply((request) => {
-
-  const label = JSON.parse(request.data).label
-  const mailsToUpdate = JSON.parse(request.data).emailIds
-
-  mailsToUpdate.forEach((mailId) => {
-    const mailIndex = data.emails.findIndex((mail) => mail.id == mailId)
-    const labelIndex = data.emails[mailIndex].labels.indexOf(label)
-
-    if(labelIndex == -1) {
-        data.emails[mailIndex].labels.push(label)
-    }else{
-        data.emails[mailIndex].labels.splice(labelIndex, 1)
-    }
-  })
-
-  return [200]
-})
-
 // POST : Mark as Unread
 mock.onPost("/api/apps/email/mark-unread").reply((request) => {
   const mailsToUpdate = JSON.parse(request.data).emailIds
