@@ -47,7 +47,7 @@
                 <!-- starred -->
                 <router-link tag="span" :to="`${baseUrl}/starred`" class="flex items-center mt-4 mb-2 cursor-pointer" :class="{'text-primary': mailFilter == 'starred'}">
                     <feather-icon icon="StarIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'starred'}, 'h-6 w-6']"></feather-icon>
-                    <span class="text-lg ml-3">Starred</span>
+                    <span class="text-lg ml-3">Markiert</span>
                 </router-link>
 
                 <!-- spam -->
