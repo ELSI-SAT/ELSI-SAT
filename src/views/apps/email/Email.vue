@@ -206,10 +206,6 @@ export default {
       this.updateMarkUnread()
       this.isSidebarActive = false
     },
-    updateLabels(label) {
-      this.$store.dispatch('email/updateLabels', { mails: this.selectedMails, label: label })
-      this.selectedMails = []
-    },
     closeMailViewSidebar() {
       this.isSidebarActive = false
     },

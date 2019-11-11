@@ -63,17 +63,6 @@ export default {
       })
     },
 
-    // Update Mails label
-    updateLabels({ commit }, payload) {
-      return new Promise((resolve, reject) => {
-        axios.post("/api/apps/email/update-labels", { emailIds: payload.mails, label: payload.label })
-          .then((response) => {
-            commit("UPDATE_LABELS", payload)
-            resolve(response)
-          })
-          .catch((error) => { reject(error) })
-      })
-    },
 
     setLabels({ commit }, payload) {
       return new Promise((resolve, reject) => {
