@@ -254,7 +254,7 @@ let data = {
       "labels": ["personal"],
       "time": "Tue Jan 04 2018 10:55:00 GMT+0000 (GMT)",
       "replies": [],
-      "mailFolder": "sent",
+      "mailFolder": "answered",
       "unread": false
     },
     {
@@ -266,7 +266,7 @@ let data = {
       "subject": "Down-sized transitional intranet",
       "cc": [],
       "bcc": [],
-      "message": "<p>Hey John, </p><p><br></p><p>calcimine gramineal nonfreezable interradial setula undertakable Abranchiata ultrasystematic spectroelectric Astarte Abraham bedsite enantiopathia exlex precoincident thiocarbamic mesenteriform daturism thioantimoniate tripudiate unsultry predynastic benzidino doxasticon</p><p><br></p><p>overstale confessory glossed jane smoodger modernization Dehkan progymnospermic gangliectomy volumenometry Paulinistically tippy Gelfomino hive preredemption coccygine horrendous unintrusted plainer interrelatedly tearer arrojadite incircumspectly yokemating</p>",
+      "message": "<p>Hey John, </p><p><br></p><p>calcimine gramineal nonfreezable interradial setula undertakable Abranchiata ultrasystematic spectroelectric Astarte Abraham bedsite enantiopathia exlex precoincident thiocarbamic meanswerederiform daturism thioantimoniate tripudiate unsultry predynastic benzidino doxasticon</p><p><br></p><p>overstale confessory glossed jane smoodger modernization Dehkan progymnospermic gangliectomy volumenometry Paulinistically tippy Gelfomino hive preredemption coccygine horrendous unintrusted plainer interrelatedly tearer arrojadite incircumspectly yokemating</p>",
       "attachments": ["SedAnteVivamus.avi"],
       "isStarred": true,
       "labels": ["important"],
@@ -326,7 +326,7 @@ let data = {
       "labels": ["company"],
       "time": "Tue Jan 08 2018 10:55:00 GMT+0000 (GMT)",
       "replies": [],
-      "mailFolder": "sent",
+      "mailFolder": "answered",
       "unread": false
     },
     {
@@ -490,7 +490,7 @@ mock.onGet("api/apps/email/mails").reply((request) => {
   const filteredEmails = data.emails.filter((email)=> {
 
     if (filter == "inbox") return email.mailFolder === "inbox"
-    if (filter === "sent") return email.mailFolder === "sent"
+    if (filter === "answered") return email.mailFolder === "answered"
     if (filter === "draft") return email.mailFolder === "draft"
     if (filter === "starred") return email.isStarred && email.mailFolder !== "trash"
     if (filter === "trash") return email.mailFolder === "trash"

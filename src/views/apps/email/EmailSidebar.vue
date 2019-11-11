@@ -27,10 +27,10 @@
                     </template>
                 </router-link>
 
-                <!-- sent -->
-                <router-link tag="span" :to="`${baseUrl}/sent`" class="flex items-center mt-4 mb-2 cursor-pointer" :class="{'text-primary': mailFilter == 'sent'}">
-                    <feather-icon icon="SendIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'sent'}, 'h-6 w-6']"></feather-icon>
-                    <span class="text-lg ml-3">Sent</span>
+                <!-- answered -->
+                <router-link tag="span" :to="`${baseUrl}/answered`" class="flex items-center mt-4 mb-2 cursor-pointer" :class="{'text-primary': mailFilter == 'answered'}">
+                    <feather-icon icon="SendIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'answered'}, 'h-6 w-6']"></feather-icon>
+                    <span class="text-lg ml-3">Beantwortet</span>
                 </router-link>
 
                 <!-- draft -->
