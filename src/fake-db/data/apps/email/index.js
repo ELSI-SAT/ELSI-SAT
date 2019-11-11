@@ -570,14 +570,6 @@ mock.onPost("/api/apps/email/mark-unread").reply((request) => {
   return [200]
 })
 
-// POST : Set starred
-mock.onPost("/api/apps/email/set-starred").reply((request) => {
-  const mailId = JSON.parse(request.data).mailId
-
-  data.emails.find((mail) => mail.id === mailId).isStarred = JSON.parse(request.data).value
-
-  return [200]
-})
 
 // GET: Fetch Calendar Labels
 // mock.onGet("api/apps/calendar/labels").reply(() => {

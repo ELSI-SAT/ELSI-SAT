@@ -183,7 +183,7 @@ export default {
   methods: {
     toggleIsStarred() {
       const payload = { mailId: this.openMailId, value: !this.currentMail.isStarred }
-      this.$store.dispatch('email/toggleIsMailStarred', payload)
+      this.$store.dispatch('email/toggleIsStarred', payload)
     },
     moveTo(to) {
       this.$emit('closeSidebar')

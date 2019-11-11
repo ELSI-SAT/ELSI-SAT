@@ -18,7 +18,11 @@
 
             <div class="flex w-full justify-between items-start">
                 <div class="mail__details">
-                    <h5 class="mb-1" :class="{'font-semibold': mail.unread}">{{ mail.sender_name }}</h5>
+                  <h5 class="mb-1 flex" :class="{'font-semibold': mail.unread}">
+                    {{ mail.sender_name }}
+                    <feather-icon icon="StarIcon" class="cursor-pointer ml-3" :svgClasses="[{'text-warning fill-current stroke-current': mail.isStarred}, 'w-5', 'h-5']"></feather-icon>
+
+                  </h5>
                     <span v-if="mail.subject">{{ mail.subject }}</span>
                     <span v-else>(no subject)</span>
                 </div>
@@ -31,7 +35,7 @@
             </div>
         </div>
         <!-- /MAIL ROW 1 -->
-      
+
     </div>
 </template>
 
@@ -73,7 +77,7 @@ export default {
   methods: {
     toggleIsStarred() {
       const payload = { mailId: this.mail.id, value: !this.mail.isStarred }
-      this.$store.dispatch('email/toggleIsMailStarred', payload)
+      this.$store.dispatch('email/toggleIsStarred', payload)
     }
   }
 }

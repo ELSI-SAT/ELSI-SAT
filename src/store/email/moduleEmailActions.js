@@ -72,15 +72,11 @@ export default {
       })
     },
 
-    // Toggle isStarred flag in mail
-    toggleIsMailStarred({ commit }, payload) {
-      return new Promise((resolve, reject) => {
-        axios.post("/api/apps/email/set-starred", { mailId: payload.mailId, value: payload.value })
-          .then((response) => {
-            commit("TOGGLE_IS_MAIL_STARRED", payload)
-            resolve(response)
-          })
-          .catch((error) => { reject(error) })
-      })
+  
     },
+  
+  // Toggle isStarred flag in mail
+  toggleIsStarred({ commit }, payload) {
+    commit("TOGGLE_IS_MAIL_STARRED", payload)
+  },
 }
