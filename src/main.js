@@ -17,17 +17,6 @@ import 'material-icons/iconfont/material-icons.css' //Material Icons
 import 'vuesax/dist/vuesax.css'; // Vuesax
 Vue.use(Vuesax)
 
-
-// axios
-import axios from "./axios.js"
-Vue.prototype.$http = axios
-
-// API Calls
-import "./http/requests"
-
-// mock
-import "./fake-db/index.js"
-
 // Theme Configurations
 import '../themeConfig.js'
 
@@ -50,7 +39,6 @@ import router from './router'
 
 // Vuex Store
 import store from './store/store'
-
 
 
 // Vuexy Admin Filters
