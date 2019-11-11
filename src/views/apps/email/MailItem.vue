@@ -12,6 +12,10 @@
 
         <!-- MAIL ROW 1 : META -->
         <div class="flex w-full">
+          <div class="mt-1 ml-1 mr-1">
+            <vs-checkbox v-model="isSelectedMail" @click.stop class="vs-checkbox-small ml-0 mr-1"></vs-checkbox>
+          </div>
+
             <div class="flex w-full justify-between items-start">
                 <div class="mail__details">
                     <h5 class="mb-1" :class="{'font-semibold': mail.unread}">{{ mail.sender_name }}</h5>
