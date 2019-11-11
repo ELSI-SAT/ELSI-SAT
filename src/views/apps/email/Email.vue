@@ -1,6 +1,6 @@
 <!-- =========================================================================================
     File Name: Email.vue
-    Description: Email Application (Unbeantwortet)
+    Description: Email Application (Offene Fragen)
     ----------------------------------------------------------------------------------------
     Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
       Author: Pixinvent
@@ -20,13 +20,13 @@
             <!-- SEARCH BAR -->
             <div class="flex border d-theme-dark-bg items-center">
                 <feather-icon class="md:inline-flex lg:hidden ml-4 mr-4 cursor-pointer" icon="MenuIcon" @click.stop="toggleEmailSidebar(true)"/>
-                <vs-input icon-no-border icon="icon-search" size="large" icon-pack="feather" placeholder="Search Mail" v-model="searchQuery" class="vs-input-no-border vs-input-no-shdow-focus w-full" />
+                <vs-input icon-no-border icon="icon-search" size="large" icon-pack="feather" placeholder="Suche" v-model="searchQuery" class="vs-input-no-border vs-input-no-shdow-focus w-full" />
             </div>
 
             <!-- EMAIL ACTION BAR -->
             <div class="email__actions flex items-center flex-wrap justify-between p-4 border border-r-0 border-l-0 border-solid d-theme-border-grey-light">
                 <div class="flex items-center">
-                    <vs-checkbox v-model="selectAllCheckBox" icon-pack="feather" :icon="selectAllIcon" class="select-all-chexkbox ml-0">Select All</vs-checkbox>
+                    <vs-checkbox v-model="selectAllCheckBox" icon-pack="feather" :icon="selectAllIcon" class="select-all-chexkbox ml-0">Alle auswählen</vs-checkbox>
                 </div>
                 <div class="flex">
 
@@ -38,7 +38,7 @@
                             <ul class="my-2">
                                 <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('inbox')" v-if="mailFilter != 'inbox'">
                                     <feather-icon icon="MailIcon" svg-classes="h-5 w-5" />
-                                    <span class="ml-3">Unbeantwortet</span>
+                                    <span class="ml-3">Offene Fragen</span>
                                 </li>
                                 <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('draft')" v-if="mailFilter != 'draft'">
                                     <feather-icon icon="Edit2Icon" svg-classes="h-5 w-5"></feather-icon>

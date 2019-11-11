@@ -1,6 +1,6 @@
 <!-- =========================================================================================
     File Name: EmailView.vue
-    Description: Email Application - Single Email View (Unbeantwortet)
+    Description: Email Application - Single Email View (Offene Fragen)
     ----------------------------------------------------------------------------------------
     Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
       Author: Pixinvent
@@ -32,7 +32,7 @@
                                     <ul class="my-2">
                                         <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('inbox')" v-if="currentMail.mailFolder != 'inbox'">
                                             <feather-icon icon="MailIcon" svg-classes="h-5 w-5" />
-                                            <span class="ml-3">Unbeantwortet</span>
+                                            <span class="ml-3">Offene Fragen</span>
                                         </li>
                                         <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('draft')" v-if="currentMail.mailFolder != 'draft'">
                                             <feather-icon icon="Edit2Icon" svg-classes="h-5 w-5"></feather-icon>

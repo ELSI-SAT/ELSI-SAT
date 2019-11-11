@@ -153,7 +153,7 @@
                 @click="$router.push('/apps/email').catch(() => {})">
 
                 <feather-icon icon="MailIcon" svgClasses="w-4 h-4" />
-                <span class="ml-2">Unbeantwortet</span>
+                <span class="ml-2">Offene Fragen</span>
               </li>
               <li
                 class="flex py-2 px-4 cursor-pointer hover:bg-primary hover:text-white"
