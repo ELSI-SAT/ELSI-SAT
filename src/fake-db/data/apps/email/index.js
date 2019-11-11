@@ -568,13 +568,6 @@ mock.onPost("/api/apps/email/update-labels").reply((request) => {
   return [200]
 })
 
-// POST : Set Mails Labels for single mail
-mock.onPost("/api/apps/email/set-labels").reply((request) => {
-  const mailId = JSON.parse(request.data).mailId
-  data.emails.find((mail) => mail.id === mailId).labels = JSON.parse(request.data).labels
-  return [200]
-})
-
 // POST : Mark as Unread
 mock.onPost("/api/apps/email/mark-unread").reply((request) => {
   const mailsToUpdate = JSON.parse(request.data).emailIds

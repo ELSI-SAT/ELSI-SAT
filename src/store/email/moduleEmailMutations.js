@@ -33,9 +33,6 @@ export default {
             else state.mails[mailIndex].labels.splice(index, 1)
         })
     },
-    SET_LABELS(state, payload) {
-      state.mails.find((mail) => mail.id === payload.mailId).labels = payload.labels
-    },
     SET_UNREAD(state, payload) {
         payload.emailIds.forEach((mailId) => {
           const mailIndex = state.mails.findIndex((mail) => mail.id == mailId)

@@ -178,12 +178,6 @@ export default {
       get() {
         return this.currentMail.labels
       },
-      set(value) {
-        if (Array.isArray(value)) {
-          const payload = { mailId: this.openMailId, labels: value }
-          this.$store.dispatch('email/setLabels', payload)
-        }
-      }
     }
   },
   methods: {

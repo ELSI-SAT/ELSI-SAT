@@ -64,15 +64,6 @@ export default {
     },
 
 
-    setLabels({ commit }, payload) {
-      return new Promise((resolve, reject) => {
-        axios.post("/api/apps/email/set-labels", { mailId: payload.mailId, labels: payload.labels })
-          .then((response) => {
-            commit("SET_LABELS", payload)
-            resolve(response)
-          })
-          .catch((error) => { reject(error) })
-      })
     },
 
     // Set mails flag unread to true
