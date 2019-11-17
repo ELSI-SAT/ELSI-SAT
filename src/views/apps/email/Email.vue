@@ -58,7 +58,7 @@
                                       svg-classes="h-6 w-6"></feather-icon>
 
                         <vs-dropdown-menu>
-                            <ul class="my-2">
+                            <ul class="my-2" style="width: 170px;">
                                 <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary"
                                     @click="moveTo('inbox')"
                                     v-if="mailFilter != 'inbox'">
