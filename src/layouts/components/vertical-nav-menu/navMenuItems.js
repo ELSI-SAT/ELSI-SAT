@@ -22,9 +22,15 @@
 export default [
   {
     url: "/",
-    name: "Home",
+    name: "Start",
     slug: "home",
     icon: "HomeIcon",
+  },
+  {
+    url: "/apps/email",
+    name: "Fragenkatalog",
+    slug: "email",
+    icon: "EditIcon",
   },
   {
     url: "/knowledge-base",

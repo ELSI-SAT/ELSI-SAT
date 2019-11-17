@@ -59,6 +59,19 @@ const router = new Router({
                   rule: 'editor'
                 },
               },
+              {
+                path: '/apps/email',
+                redirect: '/apps/email/inbox'
+              },
+              {
+                path: '/apps/email/:filter',
+                name: 'email',
+                component: () => import('./views/apps/email/Email.vue'),
+                meta: {
+                  rule: 'editor',
+                  parent: 'email'
+                }
+              },
             ],
         },
     // =============================================================================

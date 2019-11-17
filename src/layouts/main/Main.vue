@@ -100,7 +100,7 @@
                     <vs-dropdown-item>
                       <div @click="$router.push('/apps/email').catch(() => {})" class="flex items-center">
                         <feather-icon icon="MailIcon" class="inline-block mr-2" svgClasses="w-4 h-4" />
-                        <span>Inbox</span>
+                        <span>Offene Fragen</span>
                       </div>
                     </vs-dropdown-item>
                   </vs-dropdown-menu>

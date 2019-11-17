@@ -18,11 +18,16 @@ import actions from "./actions"
 
 Vue.use(Vuex)
 
+// Todo-usta: atm loaded in Email.vue
+// import moduleEmail from './email/moduleEmail.js'
 
 export default new Vuex.Store({
     getters,
     mutations,
     state,
     actions,
+    modules: {
+        // email: moduleEmail,
+    },
     strict: process.env.NODE_ENV !== 'production'
 })
