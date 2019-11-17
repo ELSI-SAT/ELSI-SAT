@@ -7,49 +7,12 @@
   Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 
-import axios from "@/axios.js"
-
 export default {
     setEmailSearchQuery({ commit }, query){
         commit("SET_EMAIL_SEARCH_QUERY", query)
     },
-
-    // Fetch emails
-    fetchEmails({ commit }, payload) {
-      return new Promise((resolve, reject) => {
-        axios.get("/api/apps/email/mails", { params: {filter: payload.filter} })
-          .then((response) => {
-            commit("SET_MAILS", response.data)
-            resolve(response)
-          })
-          .catch((error) => { reject(error) })
-      })
-    },
-
-    // Fetch Tags
-    fetchTags({ commit }) {
-      return new Promise((resolve, reject) => {
-        axios.get("/api/apps/email/tags")
-          .then((response) => {
-            commit("SET_TAGS", response.data)
-            resolve(response)
-          })
-          .catch((error) => { reject(error) })
-      })
-    },
-
-    // Fetch Email Meta
-    fetchMeta({ commit }) {
-      return new Promise((resolve, reject) => {
-        axios.get("/api/apps/email/meta")
-          .then((response) => {
-            commit("SET_META", response.data)
-            resolve(response)
-          })
-          .catch((error) => { reject(error) })
-      })
-    },
-
+  
+  
     // Move mails to another folder
     moveMailsTo({commit}, payload) {
       commit("MOVE_MAILS_TO", payload)

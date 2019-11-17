@@ -159,7 +159,6 @@ export default {
       this.selectedMails = []
       this.$refs.mailListPS.$el.scrollTop = 0
       this.$store.commit("email/UPDATE_MAIL_FILTER", this.$route.params.filter)
-      this.$store.dispatch("email/fetchEmails", { filter: this.$route.params.filter })
       this.toggleEmailSidebar()
     },
     windowWidth() {
@@ -271,10 +270,8 @@ export default {
     this.$store.registerModule('email', moduleEmail)
     this.setSidebarWidth()
 
+    // Folders
     this.$store.commit("email/UPDATE_MAIL_FILTER", this.$route.params.filter)        // Update Mail Filter
-    this.$store.dispatch("email/fetchEmails", { filter: this.$route.params.filter }) // Fetch Emails From API
-    this.$store.dispatch("email/fetchMeta")                                          // Fetch Unread Mails
-    this.$store.dispatch("email/fetchTags")                                          // Fetch Mail Tags
   },
   beforeDestroy: function() {
     this.$store.unregisterModule('email')
