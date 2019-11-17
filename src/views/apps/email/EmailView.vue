@@ -16,8 +16,7 @@
                     <div class="flex mb-4">
                         <div class="flex items-center">
                             <feather-icon icon="ArrowLeftIcon" @click="$emit('closeSidebar')" class="cursor-pointer mr-4" svg-classes="w-6 h-6"></feather-icon>
-                            <h4 v-if="currentMail.subject">{{ currentMail.subject }}</h4>
-                            <h4 v-else>(no subject)</h4>
+                            <h5>{{ currentMail.subject }}</h5>
                         </div>
                     </div>
                     <div class="ml-10 mb-4 mt-1">
@@ -29,7 +28,7 @@
                             <vs-dropdown vs-custom-content vs-trigger-click class="cursor-pointer" v-if="mailFilter != 'answered'">
                                 <feather-icon icon="FolderIcon" svg-classes="h-6 w-6" class="ml-4"></feather-icon>
                                 <vs-dropdown-menu>
-                                    <ul class="my-2">
+                                    <ul class="my-2" style="width: 170px;">
                                         <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('inbox')" v-if="currentMail.mailFolder != 'inbox'">
                                             <feather-icon icon="MailIcon" svg-classes="h-5 w-5" />
                                             <span class="ml-3">Offene Fragen</span>
@@ -46,18 +45,6 @@
                                 </vs-dropdown-menu>
                             </vs-dropdown>
 
-                            <!-- ADD LABEL DROPDOWN -->
-                            <vs-dropdown vs-custom-content vs-trigger-click class="cursor-pointer">
-                                <feather-icon icon="TagIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4"></feather-icon>
-                                <vs-dropdown-menu style="z-index: 40001">
-                                        <vs-dropdown-item v-for="(label, index) in mailTags" :key="index">
-                                            <vs-checkbox @click.stop :vs-value="label.value" v-model="currentMailLabels">{{ label.text }}</vs-checkbox>
-                                        </vs-dropdown-item>
-                                </vs-dropdown-menu>
-                            </vs-dropdown>
-
-                            <feather-icon icon="MailIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4"></feather-icon>
-                            <feather-icon v-if="currentMail.mailFolder != 'trash'" icon="TrashIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4" @click="$emit('removeMail')"></feather-icon>
                             <feather-icon icon="ChevronsLeftIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('previousMail')" />
                             <feather-icon icon="ChevronsRightIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('nextMail')" />
                         </div>
