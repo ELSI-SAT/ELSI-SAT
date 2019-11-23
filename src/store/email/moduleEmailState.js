@@ -30,7 +30,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["1"],
+        answer: [""],
       },
     },
     {
@@ -53,7 +53,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["2"],
+        answer: [""],
       },
     },
     {
@@ -75,7 +75,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["3"],
+        answer: [""],
       },
     },
     {
@@ -98,7 +98,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["10"],
+        answer: [""],
       },
     },
     {
@@ -120,7 +120,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["11"],
+        answer: [""],
       },
     },
     {
@@ -143,7 +143,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["12"],
+        answer: [""],
       },
     },
     {
@@ -166,7 +166,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["13"],
+        answer: [""],
       },
     },
     {
@@ -189,7 +189,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["14"],
+        answer: [""],
       },
     },
     {
@@ -212,7 +212,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["15"],
+        answer: [""],
       },
     },
     {
@@ -235,7 +235,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["16"],
+        answer: [""],
       },
     },
     {
@@ -258,7 +258,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["17"],
+        answer: [""],
       },
     },
     {
@@ -281,7 +281,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["18"],
+        answer: [""],
       },
     },
     {
@@ -304,7 +304,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["19"],
+        answer: [""],
       },
     },
     {
@@ -327,7 +327,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["20"],
+        answer: [""],
       },
     },
     {
@@ -350,7 +350,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["21"],
+        answer: [""],
       },
     },
     {
@@ -373,7 +373,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["22"],
+        answer: [""],
       },
     },
     {
@@ -395,7 +395,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["23"],
+        answer: [""],
       },
     },
     {
@@ -417,7 +417,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["24"],
+        answer: [""],
       },
     },
     {
@@ -439,7 +439,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["25"],
+        answer: [""],
       },
     },
     {
@@ -461,7 +461,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["26"],
+        answer: [""],
       },
     },
     {
@@ -484,7 +484,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["27"],
+        answer: [""],
       },
     },
     {
@@ -507,7 +507,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["28"],
+        answer: [""],
       },
     },
     {
@@ -530,7 +530,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["29"],
+        answer: [""],
       },
     },
     {
@@ -553,7 +553,7 @@ export default {
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
         depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: ["30"],
+        answer: [""],
       },
     },
   ],
