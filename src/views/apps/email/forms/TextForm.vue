@@ -26,26 +26,23 @@
         type: Object,
         required: true
       },
-      openMailId: {
-        required: true,
-        validator: prop => typeof prop === 'number' || prop === null
-      },
     },
 
     computed: {
+
       textarea: {
         get () {
-          return this.$store.getters['email/getMail'](this.openMailId).answer.answer
+          return this.$store.getters['email/getMail'](this.mailContent.id).answer.answer
         },
         set (value) {
           const params = {
             answer: value,
-            id: this.openMailId
+            id: this.mailContent.id
           }
-
           this.$store.commit('email/UPDATE_ANSWER', params)
         }
       }
+
     }
   }
 </script>

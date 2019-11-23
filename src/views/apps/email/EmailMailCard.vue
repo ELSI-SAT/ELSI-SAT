@@ -31,7 +31,7 @@
     </div>
 
     <div class="vx-row">
-      <TextForm v-bind:mailContent="props.mailContent" v-bind:openMailId="props.mailContent.id" class="vx-col w-full"></TextForm>
+      <TextForm v-bind:mailContent="props.mailContent" class="vx-col w-full"></TextForm>
     </div>
   </vx-card>
 </template>
