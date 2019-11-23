@@ -23,6 +23,15 @@ export default {
       time: 'Mon Dec 10 2018 07:46:00 GMT+0000 (GMT)',
       replies: [],
       mailFolder: 'inbox',
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["1"],
+      },
     },
     {
       id: 2,
@@ -37,6 +46,15 @@ export default {
       time: 'Mon Dec 10 2018 07:55:00 GMT+0000 (GMT)',
       replies: [],
       mailFolder: 'inbox',
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["2"],
+      },
     },
     {
       id: 3,
@@ -50,6 +68,15 @@ export default {
       labels: ['K.I.'],
       time: 'Mon Dec 10 2018 08:35:00 GMT+0000 (GMT)',
       replies: [],
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["3"],
+      },
     },
     {
       id: 10,
@@ -64,6 +91,15 @@ export default {
       time: 'Mon Dec 11 2018 10:55:00 GMT+0000 (GMT)',
       replies: [],
       mailFolder: 'inbox',
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["10"],
+      },
     },
     {
       id: 11,
@@ -76,7 +112,16 @@ export default {
       isStarred: true,
       labels: ['Allgemein'],
       time: "Tue Dec 12 2018 11:55:00 GMT+0000 (GMT)",
-      replies: []
+      replies: [],
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["11"],
+      },
     },
     {
       id: 12,
@@ -90,7 +135,16 @@ export default {
       labels: ["Allgemein"],
       time: "Thu Dec 13 2018 08:25:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "trash"
+      mailFolder: "trash",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["12"],
+      },
     },
     {
       id: 13,
@@ -104,7 +158,16 @@ export default {
       labels: ['K.I.'],
       time: "Fri Dec 14 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "draft"
+      mailFolder: "draft",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["13"],
+      },
     },
     {
       id: 14,
@@ -118,7 +181,16 @@ export default {
       labels: ['Allgemein'],
       time: "Tue Dec 15 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "inbox"
+      mailFolder: "inbox",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["14"],
+      },
     },
     {
       id: 15,
@@ -132,7 +204,16 @@ export default {
       labels: ["Allgemein"],
       time: "Tue Jan 01 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "trash"
+      mailFolder: "trash",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["15"],
+      },
     },
     {
       id: 16,
@@ -146,7 +227,16 @@ export default {
       labels: ["Datenschutz"],
       time: "Tue Jan 03 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "draft"
+      mailFolder: "draft",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["16"],
+      },
     },
     {
       id: 17,
@@ -160,7 +250,16 @@ export default {
       labels: ['K.I.'],
       time: "Tue Jan 03 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "trash"
+      mailFolder: "trash",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["17"],
+      },
     },
     {
       id: 18,
@@ -174,7 +273,16 @@ export default {
       labels: ["Allgemein"],
       time: "Tue Jan 04 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "answered"
+      mailFolder: "answered",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["18"],
+      },
     },
     {
       id: 19,
@@ -188,7 +296,16 @@ export default {
       labels: ["Datenschutz"],
       time: "Tue Jan 05 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "draft"
+      mailFolder: "draft",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["19"],
+      },
     },
     {
       id: 20,
@@ -202,7 +319,16 @@ export default {
       labels: ['K.I.'],
       time: "Tue Jan 06 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "inbox"
+      mailFolder: "inbox",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["20"],
+      },
     },
     {
       id: 21,
@@ -216,7 +342,16 @@ export default {
       labels: ['K.I.'],
       time: "Tue Jan 07 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "inbox"
+      mailFolder: "inbox",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["21"],
+      },
     },
     {
       id: 22,
@@ -230,7 +365,16 @@ export default {
       labels: ['K.I.'],
       time: "Tue Jan 08 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "answered"
+      mailFolder: "answered",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["22"],
+      },
     },
     {
       id: 23,
@@ -243,7 +387,16 @@ export default {
       isStarred: false,
       labels: ["Allgemein"],
       time: "Tue Jan 09 2018 10:55:00 GMT+0000 (GMT)",
-      replies: []
+      replies: [],
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["23"],
+      },
     },
     {
       id: 24,
@@ -256,7 +409,16 @@ export default {
       isStarred: true,
       labels: ["Allgemein"],
       time: "Tue Jan 10 2018 10:55:00 GMT+0000 (GMT)",
-      replies: []
+      replies: [],
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["24"],
+      },
     },
     {
       id: 25,
@@ -269,7 +431,16 @@ export default {
       isStarred: true,
       labels: ["Allgemein"],
       time: "Tue Jan 11 2018 10:55:00 GMT+0000 (GMT)",
-      replies: []
+      replies: [],
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["25"],
+      },
     },
     {
       id: 26,
@@ -282,7 +453,16 @@ export default {
       isStarred: false,
       labels: ['Allgemein'],
       time: "Tue Jan 12 2018 10:55:00 GMT+0000 (GMT)",
-      replies: []
+      replies: [],
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["26"],
+      },
     },
     {
       id: 27,
@@ -296,7 +476,16 @@ export default {
       labels: ['K.I.'],
       time: "Tue Jan 13 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "inbox"
+      mailFolder: "inbox",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["27"],
+      },
     },
     {
       id: 28,
@@ -310,7 +499,16 @@ export default {
       labels: ['K.I.'],
       time: "Tue Jan 14 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "draft"
+      mailFolder: "draft",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["28"],
+      },
     },
     {
       id: 29,
@@ -325,6 +523,15 @@ export default {
       time: "Tue Jan 16 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
       mailFolder: "trash",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["29"],
+      },
     },
     {
       id: 30,
@@ -338,9 +545,19 @@ export default {
       labels: ["Allgemein"],
       time: "Tue Jan 17 2018 10:55:00 GMT+0000 (GMT)",
       replies: [],
-      mailFolder: "trash"
-    }
+      mailFolder: "trash",
+      answer: {
+        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
+        options: [], // Array of options when type == "multiple
+        relevance: true, // Boolean: true | false
+        riskiness: 0.5, // Float: 0 … 1
+        risk_adressing: 0.5, // Float: 0 … 1
+        depth_of_reflection: 0.5, // Float: 0 … 1
+        answer: ["30"],
+      },
+    },
   ],
+  
   mailTags: [
     {text: 'Allgemein', value: 'Allgemein', color: "success"},
     {text: 'K.I.', value: 'K.I.', color: "primary"},
