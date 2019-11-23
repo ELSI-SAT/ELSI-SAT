@@ -29,16 +29,21 @@
         <div class="mail__content break-words mt-8 mb-4" v-html="props.mailContent.message"></div>
       </div>
     </div>
+
+    <div class="vx-row">
+      <TextForm v-bind:mailContent="props.mailContent" v-bind:openMailId="props.mailContent.id" class="vx-col w-full"></TextForm>
+    </div>
   </vx-card>
 </template>
 
 <script>
-export default {
+
+  export default {
   props: {
     mailContent: {
       type: Object,
       required: true
     }
-  }
+  },
 }
 </script>
