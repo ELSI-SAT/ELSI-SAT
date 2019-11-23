@@ -72,4 +72,8 @@ export default {
         }
       }
     },
+  
+    UPDATE_ANSWER(state, payload) {
+      state.mails.find((mail) => mail.id === payload.id).answer.answer = payload.answer
+    },
 }
