@@ -19,5 +19,8 @@ export default {
           || mail.message.toLowerCase().includes(state.mailSearchQuery.toLowerCase())
         )
     }),
+  
+    // possible alternative to Array.prototype.find():
+    // Array.prototype.findIndex(), an ES2015/ES6 standard.
     getMail: state => (emailId) => state.mails.find((email) => email.id == emailId)
 }
