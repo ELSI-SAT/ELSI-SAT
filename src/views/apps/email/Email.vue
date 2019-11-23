@@ -134,8 +134,6 @@ import EmailSidebar        from './EmailSidebar.vue'
 import MailItem            from './MailItem.vue'
 import EmailView           from './EmailView.vue'
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
-// Todo-usta
-import moduleEmail         from '@/store/email/moduleEmail.js'
 
 export default {
   data() {
@@ -268,14 +266,10 @@ export default {
     VuePerfectScrollbar
   },
   created() {
-    this.$store.registerModule('email', moduleEmail)
     this.setSidebarWidth()
 
     // Folders
     this.$store.commit("email/UPDATE_MAIL_FILTER", this.$route.params.filter)        // Update Mail Filter
-  },
-  beforeDestroy: function() {
-    this.$store.unregisterModule('email')
   },
   mounted() {
     this.$store.dispatch("email/setEmailSearchQuery", "")
