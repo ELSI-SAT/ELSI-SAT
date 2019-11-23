@@ -10,6 +10,7 @@
 
 import Vue from 'vue'
 import Vuex from 'vuex'
+import VuexPersist from 'vuex-persist'
 
 import state from "./state"
 import getters from "./getters"
@@ -18,8 +19,13 @@ import actions from "./actions"
 
 Vue.use(Vuex)
 
-// Todo-usta: atm loaded in Email.vue
-// import moduleEmail from './email/moduleEmail.js'
+import moduleEmail from './email/moduleEmail.js'
+
+const vuexPersist = new VuexPersist({
+  key: 'elsi-sat',
+  storage: window.localStorage
+})
+
 
 export default new Vuex.Store({
     getters,
@@ -27,7 +33,8 @@ export default new Vuex.Store({
     state,
     actions,
     modules: {
-        // email: moduleEmail,
+        email: moduleEmail,
     },
+    plugins: [vuexPersist.plugin],
     strict: process.env.NODE_ENV !== 'production'
 })
