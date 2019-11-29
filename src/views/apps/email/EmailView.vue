@@ -102,10 +102,11 @@
 </template>
 
 <script>
-import VuePerfectScrollbar from 'vue-perfect-scrollbar'
-import EmailMailCard from "./EmailMailCard.vue"
+  import VuePerfectScrollbar from 'vue-perfect-scrollbar'
+  import EmailMailCard from "./EmailMailCard.vue"
+  import TextForm  from './forms/TextForm.vue'
 
-export default {
+  export default {
   props: {
     mailTags: {
       type: Array,
@@ -172,7 +173,8 @@ export default {
   },
   components: {
     VuePerfectScrollbar,
-    EmailMailCard
+    EmailMailCard,
+    TextForm
   },
 }
 
