@@ -51,7 +51,7 @@
 
     .vx-navbar-wrapper {
       &:not(.nav-menu-wrapper) {
-        height: 62px;
+        height: 0px;
       }
     }
 
@@ -73,8 +73,6 @@
 
   &.navbar-static {
     .router-content {
-      margin-top: 4.95rem;
-
       @media (min-width: 1200px) {
         margin-top: 1rem;
       }
@@ -82,7 +80,7 @@
 
     #content-area {
       .content-wrapper {
-        min-height: calc(100vh - 8rem - 62px);
+        min-height: calc(100vh - 8rem - 0px);
       }
     }
 
@@ -100,18 +98,12 @@
   &:not(.navbar-static) {
     .vx-navbar-wrapper {
       &.nav-menu-wrapper {
-        top: 62px;
+        top: 0px;
       }
     }
   }
 
   @media(min-width: 1200px) {
-    // Content Alignment
-    &.navbar-floating {
-      .router-content {
-        margin-top: 10.1rem;
-      }
-    }
 
     /*
       Only applies to NavMenu in horizontal layout
@@ -136,7 +128,7 @@
 
       &.navbar-floating {
         .app-fixed-height {
-          height: calc(100vh - 16rem);
+          height: calc(100vh - 11.4rem);
         }
 
         &.footer-hidden {
@@ -173,7 +165,7 @@
       &.navbar-static {
         &.footer-static {
           .app-fixed-height {
-            height: calc(100vh - 14.75rem);
+            height: calc(100vh - 10.75rem);
           }
         }
 

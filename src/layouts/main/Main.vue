@@ -34,16 +34,10 @@
       <div id="content-overlay" />
 
     <!-- Navbar -->
-    <template v-if="mainLayoutType === 'horizontal' && windowWidth >= 1200">
-      <the-navbar-horizontal
-        :navbarType= "navbarType"
-        :logo= "navMenuLogo"
-        :class="[
-          {'text-white' : isNavbarDark  && !isThemeDark},
-          {'text-base'  : !isNavbarDark && isThemeDark}
-        ]" />
+    <template v-if="mainLayoutType === 'horizontal'">
 
-      <div style="height: 62px" v-if="navbarType === 'static'"></div>
+
+
 
       <h-nav-menu
         :class="[
@@ -53,14 +47,6 @@
         :navMenuItems="navMenuItems" />
     </template>
 
-    <template v-else>
-      <the-navbar-vertical
-        :navbarColor="navbarColor"
-        :class="[
-          {'text-white' : isNavbarDark  && !isThemeDark},
-          {'text-base'  : !isNavbarDark && isThemeDark}
-        ]" />
-    </template>
     <!-- /Navbar -->
 
       <div class="content-wrapper">
