@@ -10,8 +10,26 @@
           subtitle="">
           <p>Lorem ipsum.</p>
           <br>
-          <vue-apex-charts type="radialBar" height="350" :options="radialBarChart.chartOptions"
-                           :series="radialBarChart.series"></vue-apex-charts>
+          <vue-apex-charts type="radialBar"
+                           height="350"
+                           :options="radialBarChart.chartOptions"
+                           :series="radialBarChart.series">
+          </vue-apex-charts>
+        </vx-card>
+      </div>
+
+      <div class="vx-col w-1/2 mb-base">
+        <vx-card
+          title="Statistik 1"
+          title-color="primary"
+          subtitle="">
+          <p>Lorem ipsum.</p>
+          <br>
+          <vue-apex-charts type="heatmap"
+                           height="316"
+                           :options="heatMapChart.chartOptions"
+                           :series="heatMapChart.series">
+          </vue-apex-charts>
         </vx-card>
       </div>
     </div>
@@ -31,6 +49,24 @@
     created() {
       console.log('Email.vue created')
       console.log(this.$store.state.email)
+    },
+
+    methods: {
+      generateData(count, yrange) {
+        let i = 0;
+        let series = [];
+        while (i < count) {
+          let x = 'w' + (i + 1).toString();
+          let y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+
+          series.push({
+            x: x,
+            y: y
+          });
+          i++;
+        }
+        return series;
+      }
     },
 
     data() {
@@ -63,6 +99,61 @@
             labels: ['Apples', 'Oranges', 'Bananas', 'Berries'],
           }
         },
+
+
+        heatMapChart: {
+          series: [{
+            name: 'Metric1',
+            data: this.generateData(8, {
+              min: 0,
+              max: 90
+            })
+          },
+            {
+              name: 'Metric2',
+              data: this.generateData(8, {
+                min: 0,
+                max: 90
+              })
+            },
+            {
+              name: 'Metric3',
+              data: this.generateData(8, {
+                min: 0,
+                max: 90
+              })
+            },
+            {
+              name: 'Metric4',
+              data: this.generateData(8, {
+                min: 0,
+                max: 90
+              })
+            },
+            {
+              name: 'Metric5',
+              data: this.generateData(8, {
+                min: 0,
+                max: 90
+              })
+            },
+            {
+              name: 'Metric6',
+              data: this.generateData(8, {
+                min: 0,
+                max: 90
+              })
+            },
+          ],
+          chartOptions: {
+            dataLabels: {
+              enabled: false
+            },
+            colors: ["#008FFB"],
+          }
+        }
+
+
       }
     },
 
