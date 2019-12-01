@@ -9,6 +9,14 @@
 
 
 export default {
+    SET_STATE(state, text) {
+        const JSONparsed = JSON.parse(text)
+        state.mails = JSONparsed.mails
+        state.mailTags = JSONparsed.mailTags
+        state.mail_filter = JSONparsed.mail_filter
+        state.meta = JSONparsed.meta
+        state.mailSearchQuery = JSONparsed.mailSearchQuery
+    },
     SET_EMAIL_SEARCH_QUERY(state, query) {
         state.mailSearchQuery = query
     },
@@ -72,7 +80,7 @@ export default {
         }
       }
     },
-  
+
     UPDATE_ANSWER(state, payload) {
       state.mails.find((mail) => mail.id === payload.id).answer.answer = payload.answer
     },
