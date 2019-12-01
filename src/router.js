@@ -60,6 +60,18 @@ const router = new Router({
                 },
               },
               {
+                path: '/export-import',
+                name: 'export-import',
+                component: () => import('./views/Export-Import.vue'),
+                meta: {
+                  breadcrumb: [
+                    {title: 'Home', url: '/'},
+                    {title: 'Export und Import', active: true},
+                  ],
+                  pageTitle: 'Export und Import',
+                },
+              },
+              {
                 path: '/apps/email',
                 redirect: '/apps/email/inbox'
               },

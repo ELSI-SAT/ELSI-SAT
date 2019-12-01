@@ -38,4 +38,10 @@ export default [
     slug: "knowledge-base",
     icon: "HelpCircleIcon",
   },
+  {
+    url: "/export-import",
+    name: "Export/Import",
+    slug: "export-import",
+    icon: "RepeatIcon",
+  },
 ]
