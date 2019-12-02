@@ -34,6 +34,23 @@
       </div>
     </div>
 
+    <div class="vx-row">
+      <div class="vx-col w-1/2 mb-base">
+        <vx-card
+          title="Bar"
+          title-color="primary"
+          subtitle="">
+          <p>Lorem ipsum.</p>
+          <vue-apex-charts type="bar"
+                           height="200"
+                           :options="barChart.chartOptions"
+                           :series="barChart.series">
+          </vue-apex-charts>
+        </vx-card>
+      </div>
+
+    </div>
+
   </div>
 </template>
 
@@ -150,6 +167,57 @@
               enabled: false
             },
             colors: ["#008FFB"],
+          }
+        },
+
+
+        barChart: {
+          series: [{
+            data: [400, 430, 448, 470]
+          }],
+          chartOptions: {
+            colors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E'],
+            plotOptions: {
+              // https://apexcharts.com/docs/options/plotoptions/bar/
+              bar: {
+                endingShape: 'flat',
+                horizontal: true,
+                distributed: true,
+                colors: {
+                  backgroundBarColors: ['#f8f8f8']
+                }
+              }
+            },
+            dataLabels: {
+              enabled: false
+            },
+            grid: {
+              show: true,
+              borderColor: 'white',
+              xaxis: {
+                lines: {
+                  show: false,
+                }
+              },
+            },
+            // https://apexcharts.com/docs/options/xaxis/#
+            xaxis: {
+              categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands'],
+              labels: {
+                show: false
+              },
+              axisBorder: {
+                show: false,
+              },
+              axisTicks: {
+                show: false,
+              },
+            },
+            yaxis: {
+              labels: {
+                show: true,
+              }
+            },
           }
         }
 
