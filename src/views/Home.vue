@@ -5,11 +5,10 @@
     <div class="vx-row">
       <div class="vx-col w-1/2 mb-base">
         <vx-card
-          title="Statistik 1"
+          title="Radialbar"
           title-color="primary"
           subtitle="">
           <p>Lorem ipsum.</p>
-          <br>
           <vue-apex-charts type="radialBar"
                            height="350"
                            :options="radialBarChart.chartOptions"
@@ -20,11 +19,10 @@
 
       <div class="vx-col w-1/2 mb-base">
         <vx-card
-          title="Statistik 1"
+          title="Heatmap"
           title-color="primary"
           subtitle="">
           <p>Lorem ipsum.</p>
-          <br>
           <vue-apex-charts type="heatmap"
                            height="316"
                            :options="heatMapChart.chartOptions"
@@ -88,7 +86,7 @@
 
     data() {
       return {
-        themeColors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E'],
+
         radialBarChart: {
           series: [44, 55, 67, 83],
           chartOptions: {
