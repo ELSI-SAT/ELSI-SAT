@@ -60,7 +60,7 @@
                 <div
                   class="content-area__heading"
                   :class="{'pr-4 border-0 md:border-r border-solid border-grey-light' : $route.meta.breadcrumb}">
-                  <h2 class="mb-1">{{ routeTitle }}</h2>
+                  <h3 class="mb-1" style="color: #636363">{{ routeTitle }}</h3>
                 </div>
 
                 <!-- BREADCRUMB -->
