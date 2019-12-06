@@ -12,15 +12,14 @@
     <!-- MAIL HEAD -->
     <div class="vx-row">
       <div class="vx-col w-full flex justify-between flex items-center">
-        <!-- Sender Details -->
-        <div class="flex items-center">
 
+        <div class="flex items-center">
           <div class="flex flex-col">
             <h3 class="mb-1">{{ props.mailContent.inquiry }}</h3>
           </div>
         </div>
       </div>
-        <!-- /Sender Details -->
+
     </div>
 
     <!-- MAIL CONTENT -->
