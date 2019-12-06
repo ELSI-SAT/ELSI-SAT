@@ -92,8 +92,6 @@ export default {
       activePrompt: false,
       mailTo: '',
       mailSubject: '',
-      mailCC: '',
-      mailBCC: '',
       mailMessage: '',
       editorOption: {
         modules: {
