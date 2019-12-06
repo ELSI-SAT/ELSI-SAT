@@ -29,15 +29,15 @@
                                 <feather-icon icon="FolderIcon" svg-classes="h-6 w-6" class="ml-4"></feather-icon>
                                 <vs-dropdown-menu>
                                     <ul class="my-2" style="width: 170px;">
-                                        <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('inbox')" v-if="currentMail.mailFolder != 'inbox'">
+                                        <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('inbox')" v-if="currentMail.folder != 'inbox'">
                                             <feather-icon icon="MailIcon" svg-classes="h-5 w-5" />
                                             <span class="ml-3">Offene Fragen</span>
                                         </li>
-                                        <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('draft')" v-if="currentMail.mailFolder != 'draft'">
+                                        <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('draft')" v-if="currentMail.folder != 'draft'">
                                             <feather-icon icon="Edit2Icon" svg-classes="h-5 w-5"></feather-icon>
                                             <span class="ml-3">Entwurf</span>
                                         </li>
-                                        <li class="px-4 flex items-start cursor-pointer hover:text-primary" @click="moveTo('trash')" v-if="currentMail.mailFolder != 'trash'">
+                                        <li class="px-4 flex items-start cursor-pointer hover:text-primary" @click="moveTo('trash')" v-if="currentMail.folder != 'trash'">
                                             <feather-icon icon="TrashIcon" svg-classes="h-5 w-5"></feather-icon>
                                             <span class="ml-3">Nicht relevant</span>
                                         </li>

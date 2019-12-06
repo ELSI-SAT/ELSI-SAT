@@ -45,7 +45,7 @@ export default {
     MOVE_MAILS_TO(state, payload) {
       payload.emailIds.forEach((mailId) => {
         const mailIndex = state.mails.findIndex((mail) => mail.id == mailId)
-        state.mails[mailIndex].mailFolder = payload.to
+        state.mails[mailIndex].folder = payload.to
       })
     },
 
