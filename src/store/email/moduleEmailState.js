@@ -15,8 +15,6 @@ export default {
       sender: 'tommys@mail.com',
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 1',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Gesetzliche Anforderungen'],
@@ -38,8 +36,6 @@ export default {
       sender: 'tressag@mail.com',
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 2',
-      cc: ['vrushankbrahmshatriya@mail.com'],
-      bcc: ['menka@mail.com'],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['K.I.', 'Gesetzliche Anforderungen'],
@@ -61,8 +57,6 @@ export default {
       sender: 'hettiem@mail.com',
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 3',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
@@ -83,8 +77,6 @@ export default {
       sender: 'louettae@mail.com',
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 10',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Datenschutz'],
@@ -106,8 +98,6 @@ export default {
       sender: "bposvner0@zdnet.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 11',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['Allgemein'],
@@ -128,8 +118,6 @@ export default {
       sender: "rgilder1@illinois.edu",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 12',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ["Allgemein"],
@@ -151,8 +139,6 @@ export default {
       sender: "swilby2@yandex.ru",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 13',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
@@ -174,8 +160,6 @@ export default {
       sender: "wmannering3@mozilla.org",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 14',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
@@ -197,8 +181,6 @@ export default {
       sender: "hfrostdyke4@scientificamerican.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 15',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
@@ -220,8 +202,6 @@ export default {
       sender: "pjentzsch5@tamu.edu",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 16',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Datenschutz"],
@@ -243,8 +223,6 @@ export default {
       sender: "lminghetti6@yale.edu",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 17',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['K.I.'],
@@ -266,8 +244,6 @@ export default {
       sender: "efinessy7@sbwire.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 18',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
@@ -289,8 +265,6 @@ export default {
       sender: "tmckeurton8@163.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 19',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Datenschutz"],
@@ -312,8 +286,6 @@ export default {
       sender: "ebegg9@wikia.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 20',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
@@ -335,8 +307,6 @@ export default {
       sender: "mspata@sina.com.cn",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 21',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
@@ -358,8 +328,6 @@ export default {
       sender: "cprandob@rambler.ru",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 22',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
@@ -381,8 +349,6 @@ export default {
       sender: "nbartlesc@merriam-webster.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 23',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ["Allgemein"],
@@ -403,8 +369,6 @@ export default {
       sender: "rgennd@dedecms.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 24',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
@@ -425,8 +389,6 @@ export default {
       sender: "eramelote@webeden.co.uk",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 25',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
@@ -447,8 +409,6 @@ export default {
       sender: "pcuzenf@mediafire.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 26',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
@@ -469,8 +429,6 @@ export default {
       sender: "abaldersong@utexas.edu",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 27',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['K.I.'],
@@ -492,8 +450,6 @@ export default {
       sender: "dmallallh@ask.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 28',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['K.I.'],
@@ -515,8 +471,6 @@ export default {
       sender: "nmacgaughyi@aol.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 29',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
@@ -538,8 +492,6 @@ export default {
       sender: "douldcottj@yellowpages.com",
       inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
       subject: 'Frage 30',
-      cc: [],
-      bcc: [],
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
@@ -568,4 +520,4 @@ export default {
   meta: {},
   mailSearchQuery: '',
 }
-inquiry
+
