@@ -67,31 +67,9 @@
                 <vx-breadcrumb class="ml-4 md:block hidden" v-if="$route.meta.breadcrumb" :route="$route" />
 
                 <!-- DROPDOWN -->
-                <vs-dropdown vs-trigger-click class="ml-auto md:block hidden cursor-pointer">
-                  <vs-button radius icon="icon-settings" icon-pack="feather" />
-
-                  <vs-dropdown-menu class="w-32">
-                    <vs-dropdown-item>
-                      <div @click="$router.push('/pages/profile').catch(() => {})" class="flex items-center">
-                        <feather-icon icon="UserIcon" class="inline-block mr-2" svgClasses="w-4 h-4" />
-                        <span>Profile</span>
-                      </div>
-                    </vs-dropdown-item>
-                    <vs-dropdown-item>
-                      <div @click="$router.push('/apps/todo').catch(() => {})" class="flex items-center">
-                        <feather-icon icon="CheckSquareIcon" class="inline-block mr-2" svgClasses="w-4 h-4" />
-                        <span>Tasks</span>
-                      </div>
-                    </vs-dropdown-item>
-                    <vs-dropdown-item>
-                      <div @click="$router.push('/apps/email').catch(() => {})" class="flex items-center">
-                        <feather-icon icon="MailIcon" class="inline-block mr-2" svgClasses="w-4 h-4" />
-                        <span>Offene Fragen</span>
-                      </div>
-                    </vs-dropdown-item>
-                  </vs-dropdown-menu>
-
-                </vs-dropdown>
+                <div class="ml-auto md:block hidden cursor-pointer">
+                  <vs-button color="primary" type="border" >{{ this.quota }} % abgeschlossen</vs-button>
+                </div>
 
               </div>
             </transition>
@@ -125,6 +103,10 @@ import TheNavbarVertical   from '@/layouts/components/navbar/TheNavbarVertical.v
 import TheFooter           from '@/layouts/components/TheFooter.vue'
 import themeConfig         from '@/../themeConfig.js'
 import VNavMenu            from '@/layouts/components/vertical-nav-menu/VerticalNavMenu.vue'
+
+
+import {mapGetters}        from "vuex";
+import VueApexCharts       from 'vue-apexcharts';
 
 export default {
   components: {
@@ -168,7 +150,7 @@ export default {
     },
     verticalNavMenuWidth() {
       this.disableThemeTour = true
-    }
+    },
   },
   computed: {
     bodyOverlay() { return this.$store.state.bodyOverlay },
@@ -202,7 +184,15 @@ export default {
       }
     },
     verticalNavMenuWidth() { return this.$store.state.verticalNavMenuWidth },
-    windowWidth()          { return this.$store.state.windowWidth }
+    windowWidth()          { return this.$store.state.windowWidth },
+
+    quota() {
+      const answered = this.$store.getters['email/getNumberOfAnswers']
+      const questions = this.$store.getters['email/getNumberOfQuestions']
+      const quota = Math.floor((answered / questions) * 100)
+
+      return quota
+    },
   },
   methods: {
     changeRouteTitle(title) {

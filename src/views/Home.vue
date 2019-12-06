@@ -92,7 +92,6 @@
 
     data() {
       return {
-
         radialBarChart: {
           series: ["0"],
           chartOptions: {
