@@ -19,7 +19,7 @@
             <div class="flex w-full justify-between items-start">
                 <div class="mail__details">
                   <h5 class="mb-1 flex font-semibold">
-                    {{ mail.sender_name }}
+                    {{ mail.inquiry }}
                     <feather-icon icon="StarIcon" class="cursor-pointer ml-3" :svgClasses="[{'text-warning fill-current stroke-current': mail.isStarred}, 'w-5', 'h-5']"></feather-icon>
 
                   </h5>

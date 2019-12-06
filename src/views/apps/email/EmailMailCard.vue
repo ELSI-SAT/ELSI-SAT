@@ -16,7 +16,7 @@
         <div class="flex items-center">
 
           <div class="flex flex-col">
-            <h3 class="mb-1">{{ props.mailContent.sender_name }}</h3>
+            <h3 class="mb-1">{{ props.mailContent.inquiry }}</h3>
           </div>
         </div>
       </div>
