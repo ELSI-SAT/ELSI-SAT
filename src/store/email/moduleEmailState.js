@@ -17,7 +17,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Gesetzliche Anforderungen'],
-      time: 'Mon Dec 10 2018 07:46:00 GMT+0000 (GMT)',
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -37,7 +37,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['K.I.', 'Gesetzliche Anforderungen'],
-      time: 'Mon Dec 10 2018 07:55:00 GMT+0000 (GMT)',
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -57,7 +57,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
-      time: 'Mon Dec 10 2018 08:35:00 GMT+0000 (GMT)',
+      time: '',
       replies: [],
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
@@ -76,7 +76,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Datenschutz'],
-      time: 'Mon Dec 11 2018 10:55:00 GMT+0000 (GMT)',
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -96,7 +96,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['Allgemein'],
-      time: "Tue Dec 12 2018 11:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
@@ -115,7 +115,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ["Allgemein"],
-      time: "Thu Dec 13 2018 08:25:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -135,7 +135,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
-      time: "Fri Dec 14 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -155,7 +155,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
-      time: "Tue Dec 15 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -175,7 +175,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
-      time: "Tue Jan 01 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -195,7 +195,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Datenschutz"],
-      time: "Tue Jan 03 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -215,7 +215,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['K.I.'],
-      time: "Tue Jan 03 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -235,7 +235,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
-      time: "Tue Jan 04 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -255,7 +255,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Datenschutz"],
-      time: "Tue Jan 05 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -275,7 +275,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
-      time: "Tue Jan 06 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -295,7 +295,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
-      time: "Tue Jan 07 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -315,7 +315,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['K.I.'],
-      time: "Tue Jan 08 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -335,7 +335,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ["Allgemein"],
-      time: "Tue Jan 09 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
@@ -354,7 +354,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
-      time: "Tue Jan 10 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
@@ -373,7 +373,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
-      time: "Tue Jan 11 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
@@ -392,7 +392,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
-      time: "Tue Jan 12 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
@@ -411,7 +411,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['K.I.'],
-      time: "Tue Jan 13 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -431,7 +431,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ['K.I.'],
-      time: "Tue Jan 14 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -451,7 +451,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
-      time: "Tue Jan 16 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
@@ -471,7 +471,7 @@ export default {
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore <strong>et dolore magna</strong> aliquyam erat, sed diam voluptua. </p> <br> <p>At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
-      time: "Tue Jan 17 2018 10:55:00 GMT+0000 (GMT)",
+      time: '',
       replies: [],
       mailFolder: '', // answered || draft || inbox || trash
       answer: {
