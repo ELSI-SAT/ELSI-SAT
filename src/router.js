@@ -44,7 +44,14 @@ const router = new Router({
               {
                 path: '/',
                 name: 'home',
-                component: () => import('./views/Home.vue')
+                component: () => import('./views/Home.vue'),
+                meta: {
+                  breadcrumb: [
+                    {title: 'Home', url: '/'},
+                    {title: 'Übersicht', active: true},
+                  ],
+                  pageTitle: 'Übersicht',
+                },
               },
               {
                 path: '/knowledge-base',
@@ -80,6 +87,11 @@ const router = new Router({
                 name: 'email',
                 component: () => import('./views/apps/email/Email.vue'),
                 meta: {
+                  breadcrumb: [
+                    {title: 'Home', url: '/'},
+                    {title: 'Fragenkatalog', active: true},
+                  ],
+                  pageTitle: 'Fragenkatalog',
                   rule: 'editor',
                   parent: 'email'
                 }
