@@ -4,9 +4,9 @@
       <vs-navbar class="vx-navbar navbar-custom navbar-skelton" :color="navbarColor">
 
         <!-- Logo -->
-        <router-link tag="div" class="vx-logo cursor-pointer flex items-center ml-10" to="/" style="width: 250px;">
+        <router-link tag="div" class="vx-logo cursor-pointer flex items-center lg:ml-5 mr-0 sm:mr-5" to="/">
           <vs-icon color="primary" icon-pack="feather" icon="icon-layers" class="mr-3 ml-2" size="small"></vs-icon>
-          <span class="vx-logo-text">ELSI-SAT</span>
+          <span class="vx-logo-text" style="width: 107px;">ELSI-SAT</span>
         </router-link>
         <!-- /Logo -->
 

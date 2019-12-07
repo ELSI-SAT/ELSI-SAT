@@ -67,7 +67,7 @@
                 <vx-breadcrumb class="ml-4 md:block hidden" v-if="$route.meta.breadcrumb" :route="$route" />
 
                 <!-- DROPDOWN -->
-                <div class="ml-auto md:block hidden cursor-pointer">
+                <div class="ml-auto xs:block cursor-pointer">
                   <vs-button color="primary" type="border" >{{ this.quota }} % abgeschlossen</vs-button>
                 </div>
 

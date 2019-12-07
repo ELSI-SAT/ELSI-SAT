@@ -22,9 +22,13 @@
         :class="[{'router-link-active': activeLink}, 'nav-link flex items-center']"
         :to="to"
         :target="target" >
-          <vs-icon v-if="!featherIcon" :icon-pack="iconPack" :icon="icon" />
-          <feather-icon v-else :class="iconClasses" :icon="icon" />
-          <slot />
+          <span class="visible xs:inline-flex sm:inline-flex md:hidden lg:inline-flex">
+            <vs-icon v-if="!featherIcon" :icon-pack="iconPack" :icon="icon" />
+            <feather-icon v-else :class="iconClasses" :icon="icon" />
+          </span>
+          <span class="hidden md:block">
+            <slot />
+          </span>
       </router-link>
 
       <a v-else :target="target" :href="href" class="nav-link flex items-center">
@@ -52,7 +56,7 @@ export default {
   },
   computed: {
     iconClasses() {
-      return this.iconSmall ? 'w-3 h-3 mr-3' : 'w-5 h-5 mr-3'
+      return this.iconSmall ? 'w-3 h-3 mr-0 md:mr-3' : 'w-5 h-5 mr-0 md:mr-3'
     },
     activeLink() {
       return ((this.to == this.$route.path) || (this.$route.meta.parent == this.slug) && this.to) ? true : false
