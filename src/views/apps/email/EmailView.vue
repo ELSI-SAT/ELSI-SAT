@@ -1,6 +1,6 @@
 <!-- =========================================================================================
     File Name: EmailView.vue
-    Description: Email Application - Single Email View (Offene Fragen)
+    Description: Email Application - Single Email View (Unbeantwortet)
     ----------------------------------------------------------------------------------------
     Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
       Author: Pixinvent
