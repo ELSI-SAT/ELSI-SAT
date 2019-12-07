@@ -13,7 +13,6 @@
   },
   "main": "background.js",
   "dependencies": {
-    "algoliasearch": "^3.33.0",
     "apexcharts": "^3.10.1",
     "core-js": "2.6.5",
     "file-saver": "2.0.1",
