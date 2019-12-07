@@ -49,41 +49,6 @@
                 </div>
                 <div class="flex">
 
-                    <vs-dropdown vs-custom-content vs-trigger-click
-                                 class="cursor-pointer"
-                                 v-if="mailFilter != 'answered'">
-
-                        <feather-icon icon="FolderIcon"
-                                      class="cursor-pointer"
-                                      svg-classes="h-6 w-6"></feather-icon>
-
-                        <vs-dropdown-menu>
-                            <ul class="my-2" style="width: 170px;">
-                                <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary"
-                                    @click="moveTo('inbox')"
-                                    v-if="mailFilter != 'inbox'">
-                                    <feather-icon icon="MailIcon"
-                                                  svg-classes="h-5 w-5" />
-                                    <span class="ml-3">Offene Fragen</span>
-                                </li>
-                                <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary"
-                                    @click="moveTo('draft')"
-                                    v-if="mailFilter != 'draft'">
-                                    <feather-icon icon="Edit2Icon"
-                                                  svg-classes="h-5 w-5"></feather-icon>
-                                    <span class="ml-3">Entwurf</span>
-                                </li>
-                                <li class="px-4 flex items-start cursor-pointer hover:text-primary"
-                                    @click="moveTo('trash')"
-                                    v-if="mailFilter != 'trash'">
-                                    <feather-icon icon="TrashIcon"
-                                                  svg-classes="h-5 w-5"></feather-icon>
-                                    <span class="ml-3">Nicht relevant</span>
-                                </li>
-                            </ul>
-                        </vs-dropdown-menu>
-                    </vs-dropdown>
-
                     <feather-icon v-if="mailFilter != 'trash'"
                                   icon="TrashIcon"
                                   class="cursor-pointer ml-5"

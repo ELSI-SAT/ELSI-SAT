@@ -12,41 +12,25 @@
     <div>
         <vs-sidebar click-not-close parent="#email-app" :hidden-background="true" class="full-vs-sidebar email-view-sidebar items-no-padding" v-model="isSidebarActive" position-right>
             <div class="mail-sidebar-content px-0 sm:pb-6 h-full" v-if="currentMail">
-                <div class="flex flex-wrap items-center email-header justify-between md:px-8 px-6 sm:pb-2 sm: pt-6 d-theme-dark-bg">
+                <div class="flex flex-wrap items-center justify-between md:px-8 px-6 sm:pb-2 sm: pt-6 d-theme-dark-bg">
                     <div class="flex mb-4">
                         <div class="flex items-center">
                             <feather-icon icon="ArrowLeftIcon" @click="$emit('closeSidebar')" class="cursor-pointer mr-4" svg-classes="w-6 h-6"></feather-icon>
-                            <h5>{{ currentMail.subject }}</h5>
+                            <h4>{{ currentMail.inquiry }}</h4>
                         </div>
                     </div>
                     <div class="ml-10 mb-4 mt-1">
                         <div class="email__actions--single flex items-baseline">
+                          <vx-tooltip :text="currentMail.isStarred ? 'Markierung entfernen' : 'markieren'">
+                            <feather-icon
+                              icon="StarIcon"
+                              class="cursor-pointer "
+                              :svgClasses="[{'text-warning stroke-current stroke-current': currentMail.isStarred}, 'h-6 w-6']"
+                              @click="toggleIsStarred" />
+                          </vx-tooltip>
 
-                            <feather-icon icon="StarIcon" class="cursor-pointer" :svgClasses="[{'text-warning stroke-current stroke-current': currentMail.isStarred}, 'h-6 w-6']" @click="toggleIsStarred" />
-
-                            <!-- MOVE TO DROPDOWN -->
-                            <vs-dropdown vs-custom-content vs-trigger-click class="cursor-pointer" v-if="mailFilter != 'answered'">
-                                <feather-icon icon="FolderIcon" svg-classes="h-6 w-6" class="ml-4"></feather-icon>
-                                <vs-dropdown-menu>
-                                    <ul class="my-2" style="width: 170px;">
-                                        <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('inbox')" v-if="currentMail.folder != 'inbox'">
-                                            <feather-icon icon="MailIcon" svg-classes="h-5 w-5" />
-                                            <span class="ml-3">Offene Fragen</span>
-                                        </li>
-                                        <li class="px-4 mb-2 flex items-start cursor-pointer hover:text-primary" @click="moveTo('draft')" v-if="currentMail.folder != 'draft'">
-                                            <feather-icon icon="Edit2Icon" svg-classes="h-5 w-5"></feather-icon>
-                                            <span class="ml-3">Entwurf</span>
-                                        </li>
-                                        <li class="px-4 flex items-start cursor-pointer hover:text-primary" @click="moveTo('trash')" v-if="currentMail.folder != 'trash'">
-                                            <feather-icon icon="TrashIcon" svg-classes="h-5 w-5"></feather-icon>
-                                            <span class="ml-3">Nicht relevant</span>
-                                        </li>
-                                    </ul>
-                                </vs-dropdown-menu>
-                            </vs-dropdown>
-
-                            <feather-icon icon="ChevronsLeftIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('previousMail')" />
-                            <feather-icon icon="ChevronsRightIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('nextMail')" />
+                          <feather-icon icon="ChevronsLeftIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('previousMail')" />
+                          <feather-icon icon="ChevronsRightIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('nextMail')" />
                         </div>
                     </div>
                 </div>
@@ -55,18 +39,17 @@
                 <!-- LABEL ROW -->
                 <div class="vx-row">
                     <div class="vx-col w-full">
-                        <div class="email__labels--single flex ml-10 items-center mt-2">
-                            <transition-group name="list" tag="div" class="flex">
-                                <div v-for="label in currentMail.labels" :key="label" class="open-mail-label flex items-center mr-4">
-                                    <div class="h-3 w-3 rounded-full mr-1" :class="'bg-' + labelColor(label)"></div>
-                                    <span class="text-sm">{{ label | capitalize }}</span>
-                                </div>
-                            </transition-group>
-                        </div>
+                      <div class="ml-10 mr-10 items-center mt-0">
+                        <div class="mail__content break-words mt-3 mb-4" v-html="currentMail.message"></div>
+                        <transition-group name="list" tag="div" class="flex mb-6">
+                          <div v-for="label in currentMail.labels" :key="label" class="open-mail-label flex items-center mr-4">
+                            <vs-chip :style="'color: ' + labelColor(label)">{{ label }}</vs-chip>
+                          </div>
+                        </transition-group>
+                      </div>
                     </div>
                 </div>
                 <!-- /LABEL ROW -->
-                <br>
 
                 <div class="vx-row mb-4" v-if="currentMail.replies.length && !showThread">
                     <div class="vx-col w-full">
@@ -166,10 +149,6 @@
       const payload = { mailId: this.openMailId, value: !this.currentMail.isStarred }
       this.$store.dispatch('email/toggleIsStarred', payload)
     },
-    moveTo(to) {
-      this.$emit('closeSidebar')
-      this.$emit('moveTo', to)
-    }
   },
   components: {
     VuePerfectScrollbar,

@@ -25,4 +25,9 @@ export default {
   toggleIsStarred({ commit }, payload) {
     commit("TOGGLE_IS_MAIL_STARRED", payload)
   },
+
+  // Toggle isTrashed flag in mail
+  toggleIsTrashed({ commit }, payload) {
+    commit("TOGGLE_IS_MAIL_TRASHED", payload)
+  },
 }

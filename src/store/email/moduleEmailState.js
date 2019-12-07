@@ -20,6 +20,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -40,6 +42,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -60,6 +64,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -80,6 +86,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -100,6 +108,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -120,6 +130,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -140,6 +152,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -160,6 +174,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -180,6 +196,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -200,6 +218,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -220,6 +240,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -240,6 +262,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -260,6 +284,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -280,6 +306,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -300,6 +328,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -320,6 +350,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -340,6 +372,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -360,6 +394,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -380,6 +416,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -400,6 +438,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -420,6 +460,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -440,6 +482,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -460,6 +504,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -480,6 +526,8 @@ export default {
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
       answer: {
         type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
         options: [], // Array of options when type == "multiple
@@ -493,10 +541,10 @@ export default {
   ],
 
   mailTags: [
-    {text: 'Allgemein', value: 'Allgemein', color: "success"},
-    {text: 'K.I.', value: 'K.I.', color: "primary"},
-    {text: 'Datenschutz', value: 'Datenschutz', color: "warning"},
-    {text: 'Gesetzliche Anforderungen', value: 'Gesetzliche Anforderungen', color: "danger"},
+    {text: 'Allgemein', value: 'Allgemein', color: "#28C770"},
+    {text: 'K.I.', value: 'K.I.', color: "#7367F1"},
+    {text: 'Datenschutz', value: 'Datenschutz', color: "#FFA044"},
+    {text: 'Gesetzliche Anforderungen', value: 'Gesetzliche Anforderungen', color: "#EA5556"},
   ],
   mail_filter: null,
   meta: {},

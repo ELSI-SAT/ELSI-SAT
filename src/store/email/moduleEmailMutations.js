@@ -53,6 +53,10 @@ export default {
       state.mails.find((mail) => mail.id === payload.mailId).isStarred = payload.value
     },
 
+    TOGGLE_IS_MAIL_TRASHED(state, payload) {
+      state.mails.find((mail) => mail.id === payload.mailId).isTrashed = payload.value
+    },
+
     // If your process of fetching is different than ours. Please update action and mutation
     // Maybe this mutation is redundant for you. Feel free to remove it.
     UPDATE_UNREAD_META(state, payload) {
@@ -83,5 +87,9 @@ export default {
 
     UPDATE_ANSWER(state, payload) {
       state.mails.find((mail) => mail.id === payload.id).answer.answer = payload.answer
+    },
+
+    UPDATE_TRASHREASON(state, payload) {
+      state.mails.find((mail) => mail.id === payload.id).trashingReason = payload.answer
     },
 }

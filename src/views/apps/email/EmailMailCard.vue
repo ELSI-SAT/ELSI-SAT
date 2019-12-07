@@ -7,42 +7,57 @@
     Author URL: http://www.themeforest.net/user/pixinvent
 ========================================================================================== -->
 
-<template functional>
-  <vx-card class="px-4" :class="data.staticClass">
-    <!-- MAIL HEAD -->
+<template>
+  <vx-card class="px-4">
     <div class="vx-row">
-      <div class="vx-col w-full flex justify-between flex items-center">
+      <TextForm
+        v-if="!mailContent.isTrashed"
+        v-bind:mailContent="mailContent"
+        class="w-full"></TextForm>
 
-        <div class="flex items-center">
-          <div class="flex flex-col">
-            <h3 class="mb-1">{{ props.mailContent.inquiry }}</h3>
-          </div>
-        </div>
-      </div>
+      <vs-button
+        @click="toggleIsTrashed"
+        color="danger"
+        :type="mailContent.isTrashed ? 'filled' : 'border'"
+        icon-pack="feather"
+        icon="icon-trash">
+        {{ mailContent.isTrashed ? 'Als nicht relevant verworfen' : 'Als nicht relevant verwerfen' }}
+      </vs-button>
 
-    </div>
+      <TrashReason
+        v-if="mailContent.isTrashed"
+        v-bind:mailContent="mailContent"
+        label="Eingaben werden sofort gespeichert." />
 
-    <!-- MAIL CONTENT -->
-    <div class="vx-row">
-      <div class="vx-col w-full">
-        <div class="mail__content break-words mt-8 mb-4" v-html="props.mailContent.message"></div>
-      </div>
-    </div>
-
-    <div class="vx-row">
-      <TextForm v-bind:mailContent="props.mailContent" class="vx-col w-full"></TextForm>
     </div>
   </vx-card>
 </template>
 
 <script>
+  import TextForm from './forms/TextForm.vue'
+  import TrashReason from './forms/TrashReason.vue'
 
   export default {
-  props: {
-    mailContent: {
-      type: Object,
-      required: true
+    name: 'EMailMailCard',
+
+    components: {
+      TextForm,
+      TrashReason,
+    },
+
+    props: {
+      mailContent: {
+        type: Object,
+        required: true
+      }
+    },
+
+    methods: {
+      toggleIsTrashed() {
+        const payload = {mailId: this.mailContent.id, value: !this.mailContent.isTrashed}
+        this.$store.dispatch('email/toggleIsTrashed', payload)
+        // todo usta: trashreason löschen
+      },
     }
-  },
-}
+  }
 </script>
