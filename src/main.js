@@ -44,11 +44,6 @@ import store from './store/store'
 // Vuexy Admin Filters
 import './filters/filters'
 
-// Vuejs - Vue wrapper for hammerjs
-import { VueHammer } from 'vue2-hammer'
-Vue.use(VueHammer)
-
-
 // Feather font icon
 require('./assets/css/iconfont.css')
 
