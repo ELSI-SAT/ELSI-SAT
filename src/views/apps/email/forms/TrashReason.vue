@@ -3,8 +3,8 @@
     <vs-textarea id="textarea"
                  counter="100"
                  maxlength="100"
-                 height="50"
-                 placeholder="Bitte begründen Sie kurz, warum Sie die Frage für irrelevant erachten.Zum Speichern muss kein Button betätigt werden: Eingaben werden sofort gespeichert."
+                 height="60"
+                 placeholder="Bitte begründen Sie kurz, warum Sie die Frage als irrelevant erachten. Zum Speichern muss kein Button betätigt werden: Eingaben werden sofort gespeichert."
                  label="Begründung."
                  :counter-danger.sync="counterDanger"
                  v-model.trim="textarea"/>
