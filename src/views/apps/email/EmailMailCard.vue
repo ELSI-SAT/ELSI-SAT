@@ -27,7 +27,8 @@
       <TrashReason
         v-if="mailContent.isTrashed"
         v-bind:mailContent="mailContent"
-        label="Eingaben werden sofort gespeichert." />
+        label="Eingaben werden sofort gespeichert."
+        class="w-full mt-4"/>
 
     </div>
   </vx-card>
