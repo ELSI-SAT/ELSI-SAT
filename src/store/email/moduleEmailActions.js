@@ -22,12 +22,54 @@ export default {
     },
 
   // Toggle isStarred flag in mail
-  toggleIsStarred({ commit }, payload) {
+  toggleIsStarred({ commit, dispatch }, payload) {
     commit("TOGGLE_IS_MAIL_STARRED", payload)
+    dispatch('fetchMeta')
   },
 
   // Toggle isTrashed flag in mail
-  toggleIsTrashed({ commit }, payload) {
+  toggleIsTrashed({ commit, dispatch }, payload) {
     commit("TOGGLE_IS_MAIL_TRASHED", payload)
+    dispatch('fetchMeta')
+  },
+
+  // Fetch Email Meta
+  fetchMeta({ commit, state }) {
+
+    // Initialize blank object.
+    let meta = {
+      inbox: 0,
+      answered: 0,
+      starred: 0,
+      trashed: 0
+    }
+
+    // For each entry set folder and label.
+    state.mails.forEach((mail) => {
+
+      // Todo usta: Centralize the logic that determines labels and folders!
+
+      // Folders (mutually exclusive, i.e. either, or).
+      if (
+        (
+          mail.answer.answer[0] == ''
+          || mail.answer.answer == ''
+        )
+        && !mail.isTrashed) {
+        meta.inbox++;
+      } else if (
+        mail.answer.answer[0] !== ''
+        && mail.answer.answer !== ''
+        && !mail.isTrashed
+      ) {
+        meta.answered++;
+      }
+
+      // Labels.
+      mail.isStarred ? meta.starred++ : ''
+      mail.isTrashed ? meta.trashed++ : ''
+    })
+
+    commit("SET_META", meta)
   },
 }

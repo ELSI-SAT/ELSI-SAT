@@ -40,4 +40,9 @@ export default {
     }
     return (answers)
   },
+
+  // Todo usta: Exclude irrelevant questions
+  getMeta: state => {
+    return (state.meta)
+  },
 }

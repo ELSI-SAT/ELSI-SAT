@@ -22,27 +22,42 @@
                         <feather-icon icon="CircleIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'inbox'}, 'h-6 w-6']"></feather-icon>
                         <span class="text-lg ml-3">Unbeantwortet</span>
                     </div>
-                    <template v-if="emailMeta.unreadMails">
-                      <vs-chip class="number" color="primary" v-if="emailMeta.unreadMails.folder.inbox.length > 0">{{ emailMeta.unreadMails.folder.inbox.length }}</vs-chip>
+                    <template>
+                      <vs-chip class="number pr-2 pl-2" color="primary">{{ mailMeta.inbox }}</vs-chip>
                     </template>
                 </router-link>
 
                 <!-- answered -->
-                <router-link tag="span" :to="`${baseUrl}/answered`" class="flex items-center mt-4 mb-2 cursor-pointer" :class="{'text-primary': mailFilter == 'answered'}">
+                <router-link tag="span" :to="`${baseUrl}/answered`" class="flex justify-between items-center cursor-pointer mt-4" :class="{'text-primary': mailFilter == 'answered'}">
+                  <div class="flex items-center mb-2">
                     <feather-icon icon="CheckCircleIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'answered'}, 'h-6 w-6']"></feather-icon>
                     <span class="text-lg ml-3">Beantwortet</span>
+                  </div>
+                  <template>
+                    <vs-chip class="number pr-2 pl-2" color="success">{{ mailMeta.answered }}</vs-chip>
+                  </template>
                 </router-link>
 
                 <!-- starred -->
-                <router-link tag="span" :to="`${baseUrl}/starred`" class="flex items-center mt-4 mb-2 cursor-pointer" :class="{'text-primary': mailFilter == 'starred'}">
-                    <feather-icon icon="StarIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'starred'}, 'h-6 w-6']"></feather-icon>
-                    <span class="text-lg ml-3">Markiert</span>
+                <router-link tag="span" :to="`${baseUrl}/starred`" class="flex justify-between items-center cursor-pointer mt-4" :class="{'text-primary': mailFilter == 'starred'}">
+                    <div class="flex items-center mb-2">
+                      <feather-icon icon="StarIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'starred'}, 'h-6 w-6']"></feather-icon>
+                      <span class="text-lg ml-3">Markiert</span>
+                    </div>
+                  <template>
+                    <vs-chip class="number pr-2 pl-2" color="warning">{{ mailMeta.starred }}</vs-chip>
+                  </template>
                 </router-link>
 
                 <!-- trash -->
-                <router-link tag="span" :to="`${baseUrl}/trash`" class="flex items-center mt-4 mb-2 cursor-pointer" :class="{'text-primary': mailFilter == 'trash'}">
-                    <feather-icon icon="TrashIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'trash'}, 'h-6 w-6']"></feather-icon>
-                    <span class="text-lg ml-3">Nicht relevant</span>
+                <router-link tag="span" :to="`${baseUrl}/trash`" class="flex justify-between items-center cursor-pointer mt-4" :class="{'text-primary': mailFilter == 'trash'}">
+                    <div class="flex items-center mb-2">
+                      <feather-icon icon="TrashIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'trash'}, 'h-6 w-6']"></feather-icon>
+                      <span class="text-lg ml-3">Nicht relevant</span>
+                    </div>
+                  <template>
+                    <vs-chip class="number pr-2 pl-2" color="danger">{{ mailMeta.trashed }}</vs-chip>
+                  </template>
                 </router-link>
             </div>
             <vs-divider></vs-divider>
@@ -64,6 +79,8 @@ import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
 import { quillEditor } from 'vue-quill-editor'
 import VuePerfectScrollbar from 'vue-perfect-scrollbar'
+import {mapGetters} from "vuex";
+
 
 export default {
   props: {
@@ -100,6 +117,10 @@ export default {
     }
   },
   computed: {
+    ...mapGetters([
+      'email',
+    ]),
+
     validateForm() {
       return !this.errors.any() && this.mailTo != ''
     },
@@ -107,8 +128,8 @@ export default {
       const path = this.$route.path
       return path.slice(0, path.lastIndexOf("/"))
     },
-    emailMeta() {
-      return this.$store.state.email.meta
+    mailMeta() {
+      return this.$store.getters['email/getMeta']
     }
   },
   methods: {

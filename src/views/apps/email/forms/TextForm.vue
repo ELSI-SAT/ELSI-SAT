@@ -40,6 +40,11 @@
             id: this.mailContent.id
           }
           this.$store.commit('email/UPDATE_ANSWER', params)
+
+          // Todo usta: Maybe instead of dispatching this action
+          // that always scans the complete state
+          // instead create a button that submits the form once.
+          this.$store.dispatch("email/fetchMeta")
         }
       }
 

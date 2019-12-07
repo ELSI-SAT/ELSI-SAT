@@ -232,9 +232,10 @@ export default {
   },
   created() {
     this.setSidebarWidth()
-
-    // Folders
-    this.$store.commit("email/UPDATE_MAIL_FILTER", this.$route.params.filter)        // Update Mail Filter
+    // Fetch Unread Mails
+    this.$store.dispatch("email/fetchMeta")
+    // Update Mail Filter
+    this.$store.commit("email/UPDATE_MAIL_FILTER", this.$route.params.filter)
   },
   mounted() {
     this.$store.dispatch("email/setEmailSearchQuery", "")
