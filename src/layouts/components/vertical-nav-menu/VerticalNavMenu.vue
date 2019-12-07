@@ -21,8 +21,7 @@
       :reduce-not-rebound="reduceNotRebound"
       :parent="parent"
       :hiddenBackground="clickNotClose"
-      :reduce="reduce"
-      v-hammer:swipe.left="onSwipeLeft">
+      :reduce="reduce">
 
       <div @mouseenter="mouseEnter" @mouseleave="mouseLeave">
 
@@ -102,13 +101,6 @@
         <!-- /Menu Items -->
       </div>
     </vs-sidebar>
-
-    <!-- Swipe Gesture -->
-    <div
-      v-if="!isVerticalNavMenuActive"
-      class="v-nav-menu-swipe-area"
-      v-hammer:swipe.right="onSwipeAreaSwipeRight" />
-    <!-- /Swipe Gesture -->
   </div>
 </template>
 
@@ -141,7 +133,6 @@ export default {
     settings            : {      // perfectScrollbar settings
       maxScrollbarLength: 60,
       wheelSpeed        : 1,
-      swipeEasing       : true
     },
     showShadowBottom    : false,
   }),
@@ -212,12 +203,6 @@ export default {
     //   this.windowWidth = event.currentTarget.innerWidth;
     //   this.setVerticalNavMenuWidth()
     // },
-    onSwipeLeft() {
-      if (this.isVerticalNavMenuActive && this.showCloseButton) this.isVerticalNavMenuActive = false
-    },
-    onSwipeAreaSwipeRight() {
-      if (!this.isVerticalNavMenuActive && this.showCloseButton) this.isVerticalNavMenuActive = true
-    },
     psSectionScroll() {
       this.showShadowBottom = this.$refs.verticalNavMenuPs.$el.scrollTop > 0 ? true : false
     },

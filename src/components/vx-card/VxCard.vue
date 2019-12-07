@@ -27,13 +27,10 @@
             <!-- card actions -->
             <div class="vx-card__actions" v-if="hasAction">
                 <slot name="actions">
-                    <div class="vx-card__action-buttons" v-if="(actionButtons || collapseAction || refreshContentAction || removeCardAction) && !codeToggler">
+                    <div class="vx-card__action-buttons" v-if="(actionButtons || collapseAction || refreshContentAction || removeCardAction)">
                         <feather-icon @click="toggleContent" icon="ChevronUpIcon" :class="{rotate180: !isContentCollapsed}" class="ml-4" v-if="actionButtons || collapseAction" />
                         <feather-icon @click="refreshcard" icon="RotateCwIcon" class="ml-4" v-if="actionButtons || refreshContentAction" />
                         <feather-icon @click="removeCard" icon="XIcon" class="ml-4" v-if="actionButtons || removeCardAction" />
-                    </div>
-                    <div class="vx-card__code-toggler sm:block hidden" v-if="codeToggler && !actionButtons">
-                        <feather-icon icon="CodeIcon" :class="{'border border-solid border-primary border-t-0 border-r-0 border-l-0': showCode}" @click="toggleCode"></feather-icon>
                     </div>
                 </slot>
             </div>
@@ -57,18 +54,10 @@
             </div>
         </div>
 
-        <div class="vx-card__code-container" ref="codeContainer" v-show="this.$slots.codeContainer" :style="codeContainerStyles" :class="{collapsed: !showCode}">
-            <div class="code-content">
-                <prism :language="codeLanguage">
-                        <slot name="codeContainer"></slot>
-                </prism>
-            </div>
-        </div>
     </div>
 </template>
 
 <script>
-import Prism from 'vue-prism-component'
 import _color from '@/assets/utils/color.js'
 
 export default{
@@ -84,10 +73,6 @@ export default{
             type: String,
             default: "success",
         },
-        codeToggler: {
-            type: Boolean,
-            default: false,
-        },
         noShadow: {
             default: false,
             type: Boolean,
@@ -99,10 +84,6 @@ export default{
         cardBorder: {
             default: false,
             type: Boolean,
-        },
-        codeLanguage: {
-            default: "markup",
-            type: String,
         },
         collapseAction: {
             default: false,
@@ -148,16 +129,14 @@ export default{
     data() {
         return {
             isContentCollapsed: false,
-            showCode: false,
             maxHeight: null,
             cardMaxHeight: null,
-            codeContainerMaxHeight: '0px',
             tempHidden: false,
         }
     },
     computed: {
         hasAction() {
-            return this.$slots.actions || (this.actionButtons || this.collapseAction || this.refreshContentAction || this.removeCardAction || this.codeToggler)
+            return this.$slots.actions || (this.actionButtons || this.collapseAction || this.refreshContentAction || this.removeCardAction )
         },
         hasHeader() {
             return this.hasAction || (this.title || this.subtitle)
@@ -170,9 +149,6 @@ export default{
             if (!_color.isColor(this.cardBackground)) obj.background = _color.getColor(this.cardBackground)
             if (!_color.isColor(this.contentColor)) obj.color = _color.getColor(this.contentColor)
             return obj
-        },
-        codeContainerStyles() {
-            return { maxHeight: this.codeContainerMaxHeight }
         },
         cardClasses() {
           let str = '';
@@ -264,28 +240,7 @@ export default{
             }, 50)
             this.$emit("remove");
         },
-        toggleCode() {
-            this.tempHidden = true;
-            this.showCode = !this.showCode;
-            let scrollHeight = this.$refs.codeContainer.scrollHeight
-            if (this.codeContainerMaxHeight == '0px') {
-                this.codeContainerMaxHeight = `${scrollHeight}px`
-                setTimeout(() => {
-                    this.codeContainerMaxHeight = 'none'
-                    this.tempHidden = false;
-                }, 300)
-            } else {
-                this.codeContainerMaxHeight = `${scrollHeight}px`
-                setTimeout(() => {
-                    this.codeContainerMaxHeight = `0px`
-                    this.tempHidden = false;
-                }, 150)
-            }
-        },
     },
-    components: {
-        Prism,
-    }
 }
 </script>
 

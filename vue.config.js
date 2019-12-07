@@ -13,7 +13,6 @@ process.env.VUE_APP_VERSION = require('./package.json').version
 module.exports = {
   publicPath: '/',
   transpileDependencies: [
-    'vue-echarts',
     'resize-detector'
   ],
   configureWebpack: {
