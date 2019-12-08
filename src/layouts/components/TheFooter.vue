@@ -28,9 +28,8 @@ export default {
     },
   methods: {
     myappVersion() {
-      console.log("node_env: " + process.env.NODE_ENV)
-      console.log("version: " + process.env.VUE_APP_VERSION)
-
+      // console.log("node_env: " + process.env)
+      // console.log("version: " + process.env.VUE_APP_VERSION)
       return process.env.VUE_APP_VERSION;
     },
   },
