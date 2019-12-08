@@ -48,18 +48,13 @@ export default {
     state.mails.forEach((mail) => {
 
       // Todo usta: Centralize the logic that determines labels and folders!
-
       // Folders (mutually exclusive, i.e. either, or).
       if (
-        (
-          mail.answer.answer[0] == ''
-          || mail.answer.answer == ''
-        )
+        mail.answer.answer == ''
         && !mail.isTrashed) {
         meta.inbox++;
       } else if (
-        mail.answer.answer[0] !== ''
-        && mail.answer.answer !== ''
+        mail.answer.answer !== ''
         && !mail.isTrashed
       ) {
         meta.answered++;

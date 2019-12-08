@@ -33,8 +33,8 @@ export default {
   getNumberOfAnswers: state => {
     let answers = 0
     for (let i = 0; i < state.mails.length; i++) {
-      if (state.mails[i].answer.answer[0] !== ''
-      && state.mails[i].answer.answer !== '') {
+      // Todo usta: Centralize this logic.
+      if (state.mails[i].answer.answer !== '') {
         answers++;
       }
     }
