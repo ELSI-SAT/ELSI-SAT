@@ -27,14 +27,13 @@
 
             <!-- SEARCH BAR -->
             <div class="flex border d-theme-dark-bg items-center">
-                <feather-icon class="md:inline-flex lg:hidden ml-4 mr-4 cursor-pointer"
-                              @click.stop="toggleEmailSidebar(true)"/>
-                <vs-input icon-no-border icon="icon-search"
-                          size="large"
-                          icon-pack="feather"
-                          placeholder="Suche"
-                          v-model="searchQuery"
-                          class="vs-input-no-border vs-input-no-shdow-focus w-full" />
+                <vs-input
+                  icon-no-border icon="icon-search"
+                  size="large"
+                  icon-pack="feather"
+                  placeholder="Suche"
+                  v-model="searchQuery"
+                  class="vs-input-no-border vs-input-no-shdow-focus w-full" />
             </div>
 
             <!-- EMAIL ACTION BAR -->
