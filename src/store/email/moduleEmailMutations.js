@@ -86,7 +86,8 @@ export default {
     },
 
     UPDATE_ANSWER(state, payload) {
-      state.mails.find((mail) => mail.id === payload.id).answer.answer = payload.answer
+      // Answer ist always a string.
+      state.mails.find((mail) => mail.id === payload.id).answer.answer = payload.answer.toString()
     },
 
     UPDATE_TRASHREASON(state, payload) {
