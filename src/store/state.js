@@ -67,6 +67,15 @@ const state = {
     // Can be used to get current window with
     // Note: Above breakpoint state is for internal use of sidebar & navbar component
     windowWidth: null,
+
+    // Define an (unlikely) separator for serialized answers,
+    // like multiple-choice checkboxes, so that they may contain
+    // commas, which otherwise would lead to inconsistend answers,
+    // when joined with toString(): "Long Option, with comma" + "Option 2"
+    // would result in "Long Option, with comma,Option 2", which in
+    // turn would result in ["Long Option", "with comma", "Option 2"] when
+    // joined with split(',').
+    stringSeparator: '•••',
 }
 
 export default state

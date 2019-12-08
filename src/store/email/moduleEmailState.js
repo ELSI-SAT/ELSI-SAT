@@ -45,8 +45,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
-        options: [], // Array of options for types 'radio' and 'multiple'
+        type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1

@@ -20,6 +20,11 @@
         v-bind:mailContent="mailContent"
         class="w-full mb-4"></RadioForm>
 
+      <CheckboxForm
+        v-if="!mailContent.isTrashed && mailContent.answer.type === 'checkbox'"
+        v-bind:mailContent="mailContent"
+        class="w-full mb-4"></CheckboxForm>
+
       <vs-button
         @click="toggleIsTrashed"
         color="danger"
@@ -42,6 +47,7 @@
 <script>
   import TextForm from './forms/TextForm.vue'
   import RadioForm from './forms/RadioForm.vue'
+  import CheckboxForm from './forms/CheckboxForm.vue'
   import TrashReason from './forms/TrashReason.vue'
 
   export default {
@@ -50,6 +56,7 @@
     components: {
       TextForm,
       RadioForm,
+      CheckboxForm,
       TrashReason,
     },
 
