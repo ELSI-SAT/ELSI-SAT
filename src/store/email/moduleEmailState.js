@@ -23,8 +23,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: ['Ja', 'Nein', 'Vielleicht'], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -45,8 +45,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -67,8 +67,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -89,8 +89,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -111,8 +111,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -133,8 +133,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -155,8 +155,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -177,8 +177,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -199,8 +199,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -221,8 +221,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -243,8 +243,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -265,8 +265,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -287,8 +287,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -309,8 +309,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -331,8 +331,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -353,8 +353,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -375,8 +375,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -397,8 +397,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -419,8 +419,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -441,8 +441,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -463,8 +463,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -485,8 +485,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -507,8 +507,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -529,8 +529,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: "tinytext" | "text" | "mediumtext" | "checkbox" (Options: true | false) | "multiple" (Options: Array)
-        options: [], // Array of options when type == "multiple
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'mediumtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1

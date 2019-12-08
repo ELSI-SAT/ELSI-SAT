@@ -11,9 +11,14 @@
   <vx-card class="px-4">
     <div class="vx-row">
       <TextForm
-        v-if="!mailContent.isTrashed"
+        v-if="!mailContent.isTrashed && mailContent.answer.type === 'text'"
         v-bind:mailContent="mailContent"
         class="w-full"></TextForm>
+
+      <RadioForm
+        v-if="!mailContent.isTrashed && mailContent.answer.type === 'radio'"
+        v-bind:mailContent="mailContent"
+        class="w-full mb-4"></RadioForm>
 
       <vs-button
         @click="toggleIsTrashed"
@@ -36,6 +41,7 @@
 
 <script>
   import TextForm from './forms/TextForm.vue'
+  import RadioForm from './forms/RadioForm.vue'
   import TrashReason from './forms/TrashReason.vue'
 
   export default {
@@ -43,6 +49,7 @@
 
     components: {
       TextForm,
+      RadioForm,
       TrashReason,
     },
 
