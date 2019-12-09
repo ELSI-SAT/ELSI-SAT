@@ -1,7 +1,7 @@
 <template>
   <ul class="centerx">
     <li v-for="item in mailContent.answer.options">
-      <vs-checkbox v-model="checkbox" :vs-value="item" :dork="[item]">{{ item }}</vs-checkbox>
+      <vs-checkbox v-model="checkbox" :vs-value="item">{{ item }}</vs-checkbox>
     </li>
   </ul>
 </template>
@@ -35,10 +35,6 @@
             answer: value.filter(item => item).join(this.$store.state.stringSeparator), // remove empty strings
             id: this.mailContent.id
           }
-
-
-          console.log('params')
-          console.log(value)
 
           this.$store.commit('email/UPDATE_ANSWER', params)
 
