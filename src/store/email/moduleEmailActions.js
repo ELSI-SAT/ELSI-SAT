@@ -33,6 +33,11 @@ export default {
     dispatch('fetchMeta')
   },
 
+  // Commit filter updates
+  updateFilterQuestion({ commit }, payload) {
+    commit("UPDATE_FILTER_QUESTION", payload)
+  },
+
   // Fetch Email Meta
   fetchMeta({ commit, state }) {
 

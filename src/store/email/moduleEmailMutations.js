@@ -93,4 +93,8 @@ export default {
     UPDATE_TRASHREASON(state, payload) {
       state.mails.find((mail) => mail.id === payload.id).trashingReason = payload.answer
     },
+
+    UPDATE_FILTER_QUESTION(state, payload) {
+      state.mails.find((mail) => mail.id === payload.id).filter = payload.filters
+    },
 }

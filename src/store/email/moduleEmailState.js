@@ -122,7 +122,7 @@ export default {
     },
     {
       id: 12,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
+      inquiry: 'Datenschutz oder Allgemein & K.I. (filter)?',
       subject: 'Frage 12',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -132,6 +132,19 @@ export default {
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
+      // Filter: Optional array of objects
+      filter: [
+        {
+          title: 'Allgemein und K.I.',
+          includes: ['Allgemein', 'K.I.'],
+          active: false
+        },
+        {
+          title: 'Datenschutz',
+          includes: ['Datenschutz'],
+          active: false
+        },
+      ],
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
         options: [], // Array of options for types 'radio' and 'multiple'
@@ -540,12 +553,15 @@ export default {
     },
   ],
 
+  // Tags and labels
   mailTags: [
     {text: 'Allgemein', value: 'Allgemein', color: "#28C770"},
     {text: 'K.I.', value: 'K.I.', color: "#7367F1"},
     {text: 'Datenschutz', value: 'Datenschutz', color: "#FFA044"},
     {text: 'Gesetzliche Anforderungen', value: 'Gesetzliche Anforderungen', color: "#EA5556"},
   ],
+
+  // Sidebar-filter for state (inbox, answered) and labels.
   mail_filter: null,
   meta: {},
   mailSearchQuery: '',
