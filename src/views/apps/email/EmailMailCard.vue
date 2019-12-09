@@ -11,18 +11,19 @@
   <vx-card class="px-4">
     <div class="vx-row">
       <TextForm
-        v-if="!mailContent.isTrashed && mailContent.answer.type === 'text'"
-        v-bind:mailContent="mailContent"
+        v-if="!mailContent.isTrashed && mailContent.answer.type.includes('text')"
+        :mailContent="mailContent"
+        :textsize="mailContent.answer.type"
         class="w-full"></TextForm>
 
       <RadioForm
         v-if="!mailContent.isTrashed && mailContent.answer.type === 'radio'"
-        v-bind:mailContent="mailContent"
+        :mailContent="mailContent"
         class="w-full mb-4"></RadioForm>
 
       <CheckboxForm
         v-if="!mailContent.isTrashed && mailContent.answer.type === 'checkbox'"
-        v-bind:mailContent="mailContent"
+        :mailContent="mailContent"
         class="w-full mb-4"></CheckboxForm>
 
       <vs-button
@@ -36,7 +37,7 @@
 
       <TrashReason
         v-if="mailContent.isTrashed"
-        v-bind:mailContent="mailContent"
+        :mailContent="mailContent"
         label="Eingaben werden sofort gespeichert."
         class="w-full mt-4"/>
 
