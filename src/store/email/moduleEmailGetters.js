@@ -10,14 +10,26 @@
 
 export default {
   filteredMails: state => state.mails.filter((mail) => {
-    return (
-        state.mail_filter === "starred" ? mail.isStarred :
-        state.mail_filter === "trash" ? mail.isTrashed : state.mail_filter === mail.folder
-          || mail.labels.includes(state.mail_filter))
-      && (mail.inquiry.toLowerCase().includes(state.mailSearchQuery.toLowerCase())
+    let filter;
+
+    // IF the search field is not empty
+    if (state.mailSearchQuery !== '') {
+      // THEN search for the term in these fields
+      filter = mail.inquiry.toLowerCase().includes(state.mailSearchQuery.toLowerCase())
         || mail.subject.toLowerCase().includes(state.mailSearchQuery.toLowerCase())
         || mail.message.toLowerCase().includes(state.mailSearchQuery.toLowerCase())
-      )
+        || mail.answer.answer.toLowerCase().includes(state.mailSearchQuery.toLowerCase());
+    } else {
+      // ELSE filter according to the selected option in the sidebar
+      filter = state.mail_filter === "starred" ? mail.isStarred
+        : state.mail_filter === "trash" ? mail.isTrashed
+          : state.mail_filter === "inbox" ? (!mail.answer.answer && !mail.isTrashed)
+            : state.mail_filter === "answered" ? (mail.answer.answer && !mail.isTrashed)
+              // Labels, aka Categories
+              : mail.labels.includes(state.mail_filter);
+    }
+    // IF false the mail gets filtered out
+    return (filter)
   }),
 
   // possible alternative to Array.prototype.find():
