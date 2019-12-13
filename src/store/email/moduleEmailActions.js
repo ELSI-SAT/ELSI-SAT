@@ -39,7 +39,9 @@ export default {
   },
 
   // Fetch Email Meta
-  fetchMeta({ commit, state }) {
+  fetchMeta({ commit, state, getters }) {
+
+    const filtered_questions_ids = getters.getFilteredQuestionsIDs
 
     // Initialize blank object.
     let meta = {
@@ -51,6 +53,10 @@ export default {
 
     // For each entry set folder and label.
     state.mails.forEach((mail) => {
+      if (filtered_questions_ids.length > 0
+        && !filtered_questions_ids.includes(mail.id)) {
+        return
+      }
 
       // Todo usta: Centralize the logic that determines labels and folders!
       // Folders (mutually exclusive, i.e. either, or).
