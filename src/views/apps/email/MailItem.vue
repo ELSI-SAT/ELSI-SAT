@@ -80,9 +80,12 @@ export default {
     labelColor() {
       return (label) => {
         const tags = this.$store.state.email.mailTags
-        return tags.find((tag) => {
+
+        const tag_color = tags.find((tag) => {
           return tag.value == label
         }).color
+
+        return tag_color;
       }
     },
   },

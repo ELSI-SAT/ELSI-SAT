@@ -126,7 +126,7 @@ export default {
       subject: 'Frage 12',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ["Allgemein"],
+      labels: [], // Filter-questions can have labels, but they don't have to.
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
