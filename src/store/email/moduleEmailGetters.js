@@ -22,8 +22,10 @@ export default {
     // i.e. one or more filters are set,
     // then skip questions that are not positively filtered.
     const filtered_questions_ids = getters.getFilteredQuestionsIDs
-    if (filtered_questions_ids.length > 0
-      && !filtered_questions_ids.includes(mail.id)) {
+    if (
+      filtered_questions_ids.length > 0
+      && !filtered_questions_ids.includes(mail.id)
+    ) {
       return false
     }
 
