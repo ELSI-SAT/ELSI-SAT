@@ -40,7 +40,7 @@
         this.textsize == 'tinytext' ?  (counter= 100, height=60 )
           : this.textsize == 'bigtext' ?  (counter= 2000, height=300 ) : ''
 
-        return { counter: counter, height: height };
+        return { counter: counter, height: height.toString() };
       },
 
       textarea: {
