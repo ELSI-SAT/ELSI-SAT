@@ -10,8 +10,8 @@
 
 export default {
   /**
-   * Returns a list of items, for which filter === true,
-   * i.e. a list of questions as an array of objects.
+   * Returns a list of items, for which "filter" is true,
+   * as an array of objects.
    *
    * @param state
    * @param getters
@@ -87,6 +87,7 @@ export default {
     return filter_labels
   },
 
+
   /**
    * Returns all positively filtered questions
    * as an array of objects.
@@ -98,20 +99,31 @@ export default {
   getFilteredQuestions: (state, getters) => {
     // Get an arary of all active filter-labels.
     const filter_labels = getters.getFilterLabels
-    let filtered_questions = []
+    let filtered_questions = [];
+
+    // Stop, if no filters are active.
+    // Otherwise `state.mails.forEach` would only show filter-questions,
+    // wich might (!) be handy later, but is rather confusing for now.
+    if (filter_labels.length == 0) {
+      return []
+    }
 
     // For each question …
     state.mails.forEach(function (mail) {
-      // … check if it contains a label, tha is also
-      // an element of the array of filter labels
-      if (mail.labels.some(r => filter_labels.indexOf(r) >= 0)) {
-        // When true push the question to the final array.
+      if (
+        // … check if one of its labels matches a filter-label …
+        mail.labels.some(r => filter_labels.indexOf(r) >= 0)
+        // … or the question is a filter-question.
+        || Array.isArray(mail.filter) // ggf: && mail.filter.length > 0
+      ) {
+        // THEN push the question to the final array.
         filtered_questions.push(mail)
       }
     })
 
     return filtered_questions
   },
+
 
   /**
    * Returns the IDs of all positively filtered questions
@@ -135,6 +147,7 @@ export default {
 
     return filtered_questions_ids
   },
+
 
   /**
    * Returns the total number of actionable questions,
@@ -174,9 +187,10 @@ export default {
   /**
    * Returns the number of completed answers,
    * i.e. all answers that are:
-   * - not empty
-   * - not trashed
-   * - positively filtered, if a filter is set
+   * - not empty and not trashed
+   * - and, if filters are set,
+   *   + either positively filtered
+   *   + or a filter-question
    *
    * @param state
    * @param getters
@@ -186,15 +200,26 @@ export default {
     const filter_labels = getters.getFilterLabels
     let answers = 0
 
+    // For each question …
     state.mails.forEach(function (mail) {
       // Todo usta: Centralize this logic.
-      if (mail.answer.answer !== ''
+      if (
+        // … that has an answer …
+        mail.answer.answer !== ''
+        // … and is not trashed
         && mail.isTrashed !== true
+        // and that is, if filters are set …
         && (
           !(filter_labels.length > 0)
-          || mail.labels.some(r => filter_labels.indexOf(r) >= 0)
+          || (
+            // … either a filtered question
+            mail.labels.some(r => filter_labels.indexOf(r) >= 0)
+            // … or a filter-question
+            || Array.isArray(mail.filter) // ggf: && mail.filter.length > 0
+          )
         )
       ) {
+        // … count it as an answer.
         answers++;
       }
     })
