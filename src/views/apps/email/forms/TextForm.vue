@@ -1,10 +1,10 @@
 <template>
   <div>
     <vs-textarea id="textarea"
-                 counter="500"
-                 maxlength="500"
-                 height="200"
-                 placeholder="Bitte geben Sie hier ihre Antwort ein. Ihnen stehen 500 Zeichen zur Verfügung. Zum Speichern muss kein Button betätigt werden: Eingaben werden sofort gespeichert."
+                 :counter="textSize.counter"
+                 :maxlength="textSize.counter"
+                 :height="textSize.height"
+                 :placeholder="'Bitte geben Sie hier ihre Antwort ein. Ihnen stehen ' + textSize.counter + ' Zeichen zur Verfügung. Zum Speichern muss kein Button betätigt werden: Eingaben werden sofort gespeichert.'"
                  label="Eingaben werden sofort gespeichert."
                  :counter-danger.sync="counterDanger"
                  v-model.trim="textarea"/>
@@ -26,9 +26,22 @@
         type: Object,
         required: true
       },
+      textsize: {
+        type: String,
+        required: true
+      },
     },
 
     computed: {
+      textSize() {
+        let counter = 500
+        let height = 130
+
+        this.textsize == 'tinytext' ?  (counter= 100, height=60 )
+          : this.textsize == 'bigtext' ?  (counter= 2000, height=300 ) : ''
+
+        return { counter: counter, height: height };
+      },
 
       textarea: {
         get () {

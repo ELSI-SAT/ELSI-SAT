@@ -13,14 +13,21 @@
         <!-- MAIL ROW 1 : META -->
         <div class="flex w-full">
           <div class="mt-1 ml-1 mr-1">
-            <vs-checkbox v-model="isSelectedMail" @click.stop class="vs-checkbox-small ml-0 mr-1"></vs-checkbox>
+            <vs-checkbox
+              v-model="isSelectedMail"
+              @click.stop class="vs-checkbox-small ml-0 mr-1">
+            </vs-checkbox>
           </div>
 
             <div class="flex w-full justify-between items-start">
                 <div class="mail__details">
                   <h5 class="mb-1 flex font-semibold">
                     {{ mail.inquiry }}
-                    <feather-icon icon="StarIcon" class="cursor-pointer ml-3" :svgClasses="[{'text-warning fill-current stroke-current': mail.isStarred}, 'w-5', 'h-5']"></feather-icon>
+                    <feather-icon
+                      icon="StarIcon"
+                      class="cursor-pointer ml-3"
+                      :svgClasses="[{'text-warning fill-current stroke-current': mail.isStarred}, 'w-5', 'h-5']">
+                    </feather-icon>
 
                   </h5>
                     <span v-if="mail.subject">{{ mail.subject }}</span>
@@ -29,7 +36,12 @@
 
                 <div class="mail-item__meta flex items-center">
                     <div class="email__labels hidden sm:flex items-center">
-                        <div class="h-2 w-2 rounded-full mr-2" :style="'background-color: ' + labelColor(label)" v-for="(label, index) in mail.labels" :key="index"></div>
+                        <div
+                          class="h-2 w-2 rounded-full mr-2"
+                          :style="'background-color: ' + labelColor(label)"
+                          v-for="(label, index) in mail.labels"
+                          :key="index">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -68,9 +80,12 @@ export default {
     labelColor() {
       return (label) => {
         const tags = this.$store.state.email.mailTags
-        return tags.find((tag) => {
+
+        const tag_color = tags.find((tag) => {
           return tag.value == label
         }).color
+
+        return tag_color;
       }
     },
   },

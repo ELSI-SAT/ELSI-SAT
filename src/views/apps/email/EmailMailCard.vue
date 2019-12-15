@@ -9,11 +9,36 @@
 
 <template>
   <vx-card class="px-4">
-    <div class="vx-row">
+    <!-- Filter Questions -->
+    <div
+      class="vx-row"
+      v-if="mailContent.filter"
+    >
+      <FilterForm
+        :mailContent="mailContent"
+        class="w-full"></FilterForm>
+    </div>
+
+    <!-- Regular Questions -->
+    <div
+      class="vx-row"
+      v-if="!mailContent.isTrashed && !mailContent.filter"
+    >
       <TextForm
-        v-if="!mailContent.isTrashed"
-        v-bind:mailContent="mailContent"
+        v-if="mailContent.answer.type.includes('text')"
+        :mailContent="mailContent"
+        :textsize="mailContent.answer.type"
         class="w-full"></TextForm>
+
+      <RadioForm
+        v-if="mailContent.answer.type === 'radio'"
+        :mailContent="mailContent"
+        class="w-full mb-4"></RadioForm>
+
+      <CheckboxForm
+        v-if="mailContent.answer.type === 'checkbox'"
+        :mailContent="mailContent"
+        class="w-full mb-4"></CheckboxForm>
 
       <vs-button
         @click="toggleIsTrashed"
@@ -26,7 +51,7 @@
 
       <TrashReason
         v-if="mailContent.isTrashed"
-        v-bind:mailContent="mailContent"
+        :mailContent="mailContent"
         label="Eingaben werden sofort gespeichert."
         class="w-full mt-4"/>
 
@@ -35,14 +60,22 @@
 </template>
 
 <script>
+  import FilterForm from './forms/FilterForm.vue'
+
   import TextForm from './forms/TextForm.vue'
+  import RadioForm from './forms/RadioForm.vue'
+  import CheckboxForm from './forms/CheckboxForm.vue'
   import TrashReason from './forms/TrashReason.vue'
 
   export default {
     name: 'EMailMailCard',
 
     components: {
+      FilterForm,
+
       TextForm,
+      RadioForm,
+      CheckboxForm,
       TrashReason,
     },
 
