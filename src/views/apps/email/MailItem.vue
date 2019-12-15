@@ -8,7 +8,12 @@
 ========================================================================================== -->
 
 <template>
-    <div class="mail__mail-item sm:px-4 px-2 py-6">
+    <div class="mail__mail-item sm:px-4 px-2 py-6"
+         :class="{
+            'inbox': !mail.isTrashed && !mail.answer.answer,
+            'answered': !mail.isTrashed && mail.answer.answer,
+            'isTrashed': mail.isTrashed,
+            'text-grey-dark': mail.isTrashed}">
 
         <!-- MAIL ROW 1 : META -->
         <div class="flex w-full">
@@ -21,7 +26,8 @@
 
             <div class="flex w-full justify-between items-start">
                 <div class="mail__details">
-                  <h5 class="mb-1 flex font-semibold">
+                  <h5 class="mb-1 flex"
+                      :class="{'font-semibold': !mail.isTrashed && !mail.answer.answer, 'text-grey-dark': mail.isTrashed}">
                     {{ mail.inquiry }}
                     <feather-icon
                       icon="StarIcon"

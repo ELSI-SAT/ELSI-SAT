@@ -35,6 +35,20 @@
         .mail__opened-mail {
             background-color: #eee;
         }
+
+      .inbox {
+        background-color: #fff;
+      }
+
+      .answered {
+        background-color: #fff;
+        font-weight: normal;
+      }
+
+      .isTrashed {
+        text-decoration: line-through;
+        font-weight: normal;
+      }
     }
 
 
