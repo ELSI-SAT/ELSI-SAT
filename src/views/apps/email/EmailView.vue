@@ -152,7 +152,10 @@
         })
       }
 
-      return folloups
+      // Filter duplicates
+      return folloups.filter((item, index) =>
+        folloups.indexOf(item) === index
+      )
     },
     followupQuestions() {
       const folloupIDs = this.followupQuestionIDs
