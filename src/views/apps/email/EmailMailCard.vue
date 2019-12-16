@@ -46,6 +46,7 @@
         class="w-full mb-4"></FollowupForm>
 
       <vs-button
+        v-if="!isFollowupChild"
         @click="toggleIsTrashed"
         color="danger"
         :type="mailContent.isTrashed ? 'filled' : 'border'"
@@ -91,6 +92,20 @@
         type: Object,
         required: true
       }
+    },
+
+    computed : {
+      isFollowupChild() {
+        const followupIDs = this.$store.getters['email/getAllFollowupIDs']
+        if (
+          followupIDs.includes(this.mailContent.id)
+        ) {
+          return true
+        } else {
+          return false
+        }
+
+      },
     },
 
     methods: {

@@ -228,6 +228,48 @@ export default {
   },
 
 
+  /**
+   * Returns an array of objects of all followup questions.
+   * @param state
+   * @returns {*}
+   */
+  getAllFollowupQuestions: state => {
+    return state.mails.filter((item) => {
+      return item.answer.type == 'followup'
+    })
+  },
+
+
+  /**
+   * Returns an array of all Ids
+   * of all questions that are a child of a followup question.
+   *
+   * @param state
+   * @param getters
+   * @returns {*[]}
+   */
+  getAllFollowupIDs: (state, getters) => {
+    let folloupIDs = []
+
+    // For each question of type followup …
+    getters.getAllFollowupQuestions.forEach(function (question) {
+      // … for each answer-option
+      question.answer.options.map(obj => {
+        // … that has the property 'followupID'
+        if (obj.hasOwnProperty('followupID')) {
+          // … add its ID to the array of followup IDs.
+          folloupIDs.push(obj.followupID)
+        }
+      });
+    })
+
+    // Remove duplicates.
+    return folloupIDs.filter((item, index) =>
+      folloupIDs.indexOf(item) === index
+    )
+  },
+
+
   getMeta: state => {
     return (state.meta)
   },
