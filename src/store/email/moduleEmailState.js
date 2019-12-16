@@ -170,10 +170,10 @@ export default {
       answer: {
         type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
         options: [
-          {name: 'Option 1', followupID: 14},
-          {name: 'Option 2'},
-          {name: 'Option 3'},
-          {name: 'Option 4'}
+          {name: 'Option 1: 14', followupID: 14},
+          {name: 'Option 2: keine weiteren Fragen, Euer Ehren'},
+          {name: 'Option 3: 14', followupID: 14},
+          {name: 'Option 4: 15', followupID: 15}
         ], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
@@ -206,7 +206,7 @@ export default {
     },
     {
       id: 15,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
+      inquiry: 'Folgefrage zu Frage Nr. 13',
       subject: 'Frage 15',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
@@ -217,7 +217,7 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
         options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
@@ -228,7 +228,7 @@ export default {
     },
     {
       id: 16,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
+      inquiry: 'Mit Folgefragen',
       subject: 'Frage 16',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
@@ -239,8 +239,13 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
-        options: [], // Array of options for types 'radio' and 'multiple'
+        type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple)
+        options: [
+          {name: 'Option 1: 17', followupID: 17},
+          {name: 'Option 2'},
+          {name: 'Option 3: 18', followupID: 18},
+          {name: 'Option 4'}
+        ], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0.5, // Float: 0 … 1
         risk_adressing: 0.5, // Float: 0 … 1
@@ -250,7 +255,7 @@ export default {
     },
     {
       id: 17,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
+      inquiry: 'Folgefrage zu Frage Nr. 16',
       subject: 'Frage 17',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
@@ -272,7 +277,7 @@ export default {
     },
     {
       id: 18,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
+      inquiry: 'Folgefrage zu Frage Nr. 16',
       subject: 'Frage 18',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
