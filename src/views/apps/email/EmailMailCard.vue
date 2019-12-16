@@ -40,6 +40,11 @@
         :mailContent="mailContent"
         class="w-full mb-4"></CheckboxForm>
 
+      <FollowupForm
+        v-if="mailContent.answer.type === 'followup'"
+        :mailContent="mailContent"
+        class="w-full mb-4"></FollowupForm>
+
       <vs-button
         @click="toggleIsTrashed"
         color="danger"
@@ -65,6 +70,7 @@
   import TextForm from './forms/TextForm.vue'
   import RadioForm from './forms/RadioForm.vue'
   import CheckboxForm from './forms/CheckboxForm.vue'
+  import FollowupForm from './forms/FollowupForm.vue'
   import TrashReason from './forms/TrashReason.vue'
 
   export default {
@@ -76,6 +82,7 @@
       TextForm,
       RadioForm,
       CheckboxForm,
+      FollowupForm,
       TrashReason,
     },
 
