@@ -159,16 +159,10 @@
       const store = this.$store
       let questions = []
 
-      console.log("folloupIDs")
-      console.log(folloupIDs)
-
       folloupIDs.forEach(function (ID) {
         let q = store.getters['email/getMail'](ID)
         questions.push(q)
       })
-
-      console.log("questions")
-      console.log(questions)
 
       return questions
     }
