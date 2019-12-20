@@ -58,6 +58,11 @@ export default {
         return
       }
 
+      // Ignore followup-children
+      if(getters.isFollowupChild(mail.id) === true) {
+        return
+      }
+
       // Todo usta: Centralize the logic that determines labels and folders!
       // Folders (mutually exclusive, i.e. either, or).
       if (

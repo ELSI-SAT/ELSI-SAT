@@ -29,6 +29,11 @@ export default {
       return false
     }
 
+    // Ignore followup-children
+    if (getters.isFollowupChild(mail.id) === true) {
+      return false
+    }
+
     // For all remaining question proceed as such:
     let filter;
     // IF the search field is not empty
@@ -165,10 +170,13 @@ export default {
 
     // For each question …
     state.mails.forEach(function (mail) {
+
       // Todo usta: Centralize this logic.
       if (
         // … that is not trashed
         mail.isTrashed !== true
+        // … and not a followup-child
+        && getters.isFollowupChild(mail.id) != true
         // … and that is positively filtered, if filters are set
         && (
           !(filtered_questions_ids.length > 0)
@@ -176,7 +184,7 @@ export default {
         )
       ) {
         // … add 1 to the number of questions.
-        number_of_questions++;
+        number_of_questions++
       }
     })
 
@@ -208,6 +216,8 @@ export default {
         mail.answer.answer !== ''
         // … and is not trashed
         && mail.isTrashed !== true
+        // … and not a followup-child
+        && getters.isFollowupChild(mail.id) != true
         // and that is, if filters are set …
         && (
           !(filter_labels.length > 0)
@@ -267,6 +277,19 @@ export default {
     return folloupIDs.filter((item, index) =>
       folloupIDs.indexOf(item) === index
     )
+  },
+
+
+  /**
+   * Returns TRUE when a question is the child of a followup question,
+   * returns FALSE if it is not.
+   *
+   * @param state
+   * @param getters
+   * @returns {function(...[*]=)}
+   */
+  isFollowupChild: (state, getters) => (ID) => {
+    return getters.getAllFollowupIDs.includes(ID) ? true : false
   },
 
 
