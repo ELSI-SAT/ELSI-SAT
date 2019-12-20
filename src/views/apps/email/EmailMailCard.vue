@@ -12,8 +12,7 @@
     <!-- Filter Questions -->
     <div
       class="vx-row"
-      v-if="mailContent.filter"
-    >
+      v-if="mailContent.filter">
       <FilterForm
         :mailContent="mailContent"
         class="w-full"></FilterForm>
@@ -22,8 +21,8 @@
     <!-- Regular Questions -->
     <div
       class="vx-row"
-      v-if="!mailContent.isTrashed && !mailContent.filter"
-    >
+      v-if="!mailContent.isTrashed && !mailContent.filter">
+
       <TextForm
         v-if="mailContent.answer.type.includes('text')"
         :mailContent="mailContent"
@@ -44,9 +43,12 @@
         v-if="mailContent.answer.type === 'followup'"
         :mailContent="mailContent"
         class="w-full mb-4"></FollowupForm>
+    </div>
 
+    <div
+      class="vx-row">
       <vs-button
-        v-if="!isFollowupChild"
+        v-if="!isFollowupChild && !mailContent.filter"
         @click="toggleIsTrashed"
         color="danger"
         :type="mailContent.isTrashed ? 'filled' : 'border'"
@@ -60,7 +62,6 @@
         :mailContent="mailContent"
         label="Eingaben werden sofort gespeichert."
         class="w-full mt-4"/>
-
     </div>
   </vx-card>
 </template>
