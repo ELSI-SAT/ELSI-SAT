@@ -51,20 +51,7 @@
                 </div>
                 <!-- /LABEL ROW -->
 
-                <div class="vx-row mb-4" v-if="currentMail.replies.length && !showThread">
-                    <div class="vx-col w-full">
-                        <span class="text-primary font-medium ml-10 cursor-pointer" @click="showThread = true">{{ currentMail.replies.length }} Earlier Messages</span>
-                    </div>
-                </div>
                 <div v-if="isSidebarActive">
-
-                    <!-- ALL MESSAGES - THREAD -->
-                    <div class="vx-row" v-for="threadMail in currentMail.replies.slice().reverse()" :key="threadMail.id" v-if="showThread">
-                        <div class="vx-col w-full">
-                            <email-mail-card :mailContent="threadMail" class="mb-10" />
-                        </div>
-                    </div>
-
                     <!-- LATEST MESSAGE -->
                     <div class="vx-row">
                         <div class="vx-col w-full">
@@ -72,11 +59,17 @@
                         </div>
                     </div>
 
-                    <div class="vx-row" style="margin-top: 2.2rem">
-                        <div class="vx-col w-full pb-10">
-
-                        </div>
+                    <!-- ALL MESSAGES - THREAD -->
+                    <div
+                      class="vx-row"
+                      v-for="threadMail in followupQuestions"
+                      :key="threadMail.id">
+                      <div class="vx-col w-full">
+                        <email-mail-card :mailContent="threadMail" class="mt-10" />
+                      </div>
                     </div>
+
+
                 </div>
                 </VuePerfectScrollbar>
             </div>
@@ -109,7 +102,6 @@
   },
   data() {
     return {
-      showThread: false,
       settings: {
         maxScrollbarLength: 60,
         wheelSpeed: 0.50,
@@ -120,9 +112,6 @@
     isSidebarActive(value) {
       if (!value) {
         this.$emit('closeSidebar')
-        setTimeout(() => {
-          this.showThread = false
-        }, 500)
       }
     },
   },
@@ -142,7 +131,45 @@
       get() {
         return this.currentMail.labels
       },
+    },
+    followupQuestionIDs() {
+      const question = this.$store.getters['email/getMail'](this.openMailId)
+      let folloups = []
+
+      if (question.answer.type === 'followup') {
+        const answerString = question.answer.answer
+        const answerArray = answerString.split(this.$store.state.stringSeparator)
+
+        answerArray.forEach(function (answer) {
+          const options = question.answer.options
+          let option = options.find(
+            element =>
+              element.name == answer
+              && element.hasOwnProperty('followupID')
+          )
+
+          if (option) { folloups.push( option.followupID ) }
+        })
+      }
+
+      // Filter duplicates
+      return folloups.filter((item, index) =>
+        folloups.indexOf(item) === index
+      )
+    },
+    followupQuestions() {
+      const folloupIDs = this.followupQuestionIDs
+      const store = this.$store
+      let questions = []
+
+      folloupIDs.forEach(function (ID) {
+        let q = store.getters['email/getMail'](ID)
+        questions.push(q)
+      })
+
+      return questions
     }
+
   },
   methods: {
     toggleIsStarred() {

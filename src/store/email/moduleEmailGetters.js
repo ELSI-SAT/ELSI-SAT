@@ -29,6 +29,11 @@ export default {
       return false
     }
 
+    // Ignore followup-children
+    if (getters.isFollowupChild(mail.id) === true) {
+      return false
+    }
+
     // For all remaining question proceed as such:
     let filter;
     // IF the search field is not empty
@@ -165,10 +170,13 @@ export default {
 
     // For each question …
     state.mails.forEach(function (mail) {
+
       // Todo usta: Centralize this logic.
       if (
         // … that is not trashed
         mail.isTrashed !== true
+        // … and not a followup-child
+        && getters.isFollowupChild(mail.id) != true
         // … and that is positively filtered, if filters are set
         && (
           !(filtered_questions_ids.length > 0)
@@ -176,7 +184,7 @@ export default {
         )
       ) {
         // … add 1 to the number of questions.
-        number_of_questions++;
+        number_of_questions++
       }
     })
 
@@ -208,6 +216,8 @@ export default {
         mail.answer.answer !== ''
         // … and is not trashed
         && mail.isTrashed !== true
+        // … and not a followup-child
+        && getters.isFollowupChild(mail.id) != true
         // and that is, if filters are set …
         && (
           !(filter_labels.length > 0)
@@ -225,6 +235,80 @@ export default {
     })
 
     return (answers)
+  },
+
+
+  /**
+   * Returns an array of objects of all followup questions.
+   * @param state
+   * @returns {*}
+   */
+  getAllFollowupQuestions: state => {
+    return state.mails.filter((item) => {
+      return item.answer.type == 'followup'
+    })
+  },
+
+
+  /**
+   * Returns an array with the IDs of *all* followup-children.
+   *
+   * @param state
+   * @param getters
+   * @returns {*[]}
+   */
+  getAllFollowupIDs: (state, getters) => {
+    let folloupIDs = []
+
+    // For each question of type followup …
+    getters.getAllFollowupQuestions.forEach(function (question) {
+      // … push its child-IDs to the array of all followup-child IDs.
+      folloupIDs = [...folloupIDs, ...getters.getFollowupIDs(question)]
+    });
+
+    // Remove duplicates.
+    return folloupIDs.filter((item, index) =>
+      folloupIDs.indexOf(item) === index
+    )
+  },
+
+
+  /**
+   * Returns an array with the IDs of the followup-children of *a single*
+   * followup-parent.
+   *
+   * @param state
+   * @returns {function(*): []}
+   */
+  getFollowupIDs: state => (question) => {
+    if (question.answer.type != "followup") {
+      return
+    }
+
+    let folloupIDs = [];
+
+    // For each option …
+    question.answer.options.map(obj => {
+      // … that has the property 'followupID'
+      if (obj.hasOwnProperty('followupID')) {
+        // … add its ID to the array of followup IDs.
+        folloupIDs.push(obj.followupID)
+      }
+    })
+
+    return folloupIDs
+  },
+
+  /**
+   * Returns TRUE when a question is the child of a followup question,
+   * returns FALSE if it is not.
+   *
+   * @param state
+   * @param getters
+   * @returns {function(...[*]=)}
+   */
+  isFollowupChild: (state, getters) => (ID) => {
+    return getters.getAllFollowupIDs.includes(ID) ? true : false
   },
 
 

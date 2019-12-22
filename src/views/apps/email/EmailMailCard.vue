@@ -12,8 +12,7 @@
     <!-- Filter Questions -->
     <div
       class="vx-row"
-      v-if="mailContent.filter"
-    >
+      v-if="mailContent.filter">
       <FilterForm
         :mailContent="mailContent"
         class="w-full"></FilterForm>
@@ -22,8 +21,8 @@
     <!-- Regular Questions -->
     <div
       class="vx-row"
-      v-if="!mailContent.isTrashed && !mailContent.filter"
-    >
+      v-if="!mailContent.isTrashed && !mailContent.filter">
+
       <TextForm
         v-if="mailContent.answer.type.includes('text')"
         :mailContent="mailContent"
@@ -40,7 +39,19 @@
         :mailContent="mailContent"
         class="w-full mb-4"></CheckboxForm>
 
+      <FollowupForm
+        v-if="mailContent.answer.type === 'followup'"
+        :mailContent="mailContent"
+        class="w-full mb-4"></FollowupForm>
+    </div>
+
+    <div
+      v-if="!isFollowupChild"
+      class="vx-row">
+
+      <!-- Trash-Button -->
       <vs-button
+        v-if="!mailContent.filter"
         @click="toggleIsTrashed"
         color="danger"
         :type="mailContent.isTrashed ? 'filled' : 'border'"
@@ -49,12 +60,12 @@
         {{ mailContent.isTrashed ? 'Als nicht relevant verworfen' : 'Als nicht relevant verwerfen' }}
       </vs-button>
 
+      <!-- TrashReason -->
       <TrashReason
-        v-if="mailContent.isTrashed"
+        v-if="!isFollowupChild && mailContent.isTrashed"
         :mailContent="mailContent"
         label="Eingaben werden sofort gespeichert."
         class="w-full mt-4"/>
-
     </div>
   </vx-card>
 </template>
@@ -65,6 +76,7 @@
   import TextForm from './forms/TextForm.vue'
   import RadioForm from './forms/RadioForm.vue'
   import CheckboxForm from './forms/CheckboxForm.vue'
+  import FollowupForm from './forms/FollowupForm.vue'
   import TrashReason from './forms/TrashReason.vue'
 
   export default {
@@ -76,6 +88,7 @@
       TextForm,
       RadioForm,
       CheckboxForm,
+      FollowupForm,
       TrashReason,
     },
 
@@ -84,6 +97,19 @@
         type: Object,
         required: true
       }
+    },
+
+    computed : {
+      isFollowupChild() {
+        const followupIDs = this.$store.getters['email/getAllFollowupIDs']
+        if (
+          followupIDs.includes(this.mailContent.id)
+        ) {
+          return true
+        } else {
+          return false
+        }
+      },
     },
 
     methods: {
