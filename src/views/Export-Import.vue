@@ -1,19 +1,32 @@
 <template>
   <div>
-  <div class="vx-row">
-    <div class="vx-col w-full mb-base">
-      <vx-card
-        title="Export"
-        title-color="primary"
-        subtitle="">
-        <p>Exportiert den ELSI-SAT Fragebogen als JSON-formatierte Datei.</p>
-        <br>
-        <vs-button color="primary" type="filled" v-on:click="saveFile()">
-          Export durchführen
-        </vs-button>
-      </vx-card>
+    <div class="vx-row">
+      <div class="vx-col w-full mb-base">
+        <vx-card
+          title="PDF herunterladen"
+          title-color="primary"
+          subtitle="">
+          <p>Download der Ergebnisse des ELSI-SAT Fragebogens als PDF Datei.</p>
+          <br>
+          <pdfExportButton />
+        </vx-card>
+      </div>
     </div>
-  </div>
+
+    <div class="vx-row">
+      <div class="vx-col w-full mb-base">
+        <vx-card
+          title="Export"
+          title-color="primary"
+          subtitle="">
+          <p>Exportiert den ELSI-SAT Fragebogen als JSON-formatierte Datei.</p>
+          <br>
+          <vs-button color="primary" type="filled" v-on:click="saveFile()">
+            Export durchführen
+          </vs-button>
+        </vx-card>
+      </div>
+    </div>
 
     <div class="vx-row">
       <div class="vx-col w-full mb-base">
@@ -34,6 +47,7 @@
 <script>
   import {mapGetters} from "vuex";
   import ImportJSON from "../components/ImportJSON";
+  import pdfExportButton from "../components/pdf-export-button";
 
   export default {
     name: "Home",
@@ -46,7 +60,8 @@
     },
 
     components: {
-      ImportJSON
+      ImportJSON,
+      pdfExportButton
     },
 
     methods: {
