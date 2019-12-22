@@ -251,8 +251,7 @@ export default {
 
 
   /**
-   * Returns an array of all Ids
-   * of all questions that are a child of a followup question.
+   * Returns an array with the IDs of *all* followup-children.
    *
    * @param state
    * @param getters
@@ -263,15 +262,9 @@ export default {
 
     // For each question of type followup …
     getters.getAllFollowupQuestions.forEach(function (question) {
-      // … for each answer-option
-      question.answer.options.map(obj => {
-        // … that has the property 'followupID'
-        if (obj.hasOwnProperty('followupID')) {
-          // … add its ID to the array of followup IDs.
-          folloupIDs.push(obj.followupID)
-        }
-      });
-    })
+      // … push its child-IDs to the array of all followup-child IDs.
+      folloupIDs = [...folloupIDs, ...getters.getFollowupIDs(question)]
+    });
 
     // Remove duplicates.
     return folloupIDs.filter((item, index) =>
@@ -279,6 +272,32 @@ export default {
     )
   },
 
+
+  /**
+   * Returns an array with the IDs of the followup-children of *a single*
+   * followup-parent.
+   *
+   * @param state
+   * @returns {function(*): []}
+   */
+  getFollowupIDs: state => (question) => {
+    if (question.answer.type != "followup") {
+      return
+    }
+
+    let folloupIDs = [];
+
+    // For each option …
+    question.answer.options.map(obj => {
+      // … that has the property 'followupID'
+      if (obj.hasOwnProperty('followupID')) {
+        // … add its ID to the array of followup IDs.
+        folloupIDs.push(obj.followupID)
+      }
+    })
+
+    return folloupIDs
+  },
 
   /**
    * Returns TRUE when a question is the child of a followup question,

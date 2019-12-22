@@ -28,9 +28,23 @@ export default {
   },
 
   // Toggle isTrashed flag in mail
-  toggleIsTrashed({ commit, dispatch }, payload) {
+  toggleIsTrashed({ commit, dispatch, getters }, payload) {
     commit("TOGGLE_IS_MAIL_TRASHED", payload)
-    dispatch('fetchMeta')
+
+    const question = getters.getMail(payload.mailId)
+    const followupIDs = getters.getFollowupIDs(question)
+
+    if (
+      typeof followupIDs !== 'undefined'
+      && followupIDs.length > 0
+    ) {
+      followupIDs.forEach(function (id) {
+        let payloadChild = {mailId: id, value: payload.value}
+        commit("TOGGLE_IS_MAIL_TRASHED", payloadChild)
+      });
+    }
+
+    dispatch('fetchMeta');
   },
 
   // Commit filter updates
