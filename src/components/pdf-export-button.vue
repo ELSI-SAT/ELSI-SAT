@@ -7,27 +7,48 @@
 </template>
 
 <script>
-  import html2pdf from 'html2pdf.js';
+  import * as jsPDF from 'jspdf'
 
   export default {
     name: "pdf-export-button",
 
     methods: {
-      createPDF () {
-        let element = "<p>We will <b>bring evidence</b> in favor of the following thesis: any associated supporting element raises serious doubts about the strong generative capacity of the theory. To provide a constituent structure for T(Z,K), the fundamental error of regarding functional notions as categorial is not quite equivalent to the extended c-command discussed in connection with (34). We will bring evidence in favor of the following thesis: any associated supporting element is not to be considered in determining a corpus of utterance tokens upon which conformity has been defined by the paired utterance test.</p>" +
-          "<p>It may be, then, <i>that the natural general principle</i> that will subsume this case is not to be considered in determining nondistinctness in the sense of distinctive feature theory. Notice, incidentally, that most of the methodological work in modern linguistics delimits the extended c-command discussed in connection with (34). From C1, it follows that a descriptively adequate grammar is necessary to impose an interpretation on the system of base rules exclusive of the lexicon. Clearly, the natural general principle that will subsume this case can be defined in such a way as to impose the levels of acceptability from fairly high (e.g. (99a)) to virtual gibberish (e.g. (98d)). I suggested that these results would follow from the assumption that most of the methodological work in modern linguistics is unspecified with respect to problems of phonemic and morphological analysis. To characterize a linguistic level L, most of the methodological work in modern linguistics is not quite equivalent to a descriptive fact. I suggested that these results would follow from the assumption that a subset of English sentences interesting on quite independent grounds is, apparently, determined by the extended c-command discussed in connection with (34).</p>" +
-          "<p>Notice, incidentally, that this selectionally introduced contextual feature is rather different from the ultimate standard that determines the accuracy of any proposed grammar. Nevertheless, this analysis of a formative as a pair of sets of features is to be regarded as irrelevant intervening contexts in selectional rules. Presumably, this selectionally introduced contextual feature can be defined in such a way as to impose the strong generative capacity of the theory. Note that the notion of level of grammaticalness does not affect the structure of a parasitic gap construction. Let us continue to suppose that the fundamental error of regarding functional notions as categorial may remedy and, at the same time, eliminate a stipulation to place the constructions into these various categories.</p>"
+      createPDF() {
+        let pdfName = 'ELSI-SAT Ergebnis'
+        let doc = new jsPDF({
+          orientation: 'p',
+          unit: 'mm',
+          format: 'a4'
+        })
 
-        let opt = {
-          margin:       30,
-          filename:     'ELSI-SAT Ergebnis.pdf',
-          image:        { type: 'jpeg', quality: 0.98 },
-          html2canvas:  { scale: 2 },
-          jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        };
+        let margins = {
+          top: 30,
+          bottom: 30,
+          left: 30,
+          width: 140
+        }
 
-        // New Promise-based usage:
-        html2pdf().set(opt).from(element).save();
+        // doc.setFont("helvetica");
+        // doc.setFontSize(9)
+
+        let text = "<h2  style='font-family: Helvetica, Arial, sans-serif;'>Lorem Ipsum</h2><p style='font-family: Helvetica, Arial, sans-serif; line-height: 150%; font-size: 14px'>Realize the <b>need</b> to mesh viral schemas??? Visualize how you can engage transparent e-tailers? Best practices dictate the necessity to whiteboard enterprise portals? Looking forward, leverage real-time channels! Whenever you can, incubate granular mindshare? Whenver possible, aggregate new age metrics!!! Our value proposition is that we syndicate global action-items! To embrace new age synergies? Be able to grow integrated supply-chains??? We are committed to streamline extensible e-commerce! Realize the need to unleash dot-com supply-chains. Accellerate the trend to innovate user-centric ROI? Realize the need to evolve sticky models... Increase the need to reintermediate bricks-and-clicks paradigms! Visualize how you can maximize cyber users... Accellerate the trend to productize green niches? Looking forward, exploit mass platforms!!! Best practices dictate the necessity to cultivate value-added infomediaries! You can e-enable sticky portals? Realize how to leverage cross-media systems??? We must transform collaborative niches? Best practices dictate the necessity to strategize bleeding-edge infrastructures??? Our value proposition is that we morph viral partnerships. Increase the need to synergize cutting-edge communities. Please embrace dynamic architectures? Please benchmark killer web-readiness??? We must grow bricks-and-clicks models! Visualize how you can benchmark viral communities??? Develop products that facilitate end-to-end synergies... Develop products that scale sexy ROI??? Visualize how you can utilize web-enabled metrics... Realize the need to grow transparent functionalities!!! We are committed to maximize B2B platforms! Realize how to strategize customized web services! e able to generate robust experiences! You can implement user-enables supply-chains. Whenver possible, synthesize magnetic relationships!!! We are committed to enhance distributed niches??? You can syndicate innovative initiatives! Develop products that innovate out-of-the-box e-services? Whenever you can, redefine ubiquitous systems... It is mission critical that we architect synergistic ROI! Our value proposition is that we morph best-of-breed paradigms? Best practices dictate the necessity to drive open-source synergies? We are committed to benchmark viral convergence!!! We must revolutionize impactful experiences??? Whenver possible, integrate ubiquitous solutions... Realize how to deliver dynamic schemas??? Increase the need to enable B2C vortals!!! To leverage back-end technologies? You can embrace back-end partnerships... Looking forward, e-enable distributed content. Accellerate the trend to recontextualize clicks-and-mortar channels! We must repurpose user-enables ROI??? Accellerate the trend to reintermediate green channels! Whenever you can, integrate cross-platform networks!!! Be able to synthesize holistic markets?</p>"
+
+        let pageHeight= doc.internal.pageSize.height
+        let y = margins.top
+        let options = {
+          width: margins.width,
+          pagesplit: true
+        }
+
+        doc.fromHTML(text+text+text, margins.left, y, options, function() {
+          if (y >= pageHeight) {
+            y = margins.top
+            doc.addPage();
+          }
+        }, margins);
+
+
+        doc.save(pdfName + '.pdf')
       },
     }
   }
