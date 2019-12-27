@@ -54,11 +54,6 @@
 
     computed: mapGetters(['email']),
 
-    created() {
-      console.log('Email.vue created')
-      console.log(this.$store.state.email)
-    },
-
     components: {
       ImportJSON,
       pdfExportButton
