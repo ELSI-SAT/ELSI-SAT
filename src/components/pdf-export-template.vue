@@ -50,6 +50,9 @@
           case 'checkbox':
             answer = this.$store.getters['email/getAnswerCheckbox'](question.id)
             break;
+          case 'followup':
+            answer = this.$store.getters['email/getAnswerFollowup'](question.id)
+            break;
           default:
             answer = question.answer.answer
             break;

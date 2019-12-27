@@ -249,6 +249,16 @@ export default {
     return arr
   },
 
+  /**
+   * Basically followup-questions are checkboxes.
+   *
+   * @param id
+   * @returns {function(*): [parser.Node[], parser.Node[]] | * | string[]}
+   */
+  getAnswerFollowup: (state, getters) => (id) => {
+    return getters.getAnswerCheckbox(id)
+  },
+
 
   /**
    * Returns an array of objects of all followup questions.
