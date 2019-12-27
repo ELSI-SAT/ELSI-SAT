@@ -24,14 +24,7 @@
 
       checkbox: {
         get() {
-          let activeFilters = []
-          const filters = this.$store.getters['email/getMail'](this.mailContent.id).filter
-
-          filters.forEach(function (filter) {
-            filter.active ? activeFilters.push(filter) : ''
-          });
-
-          return activeFilters
+          return this.$store.getters['email/getAnswerFilter'](this.mailContent.id)
         },
 
         set(value) {

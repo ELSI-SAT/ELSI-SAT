@@ -259,6 +259,24 @@ export default {
     return getters.getAnswerCheckbox(id)
   },
 
+  /**
+   * Returns all active filters of a filter-question,
+   * as an array of objects.
+   *
+   * @param id
+   * @returns {function(*): [parser.Node[], parser.Node[]] | * | string[]}
+   */
+  getAnswerFilter: (state, getters) => (id) => {
+    let activeFilters = []
+    const filters = getters.getMail(id).filter
+
+    filters.forEach(function (filter) {
+      filter.active ? activeFilters.push(filter) : ''
+    });
+
+    return activeFilters
+  },
+
 
   /**
    * Returns an array of objects of all followup questions.

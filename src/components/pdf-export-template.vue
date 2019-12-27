@@ -56,6 +56,10 @@
             answer = this.$store.getters['email/getAnswerFollowup'](question.id)
             html = '<ul><li>' + answer.join('</li><li>') + '</li></ul>'
             break;
+          case 'filter':
+            answer = this.$store.getters['email/getAnswerFilter'](question.id)
+            html = '<ul><li>' + answer.map(e => e.title).join('</li><li>') + '</li></ul>'
+            break;
           default:
             answer = question.answer.answer
             html = answer
