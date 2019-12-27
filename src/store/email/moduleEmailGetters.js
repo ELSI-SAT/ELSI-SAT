@@ -237,6 +237,18 @@ export default {
     return (answers)
   },
 
+  /**
+   *
+   * @param id
+   * @returns {function(*): [parser.Node[], parser.Node[]] | * | string[]}
+   */
+  getAnswerCheckbox: (state, getters, rootState) => (id) => {
+    const answer = getters.getMail(id).answer.answer
+    const arr = answer.split(rootState.stringSeparator)
+
+    return arr
+  },
+
 
   /**
    * Returns an array of objects of all followup questions.

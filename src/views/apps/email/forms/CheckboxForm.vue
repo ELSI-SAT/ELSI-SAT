@@ -24,11 +24,8 @@
 
       checkbox: {
         get() {
-          // Create an array ["Option 1", "Option 2"]
-          // from a string "Option 1,Option 2"
-          const answer = this.$store.getters['email/getMail'](this.mailContent.id).answer.answer
-          const arr = answer.split(this.$store.state.stringSeparator)
-          return arr
+          // Returns all selected options as an array.
+          return this.$store.getters['email/getAnswerCheckbox'](this.mailContent.id)
         },
         set(value) {
           const params = {
