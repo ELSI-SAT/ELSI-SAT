@@ -60,6 +60,9 @@
             answer = this.$store.getters['email/getAnswerFilter'](question.id)
             html = '<ul><li>' + answer.map(e => e.title).join('</li><li>') + '</li></ul>'
             break;
+          case 'tinytext':
+          case 'text':
+          case 'bigtext':
           default:
             answer = question.answer.answer
             html = answer
