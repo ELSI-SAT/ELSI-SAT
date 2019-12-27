@@ -44,33 +44,25 @@
       },
       parseAnswer(question) {
         let answer
+        let html
 
         // Get answer.
         switch (question.answer.type) {
           case 'checkbox':
             answer = this.$store.getters['email/getAnswerCheckbox'](question.id)
+            html = '<ul><li>' + answer.join('</li><li>') + '</li></ul>'
             break;
           case 'followup':
             answer = this.$store.getters['email/getAnswerFollowup'](question.id)
+            html = '<ul><li>' + answer.join('</li><li>') + '</li></ul>'
             break;
           default:
             answer = question.answer.answer
+            html = answer
             break;
         }
 
-        let html
-
-        if (Array.isArray(answer)) {
-          html = '<ul>'
-          answer.map(function (answer) {
-            html = html + '<li>' + answer + '</li>';
-          })
-          html = html + '</ul>'
-        } else {
-          html = answer
-        }
-
-        return html
+        return html;
       }
     }
   }
