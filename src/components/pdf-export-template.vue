@@ -14,7 +14,7 @@
         <div class="meta">
           <p v-html="question.message"></p>
 
-          <ul>
+          <ul v-if="question.labels.length > 0">
             <li v-for="label in question.labels" :key="label">
               <span class="label">{{label}}</span>
             </li>
