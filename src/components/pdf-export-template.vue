@@ -28,14 +28,7 @@
 
         <p
           class="answer"
-          v-if="!question.isTrashed"
           v-html="parseAnswer(question)">
-        </p>
-
-        <p
-          class="answer"
-          v-if="question.isTrashed"
-          v-html="question.trashingReason">
         </p>
 
       </div>
@@ -61,6 +54,10 @@
       parseAnswer(question) {
         let answer
         let html
+
+        if (question.isTrashed === true) {
+          return 'Als nicht relevant markiert. ' + question.trashingReason
+        }
 
         // Get answer.
         switch (question.answer.type) {
