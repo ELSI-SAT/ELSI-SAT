@@ -237,6 +237,46 @@ export default {
     return (answers)
   },
 
+  /**
+   *
+   * @param id
+   * @returns {function(*): [parser.Node[], parser.Node[]] | * | string[]}
+   */
+  getAnswerCheckbox: (state, getters, rootState) => (id) => {
+    const answer = getters.getMail(id).answer.answer
+    const arr = answer.split(rootState.stringSeparator)
+
+    return arr
+  },
+
+  /**
+   * Basically followup-questions are checkboxes.
+   *
+   * @param id
+   * @returns {function(*): [parser.Node[], parser.Node[]] | * | string[]}
+   */
+  getAnswerFollowup: (state, getters) => (id) => {
+    return getters.getAnswerCheckbox(id)
+  },
+
+  /**
+   * Returns all active filters of a filter-question,
+   * as an array of objects.
+   *
+   * @param id
+   * @returns {function(*): [parser.Node[], parser.Node[]] | * | string[]}
+   */
+  getAnswerFilter: (state, getters) => (id) => {
+    let activeFilters = []
+    const filters = getters.getMail(id).filter
+
+    filters.forEach(function (filter) {
+      filter.active ? activeFilters.push(filter) : ''
+    });
+
+    return activeFilters
+  },
+
 
   /**
    * Returns an array of objects of all followup questions.
