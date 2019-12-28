@@ -118,6 +118,11 @@ const router = new Router({
                 name: 'page-error-404',
                 component: () => import('@/views/pages/Error404.vue')
               },
+              {
+                path: '/pages/splash',
+                name: 'splash',
+                component: () => import('@/views/pages/Splash.vue')
+              },
             ]
         },
         // Redirect to 404 page, if no match found
