@@ -5,7 +5,12 @@
       <div
         v-for="question in allQuestions"
         :key="question.id"
-        :class="isFollowupChild(question.id) ? 'followupChild' : ''">
+        :class="{
+            'followupChild': isFollowupChild(question.id),
+            'inbox': !question.isTrashed && !question.answer.answer,
+            'answered': !question.isTrashed && question.answer.answer,
+            'isTrashed': question.isTrashed
+        }">
         <h4
           v-html="question.subject + ' ' + question.inquiry"
           class="heading">
@@ -21,7 +26,18 @@
           </ul>
         </div>
 
-        <p class="answer" v-html="parseAnswer(question)"></p>
+        <p
+          class="answer"
+          v-if="!question.isTrashed"
+          v-html="parseAnswer(question)">
+        </p>
+
+        <p
+          class="answer"
+          v-if="question.isTrashed"
+          v-html="question.trashingReason">
+        </p>
+
       </div>
 
     </div>
@@ -91,6 +107,24 @@
   .heading {
     margin-top: 3rem;
     font-weight: 500;
+  }
+
+  .inbox {
+    .heading, .meta {
+      color: gray;
+    }
+  }
+
+  .isTrashed {
+    .heading, .meta {
+      color: gray;
+    }
+    .heading {
+      text-decoration: line-through;
+      &:after {
+        content: ' 🗑';
+      }
+    }
   }
 
   .followupChild {
