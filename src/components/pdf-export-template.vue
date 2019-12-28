@@ -93,7 +93,9 @@
   @import '../assets/css/main.css';
 
   #pdf-export-root {
-    //display: none;//visibility: hidden;
+    // Hide in production.
+    display: none;
+    visibility: hidden;
   }
 
   #pdf-export-content * {
