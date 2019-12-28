@@ -64,25 +64,25 @@
           case 'checkbox':
             answer = this.$store.getters['email/getAnswerCheckbox'](question.id)
             html = '<ul><li>' + answer.join('</li><li>') + '</li></ul>'
-            break;
+            break
           case 'followup':
             answer = this.$store.getters['email/getAnswerFollowup'](question.id)
             html = '<ul><li>' + answer.join('</li><li>') + '</li></ul>'
-            break;
+            break
           case 'filter':
             answer = this.$store.getters['email/getAnswerFilter'](question.id)
             html = '<ul><li>' + answer.map(e => e.title).join('</li><li>') + '</li></ul>'
-            break;
+            break
           case 'tinytext':
           case 'text':
           case 'bigtext':
           default:
             answer = question.answer.answer
             html = answer
-            break;
+            break
         }
 
-        return html;
+        return html
       }
     }
   }
