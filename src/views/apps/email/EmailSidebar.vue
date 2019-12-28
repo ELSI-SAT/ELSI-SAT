@@ -21,6 +21,7 @@
               <router-link
                 tag="span"
                 :to="`${baseUrl}/inbox`"
+                @click.native="$emit('closeSidebar')"
                 class="flex justify-between items-center cursor-pointer"
                 :class="{'text-primary': mailFilter == 'inbox'}">
 
@@ -39,6 +40,7 @@
               <router-link
                 tag="span"
                 :to="`${baseUrl}/answered`"
+                @click.native="$emit('closeSidebar')"
                 class="flex justify-between items-center cursor-pointer mt-4"
                 :class="{'text-primary': mailFilter == 'answered'}">
 
@@ -58,6 +60,7 @@
                 tag="span"
                 :to="`${baseUrl}/starred`"
                 class="flex justify-between items-center cursor-pointer mt-4"
+                @click.native="$emit('closeSidebar')"
                 :class="{'text-primary': mailFilter == 'starred'}">
 
                 <div class="flex items-center mb-2">
@@ -75,6 +78,7 @@
               <router-link
                 tag="span"
                 :to="`${baseUrl}/trash`"
+                @click.native="$emit('closeSidebar')"
                 class="flex justify-between items-center cursor-pointer mt-4"
                 :class="{'text-primary': mailFilter == 'trash'}">
 
@@ -100,7 +104,8 @@
                   class="email__label flex items-center mb-4 cursor-pointer"
                   v-for="(tag, index) in mailTags"
                   :key="index"
-                  :to="`${baseUrl}/${tag.value}`">
+                  :to="`${baseUrl}/${tag.value}`"
+                  @click.native="$emit('closeSidebar')">
 
                   <div
                     class="ml-1 h-3 w-3 rounded-full mr-4"
