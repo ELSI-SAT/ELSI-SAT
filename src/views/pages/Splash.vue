@@ -30,11 +30,11 @@
                             v-model="form.nameProject"
                             label="Name oder Bezeichnung des Forschungsvorhabens"
                             class="w-full"
+                            :class="{'form-error': errors.length > 0}"
                             icon-pack="feather"
                             icon="icon-user"
                             icon-no-border
                           />
-                          <span>{{ errors[0] }}</span>
                         </validation-provider>
                       </div>
                     </div>
@@ -49,11 +49,11 @@
                             v-model="form.nameApplicant"
                             label="Name des Antragstellers"
                             class="w-full"
+                            :class="{'form-error': errors.length > 0}"
                             icon-pack="feather"
                             icon="icon-user"
                             icon-no-border
                           />
-                          <span>{{ errors[0] }}</span>
                         </validation-provider>
                       </div>
                     </div>
@@ -95,14 +95,22 @@
 </template>
 
 <script>
-  import { ValidationProvider, extend } from 'vee-validate';
-  import { required } from 'vee-validate/dist/rules';
+  import {configure, extend, ValidationProvider} from 'vee-validate';
+  import {required} from 'vee-validate/dist/rules';
   import ImportJSON from "@/components/ImportJSON";
 
   extend('required', {
     ...required,
     message: 'This field is required'
   });
+
+  configure({
+    classes: {
+      valid: 'is-valid',
+      invalid: 'is-invalid',
+      dirty: ['is-dirty', 'is-dirty'],
+    }
+  })
 
   export default {
 
@@ -121,3 +129,14 @@
     }
   }
 </script>
+
+<style lang="scss">
+  .form-error {
+    label {
+      color: red;
+    }
+    
+    .vs-inputx {
+      border-color: red!important;
+    }}
+</style>
