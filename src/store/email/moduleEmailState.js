@@ -573,7 +573,12 @@ export default {
 
   // Sidebar-filter for state (inbox, answered) and labels.
   mail_filter: null,
-  meta: {},
+  meta: {
+    project: {
+      nameApplicant: '',
+      nameProject: '',
+    }
+  },
   mailSearchQuery: '',
 }
 
