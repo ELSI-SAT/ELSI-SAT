@@ -22,25 +22,39 @@
                   <template>
                     <div class="vx-row mt-10 mb-4">
                       <div class="vx-col w-full">
-                        <vs-input
-                          class="w-full"
-                          icon-pack="feather"
-                          icon="icon-user"
-                          icon-no-border
-                          label="Name oder Bezeichnung des Forschungsvorhabens"
-                          v-model="nameProject" />
+                        <validation-provider
+                          rules="required"
+                          v-slot="{ errors }">
+                          <vs-input
+                            name="nameProject"
+                            v-model="form.nameProject"
+                            label="Name oder Bezeichnung des Forschungsvorhabens"
+                            class="w-full"
+                            icon-pack="feather"
+                            icon="icon-user"
+                            icon-no-border
+                          />
+                          <span>{{ errors[0] }}</span>
+                        </validation-provider>
                       </div>
                     </div>
 
                     <div class="vx-row mb-8">
                       <div class="vx-col w-full">
-                        <vs-input
-                          class="w-full"
-                          icon-pack="feather"
-                          icon="icon-user"
-                          icon-no-border
-                          label="Name des Antragstellers"
-                          v-model="nameApplicant" />
+                        <validation-provider
+                          rules="required"
+                          v-slot="{ errors }">
+                          <vs-input
+                            name="nameApplicant"
+                            v-model="form.nameApplicant"
+                            label="Name des Antragstellers"
+                            class="w-full"
+                            icon-pack="feather"
+                            icon="icon-user"
+                            icon-no-border
+                          />
+                          <span>{{ errors[0] }}</span>
+                        </validation-provider>
                       </div>
                     </div>
                     <div class="vx-row">
@@ -81,19 +95,29 @@
 </template>
 
 <script>
+  import { ValidationProvider, extend } from 'vee-validate';
+  import { required } from 'vee-validate/dist/rules';
   import ImportJSON from "@/components/ImportJSON";
+
+  extend('required', {
+    ...required,
+    message: 'This field is required'
+  });
 
   export default {
 
     data() {
       return {
-        nameApplicant: '',
-        nameProject: ''
+        form: {
+          nameApplicant: '',
+          nameProject: ''
+        }
       }
     },
 
     components: {
-      ImportJSON
+      ImportJSON,
+      ValidationProvider
     }
   }
 </script>
