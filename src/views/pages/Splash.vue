@@ -19,55 +19,66 @@
                     keine ELSI-SAT Export-Datei (<code>.json</code>) besitzen.
                   </p>
 
-                  <template>
-                    <div class="vx-row mt-10 mb-4">
-                      <div class="vx-col w-full">
-                        <validation-provider
-                          rules="required"
-                          v-slot="{ errors }">
-                          <vs-input
-                            name="nameProject"
-                            v-model="form.nameProject"
-                            label="Name oder Bezeichnung des Forschungsvorhabens"
-                            class="w-full"
-                            :class="{'form-error': errors.length > 0}"
-                            icon-pack="feather"
-                            icon="icon-user"
-                            icon-no-border
-                          />
-                        </validation-provider>
-                      </div>
-                    </div>
+                  <form>
+                    <template>
 
-                    <div class="vx-row mb-8">
-                      <div class="vx-col w-full">
-                        <validation-provider
-                          rules="required"
-                          v-slot="{ errors }">
-                          <vs-input
-                            name="nameApplicant"
-                            v-model="form.nameApplicant"
-                            label="Name des Antragstellers"
-                            class="w-full"
-                            :class="{'form-error': errors.length > 0}"
-                            icon-pack="feather"
-                            icon="icon-user"
-                            icon-no-border
-                          />
-                        </validation-provider>
+                      <div class="vx-row mt-10 mb-4">
+                        <div class="vx-col w-full">
+                          <validation-provider
+                            rules="required"
+                            v-slot="{ errors }">
+                            <vs-input
+                              name="nameProject"
+                              v-model="form.nameProject"
+                              label="Name oder Bezeichnung des Forschungsvorhabens"
+                              class="w-full"
+                              :class="{'form-error': errors.length > 0}"
+                              icon-pack="feather"
+                              icon="icon-user"
+                              icon-no-border
+                            />
+                          </validation-provider>
+                        </div>
                       </div>
-                    </div>
-                    <div class="vx-row">
-                      <div class="vx-col w-full">
-                        <vs-button class="mr-3 mb-2">
-                          Speichern und weiter
-                        </vs-button>
-                        <vs-button color="warning" type="border" class="mb-2" @click="nameProject = nameApplicant = ''">
-                          Löschen
-                        </vs-button>
+
+                      <div class="vx-row mb-8">
+                        <div class="vx-col w-full">
+                          <validation-provider
+                            rules="required"
+                            v-slot="{ errors }">
+                            <vs-input
+                              name="nameApplicant"
+                              v-model="form.nameApplicant"
+                              label="Name des Antragstellers"
+                              class="w-full"
+                              :class="{'form-error': errors.length > 0}"
+                              icon-pack="feather"
+                              icon="icon-user"
+                              icon-no-border
+                            />
+                          </validation-provider>
+                        </div>
                       </div>
-                    </div>
-                  </template>
+
+                      <div class="vx-row">
+                        <div class="vx-col w-full">
+                          <vs-button
+                            :disabled="!isComplete"
+                            class="mr-3 mb-2">
+                            Speichern und weiter
+                          </vs-button>
+                          <vs-button
+                            color="warning"
+                            type="border"
+                            class="mb-2"
+                            @click="form.nameProject = form.nameApplicant = ''">
+                            Löschen
+                          </vs-button>
+                        </div>
+                      </div>
+
+                    </template>
+                  </form>
 
                 </div>
               </div>
@@ -123,6 +134,12 @@
       }
     },
 
+    computed: {
+      isComplete () {
+        return this.form.nameProject && this.form.nameApplicant;
+      }
+    },
+
     components: {
       ImportJSON,
       ValidationProvider
@@ -135,7 +152,6 @@
     label {
       color: red;
     }
-    
     .vs-inputx {
       border-color: red!important;
     }}
