@@ -12,6 +12,10 @@ export default {
         commit("SET_STATE", text)
     },
 
+    setProjectMeta({ commit }, form){
+        commit("SET_PROJECT_META", form)
+    },
+
     setEmailSearchQuery({ commit }, query){
         commit("SET_EMAIL_SEARCH_QUERY", query)
     },

@@ -355,4 +355,9 @@ export default {
   getMeta: state => {
     return (state.meta)
   },
+
+
+  projectMetaIsSet: state => {
+    return (state.meta.project.nameProject && state.meta.project.nameApplicant) ? true : false
+  },
 }
