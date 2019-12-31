@@ -19,6 +19,7 @@
 
 import Vue from 'vue'
 import Router from 'vue-router'
+import store from './store/store.js'
 
 Vue.use(Router)
 
@@ -131,6 +132,20 @@ const router = new Router({
             redirect: '/pages/error-404'
         }
     ],
+})
+
+
+router.beforeEach((to, from, next) => {
+  if (
+    store.getters['email/projectMetaIsSet'] !== true
+    // Avoid infinite redirect loop.
+    && to.fullPath != '/pages/splash'
+  ) {
+    next('/pages/splash')
+    return
+  } else {
+    next()
+  }
 })
 
 router.afterEach(() => {
