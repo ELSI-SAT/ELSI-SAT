@@ -162,6 +162,11 @@
       }
     },
 
+    mounted(){
+      this.form.nameApplicant = this.$store.getters['email/getProjectMeta'].nameApplicant
+      this.form.nameProject = this.$store.getters['email/getProjectMeta'].nameProject
+    },
+
     components: {
       ImportJSON,
       ValidationProvider
