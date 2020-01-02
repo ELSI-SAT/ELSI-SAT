@@ -47,6 +47,7 @@
           Speichern und weiter
         </vs-button>
         <vs-button
+          :disabled="this.popupActive == true"
           color="warning"
           type="border"
           class="mb-2"
