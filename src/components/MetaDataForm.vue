@@ -1,6 +1,6 @@
 <template>
   <form>
-    <div class="vx-row mt-10 mb-4">
+    <div class="vx-row mb-4">
       <div class="vx-col w-full">
         <validation-provider
           rules="required"
@@ -91,13 +91,27 @@
       }
     },
 
+    props: {
+      popupActive: {
+        default: false,
+        type: Boolean
+      }
+    },
+
     methods: {
       submitForm(form) {
         if (this.isComplete === true) {
           // Save data in store.
           this.$store.dispatch('email/setProjectMeta', form);
-          // Go to home.
-          this.$router.push("/");
+
+          if (this.popupActive === false) {
+            // Go to home.
+            this.$router.push("/");
+          } else {
+            // Close modal.
+            this.$emit('popupActive', false)
+          }
+
         } else {
           // Should never be triggered due to the submit button being
           // disabled as long as either field has no value,

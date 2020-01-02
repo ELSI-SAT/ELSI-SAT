@@ -14,7 +14,7 @@
               <div class="p-10 h-full bg-white">
                 <div class="vx-card__title mb-8">
                   <h4 class="mb-4">Neuen Fragebogen beginnen</h4>
-                  <p>
+                  <p class="mb-10">
                     Beginnen Sie hier mit einem neuen Fragebogen, wenn Sie
                     keine ELSI-SAT Export-Datei (<code>.json</code>) besitzen.
                   </p>
