@@ -54,7 +54,7 @@
         <!-- USER META -->
         <div class="the-navbar__user-meta flex items-center">
             <vs-button @click="popupActive=true" type="flat" icon-pack="feather" icon="icon-user">
-              Stammdaten
+              <span class="hidden lg:block">Stammdaten</span>
             </vs-button>
 
           <vs-popup

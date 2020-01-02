@@ -34,7 +34,7 @@ export default [
   },
   {
     url: "/knowledge-base",
-    name: "Knowledge Base",
+    name: "FAQ",
     slug: "knowledge-base",
     icon: "HelpCircleIcon",
   },

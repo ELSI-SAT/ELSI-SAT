@@ -63,7 +63,7 @@ const router = new Router({
                     {title: 'Home', url: '/'},
                     {title: 'KnowledgeBase', active: true},
                   ],
-                  pageTitle: 'Knowledge Base',
+                  pageTitle: 'FAQ',
                   rule: 'editor'
                 },
               },
