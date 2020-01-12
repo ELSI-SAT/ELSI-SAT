@@ -63,7 +63,7 @@
       },
 
       projectMetadata() {
-        return this.$store.state.email.meta.project
+        return this.$store.getters['email/getProjectMeta']
       }
     },
 

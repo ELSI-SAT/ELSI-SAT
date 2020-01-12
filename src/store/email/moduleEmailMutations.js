@@ -15,11 +15,11 @@ export default {
         state.mailTags = JSONparsed.mailTags
         state.mail_filter = JSONparsed.mail_filter
         state.meta = JSONparsed.meta
+        state.project = JSONparsed.project
         state.mailSearchQuery = JSONparsed.mailSearchQuery
     },
     SET_PROJECT_META(state, form) {
-        state.meta.project.nameProject = form.nameProject
-        state.meta.project.nameApplicant = form.nameApplicant
+        state.project = form
     },
     SET_EMAIL_SEARCH_QUERY(state, query) {
         state.mailSearchQuery = query
