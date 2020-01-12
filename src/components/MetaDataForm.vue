@@ -62,6 +62,8 @@
 <script>
   import {configure, extend, ValidationProvider} from 'vee-validate';
   import {required} from 'vee-validate/dist/rules';
+  import {mapGetters} from "vuex";
+  import _ from 'lodash';
 
   extend('required', {
     ...required,
@@ -85,10 +87,7 @@
 
     data() {
       return {
-        form: {
-          nameApplicant: '',
-          nameProject: ''
-        }
+        form: _.cloneDeep( this.$store.getters['email/getProjectMeta'] )
       }
     },
 
@@ -128,14 +127,23 @@
     },
 
     computed: {
+      ...mapGetters([
+        'email',
+      ]),
+
       isComplete() {
         return (this.form.nameProject && this.form.nameApplicant) ? true : false;
+      },
+
+      storeForm() {
+        return _.cloneDeep( this.$store.getters['email/getProjectMeta'] )
       }
     },
 
-    mounted() {
-      this.form.nameApplicant = this.$store.getters['email/getProjectMeta'].nameApplicant
-      this.form.nameProject = this.$store.getters['email/getProjectMeta'].nameProject
+    watch: {
+      storeForm(newValue) {
+        this.form = newValue
+      }
     },
   }
 
