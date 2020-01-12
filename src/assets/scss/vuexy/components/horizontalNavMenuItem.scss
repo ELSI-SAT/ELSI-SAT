@@ -52,13 +52,29 @@
       }
     }
 
+    padding: .5rem .2rem;
     a {
       border-radius: 4px;
       padding: .5rem 1rem;
+    }
 
-      @media screen and (min-width: 992px) {
-        padding: .5rem 1.5rem;
+    @media screen and (max-width: 550px) {
+      a {
+        border-radius: 4px;
+        padding: .5rem .5rem;
       }
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: .5rem .2rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      padding: .5rem .2rem;
+    }
+
+    @media screen and (min-width: 1092px) {
+      padding: .5rem .8rem;
     }
   }
 }

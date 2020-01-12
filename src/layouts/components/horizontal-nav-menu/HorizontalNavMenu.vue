@@ -50,6 +50,21 @@
 
           </li>
         </ul>
+
+        <!-- USER META -->
+        <div class="the-navbar__user-meta flex items-center">
+            <vs-button @click="popupActive=true" type="flat" icon-pack="feather" icon="icon-user">
+              <span class="hidden lg:block">Stammdaten</span>
+            </vs-button>
+
+          <vs-popup
+            title="Projekt-Stammdaten"
+            :active.sync="popupActive">
+            <MetaDataForm @popupActive="syncPopupActive" popupActive />
+          </vs-popup>
+
+        </div>
+
       </vs-navbar>
     </div>
   </div>
@@ -59,16 +74,26 @@
 import HNavMenuGroup  from "./HorizontalNavMenuGroup.vue"
 import HNavMenuHeader from "./HorizontalNavMenuHeader.vue"
 import HNavMenuItem   from "./HorizontalNavMenuItem.vue"
+import MetaDataForm from "@/components/MetaDataForm";
+
 
 export default {
+  data() {
+    return {
+      popupActive: false,
+    }
+  },
+
   props: {
     // navbarColor  : { type: String, default: "#fff", },
     navMenuItems : { type: Array,  required: true   },
   },
+
   components: {
     HNavMenuGroup,
     HNavMenuHeader,
     HNavMenuItem,
+    MetaDataForm,
   },
   computed: {
     navbarColor() {
@@ -76,6 +101,10 @@ export default {
     }
   },
   methods: {
+    syncPopupActive(value) {
+      this.popupActive = value
+    },
+
     checkGrpChildrenActive(group) {
       const path        = this.$route.fullPath
       let active        = false
@@ -96,5 +125,10 @@ export default {
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/vuexy/components/horizontalNavMenu.scss"
+  @import "@/assets/scss/vuexy/components/horizontalNavMenu.scss";
+
+  .dropdown-form .vs-dropdown--custom {
+    width: 300px;
+    padding: 20px!important;
+  }
 </style>

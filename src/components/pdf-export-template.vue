@@ -2,6 +2,22 @@
   <div id="pdf-export-root">
     <div id="pdf-export-content">
 
+      <div>
+        <h1>ELSI-SAT Export</h1>
+        <h2 class="mt-4 mb-4">Stammdaten</h2>
+
+        <vs-list>
+          <vs-list-item
+            title="Projektname"
+            :subtitle="projectMetadata.nameProject"></vs-list-item>
+          <vs-list-item
+            title="Name des Antragstellers"
+            :subtitle="projectMetadata.nameApplicant"></vs-list-item>
+        </vs-list>
+      </div>
+
+      <h2 class="mt-10">Fragenkatalog</h2>
+
       <div
         v-for="question in allQuestions"
         :key="question.id"
@@ -44,6 +60,10 @@
     computed: {
       allQuestions() {
         return this.$store.state.email.mails
+      },
+
+      projectMetadata() {
+        return this.$store.getters['email/getProjectMeta']
       }
     },
 

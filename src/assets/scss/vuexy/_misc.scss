@@ -24,6 +24,11 @@ ol {
 
 .layout--full-page {
   .bg-img {
+    // "~@": https://stackoverflow.com/a/52097176/420491
+    background-image: url("~@/assets/images/pages/vuexy-login-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .full-page-bg-color {

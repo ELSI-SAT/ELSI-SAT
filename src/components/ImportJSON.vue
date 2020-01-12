@@ -133,6 +133,9 @@ export default {
         title: 'Import erfolgreich durchgeführt.',
         color: 'success'
       })
+
+      // Go to start page.
+      this.$router.push('/')
     }
 
   }
