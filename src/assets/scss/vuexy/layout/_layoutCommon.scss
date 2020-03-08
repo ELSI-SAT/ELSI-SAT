@@ -41,7 +41,7 @@ body {
 
 .router-view {
   position: relative;
-  padding: 2.2rem;
+  padding: 2.2rem 2.2rem 0rem 2.2rem;
 
   @media (max-width: 576px) {
     padding: 1.2rem !important;

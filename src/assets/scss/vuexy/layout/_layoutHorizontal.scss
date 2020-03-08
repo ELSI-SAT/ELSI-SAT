@@ -42,16 +42,12 @@
 
   &.navbar-sticky {
     .router-content {
-      margin-top: 3.95rem;
-
-      @media (min-width: 1200px) {
-        margin-top: 8.89rem;
-      }
+      margin-top: 62px;
     }
 
     .vx-navbar-wrapper {
       &:not(.nav-menu-wrapper) {
-        height: 0px;
+        height: 62px;
       }
     }
 
@@ -73,6 +69,8 @@
 
   &.navbar-static {
     .router-content {
+      margin-top: 4.95rem;
+
       @media (min-width: 1200px) {
         margin-top: 1rem;
       }
@@ -80,7 +78,7 @@
 
     #content-area {
       .content-wrapper {
-        min-height: calc(100vh - 8rem - 0px);
+        min-height: calc(100vh - 8rem - 62px);
       }
     }
 
@@ -104,6 +102,12 @@
   }
 
   @media(min-width: 1200px) {
+    // Content Alignment
+    &.navbar-floating {
+      .router-content {
+        margin-top: 10.1rem;
+      }
+    }
 
     /*
       Only applies to NavMenu in horizontal layout
@@ -128,7 +132,7 @@
 
       &.navbar-floating {
         .app-fixed-height {
-          height: calc(100vh - 11.4rem);
+          height: calc(100vh - 16rem);
         }
 
         &.footer-hidden {
@@ -165,7 +169,7 @@
       &.navbar-static {
         &.footer-static {
           .app-fixed-height {
-            height: calc(100vh - 10.75rem);
+            height: calc(100vh - 14.75rem);
           }
         }
 
