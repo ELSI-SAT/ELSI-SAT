@@ -25,7 +25,7 @@
       followup: {
         get() {
           // Returns all selected options as an array.
-          return this.$store.getters['email/getAnswerFollowup'](this.mailContent.id)
+          return this.$store.getters['email/getAnswerCheckbox'](this.mailContent.id)
         },
         set(value) {
           const params = {
