@@ -24,9 +24,9 @@
 
       checkbox: {
         get() {
+          // Returns all selected options as an array.
           return this.$store.getters['email/getAnswerFilter'](this.mailContent.id)
         },
-
         set(value) {
           const activeFilters = value
           let numberOfActiveFilters = 0
