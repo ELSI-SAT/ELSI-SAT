@@ -68,8 +68,10 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Ja',
-          'Nein'], // Array of options for types 'radio' and 'multiple'
+        options: [
+          {name: 'Ja'},
+          {name: 'Nein'},
+        ], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0, // Float: 0 … 1
         risk_adressing: 0, // Float: 0 … 1
@@ -138,9 +140,11 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Ja',
-          'Nein'], // Array of options for types 'radio' and 'multiple'
+        type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [
+          {name: 'Ja'},
+          {name: 'Nein'},
+        ],
         relevance: true, // Boolean: true | false
         riskiness: 0, // Float: 0 … 1
         risk_adressing: 0, // Float: 0 … 1
@@ -163,12 +167,12 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          'Regelungstechnik/einfache Steuerung/Apps etc?',
-          'einfacher Algorithmus',
-          'lernender Algorithmus',
-          'maschinelles Lernen',
-          'schwache KI',
-          'starke KI',
+          {name: 'Regelungstechnik/einfache Steuerung/Apps etc?'},
+          {name: 'einfacher Algorithmus'},
+          {name: 'lernender Algorithmus'},
+          {name: 'maschinelles Lernen'},
+          {name: 'schwache KI'},
+          {name: 'starke KI'},
         ],
         relevance: true, // Boolean: true | false
         riskiness: 0, // Float: 0 … 1
@@ -192,12 +196,12 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          'Modell',
-          'Empfehlung',
-          'Klassifikation',
-          'Vorhersage',
-          'Entscheidung',
-          'Handlung',
+          {name: 'Modell'},
+          {name: 'Empfehlung'},
+          {name: 'Klassifikation'},
+          {name: 'Vorhersage'},
+          {name: 'Entscheidung'},
+          {name: 'Handlung'},
         ],
         relevance: true, // Boolean: true | false
         riskiness: 0, // Float: 0 … 1
@@ -220,8 +224,10 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['supervised (reinforced, semi-supervised, active, self-training)',
-          'unsupervised'], // Array of options for types 'radio' and 'multiple'
+        options: [
+          {name: 'supervised (reinforced, semi-supervised, active, self-training)'},
+          {name: 'unsupervised'},
+        ],
         relevance: true, // Boolean: true | false
         riskiness: 0, // Float: 0 … 1
         risk_adressing: 0, // Float: 0 … 1
@@ -244,17 +250,17 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          'öffentl. Behörden',
-          'Militär ',
-          'Energie und Umwelt',
-          'Gesundheit und Pharma',
-          'Information, Wissen und Kommunikation ',
-          'Mobilität und Logistik',
-          'Banken, Finanzen u. Versicherungen',
-          'Unterhaltung, Glücksspiel und "Gaming"',
-          'Produzierendes Gewerbe',
-          'Branchenübergreifend',
-          'Sonstiges',
+          {name: 'öffentl. Behörden'},
+          {name: 'Militär'},
+          {name: 'Energie und Umwelt'},
+          {name: 'Gesundheit und Pharma'},
+          {name: 'Information, Wissen und Kommunikation'},
+          {name: 'Mobilität und Logistik'},
+          {name: 'Banken, Finanzen u. Versicherungen'},
+          {name: 'Unterhaltung, Glücksspiel und "Gaming"'},
+          {name: 'Produzierendes Gewerbe'},
+          {name: 'Branchenübergreifend'},
+          {name: 'Sonstiges'},
         ],
         relevance: true, // Boolean: true | false
         riskiness: 0, // Float: 0 … 1
@@ -277,8 +283,10 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Ja',
-          'Nein'], // Array of options for types 'radio' and 'multiple'
+        options: [
+          {name: 'Ja'},
+          {name: 'Nein'},
+        ], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
         riskiness: 0, // Float: 0 … 1
         risk_adressing: 0, // Float: 0 … 1
