@@ -25,10 +25,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -47,10 +43,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -72,10 +64,6 @@ export default {
           {name: 'Ja'},
           {name: 'Nein'},
         ], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -94,10 +82,6 @@ export default {
       answer: {
         type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -119,11 +103,7 @@ export default {
           {name: 'Ja', followupID: 6},
           {name: 'Nein', }
         ], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
 
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -145,10 +125,6 @@ export default {
           {name: 'Ja'},
           {name: 'Nein'},
         ],
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -174,10 +150,6 @@ export default {
           {name: 'schwache KI'},
           {name: 'starke KI'},
         ],
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -203,10 +175,6 @@ export default {
           {name: 'Entscheidung'},
           {name: 'Handlung'},
         ],
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -228,10 +196,6 @@ export default {
           {name: 'supervised (reinforced, semi-supervised, active, self-training)'},
           {name: 'unsupervised'},
         ],
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -262,10 +226,6 @@ export default {
           {name: 'Branchenübergreifend'},
           {name: 'Sonstiges'},
         ],
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -287,10 +247,6 @@ export default {
           {name: 'Ja'},
           {name: 'Nein'},
         ], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -309,10 +265,6 @@ export default {
       answer: {
         type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -331,10 +283,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -353,10 +301,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -375,10 +319,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -397,10 +337,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -419,10 +355,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -441,10 +373,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -463,10 +391,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -485,10 +409,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -507,10 +427,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -529,10 +445,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -551,10 +463,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -573,10 +481,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -595,10 +499,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
