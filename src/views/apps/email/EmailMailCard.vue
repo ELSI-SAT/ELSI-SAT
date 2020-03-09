@@ -8,7 +8,17 @@
 ========================================================================================== -->
 
 <template>
-  <vx-card class="px-4">
+  <vx-card class="px-4"
+    :class="{'py-1': !mailContent.isTrashed}">
+    <!-- Show inquiry for isFollowupChild -->
+    <div
+      class="pb-6"
+      v-if="isFollowupChild && !mailContent.isTrashed">
+      <h5>
+        {{mailContent.inquiry}}
+      </h5>
+    </div>
+
     <!-- Filter Questions -->
     <div
       class="vx-row"
@@ -121,3 +131,9 @@
     }
   }
 </script>
+
+<style >
+  .vs-card--header {
+    margin-bottom: 1rem;
+  }
+</style>
