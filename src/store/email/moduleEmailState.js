@@ -61,8 +61,8 @@ export default {
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja'},
-          {name: 'Nein'},
+          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -100,8 +100,8 @@ export default {
       answer: {
         type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 6},
-          {name: 'Nein', }
+          {name: 'Ja', followupID: 6, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ], // Array of options for types 'radio' and 'multiple'
 
         answer: '', // String
@@ -122,8 +122,8 @@ export default {
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja'},
-          {name: 'Nein'},
+          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ],
         answer: '', // String
       },
@@ -143,12 +143,12 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Regelungstechnik/einfache Steuerung/Apps etc?'},
-          {name: 'einfacher Algorithmus'},
-          {name: 'lernender Algorithmus'},
-          {name: 'maschinelles Lernen'},
-          {name: 'schwache KI'},
-          {name: 'starke KI'},
+          {name: 'Regelungstechnik/einfache Steuerung/Apps etc?', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'einfacher Algorithmus', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'lernender Algorithmus', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'maschinelles Lernen', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'schwache KI', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'starke KI', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ],
         answer: '', // String
       },
@@ -168,12 +168,12 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Modell'},
-          {name: 'Empfehlung'},
-          {name: 'Klassifikation'},
-          {name: 'Vorhersage'},
-          {name: 'Entscheidung'},
-          {name: 'Handlung'},
+          {name: 'Modell', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Empfehlung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Klassifikation', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Vorhersage', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Entscheidung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Handlung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ],
         answer: '', // String
       },
@@ -193,8 +193,8 @@ export default {
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'supervised (reinforced, semi-supervised, active, self-training)'},
-          {name: 'unsupervised'},
+          {name: 'supervised (reinforced, semi-supervised, active, self-training)', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'unsupervised', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ],
         answer: '', // String
       },
@@ -214,17 +214,17 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'öffentl. Behörden'},
-          {name: 'Militär'},
-          {name: 'Energie und Umwelt'},
-          {name: 'Gesundheit und Pharma'},
-          {name: 'Information, Wissen und Kommunikation'},
-          {name: 'Mobilität und Logistik'},
-          {name: 'Banken, Finanzen u. Versicherungen'},
-          {name: 'Unterhaltung, Glücksspiel und "Gaming"'},
-          {name: 'Produzierendes Gewerbe'},
-          {name: 'Branchenübergreifend'},
-          {name: 'Sonstiges'},
+          {name: 'öffentl. Behörden', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Militär', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Energie und Umwelt', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Gesundheit und Pharma', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Information, Wissen und Kommunikation', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Mobilität und Logistik', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Banken, Finanzen u. Versicherungen', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Unterhaltung, Glücksspiel und "Gaming"', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Produzierendes Gewerbe', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Branchenübergreifend', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Sonstiges', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ],
         answer: '', // String
       },
@@ -244,8 +244,8 @@ export default {
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja'},
-          {name: 'Nein'},
+          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -282,7 +282,11 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Ja', 'Nein', 'Vielleicht'], // Array of options for types 'radio' and 'multiple'
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Vielleicht', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -300,7 +304,12 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'], // Array of options for types 'radio' and 'multiple'
+        options: [
+          {name: 'Option 1', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 3', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -404,10 +413,10 @@ export default {
       answer: {
         type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Option 1: 1008', followupID: 1008},
-          {name: 'Option 2: keine weiteren Fragen, Euer Ehren'},
-          {name: 'Option 3: 1008', followupID: 1008},
-          {name: 'Option 4: 1009', followupID: 1009}
+          {name: 'Option 1: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 2: keine weiteren Fragen, Euer Ehren', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 3: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 4: 1009', followupID: 1009, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -463,10 +472,10 @@ export default {
       answer: {
         type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Option 1: 1011', followupID: 1011},
-          {name: 'Option 2'},
-          {name: 'Option 3: 1012', followupID: 1012},
-          {name: 'Option 4'}
+          {name: 'Option 1: 1011', followupID: 1011, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 3: 1012', followupID: 1012, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
