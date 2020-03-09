@@ -1,7 +1,7 @@
 <template>
   <ul class="centerx">
-    <li v-for="item in mailContent.answer.options">
-      <vs-checkbox v-model="checkbox" :vs-value="item">{{ item }}</vs-checkbox>
+    <li v-for="(item, index) in mailContent.answer.options" v-bind:key="index">
+      <vs-checkbox v-model="checkbox" :vs-value="item.name">{{ item.name }}</vs-checkbox>
     </li>
   </ul>
 </template>

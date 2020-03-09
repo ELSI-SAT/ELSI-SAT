@@ -250,16 +250,6 @@ export default {
   },
 
   /**
-   * Basically followup-questions are checkboxes.
-   *
-   * @param id
-   * @returns {function(*): [parser.Node[], parser.Node[]] | * | string[]}
-   */
-  getAnswerFollowup: (state, getters) => (id) => {
-    return getters.getAnswerCheckbox(id)
-  },
-
-  /**
    * Returns all active filters of a filter-question,
    * as an array of objects.
    *

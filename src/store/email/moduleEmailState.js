@@ -25,10 +25,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -47,10 +43,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -68,12 +60,10 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Ja',
-          'Nein'], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -92,10 +82,6 @@ export default {
       answer: {
         type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -114,14 +100,10 @@ export default {
       answer: {
         type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 6},
-          {name: 'Nein', }
+          {name: 'Ja', followupID: 6, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
 
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -138,13 +120,11 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Ja',
-          'Nein'], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
+        type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ],
         answer: '', // String
       },
     },
@@ -163,17 +143,13 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          'Regelungstechnik/einfache Steuerung/Apps etc?',
-          'einfacher Algorithmus',
-          'lernender Algorithmus',
-          'maschinelles Lernen',
-          'schwache KI',
-          'starke KI',
+          {name: 'Regelungstechnik/einfache Steuerung/Apps etc?', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'einfacher Algorithmus', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'lernender Algorithmus', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'maschinelles Lernen', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'schwache KI', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'starke KI', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ],
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -192,17 +168,13 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          'Modell',
-          'Empfehlung',
-          'Klassifikation',
-          'Vorhersage',
-          'Entscheidung',
-          'Handlung',
+          {name: 'Modell', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Empfehlung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Klassifikation', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Vorhersage', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Entscheidung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Handlung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ],
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -220,12 +192,10 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['supervised (reinforced, semi-supervised, active, self-training)',
-          'unsupervised'], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
+        options: [
+          {name: 'supervised (reinforced, semi-supervised, active, self-training)', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'unsupervised', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ],
         answer: '', // String
       },
     },
@@ -244,22 +214,18 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          'öffentl. Behörden',
-          'Militär ',
-          'Energie und Umwelt',
-          'Gesundheit und Pharma',
-          'Information, Wissen und Kommunikation ',
-          'Mobilität und Logistik',
-          'Banken, Finanzen u. Versicherungen',
-          'Unterhaltung, Glücksspiel und "Gaming"',
-          'Produzierendes Gewerbe',
-          'Branchenübergreifend',
-          'Sonstiges',
+          {name: 'öffentl. Behörden', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Militär', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Energie und Umwelt', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Gesundheit und Pharma', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Information, Wissen und Kommunikation', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Mobilität und Logistik', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Banken, Finanzen u. Versicherungen', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Unterhaltung, Glücksspiel und "Gaming"', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Produzierendes Gewerbe', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Branchenübergreifend', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Sonstiges', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
         ],
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
@@ -277,12 +243,10 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Ja',
-          'Nein'], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -301,17 +265,184 @@ export default {
       answer: {
         type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0, // Float: 0 … 1
-        risk_adressing: 0, // Float: 0 … 1
-        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
     {
-      id: 18,
-      inquiry: 'Folgefrage zu Frage Nr. 16',
-      subject: 'Frage 18',
+      id: 1001,
+      inquiry: 'Testfrage (radio)?',
+      subject: 'Frage 1001',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['Gesetzliche Anforderungen'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Vielleicht', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+    {
+      id: 1002,
+      inquiry: 'Testfrage (checkbox)?',
+      subject: 'Frage 1002',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || true
+      labels: ['K.I.', 'Gesetzliche Anforderungen'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [
+          {name: 'Option 1', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 3', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+    {
+      id: 1003,
+      inquiry: 'Testfrage (tinytext)?',
+      subject: 'Frage 1003',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['K.I.'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+    {
+      id: 1004,
+      inquiry: 'Testfrage (bigtext)?',
+      subject: 'Frage 1004',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['Datenschutz'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+    {
+      id: 1005,
+      inquiry: 'Testfrage (text)?',
+      subject: 'Frage 1005',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || true
+      labels: ['Allgemein'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+    {
+      id: 1006,
+      inquiry: 'Testfrage: Datenschutz oder Allgemein & K.I. (filter)?',
+      subject: 'Frage 1006',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: [], // Filter-questions can have labels, but they don't have to.
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      // Filter: Optional array of objects
+      filter: [
+        {
+          title: 'Allgemein und K.I.',
+          includes: ['Allgemein', 'K.I.'],
+          active: false
+        },
+        {
+          title: 'Datenschutz',
+          includes: ['Datenschutz'],
+          active: false
+        },
+      ],
+      answer: {
+        type: "filter", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+    {
+      id: 1007,
+      inquiry: 'Testfrage (mit Folgefrage)',
+      subject: 'Frage 1007',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['K.I.'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [
+          {name: 'Option 1: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 2: keine weiteren Fragen, Euer Ehren', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 3: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 4: 1009', followupID: 1009, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+    {
+      id: 1008,
+      inquiry: 'Folgefrage zu Frage Nr. 1007',
+      subject: 'Frage 1008',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['Allgemein'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+    {
+      id: 1009,
+      inquiry: 'Folgefrage zu Frage Nr. 1007',
+      subject: 'Frage 1009',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
@@ -321,19 +452,15 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
     {
-      id: 19,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 19',
+      id: 1010,
+      inquiry: 'Mit Folgefragen',
+      subject: 'Frage 1010',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
       labels: ["Datenschutz"],
@@ -343,21 +470,22 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
+        type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [
+          {name: 'Option 1: 1011', followupID: 1011, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 3: 1012', followupID: 1012, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+        ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 20,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 20',
+      id: 1011,
+      inquiry: 'Folgefrage zu Frage Nr. 1010',
+      subject: 'Frage 1011',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
+      isStarred: false, // true || true
       labels: ['K.I.'],
       time: '',
       replies: [],
@@ -367,83 +495,13 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },
     {
-      id: 21,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 21',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 22,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 22',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 23,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 23',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ["Allgemein"],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 24,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 24',
+      id: 1012,
+      inquiry: 'Folgefrage zu Frage Nr. 1010',
+      subject: 'Frage 1012',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
@@ -455,142 +513,6 @@ export default {
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 25,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 25',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ["Allgemein"],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 26,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 26',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['Allgemein'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 27,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 27',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 28,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 28',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 29,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 29',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['Allgemein'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 30,
-      inquiry: 'Welche Maßnahmen ergreifen Sie, um xyz zu verhindern?',
-      subject: 'Frage 30',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ["Allgemein"],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
         answer: '', // String
       },
     },

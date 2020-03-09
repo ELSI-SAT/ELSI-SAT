@@ -82,11 +82,9 @@
         // Get answer.
         switch (question.answer.type) {
           case 'checkbox':
-            answer = this.$store.getters['email/getAnswerCheckbox'](question.id)
-            html = '<ul><li>' + answer.join('</li><li>') + '</li></ul>'
-            break
           case 'followup':
-            answer = this.$store.getters['email/getAnswerFollowup'](question.id)
+          case 'followup-radio':
+            answer = this.$store.getters['email/getAnswerCheckbox'](question.id)
             html = '<ul><li>' + answer.join('</li><li>') + '</li></ul>'
             break
           case 'filter':
