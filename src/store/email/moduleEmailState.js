@@ -12,11 +12,55 @@ export default {
   mails: [
     {
       id: 1,
-      inquiry: 'Welche Maßnahmen ergreifen Sie (radio)?',
+      inquiry: 'Titel des Forschungsprojektes',
       subject: 'Frage 1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['Gesetzliche Anforderungen'],
+      labels: ['Allgemein'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
+        relevance: true, // Boolean: true | false
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
+        answer: '', // String
+      },
+    },
+    {
+      id: 2,
+      inquiry: 'Welche (weiteren/verbundenen) Einrichtungen sind an dem Forschungsprojekt beteiligt?',
+      subject: 'Frage 2',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || true
+      labels: ['Allgemein'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
+        relevance: true, // Boolean: true | false
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
+        answer: '', // String
+      },
+    },
+    {
+      id: 3,
+      inquiry: 'Sind am Forschungsprojekt Partner aus der Wirtschaft oder sonstige Private beteiligt?',
+      subject: 'Frage 3',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['Allgemein'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -24,65 +68,22 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Ja', 'Nein', 'Vielleicht'], // Array of options for types 'radio' and 'multiple'
+        options: ['Ja',
+          'Nein'], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
     {
-      id: 2,
-      inquiry: 'Welche Maßnahmen ergreifen Sie (checkbox)?',
-      subject: 'Frage 2',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ['K.I.', 'Gesetzliche Anforderungen'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: ['Option 1', 'Option 2', 'Option 3', 'Option 4'], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 3,
-      inquiry: 'Welche Maßnahmen ergreifen Sie (tinytext)?',
-      subject: 'Frage 3',
+      id: 4,
+      inquiry: 'Bitte beschreiben Sie den Zweck des Systems und erläutern Sie, wem das Forschungsergebnis helfen oder dienen soll.',
+      subject: 'Frage 4',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 10,
-      inquiry: 'Welche Maßnahmen ergreifen Sie (bigtext)?',
-      subject: 'Frage 10',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['Datenschutz'],
+      labels: ['Allgemein'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -92,16 +93,16 @@ export default {
         type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
     {
-      id: 11,
-      inquiry: 'Welche Maßnahmen ergreifen Sie (text)?',
-      subject: 'Frage 11',
+      id: 5,
+      inquiry: 'Hilft oder dient das System bzw. Forschungsergebnis einer schutzbedürftigen Gruppe (z.B. Kinder/Jugendliche, ältere oder behinderte Menschen)?',
+      subject: 'Frage 5',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
       labels: ['Allgemein'],
@@ -111,81 +112,23 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 12,
-      inquiry: 'Datenschutz oder Allgemein & K.I. (filter)?',
-      subject: 'Frage 12',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: [], // Filter-questions can have labels, but they don't have to.
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      // Filter: Optional array of objects
-      filter: [
-        {
-          title: 'Allgemein und K.I.',
-          includes: ['Allgemein', 'K.I.'],
-          active: false
-        },
-        {
-          title: 'Datenschutz',
-          includes: ['Datenschutz'],
-          active: false
-        },
-      ],
-      answer: {
-        type: "filter", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 13,
-      inquiry: 'Welche Maßnahmen ergreifen Sie (mit Folgefrage)',
-      subject: 'Frage 13',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
         type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Option 1: 14', followupID: 14},
-          {name: 'Option 2: keine weiteren Fragen, Euer Ehren'},
-          {name: 'Option 3: 14', followupID: 14},
-          {name: 'Option 4: 15', followupID: 15}
+          {name: 'Ja', followupID: 6},
+          {name: 'Nein', }
         ], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
+
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
     {
-      id: 14,
-      inquiry: 'Folgefrage zu Frage Nr. 13',
-      subject: 'Frage 14',
+      id: 6,
+      inquiry: 'Ist in das Forschungsprojekt die betroffene schutzbedürftige Gruppe involviert?',
+      subject: 'Frage 6',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
@@ -196,18 +139,100 @@ export default {
       trashingReason: '', // String
       answer: {
         type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
+        options: ['Ja',
+          'Nein'], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
     {
-      id: 15,
-      inquiry: 'Folgefrage zu Frage Nr. 13',
-      subject: 'Frage 15',
+      id: 7,
+      inquiry: 'Um welche Art von Mensch-Technik-Interaktion handelt es sich bei dem Forschungsprojekt?',
+      subject: 'Frage 7',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['Allgemein'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [
+          'Regelungstechnik/einfache Steuerung/Apps etc?',
+          'einfacher Algorithmus',
+          'lernender Algorithmus',
+          'maschinelles Lernen',
+          'schwache KI',
+          'starke KI',
+        ],
+        relevance: true, // Boolean: true | false
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
+        answer: '', // String
+      },
+    },
+    {
+      id: 8,
+      inquiry: 'Auf welche Art von Resultaten soll die KI abzielen?',
+      subject: 'Frage 8',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['Allgemein'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [
+          'Modell',
+          'Empfehlung',
+          'Klassifikation',
+          'Vorhersage',
+          'Entscheidung',
+          'Handlung',
+        ],
+        relevance: true, // Boolean: true | false
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
+        answer: '', // String
+      },
+    },
+    {
+      id: 9,
+      inquiry: 'Wie lernt das System?',
+      subject: 'Frage 9',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['Allgemein'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: ['supervised (reinforced, semi-supervised, active, self-training)',
+          'unsupervised'], // Array of options for types 'radio' and 'multiple'
+        relevance: true, // Boolean: true | false
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
+        answer: '', // String
+      },
+    },
+    {
+      id: 10,
+      inquiry: 'In welchen Branchen soll die entwickelte Mensch-Technik-Interaktion eingesetzt werden?',
+      subject: 'Frage 10',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
@@ -217,61 +242,69 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
-        answer: '', // String
-      },
-    },
-    {
-      id: 16,
-      inquiry: 'Mit Folgefragen',
-      subject: 'Frage 16',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ["Datenschutz"],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Option 1: 17', followupID: 17},
-          {name: 'Option 2'},
-          {name: 'Option 3: 18', followupID: 18},
-          {name: 'Option 4'}
-        ], // Array of options for types 'radio' and 'multiple'
+          'öffentl. Behörden',
+          'Militär ',
+          'Energie und Umwelt',
+          'Gesundheit und Pharma',
+          'Information, Wissen und Kommunikation ',
+          'Mobilität und Logistik',
+          'Banken, Finanzen u. Versicherungen',
+          'Unterhaltung, Glücksspiel und "Gaming"',
+          'Produzierendes Gewerbe',
+          'Branchenübergreifend',
+          'Sonstiges',
+        ],
         relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
     {
-      id: 17,
-      inquiry: 'Folgefrage zu Frage Nr. 16',
-      subject: 'Frage 17',
+      id: 11,
+      inquiry: 'Ist ein Einsatz oder Vertrieb des zu entwickelnden Systems nach Abschluss des Forschungsprojektes geplant bzw. möglich?',
+      subject: 'Frage 11',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || true
-      labels: ['K.I.'],
+      labels: ["Allgemein"],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: ['Ja',
+          'Nein'], // Array of options for types 'radio' and 'multiple'
+        relevance: true, // Boolean: true | false
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
+        answer: '', // String
+      },
+    },
+    {
+      id: 12,
+      inquiry: 'Beschreiben Sie kurz, welche Interaktionen die Maschine mit Menschen ausführen soll.',
+      subject: 'Frage 12',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || true
+      labels: ['Allgemein'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [], // Array of options for types 'radio' and 'multiple'
         relevance: true, // Boolean: true | false
-        riskiness: 0.5, // Float: 0 … 1
-        risk_adressing: 0.5, // Float: 0 … 1
-        depth_of_reflection: 0.5, // Float: 0 … 1
+        riskiness: 0, // Float: 0 … 1
+        risk_adressing: 0, // Float: 0 … 1
+        depth_of_reflection: 0, // Float: 0 … 1
         answer: '', // String
       },
     },
