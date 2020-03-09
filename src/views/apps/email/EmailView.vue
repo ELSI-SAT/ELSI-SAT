@@ -136,7 +136,10 @@
       const question = this.$store.getters['email/getMail'](this.openMailId)
       let folloups = []
 
-      if (question.answer.type === 'followup') {
+      if (
+        question.answer.type === 'followup'
+        || question.answer.type === 'followup-radio'
+      ) {
         const answerString = question.answer.answer
         const answerArray = answerString.split(this.$store.state.stringSeparator)
 

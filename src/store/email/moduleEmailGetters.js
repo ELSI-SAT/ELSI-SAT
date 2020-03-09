@@ -275,7 +275,7 @@ export default {
    */
   getAllFollowupQuestions: state => {
     return state.mails.filter((item) => {
-      return item.answer.type == 'followup'
+      return (item.answer.type == 'followup' || item.answer.type == 'followup-radio')
     })
   },
 
@@ -311,7 +311,10 @@ export default {
    * @returns {function(*): []}
    */
   getFollowupIDs: state => (question) => {
-    if (question.answer.type != "followup") {
+    if (
+      question.answer.type != "followup"
+      && question.answer.type != "followup-radio"
+    ) {
       return
     }
 

@@ -53,6 +53,11 @@
         v-if="mailContent.answer.type === 'followup'"
         :mailContent="mailContent"
         class="w-full mb-4"></FollowupForm>
+
+      <RadioForm
+        v-if="mailContent.answer.type === 'followup-radio'"
+        :mailContent="mailContent"
+        class="w-full mb-4"></RadioForm>
     </div>
 
     <div
