@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <VuePerfectScrollbar class="scroll-area md:px-8 pt-4 px-6" :settings="settings">
+                <VuePerfectScrollbar class="scroll-area md:px-8 pt-4 pb-8 px-6" :settings="settings">
                 <!-- LABEL ROW -->
                 <div class="vx-row">
                     <div class="vx-col w-full">
