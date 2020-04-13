@@ -26,7 +26,7 @@
              class="app-fixed-height border border-solid d-theme-border-grey-light border-r-0 border-t-0 border-b-0">
 
             <!-- SEARCH BAR -->
-            <div class="flex border d-theme-dark-bg items-center">
+            <div class="flex border border-solid d-theme-border-grey-light border-r-0 border-t-0 border-l-0 items-center">
                 <vs-input
                   icon-no-border icon="icon-search"
                   size="large"
@@ -34,26 +34,6 @@
                   placeholder="Suche"
                   v-model="searchQuery"
                   class="vs-input-no-border vs-input-no-shdow-focus w-full" />
-            </div>
-
-            <!-- EMAIL ACTION BAR -->
-            <div class="email__actions flex items-center flex-wrap justify-between p-4 border border-r-0 border-l-0 border-solid d-theme-border-grey-light">
-                <div class="flex items-center">
-                    <vs-checkbox v-model="selectAllCheckBox"
-                                 icon-pack="feather"
-                                :icon="selectAllIcon"
-                                class="select-all-chexkbox ml-0">
-                      Alle auswählen
-                    </vs-checkbox>
-                </div>
-                <div class="flex">
-
-                    <feather-icon v-if="mailFilter != 'trash'"
-                                  icon="TrashIcon"
-                                  class="cursor-pointer ml-5"
-                                  svg-classes="h-6 w-6"
-                                  @click="moveTo('trash')" />
-                </div>
             </div>
 
             <!-- EMAILS LIST -->
@@ -69,10 +49,7 @@
                         :key="String(mailFilter) + String(mail.id)"
                         @click.stop="updateOpenMail(mail.id)"
                         :style="{transitionDelay: (index * 0.1) + 's'}">
-                        <mail-item :mail="mail"
-                                   :isSelected="isMailSelected(mail.id)"
-                                   @addToSelected="addToSelectedMails"
-                                   @removeSelected="removeSelectedMail" />
+                        <mail-item :mail="mail" />
                     </li>
                 </transition-group>
             </VuePerfectScrollbar>
@@ -154,12 +131,6 @@ export default {
     mails() {
       return this.$store.getters['email/filteredMails']
     },
-    selectAllIcon() {
-      return this.selectedMails.length == this.mails.length ? 'icon-check' : 'icon-minus'
-    },
-    isMailSelected() {
-      return (mailId) => this.selectedMails.indexOf(mailId) == -1 ? false : true
-    },
     windowWidth() {
       return this.$store.state.windowWidth
     }
@@ -168,13 +139,6 @@ export default {
     updateOpenMail(mailId) {
       this.openMailId = mailId
       this.isSidebarActive = true
-    },
-    addToSelectedMails(mailId) {
-      if (this.selectedMails.indexOf(mailId) === -1) this.selectedMails.push(mailId)
-    },
-    removeSelectedMail(mailId) {
-      const mailIndex = this.selectedMails.indexOf(mailId)
-      if (mailIndex !== -1) this.selectedMails.splice(mailIndex, 1)
     },
     moveTo(to) {
       const payload = { emailIds: this.selectedMails, to: to }

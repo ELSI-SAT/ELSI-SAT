@@ -8,7 +8,7 @@
 ========================================================================================== -->
 
 <template>
-    <div class="mail__mail-item sm:px-4 px-2 py-6"
+    <div class="mail__mail-item sm:px-8 px-6 py-6"
          :class="{
             'inbox': !mail.isTrashed && !mail.answer.answer,
             'answered': !mail.isTrashed && mail.answer.answer,
@@ -17,13 +17,6 @@
 
         <!-- MAIL ROW 1 : META -->
         <div class="flex w-full">
-          <div class="mt-1 ml-1 mr-1">
-            <vs-checkbox
-              v-model="isSelectedMail"
-              @click.stop class="vs-checkbox-small ml-0 mr-1">
-            </vs-checkbox>
-          </div>
-
             <div class="flex w-full justify-between items-start">
                 <div class="mail__details">
                   <h5 class="mb-1 flex"
@@ -64,23 +57,6 @@ export default {
       type: Object,
       required: true,
     },
-    isSelected: {
-      type: Boolean,
-      required: true,
-    }
-  },
-  data() {
-    return {
-      isSelectedMail: this.isSelected,
-    }
-  },
-  watch: {
-    isSelected(value) {
-      this.isSelectedMail = value
-    },
-    isSelectedMail(val) {
-      val ? this.$emit('addToSelected', this.mail.id) : this.$emit('removeSelected', this.mail.id)
-    }
   },
   computed: {
     labelColor() {
