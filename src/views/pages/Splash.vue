@@ -3,7 +3,8 @@
     <div class="vx-col sm:w-4/5 md:w-11/12 lg:w-4/5 mx-auto self-center">
 
       <div class="vx-row w-full mx-auto">
-        <h2 class="w-full mx-auto mb-6" style="text-align: center;">Wilkommen zum ELSI-SAT</h2>
+        <h2 class="w-full mx-auto mb-2" style="text-align: center;">Wilkommen bei ELSI-SAT</h2>
+        <p class="w-full mx-auto mb-8" style="text-align: center;">Dem automatisierten ELSI-Screening-& Assessment-Tool für MTI-Forschungsvorhaben</p>
       </div>
 
       <vx-card>
