@@ -3,7 +3,7 @@
   Description: Email Module State
   ----------------------------------------------------------------------------------------
   Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-  Author: Pixinvent
+  Author: Pixinvent / N.N.
   Author URL: http://www.themeforest.net/user/pixinvent
 ==========================================================================================*/
 
