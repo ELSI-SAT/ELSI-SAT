@@ -274,7 +274,7 @@ export default {
       subject: 'Frage 13',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein'],
+      labels: ['Test'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
