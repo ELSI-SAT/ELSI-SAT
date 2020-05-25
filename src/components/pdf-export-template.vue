@@ -11,7 +11,7 @@
             title="Projektname"
             :subtitle="projectMetadata.nameProject"></vs-list-item>
           <vs-list-item
-            title="Name des Antragstellers"
+            title="Name der einreichenden Institution"
             :subtitle="projectMetadata.nameApplicant"></vs-list-item>
         </vs-list>
       </div>

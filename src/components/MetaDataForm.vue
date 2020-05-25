@@ -12,7 +12,7 @@
             class="w-full"
             :class="{'form-error': errors.length > 0}"
             icon-pack="feather"
-            icon="icon-user"
+            icon="icon-folder"
             icon-no-border
           />
         </validation-provider>
@@ -27,11 +27,11 @@
           <vs-input
             name="nameApplicant"
             v-model="form.nameApplicant"
-            label="Name des Antragstellers"
+            label="Name der einreichenden Institution"
             class="w-full"
             :class="{'form-error': errors.length > 0}"
             icon-pack="feather"
-            icon="icon-user"
+            icon="icon-home"
             icon-no-border
           />
         </validation-provider>
