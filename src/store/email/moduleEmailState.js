@@ -1706,7 +1706,7 @@ export default {
       id: 84,
       inquiry: 'Ist sichergestellt, dass die Angemessenheit und Repräsentativität in Hinblick auf (Trainings-)Daten gewährleistet ist (sog. BIAS-Vermeidung)?',
       subject: 'Frage 84',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Unter Bias werden Verzerrungen bzw. Vorurteile verstanden, die eine Diskriminierung bestimmter Personengruppen oder Minderheiten verursachen. Dadurch können soziale Vorurteile in Bezug auf Rasse, Geschlecht, Sexualität und ethnische Zugehörigkeit verstärkt werden. Bias kann bei der Codierung, Sammlung und Auswahl der (Trainings-)Daten eines Algorithmus auftreten. Dies geschieht etwa durch fehlende Repräsentativität des (Trainings-)Datensatzes (Unterschied zwischen gesammelten Daten und realer Situation) oder veralteten Datensätzen (mit veralteten Wertevorstellungen, historischen Ungleichheiten).</p>',
       isStarred: false, // true || false
       labels: ['4. Sei fair'],
       time: '',
