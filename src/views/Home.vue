@@ -3,6 +3,17 @@
     <div class="vx-row">
       <div class="vx-col w-1/2 mb-base">
         <vx-card
+          title="Test"
+          title-color="primary"
+          subtitle="Link zum Fragebogen">
+          Hier geht es zum <a href="#/apps/email/inbox">Fragebogen</a>.
+        </vx-card>
+      </div>
+    </div>
+
+    <div class="vx-row">
+      <div class="vx-col w-1/2 mb-base">
+        <vx-card
           title="Beantwortete Fragen"
           title-color="primary"
           subtitle="Fortschritt bei der Beantwortung aller Fragen">
