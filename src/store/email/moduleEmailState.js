@@ -274,7 +274,7 @@ export default {
       subject: 'Frage 13',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -295,7 +295,7 @@ export default {
       subject: 'Frage 14',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -313,7 +313,7 @@ export default {
       subject: 'Frage 15',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Allgemein', 'Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -334,7 +334,7 @@ export default {
       subject: 'Frage 16',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Allgemein', 'Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -352,7 +352,7 @@ export default {
       subject: 'Frage 17',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Allgemein', 'Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -370,7 +370,7 @@ export default {
       subject: 'Frage 18',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -391,7 +391,7 @@ export default {
       subject: 'Frage 19',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -409,7 +409,7 @@ export default {
       subject: 'Frage 20',
       message: '<p>Gesetzeslink zu Art. 4 Nr. 1 DSGVO: <a href="https://dsgvo-gesetz.de/art-4-dsgvo/" target="_blank">dsgvo-gesetz.de/art-4-dsgvo/</a></p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -419,12 +419,17 @@ export default {
       filter: [
         {
           title: 'Ja',
-          includes: ['Allgemein', 'Datenschutz'],
+          includes: [
+            'Allgemein',
+            'Datenschutz'
+          ],
           active: false
         },
         {
           title: 'nein',
-          includes: ['Allgemein'],
+          includes: [
+            'Allgemein',
+          ],
           active: false
         },
       ],
@@ -443,7 +448,7 @@ export default {
       subject: 'Frage 21',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -460,7 +465,7 @@ export default {
       subject: 'Frage 22',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -481,7 +486,7 @@ export default {
       subject: 'Frage 23',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -502,7 +507,7 @@ export default {
       subject: 'Frage 24',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -523,7 +528,7 @@ export default {
       subject: 'Frage 25',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -561,7 +566,7 @@ export default {
       subject: 'Frage 27',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -582,7 +587,7 @@ export default {
       subject: 'Frage 28',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -603,7 +608,7 @@ export default {
       subject: 'Frage 29',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -624,7 +629,7 @@ export default {
       subject: 'Frage 30',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -641,7 +646,7 @@ export default {
       subject: 'Frage 31',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -662,7 +667,7 @@ export default {
       subject: 'Frage 32',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -679,7 +684,7 @@ export default {
       subject: 'Frage 33',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -700,7 +705,7 @@ export default {
       subject: 'Frage 34',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -717,7 +722,7 @@ export default {
       subject: 'Frage 35',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -738,7 +743,7 @@ export default {
       subject: 'Frage 36',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -759,7 +764,7 @@ export default {
       subject: 'Frage 37',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -780,7 +785,7 @@ export default {
       subject: 'Frage 38',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -801,7 +806,7 @@ export default {
       subject: 'Frage 39',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -818,7 +823,7 @@ export default {
       subject: 'Frage 40',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -839,7 +844,7 @@ export default {
       subject: 'Frage 41',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -860,7 +865,7 @@ export default {
       subject: 'Frage 42',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -877,7 +882,7 @@ export default {
       subject: 'Frage 43',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Datenschutz', 'Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -898,7 +903,7 @@ export default {
       subject: 'Frage 44',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -919,7 +924,7 @@ export default {
       subject: 'Frage 45',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit','4. Sei fair','5. Funktioniere'],
+      labels: ['Allgemein', 'Autonomie','Gerechtigkeit','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -940,7 +945,7 @@ export default {
       subject: 'Frage 46',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['3. Bewahre die menschliche Handlungsfähigkeit','4. Sei fair','5. Funktioniere'],
+      labels: ['Allgemein', 'Autonomie','Gerechtigkeit','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -958,7 +963,7 @@ export default {
       subject: 'Frage 47',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','4. Sei fair'],
+      labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -979,7 +984,7 @@ export default {
       subject: 'Frage 48',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','4. Sei fair'],
+      labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -997,7 +1002,7 @@ export default {
       subject: 'Frage 49',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','4. Sei fair'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1018,7 +1023,7 @@ export default {
       subject: 'Frage 50',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','4. Sei fair'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1039,7 +1044,7 @@ export default {
       subject: 'Frage 51',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','4. Sei fair'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1060,7 +1065,7 @@ export default {
       subject: 'Frage 52',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1081,7 +1086,7 @@ export default {
       subject: 'Frage 53',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1099,7 +1104,7 @@ export default {
       subject: 'Frage 54',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1120,7 +1125,7 @@ export default {
       subject: 'Frage 55',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1141,7 +1146,7 @@ export default {
       subject: 'Frage 56',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1162,7 +1167,7 @@ export default {
       subject: 'Frage 57',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1183,7 +1188,7 @@ export default {
       subject: 'Frage 58',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1204,7 +1209,7 @@ export default {
       subject: 'Frage 59',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1225,7 +1230,7 @@ export default {
       subject: 'Frage 60',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1246,7 +1251,7 @@ export default {
       subject: 'Frage 61',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1267,7 +1272,7 @@ export default {
       subject: 'Frage 62',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1288,7 +1293,7 @@ export default {
       subject: 'Frage 63',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1309,7 +1314,7 @@ export default {
       subject: 'Frage 64',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1330,7 +1335,7 @@ export default {
       subject: 'Frage 65',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit','5. Funktioniere'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1351,7 +1356,7 @@ export default {
       subject: 'Frage 66',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1372,7 +1377,7 @@ export default {
       subject: 'Frage 67',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1390,7 +1395,7 @@ export default {
       subject: 'Frage 68',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1411,7 +1416,7 @@ export default {
       subject: 'Frage 69',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1429,7 +1434,7 @@ export default {
       subject: 'Frage 70',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1450,7 +1455,7 @@ export default {
       subject: 'Frage 71',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1471,7 +1476,7 @@ export default {
       subject: 'Frage 72',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1489,7 +1494,7 @@ export default {
       subject: 'Frage 73',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['5. Funktioniere'],
+      labels: ['Allgemein', 'Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1510,7 +1515,7 @@ export default {
       subject: 'Frage 74',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1531,7 +1536,7 @@ export default {
       subject: 'Frage 75',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1549,7 +1554,7 @@ export default {
       subject: 'Frage 76',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1570,7 +1575,7 @@ export default {
       subject: 'Frage 77',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['tbd.'],
+      labels: ['Allgemein', 'tbd.'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1591,7 +1596,7 @@ export default {
       subject: 'Frage 78',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['5. Funktioniere'],
+      labels: ['Allgemein', 'Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1609,7 +1614,7 @@ export default {
       subject: 'Frage 79',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh','5. Funktioniere'],
+      labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1630,7 +1635,7 @@ export default {
       subject: 'Frage 80',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1651,7 +1656,7 @@ export default {
       subject: 'Frage 81',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['5. Funktioniere'],
+      labels: ['Allgemein', 'Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1672,7 +1677,7 @@ export default {
       subject: 'Frage 82',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['5. Funktioniere'],
+      labels: ['Allgemein', 'Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1690,7 +1695,7 @@ export default {
       subject: 'Frage 83',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['5. Funktioniere'],
+      labels: ['Allgemein', 'Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1708,7 +1713,7 @@ export default {
       subject: 'Frage 84',
       message: '<p>Unter Bias werden Verzerrungen bzw. Vorurteile verstanden, die eine Diskriminierung bestimmter Personengruppen oder Minderheiten verursachen. Dadurch können soziale Vorurteile in Bezug auf Rasse, Geschlecht, Sexualität und ethnische Zugehörigkeit verstärkt werden. Bias kann bei der Codierung, Sammlung und Auswahl der (Trainings-)Daten eines Algorithmus auftreten. Dies geschieht etwa durch fehlende Repräsentativität des (Trainings-)Datensatzes (Unterschied zwischen gesammelten Daten und realer Situation) oder veralteten Datensätzen (mit veralteten Wertevorstellungen, historischen Ungleichheiten).</p>',
       isStarred: false, // true || false
-      labels: ['4. Sei fair'],
+      labels: ['Allgemein', 'Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1729,7 +1734,7 @@ export default {
       subject: 'Frage 85',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['4. Sei fair'],
+      labels: ['Allgemein', 'Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1747,7 +1752,7 @@ export default {
       subject: 'Frage 86',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['5. Funktioniere'],
+      labels: ['Allgemein', 'Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1768,7 +1773,7 @@ export default {
       subject: 'Frage 87',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1789,7 +1794,7 @@ export default {
       subject: 'Frage 88',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1807,7 +1812,7 @@ export default {
       subject: 'Frage 89',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['2. Tue niemandem weh'],
+      labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1828,7 +1833,7 @@ export default {
       subject: 'Frage 91',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1849,7 +1854,7 @@ export default {
       subject: 'Frage 92',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1867,7 +1872,7 @@ export default {
       subject: 'Frage 93',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['1. Tue Gutes','2. Tue niemandem weh','3. Bewahre die menschliche Handlungsfähigkeit'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1879,262 +1884,265 @@ export default {
         answer: '', // String
       },
     },
-    {
-      id: 1001,
-      inquiry: 'Testfrage (radio)?',
-      subject: 'Frage 1001',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['Gesetzliche Anforderungen'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Vielleicht', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-        ], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1002,
-      inquiry: 'Testfrage (checkbox)?',
-      subject: 'Frage 1002',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ['K.I.', 'Gesetzliche Anforderungen'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [
-          {name: 'Option 1', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 3', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-        ], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1003,
-      inquiry: 'Testfrage (tinytext)?',
-      subject: 'Frage 1003',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1004,
-      inquiry: 'Testfrage (bigtext)?',
-      subject: 'Frage 1004',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['Datenschutz'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1005,
-      inquiry: 'Testfrage (text)?',
-      subject: 'Frage 1005',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ['Allgemein'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1006,
-      inquiry: 'Testfrage: Datenschutz oder Allgemein & K.I. (filter)?',
-      subject: 'Frage 1006',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: [], // Filter-questions can have labels, but they don't have to.
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      // Filter: Optional array of objects
-      filter: [
-        {
-          title: 'Allgemein und K.I.',
-          includes: ['Allgemein', 'K.I.'],
-          active: false
-        },
-        {
-          title: 'Datenschutz',
-          includes: ['Datenschutz'],
-          active: false
-        },
-      ],
-      answer: {
-        type: "filter", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1007,
-      inquiry: 'Testfrage (mit Folgefrage)',
-      subject: 'Frage 1007',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [
-          {name: 'Option 1: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 2: keine weiteren Fragen, Euer Ehren', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 3: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 4: 1009', followupID: 1009, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-        ], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1008,
-      inquiry: 'Folgefrage zu Frage Nr. 1007',
-      subject: 'Frage 1008',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || false
-      labels: ['Allgemein'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1009,
-      inquiry: 'Folgefrage zu Frage Nr. 1007',
-      subject: 'Frage 1009',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ["Allgemein"],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1010,
-      inquiry: 'Mit Folgefragen',
-      subject: 'Frage 1010',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ["Datenschutz"],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [
-          {name: 'Option 1: 1011', followupID: 1011, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 3: 1012', followupID: 1012, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-        ], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1011,
-      inquiry: 'Folgefrage zu Frage Nr. 1010',
-      subject: 'Frage 1011',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ['K.I.'],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 1012,
-      inquiry: 'Folgefrage zu Frage Nr. 1010',
-      subject: 'Frage 1012',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
-      isStarred: false, // true || true
-      labels: ["Allgemein"],
-      time: '',
-      replies: [],
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
+    // {
+    //   id: 1001,
+    //   inquiry: 'Testfrage (radio)?',
+    //   subject: 'Frage 1001',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || false
+    //   labels: ['Allgemein'],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [
+    //       {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Vielleicht', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //     ], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1002,
+    //   inquiry: 'Testfrage (checkbox)?',
+    //   subject: 'Frage 1002',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || true
+    //   labels: ['Allgemein'],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [
+    //       {name: 'Option 1', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 3', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //     ], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1003,
+    //   inquiry: 'Testfrage (tinytext)?',
+    //   subject: 'Frage 1003',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || false
+    //   labels: ['Allgemein'],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1004,
+    //   inquiry: 'Testfrage (bigtext)?',
+    //   subject: 'Frage 1004',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || false
+    //   labels: ['Datenschutz'],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "bigtext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1005,
+    //   inquiry: 'Testfrage (text)?',
+    //   subject: 'Frage 1005',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || true
+    //   labels: ['Allgemein'],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1006,
+    //   inquiry: 'Testfrage: Datenschutz oder Allgemein & K.I. (filter)?',
+    //   subject: 'Frage 1006',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || false
+    //   labels: ['Allgemein'], // Filter-questions can have labels, but they don't have to.
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   // Filter: Optional array of objects
+    //   filter: [
+    //     {
+    //       title: 'Allgemein und K.I.',
+    //       includes: ['Allgemein', 'K.I.'],
+    //       active: false
+    //     },
+    //     {
+    //       title: 'Datenschutz',
+    //       includes: ['Datenschutz'],
+    //       active: false
+    //     },
+    //   ],
+    //   answer: {
+    //     type: "filter", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1007,
+    //   inquiry: 'Testfrage (mit Folgefrage)',
+    //   subject: 'Frage 1007',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || false
+    //   labels: ['Allgemein'],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [
+    //       {name: 'Option 1: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 2: keine weiteren Fragen, Euer Ehren', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 3: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 4: 1009', followupID: 1009, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //     ], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1008,
+    //   inquiry: 'Folgefrage zu Frage Nr. 1007',
+    //   subject: 'Frage 1008',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || false
+    //   labels: ['Allgemein'],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1009,
+    //   inquiry: 'Folgefrage zu Frage Nr. 1007',
+    //   subject: 'Frage 1009',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || true
+    //   labels: ["Allgemein"],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "tinytext", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1010,
+    //   inquiry: 'Mit Folgefragen',
+    //   subject: 'Frage 1010',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || true
+    //   labels: ["Datenschutz"],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [
+    //       {name: 'Option 1: 1011', followupID: 1011, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 3: 1012', followupID: 1012, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //     ], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1011,
+    //   inquiry: 'Folgefrage zu Frage Nr. 1010',
+    //   subject: 'Frage 1011',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || true
+    //   labels: ['Allgemein'],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
+    // {
+    //   id: 1012,
+    //   inquiry: 'Folgefrage zu Frage Nr. 1010',
+    //   subject: 'Frage 1012',
+    //   message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+    //   isStarred: false, // true || true
+    //   labels: ["Allgemein"],
+    //   time: '',
+    //   replies: [],
+    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   isTrashed: false, // true || false
+    //   trashingReason: '', // String
+    //   answer: {
+    //     type: "text", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+    //     options: [], // Array of options for types 'radio' and 'multiple'
+    //     answer: '', // String
+    //   },
+    // },
   ],
 
   // Tags and labels
   mailTags: [
-    {text: 'Allgemein', value: 'Allgemein', color: "#28C770"},
-    {text: 'K.I.', value: 'K.I.', color: "#7367F1"},
+    {text: 'Allgemein', value: 'Allgemein', color: "#FFA044"},
     {text: 'Datenschutz', value: 'Datenschutz', color: "#FFA044"},
-    {text: 'Gesetzliche Anforderungen', value: 'Gesetzliche Anforderungen', color: "#EA5556"},
+    {text: 'Tue Gutes', value: 'Fürsorge', color: '#28C770'},
+    {text: 'Tue niemandem weh', value: 'Schadensvermeidung', color: '#28C770'},
+    {text: 'Bewahre die menschliche Handlungsfähigkeit', value: 'Autonomie', color: '#28C770'},
+    {text: 'Sei fair', value: 'Gerechtigkeit', color: '#28C770'},
+    {text: 'Funktioniere', value: 'Transparenz', color: '#28C770'},
   ],
 
   // Sidebar-filter for state (inbox, answered) and labels.
