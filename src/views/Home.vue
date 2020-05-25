@@ -5,45 +5,59 @@
         <vx-card
           title="Beantwortete Fragen"
           title-color="primary"
-          subtitle="">
-          <vue-apex-charts type="radialBar"
-                           height="350"
-                           :options="radialBarChart.chartOptions"
-                           :series="quota">
+          subtitle="Fortschritt bei der Beantwortung aller Fragen">
+          <vue-apex-charts
+            type="radialBar"
+            height="350"
+            :options="radialBarChart.chartOptions"
+            :series="quota">
           </vue-apex-charts>
         </vx-card>
       </div>
 
       <div class="vx-col w-1/2 mb-base">
         <vx-card
-          title="Bar"
+          title="Fortschritt"
           title-color="primary"
-          subtitle="">
-          <vue-apex-charts type="bar"
-                           height="200"
-                           :options="barChart.chartOptions"
-                           :series="barChart.series">
+          subtitle="Zeigt den Fortschritt bei der Beantwortung aller Fragen pro Kategorie">
+          <vue-apex-charts
+            type="bar"
+            height="200"
+            :options="barChart.chartOptions"
+            :series="barChart.series">
           </vue-apex-charts>
         </vx-card>
       </div>
-
     </div>
 
     <div class="vx-row">
-      <div class="vx-col w-full mb-base">
+      <div class="vx-col w-1/2 mb-base">
         <vx-card
-          title="Heatmap"
+          title="Heatmap: Big5-Risikowerte"
           title-color="primary"
-          subtitle="">
-          <vue-apex-charts type="heatmap"
-                           height="316"
-                           :options="heatMapChart.chartOptions"
-                           :series="heatMapChart.series">
+          subtitle="Zeigt für alle Big5 Kategorien die dazugehörigen Risiko-Werte">
+          <vue-apex-charts
+            type="heatmap"
+            height="316"
+            :options="heatMapChart.chartOptions"
+            :series="heatMapChart.series">
           </vue-apex-charts>
         </vx-card>
       </div>
 
-
+      <div class="vx-col w-1/2 mb-base">
+        <vx-card
+          title="Risiko-Adressierung"
+          title-color="primary"
+          subtitle="Zeigt das Verhältnis von Risiko und Risiko-Adressierung.">
+          <vue-apex-charts
+            type="bar"
+            height="316"
+            :options="columnChart.chartOptions"
+            :series="columnChart.series">
+          </vue-apex-charts>
+        </vx-card>
+      </div>
     </div>
 
   </div>
@@ -77,7 +91,7 @@
         let i = 0;
         let series = [];
         while (i < count) {
-          let x = 'w' + (i + 1).toString();
+          let x = 'R' + (i + 1).toString();
           let y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
 
           series.push({
@@ -86,6 +100,7 @@
           });
           i++;
         }
+        console.log(series)
         return series;
       }
     },
@@ -137,6 +152,7 @@
               // dashArray: 8
             },
             chart: {
+              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
               toolbar: {
                 show: true,
               },
@@ -148,63 +164,164 @@
 
         heatMapChart: {
           series: [{
-            name: 'Metric1',
-            data: this.generateData(8, {
-              min: 0,
-              max: 90
-            })
+            name: 'Tue Gutes.',
+            data: [
+              {
+                x: 'Risiko',
+                y: Math.floor(Math.random() * 100)
+              },
+              {
+                x: 'R.-Reflexion',
+                y: Math.floor(Math.random() * 100)
+              },
+              {
+                x: 'R.-Adresierung',
+                y: Math.floor(Math.random() * 100)
+              },
+            ]
           },
             {
-              name: 'Metric2',
-              data: this.generateData(8, {
-                min: 0,
-                max: 90
-              })
+              name: 'Tue niemandem weh.',
+              data: [
+                {
+                  x: 'Risiko',
+                  y: Math.floor(Math.random() * 100)
+                },
+                {
+                  x: 'R.-Reflexion',
+                  y: Math.floor(Math.random() * 100)
+                },
+                {
+                  x: 'R.-Adresierung',
+                  y: Math.floor(Math.random() * 100)
+                },
+              ]
             },
             {
-              name: 'Metric3',
-              data: this.generateData(8, {
-                min: 0,
-                max: 90
-              })
+              name: 'Handlungsfähigkeit.',
+              data: [
+                {
+                  x: 'Risiko',
+                  y: Math.floor(Math.random() * 100)
+                },
+                {
+                  x: 'R.-Reflexion',
+                  y: Math.floor(Math.random() * 100)
+                },
+                {
+                  x: 'R.-Adresierung',
+                  y: Math.floor(Math.random() * 100)
+                },
+              ]
             },
             {
-              name: 'Metric4',
-              data: this.generateData(8, {
-                min: 0,
-                max: 90
-              })
+              name: 'Sei Fair.',
+              data: [
+                {
+                  x: 'Risiko',
+                  y: Math.floor(Math.random() * 100)
+                },
+                {
+                  x: 'R.-Reflexion',
+                  y: Math.floor(Math.random() * 100)
+                },
+                {
+                  x: 'R.-Adresierung',
+                  y: Math.floor(Math.random() * 100)
+                },
+              ]
             },
             {
-              name: 'Metric5',
-              data: this.generateData(8, {
-                min: 0,
-                max: 90
-              })
-            },
-            {
-              name: 'Metric6',
-              data: this.generateData(8, {
-                min: 0,
-                max: 90
-              })
+              name: 'Funktioniere.',
+              data: [
+                {
+                  x: 'Risiko',
+                  y: Math.floor(Math.random() * 100)
+                },
+                {
+                  x: 'R.-Reflexion',
+                  y: Math.floor(Math.random() * 100)
+                },
+                {
+                  x: 'R.-Adresierung',
+                  y: Math.floor(Math.random() * 100)
+                },
+              ]
             },
           ],
+
           chartOptions: {
+            chart: {
+              height: 350,
+              type: 'heatmap',
+              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+            },
+
+            plotOptions: {
+              heatmap: {
+                enableShades: false,
+                shadeIntensity: 0,
+                radius: 0,
+                useFillColorAsStroke: true,
+                colorScale: {
+                  ranges: [
+                    {
+                      from: 0,
+                      to: 33,
+                      name: 'niedrig',
+                      color: '#04E397'
+                    },
+                    {
+                      from: 34,
+                      to: 66,
+                      name: 'mittel',
+                      color: '#FEC047'
+                    },
+                    {
+                      from: 67,
+                      to: 100,
+                      name: 'hoch',
+                      color: '#FF5B72'
+                    }
+                  ]
+                }
+              }
+            },
             dataLabels: {
               enabled: false
             },
-            colors: ["#008FFB"],
-          }
+
+
+            legend: {
+              position: 'top',
+              offsetY: 0,
+              fontSize: '12px',
+              fontFamily: 'Montserrat, Helvetica, Arial',
+              itemMargin: {
+                horizontal: 5,
+                vertical: 10
+              },
+            },
+
+            stroke: {
+              width: 1
+            },
+          },
+
+
         },
 
 
         barChart: {
           series: [{
-            data: [400, 430, 448, 470]
+            data: [90, 80, 30, 90]
           }],
           chartOptions: {
-            colors: ['#7367F0', '#28C76F', '#EA5455', '#FF9F43', '#1E1E1E'],
+            chart: {
+              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+            },
+
+            colors: ['#7367F0',],
             plotOptions: {
               // https://apexcharts.com/docs/options/plotoptions/bar/
               bar: {
@@ -230,7 +347,7 @@
             },
             // https://apexcharts.com/docs/options/xaxis/#
             xaxis: {
-              categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands'],
+              categories: ['Allgemein', 'Datenschutz', 'rechtliche Fragen', 'K.I.'],
               labels: {
                 show: false
               },
@@ -246,6 +363,71 @@
                 show: true,
               }
             },
+          }
+        },
+
+        columnChart: {
+          series: [{
+            name: 'Risiko',
+            data: [15, 5, 30, 85, 60]
+          }, {
+            name: 'Risiko-Adressierung',
+            data: [50, 85, 70, 20, 40]
+          }, {
+            name: 'Adressierungs-Score',
+            data: [80, 97, 50, 3, 20]
+          }],
+          chartOptions: {
+            chart: {
+              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+            },
+
+            colors: ['#FF5B72', '#04E397', '#7367F0', '#FFA044'],
+            plotOptions: {
+              bar: {
+                horizontal: false,
+                endingShape: 'flat',
+                columnWidth: '70%',
+              },
+            },
+            dataLabels: {
+              enabled: false
+            },
+            stroke: {
+              show: true,
+              width: 2,
+              colors: ['transparent']
+            },
+
+            xaxis: {
+              categories: ['Tue Gutes.','Tue niemandem weh.','Handlungsfähigkeit.','Sei Fair.','Funktioniere.'],
+            },
+            yaxis: {
+              title: {
+                text: ''
+              }
+            },
+            fill: {
+              opacity: 1
+            },
+
+            legend: {
+              position: 'top',
+              offsetY: 0,
+              fontSize: '12px',
+              fontFamily: 'Montserrat, Helvetica, Arial',
+              itemMargin: {
+                horizontal: 5,
+                vertical: 10
+              },
+            },
+            tooltip: {
+              y: {
+                formatter: function(val) {
+                  return "" + val + " %"
+                }
+              }
+            }
           }
         }
 
