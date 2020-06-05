@@ -409,7 +409,7 @@ export default {
       subject: 'Frage 20',
       message: '<p>Gesetzeslink zu Art. 4 Nr. 1 DSGVO: <a href="https://dsgvo-gesetz.de/art-4-dsgvo/" target="_blank">dsgvo-gesetz.de/art-4-dsgvo/</a></p>',
       isStarred: false, // true || false
-      labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein', 'Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1575,7 +1575,7 @@ export default {
       subject: 'Frage 77',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein', 'tbd.'],
+      labels: ['Allgemein'], // tbd.
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -2136,8 +2136,8 @@ export default {
 
   // Tags and labels
   mailTags: [
-    {text: 'Allgemein', value: 'Allgemein', color: "#FFA044"},
-    {text: 'Datenschutz', value: 'Datenschutz', color: "#FFA044"},
+    {text: 'Allgemein', value: 'Allgemein', color: '#FFA044'},
+    {text: 'Datenschutz', value: 'Datenschutz', color: '#FFA044'},
     {text: 'Tue Gutes', value: 'Fürsorge', color: '#28C770'},
     {text: 'Tue niemandem weh', value: 'Schadensvermeidung', color: '#28C770'},
     {text: 'Bewahre die menschliche Handlungsfähigkeit', value: 'Autonomie', color: '#28C770'},
