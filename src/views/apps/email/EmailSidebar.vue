@@ -31,7 +31,7 @@
                 </div>
 
                 <template>
-                  <vs-chip class="number pr-2 pl-2" color="primary">{{ mailMeta.inbox }}</vs-chip>
+                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white"><span style="font-weight: 100!important;">{{ mailMeta.inbox }}</span></vs-chip>
                 </template>
 
               </router-link>
@@ -50,7 +50,7 @@
                 </div>
 
                 <template>
-                  <vs-chip class="number pr-2 pl-2" color="success">{{ mailMeta.answered }}</vs-chip>
+                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white"><span style="font-weight: 100!important;">{{ mailMeta.answered }}</span></vs-chip>
                 </template>
 
               </router-link>
@@ -69,7 +69,7 @@
                 </div>
 
                 <template>
-                  <vs-chip class="number pr-2 pl-2" color="warning">{{ mailMeta.starred }}</vs-chip>
+                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white"><span style="font-weight: 100!important;">{{ mailMeta.starred }}</span></vs-chip>
                 </template>
 
               </router-link>
@@ -88,7 +88,7 @@
                   </div>
 
                   <template>
-                    <vs-chip class="number pr-2 pl-2" color="danger">{{ mailMeta.trashed }}</vs-chip>
+                    <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white"><span style="font-weight: 100!important;">{{ mailMeta.trashed }}</span></vs-chip>
                   </template>
               </router-link>
 
