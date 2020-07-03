@@ -33,9 +33,9 @@
           subtitle="Zeigt den Fortschritt bei der Beantwortung aller Fragen pro Kategorie">
           <vue-apex-charts
             type="bar"
-            height="200"
-            :options="barChart.chartOptions"
-            :series="barChart.series">
+            height="250"
+            :options="barChartOptions.chartOptions"
+            :series="barChartOptions.series">
           </vue-apex-charts>
         </vx-card>
       </div>
@@ -58,7 +58,7 @@
 
       <div class="vx-col w-1/2 mb-base">
         <vx-card
-          title="Risiko-Adressierung"
+          title="ELSI-Score"
           title-color="primary"
           subtitle="Zeigt das Verhältnis von Risiko und Risiko-Adressierung.">
           <vue-apex-charts
@@ -94,6 +94,83 @@
         // Return an array!
         return [quota]
       },
+
+      barChartOptions () {
+        let labelsObj = this.$store.getters['email/getAllLabels']
+        let labels = []
+        let colors = []
+        let data = []
+
+        labelsObj.forEach((label) => {
+          console.log('hey')
+          let answers = this.$store.getters['email/getNumberOfAnswersWithLabel'](label.value)
+          let questions = this.$store.getters['email/getNumberOfQuestionsWithLabel'](label.value)
+          let quota = (answers * 100) / questions
+          console.log(quota)
+          labels = [...labels, label.value]
+          colors = [...colors, label.color]
+          data = [...data, quota]
+        });
+
+        console.log(data)
+
+        return {
+            series: [{
+              data: data
+            }],
+            chartOptions: {
+              chart: {
+                fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+              },
+              colors: colors,
+              legend: {
+                show: false,
+              },
+              plotOptions: {
+                // https://apexcharts.com/docs/options/plotoptions/bar/
+                bar: {
+                  endingShape: 'flat',
+                  horizontal: true,
+                  distributed: true,
+                  colors: {
+                    backgroundBarColors: ['#f8f8f8']
+                  }
+                }
+              },
+              dataLabels: {
+                enabled: false,
+              },
+              grid: {
+                show: true,
+                borderColor: 'white',
+                xaxis: {
+                  lines: {
+                    show: false,
+                  }
+                },
+              },
+              // https://apexcharts.com/docs/options/xaxis/#
+              xaxis: {
+                categories: labels,
+                max: 100,
+                labels: {
+                  show: false
+                },
+                axisBorder: {
+                  show: false,
+                },
+                axisTicks: {
+                  show: false,
+                },
+              },
+              yaxis: {
+                labels: {
+                  show: true,
+                }
+              },
+            }
+        }
+      }
     },
 
     methods: {
@@ -117,6 +194,7 @@
     },
 
     data() {
+
       return {
         radialBarChart: {
           series: ["0"],
@@ -171,7 +249,6 @@
             labels: [''],
           },
         },
-
 
         heatMapChart: {
           series: [{
@@ -322,61 +399,6 @@
 
         },
 
-
-        barChart: {
-          series: [{
-            data: [90, 80, 30, 90]
-          }],
-          chartOptions: {
-            chart: {
-              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
-            },
-
-            colors: ['#7367F0',],
-            plotOptions: {
-              // https://apexcharts.com/docs/options/plotoptions/bar/
-              bar: {
-                endingShape: 'flat',
-                horizontal: true,
-                distributed: true,
-                colors: {
-                  backgroundBarColors: ['#f8f8f8']
-                }
-              }
-            },
-            dataLabels: {
-              enabled: false
-            },
-            grid: {
-              show: true,
-              borderColor: 'white',
-              xaxis: {
-                lines: {
-                  show: false,
-                }
-              },
-            },
-            // https://apexcharts.com/docs/options/xaxis/#
-            xaxis: {
-              categories: ['Allgemein', 'Datenschutz', 'rechtliche Fragen', 'K.I.'],
-              labels: {
-                show: false
-              },
-              axisBorder: {
-                show: false,
-              },
-              axisTicks: {
-                show: false,
-              },
-            },
-            yaxis: {
-              labels: {
-                show: true,
-              }
-            },
-          }
-        },
-
         columnChart: {
           series: [{
             name: 'Risiko',
@@ -385,7 +407,7 @@
             name: 'Risiko-Adressierung',
             data: [50, 85, 70, 20, 40]
           }, {
-            name: 'Adressierungs-Score',
+            name: 'ELSI-Score',
             data: [80, 97, 50, 3, 20]
           }],
           chartOptions: {
@@ -441,7 +463,6 @@
             }
           }
         }
-
 
       }
     },

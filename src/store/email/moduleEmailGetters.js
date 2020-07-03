@@ -193,6 +193,45 @@ export default {
 
 
   /**
+   * Returns the total number of actionable questions,
+   * i.e. questions that are:
+   * - not trashed
+   * - positively filtered, if a filter is set
+   *
+   * @param state
+   * @param getters
+   * @returns {function(*=): number}
+   */
+  getNumberOfQuestionsWithLabel: (state, getters) => (label) => {
+    const filtered_questions_ids = getters.getFilteredQuestionsIDs
+    let number_of_questions = 0
+
+    // For each question …
+    state.mails.forEach(function (mail) {
+
+      // Todo usta: Centralize this logic.
+      if (
+        // … that is not trashed
+        mail.isTrashed !== true
+        // … and not a followup-child
+        && getters.isFollowupChild(mail.id) != true
+        // … and that is positively filtered, if filters are set
+        && (
+          !(filtered_questions_ids.length > 0)
+          || filtered_questions_ids.includes(mail.id)
+        )
+        && mail.labels.includes(label)
+      ) {
+        // … add 1 to the number of questions.
+        number_of_questions++
+      }
+    })
+
+    return (number_of_questions)
+  },
+
+
+  /**
    * Returns the number of completed answers,
    * i.e. all answers that are:
    * - not empty and not trashed
@@ -228,6 +267,53 @@ export default {
             || Array.isArray(mail.filter) // ggf: && mail.filter.length > 0
           )
         )
+      ) {
+        // … count it as an answer.
+        answers++;
+      }
+    })
+
+    return (answers)
+  },
+
+
+  /**
+   * Returns the number of completed answers,
+   * i.e. all answers that are:
+   * - not empty and not trashed
+   * - and, if filters are set,
+   *   + either positively filtered
+   *   + or a filter-question
+   *
+   * @param state
+   * @param getters
+   * @returns {function(*=): number}
+   */
+  getNumberOfAnswersWithLabel: (state, getters) => (label) => {
+    const filter_labels = getters.getFilterLabels
+    let answers = 0
+
+    // For each question …
+    state.mails.forEach(function (mail) {
+      // Todo usta: Centralize this logic.
+      if (
+        // … that has an answer …
+        mail.answer.answer !== ''
+        // … and is not trashed
+        && mail.isTrashed !== true
+        // … and not a followup-child
+        && getters.isFollowupChild(mail.id) != true
+        // and that is, if filters are set …
+        && (
+          !(filter_labels.length > 0)
+          || (
+            // … either a filtered question
+            mail.labels.some(r => filter_labels.indexOf(r) >= 0)
+            // … or a filter-question
+            || Array.isArray(mail.filter) // ggf: && mail.filter.length > 0
+          )
+        )
+        && mail.labels.includes(label)
       ) {
         // … count it as an answer.
         answers++;
@@ -358,4 +444,16 @@ export default {
   projectMetaIsSet: state => {
     return (state.project.nameProject && state.project.nameApplicant) ? true : false
   },
+
+
+  /**
+   * Returns the mailTags Object
+   *
+   * @param state
+   * @returns {*}
+   */
+  getAllLabels: state => {
+    return state.mailTags;
+  },
+
 }
