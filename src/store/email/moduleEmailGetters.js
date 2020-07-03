@@ -323,6 +323,21 @@ export default {
     return (answers)
   },
 
+
+  /**
+   * Returns the overall answering-progress.
+   *
+   * @param state
+   * @param getters
+   * @returns {number}
+   */
+  getQuota: (state, getters) => {
+    const answered = getters.getNumberOfAnswers
+    const questions = getters.getNumberOfQuestions
+
+    return Math.floor((answered / questions) * 100)
+  },
+
   /**
    *
    * @param id

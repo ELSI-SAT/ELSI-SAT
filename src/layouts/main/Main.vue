@@ -187,11 +187,7 @@ export default {
     windowWidth()          { return this.$store.state.windowWidth },
 
     quota() {
-      const answered = this.$store.getters['email/getNumberOfAnswers']
-      const questions = this.$store.getters['email/getNumberOfQuestions']
-      const quota = Math.floor((answered / questions) * 100)
-
-      return quota
+      return this.$store.getters['email/getQuota']
     },
   },
   methods: {

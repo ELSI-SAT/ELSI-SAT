@@ -88,11 +88,7 @@
       ]),
 
       quota () {
-        const answered = this.$store.getters['email/getNumberOfAnswers']
-        const questions = this.$store.getters['email/getNumberOfQuestions']
-        const quota = Math.floor((answered / questions) * 100)
-        // Return an array!
-        return [quota]
+        return [this.$store.getters['email/getQuota']]
       },
 
       barChartOptions () {
