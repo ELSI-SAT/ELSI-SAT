@@ -114,7 +114,11 @@
                     :style="'border-color: ' + tag.color">
                   </div>
 
-                  <span class="text-lg" :class="{'text-primary': mailFilter == tag.value}">{{ tag.text }}</span>
+                  <span
+                    class="text-lg"
+                    :class="{'text-primary': mailFilter == tag.value}">
+                    {{ tag.value }}
+                  </span>
                 </router-link>
 
               </div>
