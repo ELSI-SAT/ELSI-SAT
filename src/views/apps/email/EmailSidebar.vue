@@ -74,7 +74,7 @@
 
               </router-link>
 
-              <!-- trash -->
+              <!-- trash
               <router-link
                 tag="span"
                 :to="`${baseUrl}/trash`"
@@ -91,6 +91,7 @@
                     <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white"><span style="font-weight: 100!important;">{{ mailMeta.trashed }}</span></vs-chip>
                   </template>
               </router-link>
+              -->
 
             </div>
 

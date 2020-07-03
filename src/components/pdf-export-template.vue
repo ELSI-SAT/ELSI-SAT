@@ -75,9 +75,11 @@
         let answer
         let html
 
+        /**
         if (question.isTrashed === true) {
           return 'Als nicht relevant markiert. ' + question.trashingReason
         }
+         **/
 
         // Get answer.
         switch (question.answer.type) {

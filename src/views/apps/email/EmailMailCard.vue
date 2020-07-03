@@ -64,7 +64,7 @@
       v-if="!isFollowupChild"
       class="vx-row">
 
-      <!-- Trash-Button -->
+      <!-- Trash-Button
       <vs-button
         v-if="!mailContent.filter"
         @click="toggleIsTrashed"
@@ -74,13 +74,15 @@
         icon="icon-trash">
         {{ mailContent.isTrashed ? 'Als nicht relevant verworfen' : 'Als nicht relevant verwerfen' }}
       </vs-button>
+      -->
 
-      <!-- TrashReason -->
+      <!-- TrashReason
       <TrashReason
         v-if="!isFollowupChild && mailContent.isTrashed"
         :mailContent="mailContent"
         label="Eingaben werden sofort gespeichert."
         class="w-full mt-4"/>
+      -->
     </div>
   </vx-card>
 </template>
