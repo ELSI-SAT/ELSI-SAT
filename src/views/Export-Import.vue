@@ -3,12 +3,18 @@
     <div class="vx-row">
       <div class="vx-col w-full mb-base">
         <vx-card
-          title="PDF herunterladen"
+          title="ELSI-SAT Bericht als PDF erzeugen"
           title-color="primary"
           subtitle="">
-          <p>Download der Ergebnisse des ELSI-SAT Fragebogens als PDF Datei.</p>
-          <br>
-          <pdfExportButton />
+
+          <div v-if="this.quota !== 100">
+            Die PDF kann erst erzeugt werden, wenn der Fragebogen vollständig beantwortet ist.
+          </div>
+          <div v-else>
+            <p>Download der Ergebnisse des ELSI-SAT Fragebogens als PDF Datei.</p>
+            <br>
+            <pdfExportButton />
+          </div>
         </vx-card>
       </div>
     </div>
@@ -52,7 +58,20 @@
   export default {
     name: "Home",
 
-    computed: mapGetters(['email']),
+    computed: {
+      // mix the getters into computed with object spread operator
+      ...mapGetters([
+        'email',
+      ]),
+
+      /**
+       *
+       * @returns {number}
+       */
+      quota() {
+        return this.$store.getters['email/getQuota']
+      },
+    },
 
     components: {
       ImportJSON,
