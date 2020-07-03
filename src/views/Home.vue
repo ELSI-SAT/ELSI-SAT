@@ -433,7 +433,7 @@
             },
 
             xaxis: {
-              categories: ['Tue Gutes.','Tue niemandem weh.','Handlungsfähigkeit.','Sei Fair.','Funktioniere.'],
+              categories: ['Fürsorge', 'Schadensvermeidung', 'Autonomie', 'Gerechtigkeit', 'Transparenz'],
             },
             yaxis: {
               title: {
