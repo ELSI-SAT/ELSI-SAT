@@ -43,6 +43,14 @@
         </div>
       </vx-card>
 
+      <div class="vx-row w-full mx-auto">
+        <p class="w-full mx-auto mt-5" style="text-align: center;">
+          Gefördert vom <a href="https://www.bmbf.de" target="_blank" style="color: #333">BMBF</a>,
+          entwickelt am <a href="https://www.hdm-stuttgart.de/digitale-ethik/home" target="_blank" style="color: #333">Institut für Digitale Ethik</a>
+          der <a href="https://www.hdm-stuttgart.de/index_html" target="_blank" style="color: #333">Hochschule der Medien</a>.
+        </p>
+      </div>
+
     </div>
   </div>
 </template>
