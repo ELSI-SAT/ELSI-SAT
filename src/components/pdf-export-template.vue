@@ -128,9 +128,21 @@
     font-weight: 500;
   }
 
+  .answer {
+    color: black;
+    ul {
+      list-style: disc;
+      margin-left: 10px;
+
+      li {
+        padding-left: 10px;
+      }
+    }
+  }
+
   .inbox {
     .heading, .meta {
-      color: gray;
+      color: #444;
     }
   }
 
@@ -149,7 +161,7 @@
   .followupChild {
     padding: .5rem 2rem;
     margin: 1rem 0;
-    border-left: 2px solid lightgray;
+    border-left: 1px dotted #ccc;
 
     .heading {
       margin-top: .5rem;
@@ -159,17 +171,20 @@
   }
 
   .meta {
-    color: #555;
-    background-color: #f2f2f2;
-    padding: 1rem 1.5rem;
+    color: #444;
+    border: 1px solid #ccc;
+    // background-color: #f2f2f2;
+    padding: .9rem 1.3rem;
     margin: 1rem 0;
+    font-size: 12px;
 
     ul {
-      list-style: disc;
-      margin: 10px 0 0 10px;
+      list-style: none;
+      margin: .6rem 0 0 0;
 
       li {
-        padding-left: 10px;
+        padding-right: 10px;
+        display: inline;
       }
     }
 

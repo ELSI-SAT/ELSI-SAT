@@ -26,7 +26,9 @@
           margin: 30,
           filename: 'ELSI-SAT Ergebnis.pdf',
           image: {type: 'jpeg', quality: 1},
-          html2canvas: {scale: 3},
+          // Scales larger than 2 tend to result in empty pages.
+          // https://github.com/eKoopmans/html2pdf.js/issues/19#issuecomment-315583260
+          html2canvas: {scale: 1.8},
           jsPDF: {unit: 'mm', format: 'a4', orientation: 'portrait'},
           pagebreak: {mode: 'avoid-all'}
         };
