@@ -61,8 +61,8 @@ export default {
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -100,8 +100,8 @@ export default {
       answer: {
         type: "followup-radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 6, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 6, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
 
         answer: '', // String
@@ -122,8 +122,8 @@ export default {
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '', // String
       },
@@ -143,12 +143,12 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Regelungstechnik/einfache Steuerung/Apps etc?', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'einfacher Algorithmus', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'lernender Algorithmus', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'maschinelles Lernen', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'schwache KI', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'starke KI', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Regelungstechnik/einfache Steuerung/Apps etc?', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'einfacher Algorithmus', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'lernender Algorithmus', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'maschinelles Lernen', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'schwache KI', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'starke KI', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '', // String
       },
@@ -168,12 +168,12 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Modell', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Empfehlung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Klassifikation', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Vorhersage', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Entscheidung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Handlung', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Modell', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Empfehlung', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Klassifikation', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Vorhersage', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Entscheidung', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Handlung', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '', // String
       },
@@ -193,8 +193,8 @@ export default {
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'supervised (reinforced, semi-supervised, active, self-training)', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'unsupervised', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'supervised (reinforced, semi-supervised, active, self-training)', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'unsupervised', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '', // String
       },
@@ -214,17 +214,17 @@ export default {
       answer: {
         type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'öffentl. Behörden', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Militär', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Energie und Umwelt', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Gesundheit und Pharma', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Information, Wissen und Kommunikation', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Mobilität und Logistik', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Banken, Finanzen u. Versicherungen', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Unterhaltung, Glücksspiel und "Gaming"', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Produzierendes Gewerbe', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Branchenübergreifend', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Sonstiges', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'öffentl. Behörden', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Militär', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Energie und Umwelt', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Gesundheit und Pharma', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Information, Wissen und Kommunikation', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Mobilität und Logistik', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Banken, Finanzen u. Versicherungen', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Unterhaltung, Glücksspiel und "Gaming"', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Produzierendes Gewerbe', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Branchenübergreifend', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Sonstiges', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '', // String
       },
@@ -244,8 +244,8 @@ export default {
       answer: {
         type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -283,8 +283,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 14, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 14, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -322,8 +322,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 16, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', followupID: 17, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 16, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', followupID: 17, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -379,8 +379,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 19, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 19, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -436,8 +436,8 @@ export default {
       answer: {
         type: 'filter', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -474,8 +474,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -495,8 +495,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -516,8 +516,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 25, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 25, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -554,8 +554,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 27, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 27, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -575,8 +575,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 1},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -596,8 +596,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -617,8 +617,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -655,8 +655,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 32, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 32, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -693,8 +693,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 34, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 34, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -731,8 +731,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -752,8 +752,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 37, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 37, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -773,8 +773,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -794,8 +794,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 39, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 39, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -832,8 +832,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -853,8 +853,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 42, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 42, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -891,8 +891,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -912,8 +912,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 45, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', followupID: 46, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 45, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', followupID: 46, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -933,8 +933,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -972,8 +972,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 48, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 48, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1011,8 +1011,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1032,8 +1032,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1053,8 +1053,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1074,8 +1074,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 53, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 53, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1113,8 +1113,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1134,8 +1134,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1155,8 +1155,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 57, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 57, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1176,8 +1176,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1197,8 +1197,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 59, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 59, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1218,8 +1218,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1239,8 +1239,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1260,8 +1260,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 62, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 62, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1281,8 +1281,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1302,8 +1302,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1323,8 +1323,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1344,8 +1344,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1365,8 +1365,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 67, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 67, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1404,8 +1404,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1443,8 +1443,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1464,8 +1464,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 72, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 72, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1503,8 +1503,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1524,8 +1524,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 75, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 75, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1563,8 +1563,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1584,8 +1584,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 78, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 78, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1623,8 +1623,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1644,8 +1644,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1665,8 +1665,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 83, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', followupID: 82, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 83, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', followupID: 82, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1722,8 +1722,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', followupID: 85, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', followupID: 85, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1761,8 +1761,8 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1782,8 +1782,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 88, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 88, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1821,8 +1821,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 90, risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
+          {name: 'Ja', followupID: 90, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1842,8 +1842,8 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 92, risk_contemplation: 1, risk_awareness: 1, risk_response: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
+          {name: 'Ja', followupID: 92, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
@@ -1899,9 +1899,9 @@ export default {
     //   answer: {
     //     type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
     //     options: [
-    //       {name: 'Ja', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Nein', risk_contemplation: 1, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Vielleicht', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Vielleicht', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
     //     ], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
@@ -1921,10 +1921,10 @@ export default {
     //   answer: {
     //     type: "checkbox", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
     //     options: [
-    //       {name: 'Option 1', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 3', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 1', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 2', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 3', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 4', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
     //     ], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
@@ -2029,10 +2029,10 @@ export default {
     //   answer: {
     //     type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
     //     options: [
-    //       {name: 'Option 1: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 2: keine weiteren Fragen, Euer Ehren', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 3: 1008', followupID: 1008, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 4: 1009', followupID: 1009, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 1: 1008', followupID: 1008, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 2: keine weiteren Fragen, Euer Ehren', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 3: 1008', followupID: 1008, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 4: 1009', followupID: 1009, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
     //     ], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
@@ -2088,10 +2088,10 @@ export default {
     //   answer: {
     //     type: "followup", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
     //     options: [
-    //       {name: 'Option 1: 1011', followupID: 1011, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 2', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 3: 1012', followupID: 1012, risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
-    //       {name: 'Option 4', risk_contemplation: 0, risk_awareness: 0, risk_response: 0},
+    //       {name: 'Option 1: 1011', followupID: 1011, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 2', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 3: 1012', followupID: 1012, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+    //       {name: 'Option 4', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
     //     ], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
