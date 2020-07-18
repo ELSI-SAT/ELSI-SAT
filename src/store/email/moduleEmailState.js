@@ -100,7 +100,7 @@ export default {
       answer: {
         type: "followup-radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 6, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 5.1, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
 
@@ -108,9 +108,9 @@ export default {
       },
     },
     {
-      id: 6,
+      id: 5.1,
       inquiry: 'Ist in das Forschungsprojekt die betroffene schutzbedürftige Gruppe involviert?',
-      subject: 'Frage 6',
+      subject: 'Frage 5.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
@@ -283,16 +283,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 14, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 13.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 14,
+      id: 13.1,
       inquiry: 'Wenn ja: Wie stellen Sie sicher, dass die betroffene Person/Personengruppe von einer Entscheidung des Systems nicht benachteiligt wird?',
-      subject: 'Frage 14',
+      subject: 'Frage 13.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
@@ -322,16 +322,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 16, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', followupID: 17, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 15.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', followupID: 15.2, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 16,
+      id: 15.1,
       inquiry: 'Was verstehen Sie unter "angemessene menschliche Kontrolle" in Ihrem Forschungsvorhaben?',
-      subject: 'Frage 16',
+      subject: 'Frage 15.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Transparenz'],
@@ -347,9 +347,9 @@ export default {
       },
     },
     {
-      id: 17,
+      id: 15.2,
       inquiry: 'Warum sind Sie der Meinung, dass keine menschliche Kontrolle notwendig ist?',
-      subject: 'Frage 17',
+      subject: 'Frage 15.2',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Transparenz'],
@@ -379,16 +379,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 19, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 18.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 19,
+      id: 18.1,
       inquiry: 'Wie stellen Sie die Übersteuerbarkeit der Maschine sicher?',
-      subject: 'Frage 19',
+      subject: 'Frage 18.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
@@ -517,16 +517,16 @@ export default {
       answer: {
         type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 25, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 24.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 25,
+      id: 24.1,
       inquiry: 'Falls ja (16.4): Welche "angemessenen" Anstrengungen werden unternommen, um sich zu vergewissern, dass die Einwilligung durch den Träger der elterlichen Verantwortung für das Kind erteilt wurde (Art. 8 Abs. 2 DSGVO)?',
-      subject: 'Frage 25',
+      subject: 'Frage 24.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
@@ -556,16 +556,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 27, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 26.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 27,
+      id: 26.1,
       inquiry: 'Falls ja: Besteht eine Einwilligung oder eine sonstige Ausnahme nach (Art. 9 Abs. 2 DSGVO)?',
-      subject: 'Frage 27',
+      subject: 'Frage 26.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
@@ -658,16 +658,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 32, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 31.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 32,
+      id: 31.1,
       inquiry: 'Falls ja: Welche (technisch-organisatorischen) Maßnahmen werden getroffen bzw. sind geplant, um hierbei einen hinreichenden Datenschutz sowie die erforderliche Datensicherheit zu gewährleisten?',
-      subject: 'Frage 32',
+      subject: 'Frage 31.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
@@ -697,16 +697,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 34, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 33.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 34,
+      id: 33.1,
       inquiry: 'Falls ja: Welche (technisch-organisatorischen) Maßnahmen werden getroffen bzw. sind geplant, um hierbei einen hinreichenden Datenschutz und die erforderliche Datensicherheit zu gewährleisten?',
-      subject: 'Frage 34',
+      subject: 'Frage 33.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
@@ -757,16 +757,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 37, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 36.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 37,
+      id: 36.1,
       inquiry: 'Falls ja: Ist bekannt, dass eine unzureichende/fehlerhafte Software-Architektur eines Produkts, das digitale Inhalte bereitstellt (s.o.), auch darin liegen kann, dass den Datenschutzgrundsätzen nicht ausreichend Rechnung getragen wurde (z.B. Grds. d. Datensparsamkeit, Art. 5 Abs. 1 lit. c, Art. 25 Abs. 1 u. 2 DSGVO i.V.m. ErwG 48 DI-RL)?',
-      subject: 'Frage 37',
+      subject: 'Frage 36.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
@@ -799,16 +799,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 39, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 38.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 39,
+      id: 38.1,
       inquiry: 'Mit welchen Maßnahmen wird sichergestellt, dass Datensicherheit (Art. 5  Abs. 1 lit f, Art. 32 Abs. 1/2 DSGVO) und Datenschutz (Art. 5 Abs 1a-e) in Hinblick auf die verarbeiteten Daten gewährleistet wird (keine Manipulation/Hacks)?',
-      subject: 'Frage 39',
+      subject: 'Frage 38.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
@@ -859,16 +859,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 42, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 41.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 42,
+      id: 41.1,
       inquiry: 'Wie würde der Widerspruch ggfs. (technisch-organisatorisch) umgesetzt und ausgeführt?',
-      subject: 'Frage 42',
+      subject: 'Frage 41.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Autonomie','Transparenz'],
@@ -919,16 +919,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 45, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', followupID: 46, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 44.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', followupID: 44.2, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 45,
+      id: 44.1,
       inquiry: 'Wird sichergestellt, dass jedem Anwender bewusst ist, dass die Maschine bestimmte Ergebnisse lediglich aufgrund einer mathematischen Annäherungsrechnung (Wahrscheinlichkeit) präsentiert?',
-      subject: 'Frage 45',
+      subject: 'Frage 44.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Gerechtigkeit','Transparenz'],
@@ -947,9 +947,9 @@ export default {
       },
     },
     {
-      id: 46,
+      id: 44.2,
       inquiry: 'Weshalb soll dem Anwender nicht bewusst sein, dass die Maschine bestimmte Ergebnisse lediglich aufgrund einer mathematischen Annäherungsrechnung (Wahrscheinlichkeit) präsentiert?',
-      subject: 'Frage 46',
+      subject: 'Frage 44.2',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Gerechtigkeit','Transparenz'],
@@ -979,16 +979,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 48, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 47.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 48,
+      id: 47.1,
       inquiry: 'Falls ja: Wie ließe sich eine mögliche Benachteiligung rechtfertigen?',
-      subject: 'Frage 48',
+      subject: 'Frage 47.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Gerechtigkeit'],
@@ -1081,16 +1081,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 53, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 52.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 53,
+      id: 52.1,
       inquiry: 'Falls ja: Welche Maßnahmen sollen hierzu ergriffen werden?',
-      subject: 'Frage 53',
+      subject: 'Frage 52.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
@@ -1162,16 +1162,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 57, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 56.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 57,
+      id: 56.1,
       inquiry: 'Falls ja: Sind Ihnen die hiermit verbundenen Rechte und Pflichten des Bundesamtes bzw. des Betreibers (z.B. §§ 4, 5 BSIG) oder auch Herstellers (§ 5a Abs. 6 BSIG) sowie die hiermit verbundenen Eingriffe in Betroffenenrechte (vgl. § 5 Abs. 1, §§ 6 ff. BSIG) bekannt?',
-      subject: 'Frage 57',
+      subject: 'Frage 56.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
@@ -1204,16 +1204,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 59, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 58.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 59,
+      id: 58.1,
       inquiry: 'Falls ja: Sind Ihnen die hiermit verbundenen Rechte und Pflichten des Bundesamtes bzw. des Betreibers (z.B. §§ 7a, 8a, 8b BSIG) bekannt?',
-      subject: 'Frage 59',
+      subject: 'Frage 58.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
@@ -1267,16 +1267,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 62, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 61.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 62,
+      id: 61.1,
       inquiry: 'Falls ja: Sind die besonderen Anforderungen an deren Anbieter (§ 8c BSIG) bekannt?',
-      subject: 'Frage 62',
+      subject: 'Frage 61.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
@@ -1372,16 +1372,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 67, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 66.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 67,
+      id: 66.1,
       inquiry: 'Wie stellen Sie die Herkunft und Qualität der verwendeten Daten sicher?',
-      subject: 'Frage 67',
+      subject: 'Frage 66.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
@@ -1471,16 +1471,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 72, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 71.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 72,
+      id: 71.1,
       inquiry: 'Welche physischen Schäden kann das System verursachen?',
-      subject: 'Frage 72',
+      subject: 'Frage 71.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
@@ -1531,16 +1531,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 75, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 74.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 75,
+      id: 74.1,
       inquiry: 'Falls ja: Wie planen Sie die Qualität der Daten und deren Sicherheit im outgesourcten Teil sicherzustellen (vgl. Art. 28 DSGVO)?',
-      subject: 'Frage 75',
+      subject: 'Frage 74.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
@@ -1591,16 +1591,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 78, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 77.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 78,
+      id: 77.1,
       inquiry: 'Wie wird deren Eignung bzw. Zuverlässigkeit geprüft oder gewährleistet?',
-      subject: 'Frage 78',
+      subject: 'Frage 77.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
@@ -1672,16 +1672,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 83, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
-          {name: 'Nein', followupID: 82, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 81.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', followupID: 81.2, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 82,
+      id: 81.2,
       inquiry: 'Wie können Sie den Algorithmus bzw. das Ergebnis des Algorithmus dem Anwender (Laien/Nicht-Programmierer) erklärbar und transparent machen?',
-      subject: 'Frage 82',
+      subject: 'Frage 81.2',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
@@ -1697,9 +1697,9 @@ export default {
       },
     },
     {
-      id: 83,
+      id: 81.1,
       inquiry: 'Was tun Sie, um das Risiko technisch und/oder organisatorisch so gering wie möglich zu halten?',
-      subject: 'Frage 83',
+      subject: 'Frage 81.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
@@ -1730,15 +1730,15 @@ export default {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
           {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', followupID: 85, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Nein', followupID: 84.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 85,
+      id: 84.1,
       inquiry: 'Falls nein: Mit welchen Maßnahmen kann eine bessere Datenqualität hergestellt werden?',
-      subject: 'Frage 85',
+      subject: 'Frage 84.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Gerechtigkeit'],
@@ -1789,16 +1789,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 88, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 87.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 88,
+      id: 87.1,
       inquiry: 'Welche Bereiche müsste eine Technikfolgenabschätzung umfassen? (Gesellschaft, Umwelt etc.)',
-      subject: 'Frage 88',
+      subject: 'Frage 87.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
@@ -1828,12 +1828,32 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 90, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', followupID: 89.1, risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
+
+    {
+      id: 89.1,
+      inquiry: 'Falls ja: Welche Mechanismen sollen diese Abhilfe konkret schaffen?',
+      subject: 'Frage 89.1',
+      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      isStarred: false, // true || false
+      labels: ['Allgemein','Schadensvermeidung'],
+      time: '',
+      replies: [],
+      folder: 'inbox', // answered || draft || inbox || trash
+      isTrashed: false, // true || false
+      trashingReason: '', // String
+      answer: {
+        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
+        answer: '', // String
+      },
+    },
+
     {
       id: 91,
       inquiry: 'Halten Sie es für möglich, dass das zu entwickelnde Produkt - abgesehen von Gleichheitsgrundsätzen - weitere (Grund-)Rechte Dritter tangiert oder gar in diese eingegriffen werden könnte (sog. "Drittwirkung" von Grundrechten ggü. Privaten)?',
@@ -1849,16 +1869,16 @@ export default {
       answer: {
         type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
-          {name: 'Ja', followupID: 92, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', followupID: 91.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
     {
-      id: 92,
+      id: 91.1,
       inquiry: 'Falls ja: Welche Grundrechte könnten hierbei betroffen sein (z.B. Art. 2, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 16a, 21 GG)?',
-      subject: 'Frage 92',
+      subject: 'Frage 91.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie'],
