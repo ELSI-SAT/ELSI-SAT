@@ -57,7 +57,6 @@
 
         <!-- EMAIL VIEW SIDEBAR -->
         <email-view
-            :mailTags       = "mailTags"
             :openMailId      = "openMailId"
             :isSidebarActive = "isSidebarActive"
             :mailFilter      = "mailFilter"
@@ -120,20 +119,15 @@ export default {
         this.$store.dispatch('email/setEmailSearchQuery', val)
       }
     },
-    selectAllCheckBox: {
-      get() {
-        return this.selectedMails.length
-      },
-      set(value) {
-        value ? this.selectedMails = this.mails.map(mail => mail.id) : this.selectedMails = []
-      }
-    },
     mails() {
       return this.$store.getters['email/filteredMails']
     },
+    allMails() {
+      return this.$store.state.email.mails
+    },
     windowWidth() {
       return this.$store.state.windowWidth
-    }
+    },
   },
   methods: {
     updateOpenMail(mailId) {
