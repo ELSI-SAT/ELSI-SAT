@@ -57,9 +57,11 @@
 
         <!-- EMAIL VIEW SIDEBAR -->
         <email-view
+            :mailTags        = "mailTags"
             :openMailId      = "openMailId"
             :isSidebarActive = "isSidebarActive"
             :mailFilter      = "mailFilter"
+            :isFirstMail     = "isFirstMailResult"
             @removeMail      = "removeOpenMail"
             @previousMail    = "previousMail"
             @nextMail        = "nextMail"
@@ -81,6 +83,7 @@ export default {
       openMailId           : null,
       selectedMails        : [],
       isSidebarActive      : false,
+      isFirstMailResult    : false,
       showThread           : false,
       clickNotClose        : true,
       isEmailSidebarActive : true,
@@ -133,6 +136,7 @@ export default {
     updateOpenMail(mailId) {
       this.openMailId = mailId
       this.isSidebarActive = true
+      this.isFirstMail()
     },
     moveTo(to) {
       const payload = { emailIds: this.selectedMails, to: to }
@@ -156,10 +160,20 @@ export default {
     nextMail() {
       const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
       if (this.mails[currentMailIndex + 1]) this.openMailId = this.mails[currentMailIndex + 1].id
+      this.isFirstMail()
     },
     previousMail() {
       const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
       if (this.mails[currentMailIndex - 1]) this.openMailId = this.mails[currentMailIndex - 1].id
+      this.isFirstMail()
+    },
+    isFirstMail() {
+      const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
+      if (currentMailIndex === 0){
+        this.isFirstMailResult = true
+      } else {
+        this.isFirstMailResult = false
+      }
     },
     closeMailViewSidebar() {
       this.isSidebarActive = false

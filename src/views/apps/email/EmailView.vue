@@ -29,8 +29,16 @@
                               @click="toggleIsStarred" />
                           </vx-tooltip>
 
-                          <feather-icon icon="ChevronsLeftIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('previousMail')" />
-                          <feather-icon icon="ChevronsRightIcon" svg-classes="h-6 w-6" class="cursor-pointer ml-4 hidden sm:inline-flex" @click="$emit('nextMail')" />
+                          <feather-icon
+                            icon="ChevronsLeftIcon"
+                            svg-classes="h-6 w-6"
+                            :class="[{'text-grey': this.isFirstMail}, 'cursor-pointer ml-4 sm:inline-flex']"
+                            @click="$emit('previousMail')" />
+                          <feather-icon
+                            icon="ChevronsRightIcon"
+                            svg-classes="h-6 w-6"
+                            class="cursor-pointer ml-4 hidden sm:inline-flex"
+                            @click="$emit('nextMail')" />
                         </div>
                     </div>
                 </div>
@@ -69,7 +77,6 @@
                       </div>
                     </div>
 
-
                 </div>
                 </VuePerfectScrollbar>
             </div>
@@ -93,6 +100,10 @@
       validator: prop => typeof prop === 'number' || prop === null
     },
     isSidebarActive: {
+      type: Boolean,
+      required: true
+    },
+    isFirstMail: {
       type: Boolean,
       required: true
     },
