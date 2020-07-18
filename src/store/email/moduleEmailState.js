@@ -455,7 +455,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'options: [], // Array of options for types 'radio' and 'multiple'
+        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -535,7 +536,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'options: [], // Array of options for types 'radio' and 'multiple'
+        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -636,7 +638,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'options: [], // Array of options for types 'radio' and 'multiple'
+        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -674,7 +677,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'options: [], // Array of options for types 'radio' and 'multiple'
+        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -712,7 +716,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'options: [], // Array of options for types 'radio' and 'multiple'
+        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -813,7 +818,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'options: [], // Array of options for types 'radio' and 'multiple'
+        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
@@ -872,7 +878,8 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'options: [], // Array of options for types 'radio' and 'multiple'
+        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
