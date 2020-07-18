@@ -16,7 +16,7 @@
                     <div class="flex-grow mb-4">
                         <div class="flex align-text-top">
                             <feather-icon icon="ArrowLeftIcon" @click="$emit('closeSidebar')" class="cursor-pointer mr-4" svg-classes="w-6 h-6"></feather-icon>
-                            <h4>{{ currentMail.inquiry }}</h4>
+                            <h4>{{ currentMail.inquiry }} &ensp;<span class="text-grey font-light" style="white-space: nowrap">{{ currentMail.subject }}</span></h4>
                         </div>
                     </div>
                     <div class="ml-10 mb-4 mt-1">

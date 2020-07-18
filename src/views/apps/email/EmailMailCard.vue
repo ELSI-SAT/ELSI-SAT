@@ -16,6 +16,7 @@
       v-if="isFollowupChild && !mailContent.isTrashed">
       <h5>
         {{mailContent.inquiry}}
+        &ensp;<span class="text-grey font-light" style="white-space: nowrap">{{ mailContent.subject }}</span>
       </h5>
     </div>
 
