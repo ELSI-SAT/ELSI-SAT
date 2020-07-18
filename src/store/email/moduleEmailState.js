@@ -504,7 +504,7 @@ export default {
     },
     {
       id: 24,
-      inquiry: 'Falls ja: Könnten durch das zu entwickelnde Produkt Daten von "Kindern", d.h. unter 16-jährigen (Art. 8 DSGVO), verarbeitet werden?',
+      inquiry: 'Könnten durch das zu entwickelnde Produkt Daten von "Kindern", d.h. unter 16-jährigen (Art. 8 DSGVO), verarbeitet werden?',
       subject: 'Frage 24',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -525,7 +525,7 @@ export default {
     },
     {
       id: 24.1,
-      inquiry: 'Falls ja (16.4): Welche "angemessenen" Anstrengungen werden unternommen, um sich zu vergewissern, dass die Einwilligung durch den Träger der elterlichen Verantwortung für das Kind erteilt wurde (Art. 8 Abs. 2 DSGVO)?',
+      inquiry: 'Welche "angemessenen" Anstrengungen werden unternommen, um sich zu vergewissern, dass die Einwilligung durch den Träger der elterlichen Verantwortung für das Kind erteilt wurde (Art. 8 Abs. 2 DSGVO)?',
       subject: 'Frage 24.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -564,7 +564,7 @@ export default {
     },
     {
       id: 26.1,
-      inquiry: 'Falls ja: Besteht eine Einwilligung oder eine sonstige Ausnahme nach (Art. 9 Abs. 2 DSGVO)?',
+      inquiry: 'Besteht eine Einwilligung oder eine sonstige Ausnahme nach (Art. 9 Abs. 2 DSGVO)?',
       subject: 'Frage 26.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -666,7 +666,7 @@ export default {
     },
     {
       id: 31.1,
-      inquiry: 'Falls ja: Welche (technisch-organisatorischen) Maßnahmen werden getroffen bzw. sind geplant, um hierbei einen hinreichenden Datenschutz sowie die erforderliche Datensicherheit zu gewährleisten?',
+      inquiry: 'Welche (technisch-organisatorischen) Maßnahmen werden getroffen bzw. sind geplant, um hierbei einen hinreichenden Datenschutz sowie die erforderliche Datensicherheit zu gewährleisten?',
       subject: 'Frage 31.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -705,7 +705,7 @@ export default {
     },
     {
       id: 33.1,
-      inquiry: 'Falls ja: Welche (technisch-organisatorischen) Maßnahmen werden getroffen bzw. sind geplant, um hierbei einen hinreichenden Datenschutz und die erforderliche Datensicherheit zu gewährleisten?',
+      inquiry: 'Welche (technisch-organisatorischen) Maßnahmen werden getroffen bzw. sind geplant, um hierbei einen hinreichenden Datenschutz und die erforderliche Datensicherheit zu gewährleisten?',
       subject: 'Frage 33.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -765,7 +765,7 @@ export default {
     },
     {
       id: 36.1,
-      inquiry: 'Falls ja: Ist bekannt, dass eine unzureichende/fehlerhafte Software-Architektur eines Produkts, das digitale Inhalte bereitstellt (s.o.), auch darin liegen kann, dass den Datenschutzgrundsätzen nicht ausreichend Rechnung getragen wurde (z.B. Grds. d. Datensparsamkeit, Art. 5 Abs. 1 lit. c, Art. 25 Abs. 1 u. 2 DSGVO i.V.m. ErwG 48 DI-RL)?',
+      inquiry: 'Ist bekannt, dass eine unzureichende/fehlerhafte Software-Architektur eines Produkts, das digitale Inhalte bereitstellt (s.o.), auch darin liegen kann, dass den Datenschutzgrundsätzen nicht ausreichend Rechnung getragen wurde (z.B. Grds. d. Datensparsamkeit, Art. 5 Abs. 1 lit. c, Art. 25 Abs. 1 u. 2 DSGVO i.V.m. ErwG 48 DI-RL)?',
       subject: 'Frage 36.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -987,7 +987,7 @@ export default {
     },
     {
       id: 47.1,
-      inquiry: 'Falls ja: Wie ließe sich eine mögliche Benachteiligung rechtfertigen?',
+      inquiry: 'Wie ließe sich eine mögliche Benachteiligung rechtfertigen?',
       subject: 'Frage 47.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1089,7 +1089,7 @@ export default {
     },
     {
       id: 52.1,
-      inquiry: 'Falls ja: Welche Maßnahmen sollen hierzu ergriffen werden?',
+      inquiry: 'Welche Maßnahmen sollen hierzu ergriffen werden?',
       subject: 'Frage 52.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1170,7 +1170,7 @@ export default {
     },
     {
       id: 56.1,
-      inquiry: 'Falls ja: Sind Ihnen die hiermit verbundenen Rechte und Pflichten des Bundesamtes bzw. des Betreibers (z.B. §§ 4, 5 BSIG) oder auch Herstellers (§ 5a Abs. 6 BSIG) sowie die hiermit verbundenen Eingriffe in Betroffenenrechte (vgl. § 5 Abs. 1, §§ 6 ff. BSIG) bekannt?',
+      inquiry: 'Sind Ihnen die hiermit verbundenen Rechte und Pflichten des Bundesamtes bzw. des Betreibers (z.B. §§ 4, 5 BSIG) oder auch Herstellers (§ 5a Abs. 6 BSIG) sowie die hiermit verbundenen Eingriffe in Betroffenenrechte (vgl. § 5 Abs. 1, §§ 6 ff. BSIG) bekannt?',
       subject: 'Frage 56.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1212,7 +1212,7 @@ export default {
     },
     {
       id: 58.1,
-      inquiry: 'Falls ja: Sind Ihnen die hiermit verbundenen Rechte und Pflichten des Bundesamtes bzw. des Betreibers (z.B. §§ 7a, 8a, 8b BSIG) bekannt?',
+      inquiry: 'Sind Ihnen die hiermit verbundenen Rechte und Pflichten des Bundesamtes bzw. des Betreibers (z.B. §§ 7a, 8a, 8b BSIG) bekannt?',
       subject: 'Frage 58.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1233,7 +1233,7 @@ export default {
     },
     {
       id: 60,
-      inquiry: 'Falls ja: Trifft das zu entwickelnde Produkt eigenständig technische Maßnahmen und Vorkehrungen zur Schadensvermeidung "nach dem Stand der Technik" nach § 8a Abs. 1 BSIG (z.B. Aufzeichnungs-, Melde- oder Informationsvorgänge)?',
+      inquiry: 'Trifft das zu entwickelnde Produkt eigenständig technische Maßnahmen und Vorkehrungen zur Schadensvermeidung "nach dem Stand der Technik" nach § 8a Abs. 1 BSIG (z.B. Aufzeichnungs-, Melde- oder Informationsvorgänge)?',
       subject: 'Frage 60',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1275,7 +1275,7 @@ export default {
     },
     {
       id: 61.1,
-      inquiry: 'Falls ja: Sind die besonderen Anforderungen an deren Anbieter (§ 8c BSIG) bekannt?',
+      inquiry: 'Sind die besonderen Anforderungen an deren Anbieter (§ 8c BSIG) bekannt?',
       subject: 'Frage 61.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1539,7 +1539,7 @@ export default {
     },
     {
       id: 74.1,
-      inquiry: 'Falls ja: Wie planen Sie die Qualität der Daten und deren Sicherheit im outgesourcten Teil sicherzustellen (vgl. Art. 28 DSGVO)?',
+      inquiry: 'Wie planen Sie die Qualität der Daten und deren Sicherheit im outgesourcten Teil sicherzustellen (vgl. Art. 28 DSGVO)?',
       subject: 'Frage 74.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1737,7 +1737,7 @@ export default {
     },
     {
       id: 84.1,
-      inquiry: 'Falls nein: Mit welchen Maßnahmen kann eine bessere Datenqualität hergestellt werden?',
+      inquiry: 'Mit welchen Maßnahmen kann eine bessere Datenqualität hergestellt werden?',
       subject: 'Frage 84.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1837,7 +1837,7 @@ export default {
 
     {
       id: 89.1,
-      inquiry: 'Falls ja: Welche Mechanismen sollen diese Abhilfe konkret schaffen?',
+      inquiry: 'Welche Mechanismen sollen diese Abhilfe konkret schaffen?',
       subject: 'Frage 89.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1877,7 +1877,7 @@ export default {
     },
     {
       id: 91.1,
-      inquiry: 'Falls ja: Welche Grundrechte könnten hierbei betroffen sein (z.B. Art. 2, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 16a, 21 GG)?',
+      inquiry: 'Welche Grundrechte könnten hierbei betroffen sein (z.B. Art. 2, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 16a, 21 GG)?',
       subject: 'Frage 91.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -1895,7 +1895,7 @@ export default {
     },
     {
       id: 93,
-      inquiry: 'Falls ja: Welche (technisch-organisatischen) Maßnahmen werden getroffen, um diesen Eingriff minimalinvasiv zu gestalten?',
+      inquiry: 'Welche (technisch-organisatischen) Maßnahmen werden getroffen, um diesen Eingriff minimalinvasiv zu gestalten?',
       subject: 'Frage 93',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
