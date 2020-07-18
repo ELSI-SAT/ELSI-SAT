@@ -49,7 +49,8 @@ export default {
         : state.mail_filter === "trash" ? mail.isTrashed
           : state.mail_filter === "inbox" ? (!mail.answer.answer && !mail.isTrashed)
             : state.mail_filter === "answered" ? (mail.answer.answer && !mail.isTrashed)
-              : mail.labels.includes(state.mail_filter); // Labels, aka Categories
+              : state.mail_filter === "all" ? (1 === 1)
+                : mail.labels.includes(state.mail_filter); // Labels, aka Categories
     }
 
     // IF filter === false, the item will not be returned.

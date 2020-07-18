@@ -17,12 +17,35 @@
           :settings="settings">
             <div class="px-6 pb-2 flex flex-col">
 
+              <!-- all -->
+              <router-link
+                tag="span"
+                :to="`${baseUrl}/all`"
+                @click.native="$emit('closeSidebar')"
+                class="flex justify-between items-center cursor-pointer"
+                :class="{'text-primary': mailFilter == 'all'}">
+
+                <div class="flex items-center mb-2">
+                    <feather-icon icon="FolderIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'all'}, 'h-6 w-6']"></feather-icon>
+                    <span class="text-lg ml-3">Alle Fragen</span>
+                </div>
+
+                <template>
+                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white">
+                    <span style="font-weight: 100!important;">{{ this.totalQuestions }}</span>
+                  </vs-chip>
+                </template>
+
+              </router-link>
+
+
+
               <!-- inbox -->
               <router-link
                 tag="span"
                 :to="`${baseUrl}/inbox`"
                 @click.native="$emit('closeSidebar')"
-                class="flex justify-between items-center cursor-pointer"
+                class="flex justify-between items-center cursor-pointer mt-4"
                 :class="{'text-primary': mailFilter == 'inbox'}">
 
                 <div class="flex items-center mb-2">
@@ -31,7 +54,9 @@
                 </div>
 
                 <template>
-                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white"><span style="font-weight: 100!important;">{{ mailMeta.inbox }}</span></vs-chip>
+                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white">
+                    <span style="font-weight: 100!important;">{{ mailMeta.inbox }}</span>
+                  </vs-chip>
                 </template>
 
               </router-link>
@@ -50,7 +75,9 @@
                 </div>
 
                 <template>
-                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white"><span style="font-weight: 100!important;">{{ mailMeta.answered }}</span></vs-chip>
+                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white">
+                    <span style="font-weight: 100!important;">{{ mailMeta.answered }}</span>
+                  </vs-chip>
                 </template>
 
               </router-link>
@@ -69,7 +96,9 @@
                 </div>
 
                 <template>
-                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white"><span style="font-weight: 100!important;">{{ mailMeta.starred }}</span></vs-chip>
+                  <vs-chip style="color: grey;" class="number pr-2 pl-2" color="white">
+                    <span style="font-weight: 100!important;">{{ mailMeta.starred }}</span>
+                  </vs-chip>
                 </template>
 
               </router-link>
@@ -183,6 +212,9 @@ export default {
     },
     mailMeta() {
       return this.$store.getters['email/getMeta']
+    },
+    totalQuestions() {
+      return this.$store.getters['email/getNumberOfQuestions']
     }
   },
   methods: {

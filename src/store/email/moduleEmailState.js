@@ -515,7 +515,7 @@ export default {
       isTrashed: false, // true || false
       trashingReason: '', // String
       answer: {
-        type: 'radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
+        type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
         options: [
           {name: 'Ja', followupID: 24.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
