@@ -22,7 +22,8 @@
                   <h5 class="mb-1 "
                       :class="{'font-semibold': !mail.isTrashed && !mail.answer.answer, 'font-normal': mail.answer.answer}">
                     {{ mail.inquiry }}
-                    <span class="text-grey font-light">&ensp;{{ mail.subject }}</span>
+                    <br>
+                    <div class="text-grey font-light mt-1">{{ mail.subject }}</div>
 
                   </h5>
                 </div>
