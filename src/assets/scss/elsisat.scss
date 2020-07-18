@@ -5,3 +5,43 @@
 .vs-sidebar {
   box-shadow: none !important;
 }
+
+
+/* Customize the label (the radio-container) */
+.radio-container {
+  margin-bottom: .2rem;
+
+  input[type='radio']:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    top: -3px;
+    left: -2px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+
+  input[type='radio']:checked:after {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    top: -3px;
+    left: -2px;
+    position: relative;
+    background-color: $primary;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  }
+
+  .label{
+    margin-left: 1.5rem;
+  }
+}
+
+

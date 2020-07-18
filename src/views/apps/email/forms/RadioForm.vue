@@ -1,8 +1,12 @@
 <template>
   <ul class="centerx">
     <li v-for="(item, index) in mailContent.answer.options" v-bind:key="index">
-      <vs-radio :vs-name="mailContent.id" v-model="radios" :vs-value="item.name">{{ item.name }}</vs-radio>
+      <div class="radio-container">
+        <input :id="item.name" class="form-radio" type="radio" v-model="radios" :value="item.name">
+        <label :for="item.name" class="label">{{ item.name }}</label>
+      </div>
     </li>
+
   </ul>
 </template>
 
