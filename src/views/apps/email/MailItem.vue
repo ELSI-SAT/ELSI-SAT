@@ -18,19 +18,20 @@
         <!-- MAIL ROW 1 : META -->
         <div class="flex w-full">
             <div class="flex w-full justify-between items-start">
-                <div class="mail__details">
-                  <h5 class="mb-1 flex"
-                      :class="{'font-semibold': !mail.isTrashed && !mail.answer.answer, 'text-grey-dark': mail.isTrashed}">
+                <div class="mail__details flex w-full">
+                  <h5 class="mb-1 "
+                      :class="{'font-semibold': !mail.isTrashed && !mail.answer.answer, 'font-normal': mail.answer.answer}">
                     {{ mail.inquiry }}
-                    <feather-icon
-                      icon="StarIcon"
-                      class="cursor-pointer ml-3"
-                      :svgClasses="[{'text-warning fill-current stroke-current': mail.isStarred}, 'w-5', 'h-5']">
-                    </feather-icon>
+                    <span class="text-grey font-light">&ensp;{{ mail.subject }}</span>
 
                   </h5>
-                    <span v-if="mail.subject">{{ mail.subject }}</span>
-                    <span v-else>(no subject)</span>
+                </div>
+                <div style="display: block">
+                  <feather-icon
+                    icon="StarIcon"
+                    class="cursor-pointer ml-3"
+                    :svgClasses="[{'text-warning fill-current stroke-current': mail.isStarred}, 'w-5', 'h-5']">
+                  </feather-icon>
                 </div>
             </div>
         </div>
