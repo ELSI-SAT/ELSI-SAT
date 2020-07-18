@@ -31,7 +31,7 @@
 
     <!-- Regular Questions -->
     <div
-      class="vx-row"
+      class=""
       v-if="!mailContent.isTrashed && !mailContent.filter">
 
       <TextForm

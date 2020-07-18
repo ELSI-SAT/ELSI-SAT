@@ -1,5 +1,5 @@
 <template>
-  <ul class="centerx">
+  <ul class="centerx" style="margin-bottom: 0px !important;">
     <li v-for="(item, index) in mailContent.answer.options" v-bind:key="index">
       <div class="radio-container">
         <input :id="item.name" class="form-radio" type="radio" v-model="radios" :value="item.name">
