@@ -12,9 +12,9 @@
     <div>
         <vs-sidebar click-not-close parent="#email-app" :hidden-background="true" class="full-vs-sidebar email-view-sidebar items-no-padding" v-model="isSidebarActive" position-right>
             <div class="mail-sidebar-content px-0 sm:pb-6 h-full" v-if="currentMail">
-                <div class="flex flex-wrap items-center justify-between md:px-8 px-6 sm:pb-2 sm: pt-6 d-theme-dark-bg">
-                    <div class="flex mb-4">
-                        <div class="flex items-center">
+                <div class="flex flex-no-wrap  justify-between md:px-8 px-6 sm:pb-2 sm: pt-6 d-theme-dark-bg">
+                    <div class="flex-grow mb-4">
+                        <div class="flex align-text-top">
                             <feather-icon icon="ArrowLeftIcon" @click="$emit('closeSidebar')" class="cursor-pointer mr-4" svg-classes="w-6 h-6"></feather-icon>
                             <h4>{{ currentMail.inquiry }}</h4>
                         </div>
