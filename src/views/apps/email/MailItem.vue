@@ -32,17 +32,6 @@
                     <span v-if="mail.subject">{{ mail.subject }}</span>
                     <span v-else>(no subject)</span>
                 </div>
-
-                <div class="mail-item__meta flex items-center">
-                    <div class="email__labels hidden sm:flex items-center">
-                        <div
-                          class="h-2 w-2 rounded-full mr-2"
-                          :style="'background-color: ' + labelColor(label)"
-                          v-for="(label, index) in mail.labels"
-                          :key="index">
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <!-- /MAIL ROW 1 -->
