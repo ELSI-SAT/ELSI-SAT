@@ -2163,13 +2163,13 @@ export default {
 
   // Tags and labels
   mailTags: [
-    {text: 'Allgemein', value: 'Allgemein', color: '#FFA044'},
-    {text: 'Datenschutz', value: 'Datenschutz', color: '#FFA044'},
-    {text: 'Tue Gutes', value: 'Fürsorge', color: '#28C770'},
-    {text: 'Tue niemandem weh', value: 'Schadensvermeidung', color: '#28C770'},
-    {text: 'Bewahre die menschliche Handlungsfähigkeit', value: 'Autonomie', color: '#28C770'},
-    {text: 'Sei fair', value: 'Gerechtigkeit', color: '#28C770'},
-    {text: 'Funktioniere', value: 'Transparenz', color: '#28C770'},
+    {text: 'Allgemein', value: 'Allgemein', color: '#5E5E5F'},
+    {text: 'Datenschutz', value: 'Datenschutz', color: '#5E5E5F'},
+    {text: 'Tue Gutes', value: 'Fürsorge', color: '#7367F0'},
+    {text: 'Tue niemandem weh', value: 'Schadensvermeidung', color: '#7367F0'},
+    {text: 'Bewahre die menschliche Handlungsfähigkeit', value: 'Autonomie', color: '#7367F0'},
+    {text: 'Sei fair', value: 'Gerechtigkeit', color: '#7367F0'},
+    {text: 'Funktioniere', value: 'Transparenz', color: '#7367F0'},
   ],
 
   // Sidebar-filter for state (inbox, answered) and labels.
