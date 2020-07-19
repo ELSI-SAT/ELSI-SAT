@@ -7,7 +7,9 @@
                  :placeholder="'Bitte geben Sie hier ihre Antwort ein. Ihnen stehen ' + textSize.counter + ' Zeichen zur Verfügung. Zum Speichern muss kein Button betätigt werden: Eingaben werden sofort gespeichert.'"
                  label="Eingaben werden sofort gespeichert."
                  :counter-danger.sync="counterDanger"
-                 v-model.trim="textarea"/>
+                 v-model.trim="textarea"
+                 @focus="fieldHasFocus(true)"
+                 @blur="fieldHasFocus(false)"/>
   </div>
 </template>
 
@@ -61,7 +63,12 @@
         }
       }
 
-    }
+    },
+    methods: {
+      fieldHasFocus(focus){
+        this.$store.commit("TEXTAREA_HAS_FOCUS", focus)
+      },
+    },
   }
 </script>
 

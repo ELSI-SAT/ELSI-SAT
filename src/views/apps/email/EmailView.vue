@@ -15,8 +15,10 @@
                 <div id="question-head" class="flex flex-no-wrap  justify-between md:px-8 px-6 sm:pb-2 sm: pt-6 d-theme-dark-bg">
                     <div class="flex-grow mb-4">
                         <div class="flex align-text-top">
+                          <vx-tooltip text="Zurück zur Übersicht [ESC]">
                             <feather-icon icon="ArrowLeftIcon" @click="$emit('closeSidebar')" class="cursor-pointer mr-4" svg-classes="w-6 h-6"></feather-icon>
-                            <h4>{{ currentMail.inquiry }} &ensp;<span class="text-grey font-light" style="white-space: nowrap">{{ currentMail.subject }}</span></h4>
+                          </vx-tooltip>
+                          <h4>{{ currentMail.inquiry }} &ensp;<span class="text-grey font-light" style="white-space: nowrap">{{ currentMail.subject }}</span></h4>
                         </div>
                     </div>
                     <div class="ml-10 mb-4 mt-1">

@@ -76,6 +76,7 @@ const state = {
     // turn would result in ["Long Option", "with comma", "Option 2"] when
     // joined with split(',').
     stringSeparator: '•••',
+    textareaHasFocus: false,
 }
 
 export default state

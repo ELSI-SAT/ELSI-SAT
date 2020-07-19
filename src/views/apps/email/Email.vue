@@ -133,6 +133,22 @@ export default {
     },
   },
   methods: {
+    navigateQuestionsByKeyboard(e) {
+      let textareaHasFocus = this.$store.state.textareaHasFocus
+
+      if (e.keyCode == 39 && !textareaHasFocus) {
+        // Right arrow,
+        // but only when not focusing a textarea.
+        this.nextMail()
+      } else if (e.keyCode == 37 && !textareaHasFocus) {
+        // Left arrow,
+        // but only when not focusing a textarea.
+        this.previousMail()
+      } else if (e.keyCode == 27 && !textareaHasFocus) {
+        // ESC.
+        this.toggleEmailSidebar()
+      }
+    },
     updateOpenMail(mailId) {
       this.openMailId = mailId
       this.isSidebarActive = true
@@ -207,6 +223,11 @@ export default {
     this.$store.dispatch("email/fetchMeta")
     // Update Mail Filter
     this.$store.commit("email/UPDATE_MAIL_FILTER", this.$route.params.filter)
+    // Navigate questionaire with keyboard.
+    document.addEventListener("keyup", this.navigateQuestionsByKeyboard);
+  },
+  destroyed() {
+    document.removeEventListener('keyup', this.navigateQuestionsByKeyboard);
   },
   mounted() {
     this.$store.dispatch("email/setEmailSearchQuery", "")

@@ -14,6 +14,8 @@
             icon-pack="feather"
             icon="icon-folder"
             icon-no-border
+            @focus="fieldHasFocus(true)"
+            @blur="fieldHasFocus(false)"
           />
         </validation-provider>
       </div>
@@ -33,6 +35,8 @@
             icon-pack="feather"
             icon="icon-home"
             icon-no-border
+            @focus="fieldHasFocus(true)"
+            @blur="fieldHasFocus(false)"
           />
         </validation-provider>
       </div>
@@ -99,6 +103,9 @@
     },
 
     methods: {
+      fieldHasFocus(focus){
+        this.$store.commit("TEXTAREA_HAS_FOCUS", focus)
+      },
       submitForm(form) {
         if (this.isComplete === true) {
           // Save data in store.
