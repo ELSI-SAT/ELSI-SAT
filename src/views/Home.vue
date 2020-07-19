@@ -34,8 +34,8 @@
           <vue-apex-charts
             type="bar"
             height="250"
-            :options="barChartOptions.chartOptions"
-            :series="barChartOptions.series">
+            :options="barChart.chartOptions"
+            :series="barChart.series">
           </vue-apex-charts>
         </vx-card>
       </div>
@@ -91,24 +91,21 @@
         return [this.$store.getters['email/getQuota']]
       },
 
-      barChartOptions () {
+      barChart () {
         let labelsObj = this.$store.getters['email/getAllLabels']
         let labels = []
         let colors = []
         let data = []
 
         labelsObj.forEach((label) => {
-          console.log('hey')
           let answers = this.$store.getters['email/getNumberOfAnswersWithLabel'](label.value)
           let questions = this.$store.getters['email/getNumberOfQuestionsWithLabel'](label.value)
-          let quota = (answers * 100) / questions
-          console.log(quota)
+          let quota = Math.floor((answers * 100) / questions)
+
           labels = [...labels, label.value]
           colors = [...colors, label.color]
           data = [...data, quota]
         });
-
-        console.log(data)
 
         return {
             series: [{
@@ -166,8 +163,206 @@
               },
             }
         }
-      }
-    },
+      },
+
+      columnChart () {
+        let labelsObj = this.$store.getters['email/getAllLabels']
+        let labels = []
+        let colors = []
+        let dataMalus = []
+        let dataBonus = []
+        let dataScore = []
+
+        labelsObj.forEach((label) => {
+          labels = [...labels, label.value]
+          colors = [...colors, label.color]
+
+          let totalMalus = this.$store.getters['email/getScoreTotalMalus'](label.value)
+          let maximumMalus = this.$store.getters['email/getScoreMaximumMalus'](label.value)
+          let malusQuota = Math.floor((totalMalus * 100) / maximumMalus)
+          dataMalus = [...dataMalus, malusQuota]
+
+          let totalBonus = this.$store.getters['email/getScoreTotalBonus'](label.value)
+          let maximumBonus = this.$store.getters['email/getScoreMaximumBonus'](label.value)
+          let bonusQuota = Math.floor((totalBonus * 100) / maximumBonus)
+          dataBonus = [...dataBonus, bonusQuota]
+
+          let scoreQuote = Math.floor(((1 - ((totalMalus / maximumMalus) - (totalBonus  / maximumBonus))) / 2) * 100)
+          dataScore = [...dataScore, scoreQuote]
+
+        });
+
+        return {
+          series: [{
+            name: 'Risiko',
+            data: dataMalus
+          }, {
+            name: 'Risiko-Adressierung',
+            data: dataBonus
+          },
+          //{
+          //  name: 'Score',
+          //  data: dataScore
+          //}
+          ],
+
+          chartOptions: {
+            chart: {
+              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+            },
+
+            colors: ['#FF5B72', '#04E397', '#7367F0', '#FFA044'],
+            plotOptions: {
+              bar: {
+                horizontal: false,
+                endingShape: 'flat',
+                columnWidth: '70%',
+              },
+            },
+            dataLabels: {
+              enabled: false
+            },
+            stroke: {
+              show: true,
+              width: 2,
+              colors: ['transparent']
+            },
+
+            xaxis: {
+              categories: labels,
+            },
+            yaxis: {
+              title: {
+                text: ''
+              }
+            },
+            fill: {
+              opacity: 1
+            },
+
+            legend: {
+              position: 'top',
+              offsetY: 0,
+              fontSize: '12px',
+              fontFamily: 'Montserrat, Helvetica, Arial',
+              itemMargin: {
+                horizontal: 5,
+                vertical: 10
+              },
+            },
+            tooltip: {
+              y: {
+                formatter: function(val) {
+                  return "" + val + " %"
+                }
+              }
+            }
+          }
+        }
+      },
+
+      heatMapChart () {
+        let labelsObj = this.$store.getters['email/getAllLabels']
+        let labels = []
+        let colors = []
+        let dataHeatmap = []
+
+        labelsObj.forEach((label) => {
+          labels = [...labels, label.value]
+          colors = [...colors, label.color]
+
+          let totalMalus = this.$store.getters['email/getScoreTotalMalus'](label.value)
+          let maximumMalus = this.$store.getters['email/getScoreMaximumMalus'](label.value)
+          let malusQuota = Math.floor((totalMalus * 100 ) / maximumMalus)
+
+          let totalBonus = this.$store.getters['email/getScoreTotalBonus'](label.value)
+          let maximumBonus = this.$store.getters['email/getScoreMaximumBonus'](label.value)
+          let bonusQuota = Math.floor((totalBonus * 100 ) / maximumBonus)
+
+          let scoreQuote = Math.floor(((1 - ((totalMalus / maximumMalus) - (totalBonus  / maximumBonus))) / 2) * 100 )
+
+          let dataLabel = new Object();
+            dataLabel.name = label.value
+            dataLabel.data = [
+              {x: 'Risiko', y: malusQuota},
+              {x: 'Adressierung', y: 100-bonusQuota},
+              {x: 'Score', y: 100-scoreQuote},
+            ]
+
+            dataHeatmap = [...dataHeatmap, dataLabel]
+        });
+
+        return {
+          series: dataHeatmap,
+
+          chartOptions: {
+            chart: {
+              height: 350,
+              type: 'heatmap',
+              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+            },
+
+            plotOptions: {
+              heatmap: {
+                enableShades: true,
+                shadeIntensity: 0,
+                radius: 0,
+                useFillColorAsStroke: false,
+                colorScale: {
+                  ranges: [
+                    {
+                      from: 0,
+                      to: 40,
+                      name: 'niedrig',
+                      color: '#04E397'
+                    },
+                    {
+                      from: 41,
+                      to: 65,
+                      name: 'mittel',
+                      color: '#FEC047'
+                    },
+                    {
+                      from: 66,
+                      to: 100,
+                      name: 'hoch',
+                      color: '#FF5B72'
+                    }
+                  ]
+                }
+              }
+            },
+            dataLabels: {
+              enabled: false
+            },
+            tooltip: {
+              enabled: false,
+            },
+            stroke: {
+              show: true,
+              curve: 'smooth',
+              lineCap: 'butt',
+              colors: ['white'],
+              width: 4,
+              dashArray: 0,
+            },
+
+            legend: {
+              position: 'top',
+              offsetY: 0,
+              fontSize: '12px',
+              fontFamily: 'Montserrat, Helvetica, Arial',
+              itemMargin: {
+                horizontal: 5,
+                vertical: 10
+              },
+            },
+
+          },
+        }
+      },
+
+  },
 
     methods: {
 
@@ -184,7 +379,7 @@
           });
           i++;
         }
-        console.log(series)
+
         return series;
       }
     },
@@ -245,221 +440,6 @@
             labels: [''],
           },
         },
-
-        heatMapChart: {
-          series: [{
-            name: 'Tue Gutes.',
-            data: [
-              {
-                x: 'Risiko',
-                y: Math.floor(Math.random() * 100)
-              },
-              {
-                x: 'R.-Reflexion',
-                y: Math.floor(Math.random() * 100)
-              },
-              {
-                x: 'R.-Adresierung',
-                y: Math.floor(Math.random() * 100)
-              },
-            ]
-          },
-            {
-              name: 'Tue niemandem weh.',
-              data: [
-                {
-                  x: 'Risiko',
-                  y: Math.floor(Math.random() * 100)
-                },
-                {
-                  x: 'R.-Reflexion',
-                  y: Math.floor(Math.random() * 100)
-                },
-                {
-                  x: 'R.-Adresierung',
-                  y: Math.floor(Math.random() * 100)
-                },
-              ]
-            },
-            {
-              name: 'Handlungsfähigkeit.',
-              data: [
-                {
-                  x: 'Risiko',
-                  y: Math.floor(Math.random() * 100)
-                },
-                {
-                  x: 'R.-Reflexion',
-                  y: Math.floor(Math.random() * 100)
-                },
-                {
-                  x: 'R.-Adresierung',
-                  y: Math.floor(Math.random() * 100)
-                },
-              ]
-            },
-            {
-              name: 'Sei Fair.',
-              data: [
-                {
-                  x: 'Risiko',
-                  y: Math.floor(Math.random() * 100)
-                },
-                {
-                  x: 'R.-Reflexion',
-                  y: Math.floor(Math.random() * 100)
-                },
-                {
-                  x: 'R.-Adresierung',
-                  y: Math.floor(Math.random() * 100)
-                },
-              ]
-            },
-            {
-              name: 'Funktioniere.',
-              data: [
-                {
-                  x: 'Risiko',
-                  y: Math.floor(Math.random() * 100)
-                },
-                {
-                  x: 'R.-Reflexion',
-                  y: Math.floor(Math.random() * 100)
-                },
-                {
-                  x: 'R.-Adresierung',
-                  y: Math.floor(Math.random() * 100)
-                },
-              ]
-            },
-          ],
-
-          chartOptions: {
-            chart: {
-              height: 350,
-              type: 'heatmap',
-              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
-            },
-
-            plotOptions: {
-              heatmap: {
-                enableShades: false,
-                shadeIntensity: 0,
-                radius: 0,
-                useFillColorAsStroke: true,
-                colorScale: {
-                  ranges: [
-                    {
-                      from: 0,
-                      to: 33,
-                      name: 'niedrig',
-                      color: '#04E397'
-                    },
-                    {
-                      from: 34,
-                      to: 66,
-                      name: 'mittel',
-                      color: '#FEC047'
-                    },
-                    {
-                      from: 67,
-                      to: 100,
-                      name: 'hoch',
-                      color: '#FF5B72'
-                    }
-                  ]
-                }
-              }
-            },
-            dataLabels: {
-              enabled: false
-            },
-
-
-            legend: {
-              position: 'top',
-              offsetY: 0,
-              fontSize: '12px',
-              fontFamily: 'Montserrat, Helvetica, Arial',
-              itemMargin: {
-                horizontal: 5,
-                vertical: 10
-              },
-            },
-
-            stroke: {
-              width: 1
-            },
-          },
-
-
-        },
-
-        columnChart: {
-          series: [{
-            name: 'Risiko',
-            data: [15, 5, 30, 85, 60]
-          }, {
-            name: 'Risiko-Adressierung',
-            data: [50, 85, 70, 20, 40]
-          }, {
-            name: 'ELSI-Score',
-            data: [80, 97, 50, 3, 20]
-          }],
-          chartOptions: {
-            chart: {
-              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
-            },
-
-            colors: ['#FF5B72', '#04E397', '#7367F0', '#FFA044'],
-            plotOptions: {
-              bar: {
-                horizontal: false,
-                endingShape: 'flat',
-                columnWidth: '70%',
-              },
-            },
-            dataLabels: {
-              enabled: false
-            },
-            stroke: {
-              show: true,
-              width: 2,
-              colors: ['transparent']
-            },
-
-            xaxis: {
-              categories: ['Fürsorge', 'Schadensvermeidung', 'Autonomie', 'Gerechtigkeit', 'Transparenz'],
-            },
-            yaxis: {
-              title: {
-                text: ''
-              }
-            },
-            fill: {
-              opacity: 1
-            },
-
-            legend: {
-              position: 'top',
-              offsetY: 0,
-              fontSize: '12px',
-              fontFamily: 'Montserrat, Helvetica, Arial',
-              itemMargin: {
-                horizontal: 5,
-                vertical: 10
-              },
-            },
-            tooltip: {
-              y: {
-                formatter: function(val) {
-                  return "" + val + " %"
-                }
-              }
-            }
-          }
-        }
-
       }
     },
 

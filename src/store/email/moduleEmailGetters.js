@@ -194,7 +194,7 @@ export default {
 
 
   /**
-   * Returns the total number of actionable questions,
+   * Returns the total number of actionable questions, that have a specific label,
    * i.e. questions that are:
    * - not trashed
    * - positively filtered, if a filter is set
@@ -279,7 +279,7 @@ export default {
 
 
   /**
-   * Returns the number of completed answers,
+   * Returns the number of completed answers, that have a specific label,
    * i.e. all answers that are:
    * - not empty and not trashed
    * - and, if filters are set,
@@ -433,6 +433,154 @@ export default {
 
     return folloupIDs
   },
+
+
+  getScoreTotalMalus: (state, getters) => (label) =>{
+    let totalMalus = 0;
+
+    state.mails.forEach(function (mail) {
+      // Ignore questions without answers.
+      // Todo: check other criteria, like trashed, followup etc.
+      if (mail.answer.answer == '') return;
+
+      // If a label is set, discard questions without this label.
+      if (label !== false && !mail.labels.includes(label)) return;
+
+      let risk = 0
+      let answer_value = mail.answer.answer
+      // Todo: refactor: abstract/centralize
+      let factor = 1; if (getters.getNumberOfLabels(mail.id) >= 3) factor = 2
+
+      switch (mail.answer.type) {
+        case 'radio':
+        case 'followup-radio':
+          // Ignore type 'filter' for the time being.
+          risk = mail.answer.options.find(o => o.name === answer_value).risk_existence;
+          break
+        case 'tinytext':
+        case 'text':
+        case 'bigtext':
+          // Text-type questions NEVER have "risk_existence" values set.
+          break
+      }
+
+      totalMalus = totalMalus + risk * factor
+    })
+
+    return totalMalus
+  },
+
+
+
+  getScoreMaximumMalus: (state, getters) => (label) =>{
+    let maximumMalus = 0;
+
+    state.mails.forEach(function (mail) {
+      // Todo: check other criteria, like trashed, followup etc.
+
+      // If a label is set, discard questions without this label.
+      if (label !== false && !mail.labels.includes(label)) return;
+
+      let risk = 0
+      // Todo: refactor: abstract/centralize
+      let factor = 1; if (getters.getNumberOfLabels(mail.id) >= 3) factor = 2
+
+      // Skip empty option-arrays.
+      if (typeof mail.answer.options == 'undefined' || mail.answer.options.length == 0) {
+        return
+      }
+
+      mail.answer.options.forEach(function (option) {
+        risk = option.risk_existence
+        maximumMalus = maximumMalus + risk * factor
+      })
+    })
+
+    return maximumMalus
+  },
+
+
+  getScoreTotalBonus: (state, getters) => (label) =>{
+    let totalBonus = 0;
+
+    state.mails.forEach(function (mail) {
+      // Ignore questions without answers.
+      // Todo: check other criteria, like trashed, followup etc.
+      if (mail.answer.answer == '') return;
+
+      // If a label is set, discard questions without this label.
+      if (label !== false && !mail.labels.includes(label)) return;
+
+      let bonus = 0
+      let answer_value = mail.answer.answer
+      // Todo: refactor: abstract/centralize
+      let factor = 1; if (getters.getNumberOfLabels(mail.id) >= 3) factor = 2
+
+      switch (mail.answer.type) {
+        case 'radio':
+        case 'followup-radio':
+          // Ignore type 'filter' for the time being.
+          bonus = mail.answer.options.find(o => o.name === answer_value).risk_addressing;
+          break
+        case 'tinytext':
+        case 'text':
+        case 'bigtext':
+          // Text-type questions Do have "risk_addressing" values set.
+          bonus = 1
+          break
+      }
+
+      totalBonus = totalBonus + bonus * factor
+    })
+
+    return totalBonus
+  },
+
+
+
+  getScoreMaximumBonus: (state, getters) => (label) =>{
+    let maximumBonus = 0;
+
+    state.mails.forEach(function (mail) {
+      // Todo: check other criteria, like trashed, followup etc.
+
+      // If a label is set, discard questions without this label.
+      if (label !== false && !mail.labels.includes(label)) return;
+
+      let bonus = 0
+      // Todo: refactor: abstract/centralize
+      let factor = 1; if (getters.getNumberOfLabels(mail.id) >= 3) factor = 2
+
+      switch (mail.answer.type) {
+        case 'radio':
+        case 'followup-radio':
+          // Ignore type 'filter' for the time being.
+          mail.answer.options.forEach(function (option) {
+            bonus = option.risk_addressing
+          })
+
+          break
+        case 'tinytext':
+        case 'text':
+        case 'bigtext':
+          // Text-type questions Do have "risk_addressing" values set.
+          bonus = 1
+          break
+      }
+
+      maximumBonus = maximumBonus + bonus * factor
+    })
+
+
+    return maximumBonus
+  },
+
+
+  getNumberOfLabels: (state, getters) => (id) => {
+    let mail = state.mails.find((email) => email.id == id)
+    return mail.labels.length
+  },
+
 
   /**
    * Returns TRUE when a question is the child of a followup question,
