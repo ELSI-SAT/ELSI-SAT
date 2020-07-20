@@ -30,7 +30,7 @@
         <vx-card
           title="Fortschritt"
           title-color="primary"
-          subtitle="Zeigt den Fortschritt bei der Beantwortung aller Fragen pro Kategorie">
+          subtitle="Der Fortschritt bei der Beantwortung des Fragebogens.">
           <vue-apex-charts
             type="bar"
             height="250"
@@ -44,9 +44,9 @@
     <div class="vx-row">
       <div class="vx-col w-1/2 mb-base">
         <vx-card
-          title="Heatmap: Big5-Risikowerte"
+          title="Heatmap"
           title-color="primary"
-          subtitle="Zeigt für alle Big5 Kategorien die dazugehörigen Risiko-Werte">
+          subtitle="Risiko, Adressierung und ELSI-Score als Ampel für alle Kategorien.">
           <vue-apex-charts
             type="heatmap"
             height="316"
@@ -58,9 +58,9 @@
 
       <div class="vx-col w-1/2 mb-base">
         <vx-card
-          title="ELSI-Score"
+          title="Risiko und Adressierung"
           title-color="primary"
-          subtitle="Zeigt das Verhältnis von Risiko und Risiko-Adressierung.">
+          subtitle="Die Risiko- und Adressierungs-Werte für jede Kategorie.">
           <vue-apex-charts
             type="bar"
             height="316"
