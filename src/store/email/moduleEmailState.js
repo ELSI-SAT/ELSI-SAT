@@ -627,7 +627,7 @@ export default {
     },
     {
       id: 30,
-      inquiry: 'Sind technische oder organisatorische Maßnahmen bzw. Vorgaben zur Ausgestlatung des Produkts geplant, um ein <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3058-1-1">datenrechtliches Risiko (i.S.v. Art. 24 DSGVO)</a> wirkungsvoll zu minimieren <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3395-1-1">(z.B. Anonymisierung, technisch-organisatorische Maßnahmen, etc.)?',
+      inquiry: 'Sind technische oder organisatorische Maßnahmen bzw. Vorgaben zur Ausgestaltung des Produkts geplant, um ein <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3058-1-1">datenrechtliches Risiko (i.S.v. Art. 24 DSGVO)</a> wirkungsvoll zu minimieren <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3395-1-1">(z.B. Anonymisierung, technisch-organisatorische Maßnahmen, etc.)?',
       subject: 'Frage 30',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -1049,9 +1049,9 @@ export default {
       id: 51,
       inquiry: 'Wird im zu entwickelnden Produkt voraussichtlich der Grundsatz und das Ideal der "digitalen Barrierefreiheit" berücksichtigt/umgesetzt?',
       subject: 'Frage 51',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Gerechtigkeit'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1070,7 +1070,7 @@ export default {
       id: 52,
       inquiry: 'Ist geplant, im Projekt Maßnahmen zur Verbesserung der Privatsphäre zu ergreifen)?',
       subject: 'Frage 52',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
@@ -1091,7 +1091,7 @@ export default {
       id: 52.1,
       inquiry: 'Welche Maßnahmen sollen hierzu ergriffen werden?',
       subject: 'Frage 52.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Bitte nennen Sie die konkreten Maßnahmen zur Verbesserung der Privatsphäre im Forschungsprojekt. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
@@ -1107,9 +1107,9 @@ export default {
     },
     {
       id: 54,
-      inquiry: 'Gibt es in Ihrem Projekt einen Ansprechpartner für Fragen zum Datenschutz (z. B. DSB etc.)?',
+      inquiry: 'Gibt es in Ihrem Projekt einen Ansprechpartner für Fragen zum Datenschutz (z. B. Datenschutzbeauftragter (DSB) etc.)?',
       subject: 'Frage 54',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
@@ -1128,9 +1128,9 @@ export default {
     },
     {
       id: 55,
-      inquiry: 'Haben Sie innerhalb ihres Projekts ein besonderes Datenschutzmanagement eingerichtet (vgl. Art. 30 DSGVO)?',
+      inquiry: 'Haben Sie innerhalb ihres Projekts ein besonderes <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3277-1-1">Datenschutzmanagement </a> eingerichtet?',
       subject: 'Frage 55',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
@@ -1149,9 +1149,9 @@ export default {
     },
     {
       id: 56,
-      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein IT-System bzw. um eine Anwendung von Komponenten oder Prozessen für Einrichtungen des Bundes (i.S.v. § 2 Abs. 1 bzw. 3 BSIG)',
+      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein IT-System bzw. um eine Anwendung von <a href="https://www.gesetze-im-internet.de/bsig_2009/__2.html">Komponenten oder Prozessen für Einrichtungen des Bundes?</a>'
       subject: 'Frage 56',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
@@ -1170,9 +1170,9 @@ export default {
     },
     {
       id: 56.1,
-      inquiry: 'Sind Ihnen die hiermit verbundenen Rechte und Pflichten des Bundesamtes bzw. des Betreibers (z.B. §§ 4, 5 BSIG) oder auch Herstellers (§ 5a Abs. 6 BSIG) sowie die hiermit verbundenen Eingriffe in Betroffenenrechte (vgl. § 5 Abs. 1, §§ 6 ff. BSIG) bekannt?',
+      inquiry: 'Sind Ihnen die hiermit verbundenen <a href"https://www.gesetze-im-internet.de/bsig_2009/__4.html">Rechte und Pflichten des Bundesamtes bzw. des Betreibers </a> oder auch <a href="https://www.gesetze-im-internet.de/bsig_2009/__5a.html">Herstellers </a> sowie die hiermit verbundenen Eingriffe in <a href="https://www.gesetze-im-internet.de/bsig_2009/__6.html">Betroffenenrechte </a> bekannt?',
       subject: 'Frage 56.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
@@ -1191,9 +1191,9 @@ export default {
     },
     {
       id: 58,
-      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein System, welches ggfs. innerhalb "Kritischer Infrastrukturen" (sog. KRITIS, z.B. IT/TK, Energie, Wasser, Ernährung, Transport/Verkehr, Gesundheit, Finanz-/Versicherungswesen) eingesetzt wird oder werden kann (§ 8b BSIG)?',
+      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein System, welches ggfs. innerhalb <a href="https://www.gesetze-im-internet.de/bsig_2009/__8b.html">"Kritischer Infrastrukturen" </a> (sog. KRITIS, z.B. IT/TK, Energie, Wasser, Ernährung, Transport/Verkehr, Gesundheit, Finanz-/Versicherungswesen) eingesetzt wird oder werden kann?',
       subject: 'Frage 58',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
@@ -1214,7 +1214,7 @@ export default {
       id: 58.1,
       inquiry: 'Sind Ihnen die hiermit verbundenen Rechte und Pflichten des Bundesamtes bzw. des Betreibers (z.B. §§ 7a, 8a, 8b BSIG) bekannt?',
       subject: 'Frage 58.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
@@ -1233,9 +1233,9 @@ export default {
     },
     {
       id: 60,
-      inquiry: 'Trifft das zu entwickelnde Produkt eigenständig technische Maßnahmen und Vorkehrungen zur Schadensvermeidung "nach dem Stand der Technik" nach § 8a Abs. 1 BSIG (z.B. Aufzeichnungs-, Melde- oder Informationsvorgänge)?',
+      inquiry: 'Enthält das zu entwickelnde Produkt eigenständig technische Maßnahmen/Vorkehrungen zur Schadensvermeidung <a href="https://www.gesetze-im-internet.de/bsig_2009/__8a.html">"nach dem Stand der Technik" (z.B. Aufzeichnungs-, Melde- oder Informationsvorgänge)?',
       subject: 'Frage 60',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
@@ -1256,7 +1256,7 @@ export default {
       id: 61,
       inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um einen "digitalen Dienst" i.S.v. § 8c BSIG?',
       subject: 'Frage 61',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
@@ -1275,9 +1275,9 @@ export default {
     },
     {
       id: 61.1,
-      inquiry: 'Sind die besonderen Anforderungen an deren Anbieter (§ 8c BSIG) bekannt?',
+      inquiry: 'Sind die besonderen Anforderungen an deren <a href="https://www.gesetze-im-internet.de/bsig_2009/__8c.html">"Anbieter" </a> bekannt?',
       subject: 'Frage 61.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
@@ -1296,9 +1296,9 @@ export default {
     },
     {
       id: 63,
-      inquiry: 'Ist bekannt, dass nicht nur das übermäßige Sammeln und Verarbeiten von Daten (Art. 5 Abs. 1 lit. c DSGVO, § 202a StGB), sondern auch das rechtswidrige Löschen oder Vernichten von Daten sogar einen Straftatbestand erfüllen kann (§ 303a StGB)?',
+      inquiry: 'Ist bekannt, dass nicht nur das <a href="https://www.gesetze-im-internet.de/stgb/__202a.html">übermäßige Sammeln und Verarbeiten von Daten </a>, sondern auch das rechtswidrige Löschen oder Vernichten von Daten <a href="https://www.gesetze-im-internet.de/stgb/__303a.html">Straftatbestände </a> erfüllen kann?',
       subject: 'Frage 63',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
@@ -1317,9 +1317,9 @@ export default {
     },
     {
       id: 64,
-      inquiry: 'Ist bekannt, dass durch eine auch bzgl. Datensicherheit unzureichend gestaltete Software oder Anwendung Schadensersatzansprüche (§ 823 Abs. 1 BGB), die sich auch auf sog. "Folgeschäden" beziehen können (§ 1 Abs. 1 ProdHaftG), ausgelöst werden können.',
+      inquiry: 'Ist bekannt, dass eine bzgl. Datensicherheit schlecht oder unzureichend gestaltete Software oder Anwendung <a href="https://www.gesetze-im-internet.de/bgb/__823.html">Schadensersatzansprüche </a> auslösen kann, die sich auch auf sog. <a href="https://www.gesetze-im-internet.de/prodhaftg/__1.html">"Folgeschäden" </a> erstecken können?',
       subject: 'Frage 64',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
@@ -1338,9 +1338,9 @@ export default {
     },
     {
       id: 65,
-      inquiry: 'Ist bekannt, dass der Grundsatz der Sicherheit der Verarbeitung auch in der DSGVO normiert ist und dort durch weitere Vorgaben konkretisiert wird (Art. 5 Abs. 1 lit. f i.V.m. Art. 32 DSGVO)?',
+      inquiry: 'Ist bekannt, dass der Grundsatz der "Sicherheit der Verarbeitung" auch in der DSGVO normiert ist und dort durch weitere Vorgaben konkretisiert wird (Art. 5 Abs. 1 lit. f i.V.m. Art. 32 DSGVO)?',
       subject: 'Frage 65',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
@@ -1361,7 +1361,7 @@ export default {
       id: 66,
       inquiry: 'Untersuchen und beurteilen Sie die Qualität der verwendeten Datenquellen?',
       subject: 'Frage 66',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
@@ -1382,7 +1382,7 @@ export default {
       id: 66.1,
       inquiry: 'Wie stellen Sie die Herkunft und Qualität der verwendeten Daten sicher?',
       subject: 'Frage 66.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
@@ -1421,7 +1421,7 @@ export default {
       id: 69,
       inquiry: 'Sollen interne/externe Datenzugriffe im Projekt dokumentiert werden?',
       subject: 'Frage 69',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
@@ -1439,7 +1439,7 @@ export default {
       id: 70,
       inquiry: 'Arbeiten Sie mit bereits vorhandenen Datensätzen?',
       subject: 'Frage 70',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
@@ -1460,7 +1460,7 @@ export default {
       id: 71,
       inquiry: 'Interagiert das System physisch mit der Welt?',
       subject: 'Frage 71',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
@@ -1481,7 +1481,7 @@ export default {
       id: 71.1,
       inquiry: 'Welche physischen Schäden kann das System verursachen?',
       subject: 'Frage 71.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
@@ -1499,7 +1499,7 @@ export default {
       id: 73,
       inquiry: 'Kann das System kontinuierlich aktualisiert werden (Updates)?',
       subject: 'Frage 73',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
@@ -1520,7 +1520,7 @@ export default {
       id: 74,
       inquiry: 'Sind Teile ihres Projekts outgesourced?',
       subject: 'Frage 74',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
       time: '',
@@ -1559,7 +1559,7 @@ export default {
       id: 76,
       inquiry: 'Verwenden Sie externe Software/Quellcode/Daten?',
       subject: 'Frage 76',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
       time: '',
@@ -1619,7 +1619,7 @@ export default {
       id: 79,
       inquiry: 'Kann die Funktionsfähigkeit (Zuverlässigkeit der Ergebnisse) des Systems regelmäßig überprüft werden?',
       subject: 'Frage 79',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
@@ -1640,7 +1640,7 @@ export default {
       id: 80,
       inquiry: 'Ist es vorstellbar, das System für ethisch unerwünschte Zwecke zu entfremden (Dual Use, z. B. LAWS) ?',
       subject: 'Frage 80',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
@@ -1661,7 +1661,7 @@ export default {
       id: 81,
       inquiry: 'Wäre es für den Antragsteller denkbar, dass eine vollständige Erklärbarkeit und Transparenz des Algorithmus nicht sicher dargestellt werden kann?',
       subject: 'Frage 81',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd.. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
@@ -1682,7 +1682,7 @@ export default {
       id: 81.2,
       inquiry: 'Wie können Sie den Algorithmus bzw. das Ergebnis des Algorithmus dem Anwender (Laien/Nicht-Programmierer) erklärbar und transparent machen?',
       subject: 'Frage 81.2',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
@@ -1700,7 +1700,7 @@ export default {
       id: 81.1,
       inquiry: 'Was tun Sie, um das Risiko technisch und/oder organisatorisch so gering wie möglich zu halten?',
       subject: 'Frage 81.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
@@ -1739,7 +1739,7 @@ export default {
       id: 84.1,
       inquiry: 'Mit welchen Maßnahmen kann eine bessere Datenqualität hergestellt werden?',
       subject: 'Frage 84.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Gerechtigkeit'],
       time: '',
@@ -1757,7 +1757,7 @@ export default {
       id: 86,
       inquiry: 'Wäre es technisch möglich, den Code Ihres Algorithmus öffentlich darstellbar und zugänglich zu machen?',
       subject: 'Frage 86',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
@@ -1778,7 +1778,7 @@ export default {
       id: 87,
       inquiry: 'Soll im Projektverlauf eine Technikfolgenabschätzung erfolgen?',
       subject: 'Frage 87',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
@@ -1799,7 +1799,7 @@ export default {
       id: 87.1,
       inquiry: 'Welche Bereiche müsste eine Technikfolgenabschätzung umfassen? (Gesellschaft, Umwelt etc.)',
       subject: 'Frage 87.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
@@ -1817,7 +1817,7 @@ export default {
       id: 89,
       inquiry: 'Sind Mechanismen geplant, die im Falle eines Schadens Abhilfe schaffen, z.B. in Form eines Rechtsschutzes oder einer Versicherungspolice?',
       subject: 'Frage 89',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
@@ -1839,7 +1839,7 @@ export default {
       id: 89.1,
       inquiry: 'Welche Mechanismen sollen diese Abhilfe konkret schaffen?',
       subject: 'Frage 89.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein','Schadensvermeidung'],
       time: '',
@@ -1856,11 +1856,11 @@ export default {
 
     {
       id: 91,
-      inquiry: 'Halten Sie es für möglich, dass das zu entwickelnde Produkt - abgesehen von Gleichheitsgrundsätzen - weitere (Grund-)Rechte Dritter tangiert oder gar in diese eingegriffen werden könnte (sog. "Drittwirkung" von Grundrechten ggü. Privaten)?',
+      inquiry: 'Halten Sie es für möglich, dass das zu entwickelnde Produkt - abgesehen von Gleichheitsgrundsätzen - weitere (Grund-)Rechte Dritter tangiert oder gar in diese eingegriffen werden könnte (sog. "Drittwirkung" von Grundrechten)?',
       subject: 'Frage 91',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1881,7 +1881,7 @@ export default {
       subject: 'Frage 91.1',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -1895,11 +1895,11 @@ export default {
     },
     {
       id: 93,
-      inquiry: 'Welche (technisch-organisatischen) Maßnahmen werden getroffen, um diesen Eingriff minimalinvasiv zu gestalten?',
+      inquiry: 'Welche (technisch-organisatischen) Maßnahmen werden getroffen, um mögliche Eingriffe zu minimieren?',
       subject: 'Frage 93',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie'],
+      labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
