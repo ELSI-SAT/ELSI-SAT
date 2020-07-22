@@ -462,7 +462,7 @@ export default {
     },
     {
       id: 22,
-      inquiry: 'Ist es denkbar, dass aus einer zunächst unpersonalisierten und vermeintlich "anonymnen" Datenverarbeitung auf irgendeine Weise doch ein Personenbezug hergestellt oder rückverfolgt werden könnte (z.B. Rekonstruktion, Rückverfolgung, gerichtl. Herausgabeverfügung)?',
+      inquiry: 'Ist es denkbar, dass aus einer zunächst unpersonalisierten und vermeintlich "anonymen" Datenverarbeitung auf irgendeine Weise doch ein Personenbezug hergestellt oder rückverfolgt werden könnte (z.B. Rekonstruktion, Rückverfolgung, gerichtl. Herausgabeverfügung)?',
       subject: 'Frage 22',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
@@ -543,7 +543,7 @@ export default {
     },
     {
       id: 26,
-      inquiry: 'Werden in der Regel durch das zu entwickelnde Produkt sog. <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1<"sensible Daten </a> verarbeitet?',
+      inquiry: 'Werden in der Regel durch das zu entwickelnde Produkt sog. <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1<"sensible Daten"</a> verarbeitet?',
       subject: 'Frage 26',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
