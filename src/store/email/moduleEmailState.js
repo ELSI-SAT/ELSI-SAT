@@ -14,7 +14,7 @@ export default {
       id: 1,
       inquiry: 'Titel des Forschungsprojektes',
       subject: 'Frage 1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Bitte nennen Sie den vollständigen Titel Ihres Forschungsprojektes. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
@@ -32,7 +32,7 @@ export default {
       id: 2,
       inquiry: 'Welche (weiteren/verbundenen) Einrichtungen sind an dem Forschungsprojekt beteiligt?',
       subject: 'Frage 2',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Bitte nennen Sie alle Projektpartner und deren jeweilige Kategorie. </p>',
       isStarred: false, // true || true
       labels: ['Allgemein'],
       time: '',
@@ -71,7 +71,7 @@ export default {
       id: 4,
       inquiry: 'Bitte beschreiben Sie den Zweck des Systems und erläutern Sie, wem das Forschungsergebnis helfen oder dienen soll.',
       subject: 'Frage 4',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Erläutern Sie bitte kurz, welchen Zweck Ihr MTI-System erfüllen soll und welche Personen/Gruppen von dem Forschungsergebnis profitieren. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
@@ -87,9 +87,9 @@ export default {
     },
     {
       id: 5,
-      inquiry: 'Hilft oder dient das System bzw. Forschungsergebnis einer schutzbedürftigen Gruppe (z.B. Kinder/Jugendliche, ältere oder behinderte Menschen)?',
+      inquiry: 'Hilft oder dient das System bzw. Forschungsergebnis einer schutzbedürftigen Gruppe?',
       subject: 'Frage 5',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || true
       labels: ['Allgemein'],
       time: '',
@@ -111,7 +111,7 @@ export default {
       id: 5.1,
       inquiry: 'Ist in das Forschungsprojekt die betroffene schutzbedürftige Gruppe involviert?',
       subject: 'Frage 5.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Nennen Sie bitte alle schutzbedürftigen Gruppen, die aktiv in Ihrem Forschungsprojekt mitarbeiten. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
@@ -132,7 +132,7 @@ export default {
       id: 7,
       inquiry: 'Um welche Art von Mensch-Technik-Interaktion handelt es sich bei dem Forschungsprojekt?',
       subject: 'Frage 7',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Bitte klassifizieren Sie Ihr geplantes System in der folgenden Liste. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
@@ -157,7 +157,7 @@ export default {
       id: 8,
       inquiry: 'Auf welche Art von Resultaten soll die KI abzielen?',
       subject: 'Frage 8',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
@@ -182,7 +182,7 @@ export default {
       id: 9,
       inquiry: 'Wie lernt das System?',
       subject: 'Frage 9',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
@@ -203,7 +203,7 @@ export default {
       id: 10,
       inquiry: 'In welchen Branchen soll die entwickelte Mensch-Technik-Interaktion eingesetzt werden?',
       subject: 'Frage 10',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Nennen Sie bitte alle denkbaren Branchen, in denen die Mensch-Technik-Interaktion einsetzbar wäre, unabhängig des angedachten Einsatzzwecks. </p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
       time: '',
@@ -233,7 +233,7 @@ export default {
       id: 11,
       inquiry: 'Ist ein Einsatz oder Vertrieb des zu entwickelnden Systems nach Abschluss des Forschungsprojektes geplant bzw. möglich?',
       subject: 'Frage 11',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Bitte geben Sie über mögliche wirtschaftliche Verwertungsmöglichkeiten des Systems Auskunft. </p>',
       isStarred: false, // true || true
       labels: ["Allgemein"],
       time: '',
@@ -254,7 +254,7 @@ export default {
       id: 12,
       inquiry: 'Beschreiben Sie kurz, welche Interaktionen die Maschine mit Menschen ausführen soll.',
       subject: 'Frage 12',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || true
       labels: ['Allgemein'],
       time: '',
@@ -332,7 +332,7 @@ export default {
       id: 15.1,
       inquiry: 'Was verstehen Sie unter "angemessene menschliche Kontrolle" in Ihrem Forschungsvorhaben?',
       subject: 'Frage 15.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Bitte spezifizieren Sie kurz, wie die menschliche Kontrolle in Ihrem speziellen Forschungsvorhaben angemessen sichergestellt wird. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Transparenz'],
       time: '',
@@ -350,7 +350,7 @@ export default {
       id: 15.2,
       inquiry: 'Warum sind Sie der Meinung, dass keine menschliche Kontrolle notwendig ist?',
       subject: 'Frage 15.2',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Bitte spezifizieren Sie kurz, weshalb in Ihrem Forschungsprojekt keine menschliche Kontrolle notwendig wird. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Transparenz'],
       time: '',
@@ -368,7 +368,7 @@ export default {
       id: 18,
       inquiry: 'Ist das System vom Nutzer jederzeit übersteuerbar?',
       subject: 'Frage 18',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
       time: '',
@@ -389,7 +389,7 @@ export default {
       id: 18.1,
       inquiry: 'Wie stellen Sie die Übersteuerbarkeit der Maschine sicher?',
       subject: 'Frage 18.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>Wenn möglich, bitte nennen Sie bereits konkrete Maßnahmen. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
       time: '',
@@ -405,9 +405,9 @@ export default {
     },
     {
       id: 20,
-      inquiry: 'Werden durch das zu entwickelnde Produkt personenbezogene Daten (Gesetzeslink: Art. 4 Nr. 1 DSGVO) verarbeitet (Art. 4 Nr. 2 DSGVO)?',
+      inquiry: 'Werden durch das zu entwickelnde Produkt  <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1">personenbezogene Daten</a> verarbeitet?',
       subject: 'Frage 20',
-      message: '<p>Gesetzeslink zu Art. 4 Nr. 1 DSGVO: <a href="https://dsgvo-gesetz.de/art-4-dsgvo/" target="_blank">dsgvo-gesetz.de/art-4-dsgvo/</a></p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
@@ -444,11 +444,11 @@ export default {
     },
     {
       id: 21,
-      inquiry: 'Ist bekannt, dass ggfs. (mindestens) ein datenrechtlich Verantwortlicher (Art. 4 Nr. 7 DSGVO) existiert (z.B. Entwickler/Hersteller/Betreiber/Nutzer)?',
+      inquiry: 'Ist bekannt, wer im praktischen Systembetrieb als <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1">Daten-Verantwortlicher</a> gelten müsste oder anzusehen wäre (z.B. Entwickler/Hersteller/Betreiber/Nutzer, evtl. auch kumulativ)?',
       subject: 'Frage 21',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -462,11 +462,11 @@ export default {
     },
     {
       id: 22,
-      inquiry: 'Ist es denkbar, dass aus der (unpersonalisierten) Datenverarbeitung ein Personenbezug hergestellt werden kann (z.B. Rekonstruktion, Rückverfolgung, gerichtl. Herausgabeverfügung)?',
+      inquiry: 'Ist es denkbar, dass aus einer zunächst unpersonalisierten und vermeintlich "anonymnen" Datenverarbeitung auf irgendeine Weise doch ein Personenbezug hergestellt oder rückverfolgt werden könnte (z.B. Rekonstruktion, Rückverfolgung, gerichtl. Herausgabeverfügung)?',
       subject: 'Frage 22',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz','Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -483,11 +483,11 @@ export default {
     },
     {
       id: 23,
-      inquiry: 'Sofern mehrere Datenverarbeiter beteiligt sind, könnte im Betrieb der Anwendung evtl. eine gemeinsame Verantwortlichkeit (Art. 26 DSGVO) oder einer Auftragsverarbeitung (Art. 28 DSGVO) bestehen?',
+      inquiry: 'Sofern mehrere Datenverarbeiter beteiligt sind, könnte eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3098-1-1">gemeinsame Verantwortlichkeit</a> oder einer Auftragsverarbeitung <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3162-1-1"<Auftragsverarbeitung </a> bestehen?',
       subject: 'Frage 23',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -504,11 +504,11 @@ export default {
     },
     {
       id: 24,
-      inquiry: 'Könnten durch das zu entwickelnde Produkt Daten von "Kindern", d.h. unter 16-jährigen (Art. 8 DSGVO), verarbeitet werden?',
+      inquiry: 'Könnten durch das zu entwickelnde Produkt Daten von <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2044-1-1"<Kindern, d.h. unter 16-jährigen </a> verarbeitet werden (ggfs. unbeabsichtigt)?',
       subject: 'Frage 24',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -525,11 +525,11 @@ export default {
     },
     {
       id: 24.1,
-      inquiry: 'Welche "angemessenen" Anstrengungen werden unternommen, um sich zu vergewissern, dass die Einwilligung durch den Träger der elterlichen Verantwortung für das Kind erteilt wurde (Art. 8 Abs. 2 DSGVO)?',
+      inquiry: 'Welche "angemessenen" Anstrengungen bzw. Vorkehrungen können im System getroffen werden, um sicherzustellen, dass für ein "Kind" eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2044-1-1"<notwendige Einwilligung durch den Träger der elterlichen Verantwortung erteilt wird </a>?',
       subject: 'Frage 24.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -543,11 +543,11 @@ export default {
     },
     {
       id: 26,
-      inquiry: 'Werden durch das zu entwickelnde Produkt sog. "sensible Daten" (Art. 9 DSGVO) verarbeitet?',
+      inquiry: 'Werden in der Regel durch das zu entwickelnde Produkt sog. <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1<"sensible Daten </a> verarbeitet?',
       subject: 'Frage 26',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -564,11 +564,11 @@ export default {
     },
     {
       id: 26.1,
-      inquiry: 'Besteht eine Einwilligung oder eine sonstige Ausnahme nach (Art. 9 Abs. 2 DSGVO)?',
+      inquiry: 'Besteht eine Einwilligung oder eine sonstige Ausnahme nach <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1<"Art. 9 Abs. 2 DSGVO </a>?',
       subject: 'Frage 26.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -585,11 +585,11 @@ export default {
     },
     {
       id: 28,
-      inquiry: 'Ist bekannt, dass die DSGVO eine ausschließlich auf einer automatisierten Verarbeitung - einschließlich Profiling - beruhende Entscheidung grundsätzlich nicht gestattet (Art. 22 DSGVO)?',
+      inquiry: 'Ist bekannt, dass eine ausschließlich auf einer automatisierten Verarbeitung beruhende Entscheidung - einschließlich Profiling - grundsätzlich unzulässig ist <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2853-1-1"Art. 22 DSGVO </a>?',
       subject: 'Frage 28',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -606,11 +606,11 @@ export default {
     },
     {
       id: 29,
-      inquiry: 'Wäre voraussichtlich wegen eines hohen datenrechtlichen Risikos für die Rechte Betroffener durch den Anwender/Nutzer eine DS-Folgenabschätzung (Art. 35 DSGVO) durchzuführen?',
+      inquiry: 'Erschiene wegen eines hohen datenrechtlichen Risikos für die Rechte Betroffener durch den Anwender/Nutzer eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3558-1-1"<DS-Folgenabschätzung nach (Art. 35 DSGVO) </a> als sinnvoll oder wahrscheinlich?',
       subject: 'Frage 29',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -627,11 +627,11 @@ export default {
     },
     {
       id: 30,
-      inquiry: 'Welche Maßnahmen werden in Hinblick auf die Entwicklung bzw. Ausgestaltung des Produkts getroffen, um ein datenrechtliches Risiko möglichst weitgehend zu minimieren (Anonymisierung, TOMs, etc., vgl. Art. 24 DSGVO)?',
+      inquiry: 'Sind technische oder organisatorische Maßnahmen bzw. Vorgaben zur Ausgestlatung des Produkts geplant, um ein <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3058-1-1">datenrechtliches Risiko (i.S.v. Art. 24 DSGVO)</a> wirkungsvoll zu minimieren <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3395-1-1">(z.B. Anonymisierung, technisch-organisatorische Maßnahmen, etc.)?',
       subject: 'Frage 30',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -645,11 +645,11 @@ export default {
     },
     {
       id: 31,
-      inquiry: 'Wird die Datenverarbeitung des Produkts oder der Anwendung voraussichtlich auf oder mithilfe fremder/dritter Infrastruktur (Server, Open Source etc.) durch- oder ausgeführt (Art. 12, 13 Abs. 1 lit. e, 30 Abs. 1 lit. d DSGVO)?',
+      inquiry: 'Wird die Datenverarbeitung des Produkts oder der Anwendung voraussichtlich unter Zuhilfenahme fremder/dritter Infrastruktur (Server, Open Source etc.) durch- oder ausgeführt (Art. 12, 13 Abs. 1 lit. e, 30 Abs. 1 lit. d DSGVO)?',
       subject: 'Frage 31',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -668,9 +668,9 @@ export default {
       id: 31.1,
       inquiry: 'Welche (technisch-organisatorischen) Maßnahmen werden getroffen bzw. sind geplant, um hierbei einen hinreichenden Datenschutz sowie die erforderliche Datensicherheit zu gewährleisten?',
       subject: 'Frage 31.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -684,11 +684,11 @@ export default {
     },
     {
       id: 33,
-      inquiry: 'Finden bei Einsatz des zu entwickelnden Produkts Datenübermittlungsvorgänge in EU-Drittländer, d.h. also eine grenzüberschreitende Verarbeitung (Art. 4 Nr. 23, Art. 13 Abs. 1 lit. f, Art. 30 Abs. 1 lit. e DSGVO) statt?',
+      inquiry: 'Finden bei Einsatz des zu entwickelnden Produkts Datenübermittlungen in EU-Drittländer, d.h. also eine grenzüberschreitende Verarbeitung (Art. 4 Nr. 23, Art. 13 Abs. 1 lit. f, Art. 30 Abs. 1 lit. e DSGVO) statt?',
       subject: 'Frage 33',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -707,9 +707,9 @@ export default {
       id: 33.1,
       inquiry: 'Welche (technisch-organisatorischen) Maßnahmen werden getroffen bzw. sind geplant, um hierbei einen hinreichenden Datenschutz und die erforderliche Datensicherheit zu gewährleisten?',
       subject: 'Frage 33.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -723,11 +723,11 @@ export default {
     },
     {
       id: 35,
-      inquiry: 'Ist bekannt, dass die Grundsätze von Privacy by Design (Art. 25 Abs. 1 DSGVO) bzw. Privacy by Default (Art. 25 Abs. 2 DSGVO) auch für den Hersteller bzw. Entwickler des Produkts Anwendung finden (ErwG 78 DSGVO)?',
+      inquiry: 'Ist bekannt, dass die Grundsätze von <a href="interner Link zu Wissensdatenbank">Privacy by Design </a> bzw. <a href="interner Link zu Wissensdatenbank"> Privacy by Default </a> auch für den Hersteller bzw. Entwickler des Produkts Anwendung finden?',
       subject: 'Frage 35',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -746,9 +746,9 @@ export default {
       id: 36,
       inquiry: 'Ist bekannt, dass eine unzureichende/fehlerhafte Software-Architektur (oder auch ein entsprechendes Update) eines Produkts, das digitale Inhalte bereitstellt (sog. digital sevices/contents, auch "embedded content") Gewährleistungsansprüche auslösen kann (sog. DI-RL (EU) 2019/770)?',
       subject: 'Frage 36',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -765,11 +765,11 @@ export default {
     },
     {
       id: 36.1,
-      inquiry: 'Ist bekannt, dass eine unzureichende/fehlerhafte Software-Architektur eines Produkts, das digitale Inhalte bereitstellt (s.o.), auch darin liegen kann, dass den Datenschutzgrundsätzen nicht ausreichend Rechnung getragen wurde (z.B. Grds. d. Datensparsamkeit, Art. 5 Abs. 1 lit. c, Art. 25 Abs. 1 u. 2 DSGVO i.V.m. ErwG 48 DI-RL)?',
+      inquiry: 'Ist bekannt, dass eine unzureichende/fehlerhafte Software-Architektur eines Produkts, das digitale Inhalte bereitstellt, bereits darin liegen kann, dass den Datenschutzgrundsätzen nicht oder nicht hinreichend Rechnung getragen wurde (z.B. Datensparsamkeit, Art. 5 Abs. 1 lit. c, Art. 25 Abs. 1 u. 2 DSGVO i.V.m. ErwG 48 DI-RL)?',
       subject: 'Frage 36.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -786,11 +786,11 @@ export default {
     },
     {
       id: 38,
-      inquiry: 'Ist geplant, dass sämtliche personenbezogenen Daten des Nutzers ausschließlich innerhalb des Systems bleiben und i.d.R. nicht für Dritte zugänglich sind?',
+      inquiry: 'Ist geplant, dass sämtliche personenbezogenen Daten des Nutzers ausschließlich innerhalb des Systems bleiben und in der Regel nicht für Dritte zugänglich sind?',
       subject: 'Frage 38',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -809,9 +809,9 @@ export default {
       id: 38.1,
       inquiry: 'Mit welchen Maßnahmen wird sichergestellt, dass Datensicherheit (Art. 5  Abs. 1 lit f, Art. 32 Abs. 1/2 DSGVO) und Datenschutz (Art. 5 Abs 1a-e) in Hinblick auf die verarbeiteten Daten gewährleistet wird (keine Manipulation/Hacks)?',
       subject: 'Frage 38.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -827,9 +827,9 @@ export default {
       id: 40,
       inquiry: 'Sind in der Anwendung technische Vorkehrungen getroffen, damit ein Auskunftsverlangen über personenbezogenene Daten durch den Betroffenen unkompliziert bearbeitet werden kann?',
       subject: 'Frage 40',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -846,11 +846,11 @@ export default {
     },
     {
       id: 41,
-      inquiry: 'Sind in der Anwendung technische Vorkehrungen getroffen, damit eine ggfs. erfolgte Einwilligung der Datenverarbeitung jederzeit unkompliziert widerrufbar ist bzw. ein Widerspruch (Art. 21 Abs. 6 DSGVO) berücksichtigt werden kann?',
+      inquiry: 'Sind in der Anwendung technische Vorkehrungen getroffen, damit eine ggfs. erfolgte Einwilligung der Datenverarbeitung jederzeit unkompliziert widerrufbar ist bzw. ein <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2818-1-1">Widerspruch </a> berücksichtigt werden kann?',
       subject: 'Frage 41',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -869,9 +869,9 @@ export default {
       id: 41.1,
       inquiry: 'Wie würde der Widerspruch ggfs. (technisch-organisatorisch) umgesetzt und ausgeführt?',
       subject: 'Frage 41.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Datenschutz', 'Autonomie','Transparenz'],
+      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
@@ -908,7 +908,7 @@ export default {
       id: 44,
       inquiry: 'Planen Sie den Anwender darauf aufmerksam zu machen, dass er/sie mit einem nicht-menschlichen Agenten agiert?',
       subject: 'Frage 44',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
       time: '',
@@ -929,7 +929,7 @@ export default {
       id: 44.1,
       inquiry: 'Wird sichergestellt, dass jedem Anwender bewusst ist, dass die Maschine bestimmte Ergebnisse lediglich aufgrund einer mathematischen Annäherungsrechnung (Wahrscheinlichkeit) präsentiert?',
       subject: 'Frage 44.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Gerechtigkeit','Transparenz'],
       time: '',
@@ -950,7 +950,7 @@ export default {
       id: 44.2,
       inquiry: 'Weshalb soll dem Anwender nicht bewusst sein, dass die Maschine bestimmte Ergebnisse lediglich aufgrund einer mathematischen Annäherungsrechnung (Wahrscheinlichkeit) präsentiert?',
       subject: 'Frage 44.2',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Gerechtigkeit','Transparenz'],
       time: '',
@@ -968,7 +968,7 @@ export default {
       id: 47,
       inquiry: 'Gibt es Personen oder Gruppen (z. B. Minderheiten), die durch die geplante Entwicklung oder Einführung benachteiligt sein können?',
       subject: 'Frage 47',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
@@ -989,7 +989,7 @@ export default {
       id: 47.1,
       inquiry: 'Wie ließe sich eine mögliche Benachteiligung rechtfertigen?',
       subject: 'Frage 47.1',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
@@ -1005,9 +1005,9 @@ export default {
     },
     {
       id: 49,
-      inquiry: 'Ist das zu entwickelnde Produkt geeignet, in seiner Anwendung (datenrechtliche) Verstöße gegen den Gleichheitsgrundsatz zu fördern oder zu bewirken (Art. 3 GG, ggfs. i.V.m. Art. 9 DSGVO)?',
+      inquiry: 'Ist das zu entwickelnde Produkt geeignet, in seiner praktischen Anwendung (datenrechtliche) Verstöße gegen <a href="https://www.gesetze-im-internet.de/gg/art_3.html"<Gleichheitsgrundsätze </a> fördern oder gar zu bewirken?',
       subject: 'Frage 49',
-      message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
+      message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Gerechtigkeit'],
       time: '',
@@ -1026,7 +1026,7 @@ export default {
     },
     {
       id: 50,
-      inquiry: 'Ist bekannt, dass auch eine funktionierende und zunächst "undiskriminiert gefütterte" (selbstlernende) KI eine sog. BIAS aufweisen kann, also in Entscheidungen o. Ergebnissen diskriminiert?',
+      inquiry: 'Ist bekannt, dass auch eine zunächst "undiskriminiert gefütterte" (selbstlernende) KI eine sog. BIAS aufweisen kann, d.h. also in Entscheidungen oder Ergebnissen diskriminierende Wirkung haben kann?',
       subject: 'Frage 50',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
