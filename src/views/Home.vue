@@ -14,15 +14,21 @@
     <div class="vx-row">
       <div class="vx-col w-1/2 mb-base">
         <vx-card
-          title="Beantwortete Fragen"
+          title="ELSI-Score"
           title-color="primary"
-          subtitle="Fortschritt bei der Beantwortung aller Fragen">
+          subtitle="ELSI-Score gesamt und alle Kategorien.">
           <vue-apex-charts
+            v-if="quota >= 50"
             type="radialBar"
-            height="350"
+            height="300"
             :options="radialBarChart.chartOptions"
-            :series="quota">
+            :series="radialBarChart.series">
           </vue-apex-charts>
+          <div
+            v-if="quota < 50"
+            style="height: 50px;">
+            <p>Zu wenige Daten zur Berechnung (ab 50 Prozent Vollständigkeit).</p>
+          </div>
         </vx-card>
       </div>
 
@@ -32,11 +38,17 @@
           title-color="primary"
           subtitle="Der Fortschritt bei der Beantwortung des Fragebogens.">
           <vue-apex-charts
+            v-if="quota >= 50"
             type="bar"
             height="250"
             :options="barChart.chartOptions"
             :series="barChart.series">
           </vue-apex-charts>
+          <div
+            v-if="quota < 50"
+            style="height: 50px;">
+            <p>Zu wenige Daten zur Berechnung (ab 50 Prozent Vollständigkeit).</p>
+          </div>
         </vx-card>
       </div>
     </div>
@@ -48,11 +60,17 @@
           title-color="primary"
           subtitle="Risiko, Adressierung und ELSI-Score als Ampel für alle Kategorien.">
           <vue-apex-charts
+            v-if="quota >= 50"
             type="heatmap"
             height="316"
             :options="heatMapChart.chartOptions"
             :series="heatMapChart.series">
           </vue-apex-charts>
+          <div
+            v-if="quota < 50"
+            style="height: 50px;">
+            <p>Zu wenige Daten zur Berechnung (ab 50 Prozent Vollständigkeit).</p>
+          </div>
         </vx-card>
       </div>
 
@@ -62,11 +80,17 @@
           title-color="primary"
           subtitle="Die Risiko- und Adressierungs-Werte für jede Kategorie.">
           <vue-apex-charts
+            v-if="quota >= 50"
             type="bar"
             height="316"
             :options="columnChart.chartOptions"
             :series="columnChart.series">
           </vue-apex-charts>
+          <div
+            v-if="quota < 50"
+            style="height: 50px;">
+            <p>Zu wenige Daten zur Berechnung (ab 50 Prozent Vollständigkeit).</p>
+          </div>
         </vx-card>
       </div>
     </div>
@@ -89,6 +113,70 @@
 
       quota () {
         return [this.$store.getters['email/getQuota']]
+      },
+
+      radialBarChart () {
+        let labelsObj = this.$store.getters['email/getAllLabels']
+        let labels = []
+        let colors = []
+        let dataMalus = []
+        let dataBonus = []
+        let dataScore = []
+
+        labelsObj.forEach((label) => {
+          labels = [...labels, label.value]
+          colors = [...colors, label.color]
+
+          let totalMalus = this.$store.getters['email/getScoreTotalMalus'](label.value)
+          let maximumMalus = this.$store.getters['email/getScoreMaximumMalus'](label.value)
+          let malusQuota = Math.floor((totalMalus * 100) / maximumMalus)
+          dataMalus = [...dataMalus, malusQuota]
+
+          let totalBonus = this.$store.getters['email/getScoreTotalBonus'](label.value)
+          let maximumBonus = this.$store.getters['email/getScoreMaximumBonus'](label.value)
+          let bonusQuota = Math.floor((totalBonus * 100) / maximumBonus)
+          dataBonus = [...dataBonus, bonusQuota]
+
+          let scoreQuota = Math.floor(((1 - ((totalMalus / maximumMalus) - (totalBonus  / maximumBonus))) / 2) * 100)
+          dataScore = [...dataScore, scoreQuota]
+
+        });
+
+        return {
+          series: dataScore,
+
+          chartOptions: {
+            chart: {
+              height: 300,
+              type: 'radialBar',
+            },
+            plotOptions: {
+              radialBar: {
+                hollow: {
+                  size: '40%',
+                },
+                dataLabels: {
+                  name: {
+                    fontSize: '22px',
+                  },
+                  value: {
+                    fontSize: '16px',
+                  },
+                  total: {
+                    show: true,
+                    label: "Gesamt",
+                    formatter: function (w) {
+                      // By default this function returns the average of all series. The below is just an example to show the use of custom formatter function
+                      return dataScore[0] + ' %'
+                    }
+                  }
+                }
+              }
+            },
+            colors: colors,
+            labels: labels,
+          },
+        }
       },
 
       barChart () {
@@ -187,8 +275,8 @@
           let bonusQuota = Math.floor((totalBonus * 100) / maximumBonus)
           dataBonus = [...dataBonus, bonusQuota]
 
-          let scoreQuote = Math.floor(((1 - ((totalMalus / maximumMalus) - (totalBonus  / maximumBonus))) / 2) * 100)
-          dataScore = [...dataScore, scoreQuote]
+          let scoreQuota = Math.floor(((1 - ((totalMalus / maximumMalus) - (totalBonus  / maximumBonus))) / 2) * 100)
+          dataScore = [...dataScore, scoreQuota]
 
         });
 
@@ -279,14 +367,21 @@
           let maximumBonus = this.$store.getters['email/getScoreMaximumBonus'](label.value)
           let bonusQuota = Math.floor((totalBonus * 100 ) / maximumBonus)
 
-          let scoreQuote = Math.floor(((1 - ((totalMalus / maximumMalus) - (totalBonus  / maximumBonus))) / 2) * 100 )
+          let scoreQuota = Math.floor(((1 - ((totalMalus / maximumMalus) - (totalBonus  / maximumBonus))) / 2) * 100 )
+
+          let invertedBonusQuota = 100-bonusQuota
+          let invertedScoreQuota = 100-scoreQuota
+
+          // Apexcharts heatmap shows values of zero as blank.
+          invertedBonusQuota <= 0 ? invertedBonusQuota = 1 : ''
+          invertedScoreQuota <= 0 ? invertedScoreQuota = 1 : ''
 
           let dataLabel = new Object();
             dataLabel.name = label.value
             dataLabel.data = [
               {x: 'Risiko', y: malusQuota},
-              {x: 'Adressierung', y: 100-bonusQuota},
-              {x: 'Score', y: 100-scoreQuote},
+              {x: 'Adressierung', y: invertedBonusQuota},
+              {x: 'Score', y: invertedScoreQuota},
             ]
 
             dataHeatmap = [...dataHeatmap, dataLabel]
@@ -311,9 +406,9 @@
                 colorScale: {
                   ranges: [
                     {
-                      from: 0,
+                      from: -100,
                       to: 40,
-                      name: 'niedrig',
+                      name: 'positiv',
                       color: '#04E397'
                     },
                     {
@@ -325,7 +420,7 @@
                     {
                       from: 66,
                       to: 100,
-                      name: 'hoch',
+                      name: 'negativ',
                       color: '#FF5B72'
                     }
                   ]
@@ -336,7 +431,7 @@
               enabled: false
             },
             tooltip: {
-              enabled: false,
+              enabled: true,
             },
             stroke: {
               show: true,
@@ -384,64 +479,6 @@
       }
     },
 
-    data() {
-
-      return {
-        radialBarChart: {
-          series: ["0"],
-          chartOptions: {
-            plotOptions: {
-              radialBar: {
-                size: 140,
-                offsetY: -30,
-                startAngle: -150,
-                endAngle: 150,
-                hollow: {
-                  size: '60%',
-                },
-                track: {
-                  background: "#f8f8f8",
-                  strokeWidth: '100%',
-
-                },
-                dataLabels: {
-                  value: {
-                    offsetY: 0,
-                    color: '#99a2ac',
-                    fontSize: '2rem'
-                  }
-                }
-              },
-            },
-            colors: ['#7367F0'],
-            fill: {
-              // type: 'gradient',
-              // gradient: {
-              //   // enabled: true,
-              //   shade: 'dark',
-              //   type: 'horizontal',
-              //   shadeIntensity: 0.5,
-              //   gradientToColors: ['#76B9F4'],
-              //   inverseColors: true,
-              //   opacityFrom: 1,
-              //   opacityTo: 1,
-              //   stops: [0, 100]
-              // },
-            },
-            stroke: {
-              // dashArray: 8
-            },
-            chart: {
-              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
-              toolbar: {
-                show: true,
-              },
-            },
-            labels: [''],
-          },
-        },
-      }
-    },
 
     components: {
       VueApexCharts
