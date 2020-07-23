@@ -435,6 +435,50 @@ export default {
   },
 
 
+  /**
+   * Determines if a question is a followup question.
+   *
+   * @param state
+   * @param getters
+   * @returns {function(...[*]=)}
+   */
+  isFollowup: (state, getters) => (mailid) => {
+    if (getters['getAllFollowupIDs'].includes(mailid)) {
+      return true
+    } else {
+      return false
+    }
+  },
+
+
+  /**
+   *
+   * @param state
+   * @param getters
+   */
+  isActiveFollowup: (state, getters) => (mailid) => {
+    let isActiveFollowup = false
+
+    // get its parent's option of which it is the followup
+    // Since followup-questions are indexed with a dot (eg. 15.1)
+    // the parent's id is the current ID as an integer
+    let parentID = parseInt(mailid)
+    let parent = getters.getMail(parentID)
+    let triggerOption = parent.answer.options.find(o => o.followupID == mailid).name
+
+    if (triggerOption == parent.answer.answer) {
+      isActiveFollowup = true
+    }
+
+    // console.log('mailid: ' + mailid)
+    // console.log('triggerOption: ' + triggerOption)
+    // console.log('parent.answer.answer: ' + parent.answer.answer)
+    // console.log('isActiveFollowup: ' + isActiveFollowup)
+
+    return isActiveFollowup;
+  },
+
+
   getScoreTotalMalus: (state, getters) => (label) =>{
     let totalMalus = 0;
 
@@ -446,7 +490,16 @@ export default {
       // If a label is set, discard questions without this label.
       if (label !== false && !mail.labels.includes(label)) return;
 
-      let risk = 0
+      // If this question is a followup-question,
+      // only consider it, if its parent's answer triggers it.
+      if (
+        getters.isFollowup(mail.id)
+        && getters.isActiveFollowup(mail.id) !== true
+      ) {
+        return;
+      }
+
+      let risk = 0;
       let answer_value = mail.answer.answer
       // Todo: refactor: abstract/centralize
       let factor = 1; if (getters.getNumberOfLabels(mail.id) >= 3) factor = 2
@@ -481,6 +534,15 @@ export default {
       // If a label is set, discard questions without this label.
       if (label !== false && !mail.labels.includes(label)) return;
 
+      // If this question is a followup-question,
+      // only consider it, if its parent's answer triggers it.
+      if (
+        getters.isFollowup(mail.id)
+        && getters.isActiveFollowup(mail.id) !== true
+      ) {
+        return;
+      }
+
       let risk = 0
       // Todo: refactor: abstract/centralize
       let factor = 1; if (getters.getNumberOfLabels(mail.id) >= 3) factor = 2
@@ -510,6 +572,15 @@ export default {
 
       // If a label is set, discard questions without this label.
       if (label !== false && !mail.labels.includes(label)) return;
+
+      // If this question is a followup-question,
+      // only consider it, if its parent's answer triggers it.
+      if (
+        getters.isFollowup(mail.id)
+        && getters.isActiveFollowup(mail.id) !== true
+      ) {
+        return;
+      }
 
       let bonus = 0
       let answer_value = mail.answer.answer
@@ -546,6 +617,15 @@ export default {
 
       // If a label is set, discard questions without this label.
       if (label !== false && !mail.labels.includes(label)) return;
+
+      // If this question is a followup-question,
+      // only consider it, if its parent's answer triggers it.
+      if (
+        getters.isFollowup(mail.id)
+        && getters.isActiveFollowup(mail.id) !== true
+      ) {
+        return;
+      }
 
       let bonus = 0
       // Todo: refactor: abstract/centralize
