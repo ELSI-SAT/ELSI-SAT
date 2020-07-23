@@ -18,7 +18,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -36,7 +35,6 @@ export default {
       isStarred: false, // true || true
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -54,7 +52,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -75,7 +72,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -93,7 +89,6 @@ export default {
       isStarred: false, // true || true
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -115,7 +110,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -136,7 +130,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -161,7 +154,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -186,7 +178,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -207,7 +198,6 @@ export default {
       isStarred: false, // true || true
       labels: ["Allgemein"],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -237,7 +227,6 @@ export default {
       isStarred: false, // true || true
       labels: ["Allgemein"],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -258,7 +247,6 @@ export default {
       isStarred: false, // true || true
       labels: ['Allgemein'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -276,7 +264,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -297,7 +284,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -315,7 +301,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -336,7 +321,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -354,7 +338,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -372,7 +355,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -393,7 +375,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -411,7 +392,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -450,7 +430,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -468,7 +447,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz','Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -489,7 +467,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -510,7 +487,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -531,7 +507,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -549,7 +524,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -570,7 +544,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -591,7 +564,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -612,7 +584,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -633,7 +604,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -651,7 +621,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -672,7 +641,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -690,7 +658,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -711,7 +678,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -729,7 +695,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -750,7 +715,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -771,7 +735,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -792,7 +755,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -813,7 +775,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -831,7 +792,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -852,7 +812,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -873,7 +832,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -891,7 +849,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -912,7 +869,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -933,7 +889,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Gerechtigkeit','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -954,7 +909,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Autonomie','Gerechtigkeit','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -972,7 +926,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -993,7 +946,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1011,7 +963,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1032,7 +983,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1053,7 +1003,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1074,7 +1023,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1095,7 +1043,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1113,7 +1060,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1134,7 +1080,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1149,13 +1094,12 @@ export default {
     },
     {
       id: 56,
-      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein IT-System bzw. um eine Anwendung von <a href="https://www.gesetze-im-internet.de/bsig_2009/__2.html">Komponenten oder Prozessen für Einrichtungen des Bundes?</a>'
+      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein IT-System bzw. um eine Anwendung von <a href="https://www.gesetze-im-internet.de/bsig_2009/__2.html">Komponenten oder Prozessen für Einrichtungen des Bundes?</a>',
       subject: 'Frage 56',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1176,7 +1120,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1197,7 +1140,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1218,7 +1160,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1239,7 +1180,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1260,7 +1200,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1281,7 +1220,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1302,7 +1240,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1323,7 +1260,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1344,7 +1280,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1365,7 +1300,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1386,7 +1320,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1404,7 +1337,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1425,7 +1357,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1443,7 +1374,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1464,7 +1394,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1485,7 +1414,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1503,7 +1431,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1524,7 +1451,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1545,7 +1471,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1563,7 +1488,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Autonomie'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1584,7 +1508,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein'], // tbd.
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1605,7 +1528,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1623,7 +1545,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung','Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1644,7 +1565,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1665,7 +1585,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1686,7 +1605,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1704,7 +1622,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1722,7 +1639,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1743,7 +1659,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1761,7 +1676,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Transparenz'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1782,7 +1696,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1803,7 +1716,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1821,7 +1733,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1843,7 +1754,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein','Schadensvermeidung'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1862,7 +1772,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1883,7 +1792,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1901,7 +1809,6 @@ export default {
       isStarred: false, // true || false
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Autonomie','Gerechtigkeit'],
       time: '',
-      replies: [],
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
       trashingReason: '', // String
@@ -1919,8 +1826,7 @@ export default {
     //   isStarred: false, // true || false
     //   labels: ['Allgemein'],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -1941,8 +1847,7 @@ export default {
     //   isStarred: false, // true || true
     //   labels: ['Allgemein'],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -1964,8 +1869,7 @@ export default {
     //   isStarred: false, // true || false
     //   labels: ['Allgemein'],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -1982,8 +1886,7 @@ export default {
     //   isStarred: false, // true || false
     //   labels: ['Datenschutz'],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -2000,8 +1903,7 @@ export default {
     //   isStarred: false, // true || true
     //   labels: ['Allgemein'],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -2018,8 +1920,7 @@ export default {
     //   isStarred: false, // true || false
     //   labels: ['Allgemein'], // Filter-questions can have labels, but they don't have to.
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   // Filter: Optional array of objects
@@ -2049,8 +1950,7 @@ export default {
     //   isStarred: false, // true || false
     //   labels: ['Allgemein'],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -2072,8 +1972,7 @@ export default {
     //   isStarred: false, // true || false
     //   labels: ['Allgemein'],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -2090,8 +1989,7 @@ export default {
     //   isStarred: false, // true || true
     //   labels: ["Allgemein"],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -2108,8 +2006,7 @@ export default {
     //   isStarred: false, // true || true
     //   labels: ["Datenschutz"],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -2131,8 +2028,7 @@ export default {
     //   isStarred: false, // true || true
     //   labels: ['Allgemein'],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
@@ -2149,8 +2045,7 @@ export default {
     //   isStarred: false, // true || true
     //   labels: ["Allgemein"],
     //   time: '',
-    //   replies: [],
-    //   folder: 'inbox', // answered || draft || inbox || trash
+    //   //   folder: 'inbox', // answered || draft || inbox || trash
     //   isTrashed: false, // true || false
     //   trashingReason: '', // String
     //   answer: {
