@@ -18,8 +18,7 @@
                           <vx-tooltip text="Zurück zur Übersicht [ESC]">
                             <feather-icon icon="ArrowLeftIcon" @click="$emit('closeSidebar')" class="cursor-pointer mr-4" svg-classes="w-6 h-6"></feather-icon>
                           </vx-tooltip>
-                          <h4 v-html=" currentMail.inquiry "> &ensp;<span class="text-grey font-light" style="white-space: nowrap">{{ currentMail.subject }}</span></h4>
-                        </div>
+                          <h4><span v-html="currentMail.inquiry"></span> &ensp;<span class="text-grey font-light" style="white-space: nowrap">{{ currentMail.subject }}</span></h4>                        </div>
                     </div>
                     <div class="ml-10 mb-4 mt-1">
                         <div class="email__actions--single flex items-baseline">
