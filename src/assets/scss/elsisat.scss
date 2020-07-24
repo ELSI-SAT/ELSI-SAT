@@ -7,6 +7,16 @@
 }
 
 
+.mail__details h5 {
+  a {
+    color: currentColor;
+    display: inline-block;  /* For IE11/ MS Edge bug */
+    pointer-events: none;
+    text-decoration: none;
+  }
+}
+
+
 /* Customize the label (the radio-container) */
 .radio-container {
   margin-bottom: .2rem;

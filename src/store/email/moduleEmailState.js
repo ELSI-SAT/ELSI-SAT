@@ -426,7 +426,7 @@ export default {
       id: 21,
       inquiry: 'Ist bekannt, wer im praktischen Systembetrieb als <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1">Daten-Verantwortlicher</a> gelten müsste oder anzusehen wäre (z.B. Entwickler/Hersteller/Betreiber/Nutzer, evtl. auch kumulativ)?',
       subject: 'Frage 21',
-      message: '<p>tbd. </p>',
+      message: '<p><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1" target="_blank">Daten-Verantwortlicher</a></p>',
       isStarred: false, // true || false
       labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',

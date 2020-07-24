@@ -20,8 +20,8 @@
             <div class="flex w-full justify-between items-start">
                 <div class="mail__details flex w-full">
                   <h5 class="mb-1 "
+                      v-html="mail.inquiry"
                       :class="{'font-semibold': !mail.isTrashed && !mail.answer.answer, 'font-normal': mail.answer.answer}">
-                    {{ mail.inquiry }}
                     <br>
                     <div class="text-grey font-light mt-1">{{ mail.subject }}</div>
 
