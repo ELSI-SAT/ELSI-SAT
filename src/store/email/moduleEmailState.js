@@ -386,7 +386,7 @@ export default {
     },
     {
       id: 20,
-      inquiry: 'Werden durch das zu entwickelnde Produkt  <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1">personenbezogene Daten</a> verarbeitet?',
+      inquiry: 'Werden durch das zu entwickelnde Produkt  <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1" target="_blank">personenbezogene Daten</a> verarbeitet?',
       subject: 'Frage 20',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -424,7 +424,7 @@ export default {
     },
     {
       id: 21,
-      inquiry: 'Ist bekannt, wer im praktischen Systembetrieb als <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1">Daten-Verantwortlicher</a> gelten müsste oder anzusehen wäre (z.B. Entwickler/Hersteller/Betreiber/Nutzer, evtl. auch kumulativ)?',
+      inquiry: 'Ist bekannt, wer im praktischen Systembetrieb als <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1" target="_blank">Daten-Verantwortlicher</a> gelten müsste oder anzusehen wäre (z.B. Entwickler/Hersteller/Betreiber/Nutzer, evtl. auch kumulativ)?',
       subject: 'Frage 21',
       message: '<p><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1" target="_blank">Daten-Verantwortlicher</a></p>',
       isStarred: false, // true || false
@@ -461,7 +461,7 @@ export default {
     },
     {
       id: 23,
-      inquiry: 'Sofern mehrere Datenverarbeiter beteiligt sind, könnte eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3098-1-1">gemeinsame Verantwortlichkeit</a> oder einer Auftragsverarbeitung <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3162-1-1"<Auftragsverarbeitung </a> bestehen?',
+      inquiry: 'Sofern mehrere Datenverarbeiter beteiligt sind, könnte eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3098-1-1" target="_blank">gemeinsame Verantwortlichkeit</a> oder einer Auftragsverarbeitung <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3162-1-1" target="_blank">Auftragsverarbeitung </a> bestehen?',
       subject: 'Frage 23',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -481,7 +481,7 @@ export default {
     },
     {
       id: 24,
-      inquiry: 'Könnten durch das zu entwickelnde Produkt Daten von <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2044-1-1"<Kindern, d.h. unter 16-jährigen </a> verarbeitet werden (ggfs. unbeabsichtigt)?',
+      inquiry: 'Könnten durch das zu entwickelnde Produkt Daten von <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2044-1-1" target="_blank">Kindern, d.h. unter 16-jährigen </a> verarbeitet werden (ggfs. unbeabsichtigt)?',
       subject: 'Frage 24',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -501,7 +501,7 @@ export default {
     },
     {
       id: 24.1,
-      inquiry: 'Welche "angemessenen" Anstrengungen bzw. Vorkehrungen können im System getroffen werden, um sicherzustellen, dass für ein "Kind" eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2044-1-1"<notwendige Einwilligung durch den Träger der elterlichen Verantwortung erteilt wird </a>?',
+      inquiry: 'Welche "angemessenen" Anstrengungen bzw. Vorkehrungen können im System getroffen werden, um sicherzustellen, dass für ein "Kind" eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2044-1-1" target="_blank">notwendige Einwilligung durch den Träger der elterlichen Verantwortung erteilt wird </a>?',
       subject: 'Frage 24.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -518,7 +518,7 @@ export default {
     },
     {
       id: 26,
-      inquiry: 'Werden in der Regel durch das zu entwickelnde Produkt sog. <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1<"sensible Daten"</a> verarbeitet?',
+      inquiry: 'Werden in der Regel durch das zu entwickelnde Produkt sog. <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1 target="_blank">"sensible Daten"</a> verarbeitet?',
       subject: 'Frage 26',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -538,7 +538,7 @@ export default {
     },
     {
       id: 26.1,
-      inquiry: 'Besteht eine Einwilligung oder eine sonstige Ausnahme nach <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1<"Art. 9 Abs. 2 DSGVO </a>?',
+      inquiry: 'Besteht eine Einwilligung oder eine sonstige Ausnahme nach <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1" target="_blank">Art. 9 Abs. 2 DSGVO </a>?',
       subject: 'Frage 26.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -558,7 +558,7 @@ export default {
     },
     {
       id: 28,
-      inquiry: 'Ist bekannt, dass eine ausschließlich auf einer automatisierten Verarbeitung beruhende Entscheidung - einschließlich Profiling - grundsätzlich unzulässig ist <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2853-1-1"Art. 22 DSGVO </a>?',
+      inquiry: 'Ist bekannt, dass eine ausschließlich auf einer automatisierten Verarbeitung beruhende Entscheidung - einschließlich Profiling - grundsätzlich unzulässig ist <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2853-1-1" target="_blank">Art. 22 DSGVO </a>?',
       subject: 'Frage 28',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -578,7 +578,7 @@ export default {
     },
     {
       id: 29,
-      inquiry: 'Erschiene wegen eines hohen datenrechtlichen Risikos für die Rechte Betroffener durch den Anwender/Nutzer eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3558-1-1"<DS-Folgenabschätzung nach (Art. 35 DSGVO) </a> als sinnvoll oder wahrscheinlich?',
+      inquiry: 'Erschiene wegen eines hohen datenrechtlichen Risikos für die Rechte Betroffener durch den Anwender/Nutzer eine <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3558-1-1" target="_blank">DS-Folgenabschätzung nach (Art. 35 DSGVO) </a> als sinnvoll oder wahrscheinlich?',
       subject: 'Frage 29',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -598,7 +598,7 @@ export default {
     },
     {
       id: 30,
-      inquiry: 'Sind technische oder organisatorische Maßnahmen bzw. Vorgaben zur Ausgestaltung des Produkts geplant, um ein <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3058-1-1">datenrechtliches Risiko (i.S.v. Art. 24 DSGVO)</a> wirkungsvoll zu minimieren <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3395-1-1">(z.B. Anonymisierung, technisch-organisatorische Maßnahmen, etc.)?',
+      inquiry: 'Sind technische oder organisatorische Maßnahmen bzw. Vorgaben zur Ausgestaltung des Produkts geplant, um ein <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3058-1-1" target="_blank">datenrechtliches Risiko (i.S.v. Art. 24 DSGVO)</a> wirkungsvoll zu minimieren <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3395-1-1" target="_blank">(z.B. Anonymisierung, technisch-organisatorische Maßnahmen, etc.)?',
       subject: 'Frage 30',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -689,7 +689,7 @@ export default {
     },
     {
       id: 35,
-      inquiry: 'Ist bekannt, dass die Grundsätze von <a href="interner Link zu Wissensdatenbank">Privacy by Design </a> bzw. <a href="interner Link zu Wissensdatenbank"> Privacy by Default </a> auch für den Hersteller bzw. Entwickler des Produkts Anwendung finden?',
+      inquiry: 'Ist bekannt, dass die Grundsätze von <a href="interner Link zu Wissensdatenbank" target="_blank">Privacy by Design </a> bzw. <a href="interner Link zu Wissensdatenbank" target="_blank"> Privacy by Default </a> auch für den Hersteller bzw. Entwickler des Produkts Anwendung finden?',
       subject: 'Frage 35',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -806,7 +806,7 @@ export default {
     },
     {
       id: 41,
-      inquiry: 'Sind in der Anwendung technische Vorkehrungen getroffen, damit eine ggfs. erfolgte Einwilligung der Datenverarbeitung jederzeit unkompliziert widerrufbar ist bzw. ein <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2818-1-1">Widerspruch </a> berücksichtigt werden kann?',
+      inquiry: 'Sind in der Anwendung technische Vorkehrungen getroffen, damit eine ggfs. erfolgte Einwilligung der Datenverarbeitung jederzeit unkompliziert widerrufbar ist bzw. ein <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2818-1-1" target="_blank">Widerspruch </a> berücksichtigt werden kann?',
       subject: 'Frage 41',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -957,7 +957,7 @@ export default {
     },
     {
       id: 49,
-      inquiry: 'Ist das zu entwickelnde Produkt geeignet, in seiner praktischen Anwendung (datenrechtliche) Verstöße gegen <a href="https://www.gesetze-im-internet.de/gg/art_3.html"<Gleichheitsgrundsätze </a> fördern oder gar zu bewirken?',
+      inquiry: 'Ist das zu entwickelnde Produkt geeignet, in seiner praktischen Anwendung (datenrechtliche) Verstöße gegen <a href="https://www.gesetze-im-internet.de/gg/art_3.html" target="_blank">Gleichheitsgrundsätze </a> fördern oder gar zu bewirken?',
       subject: 'Frage 49',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -1074,7 +1074,7 @@ export default {
     },
     {
       id: 55,
-      inquiry: 'Haben Sie innerhalb ihres Projekts ein besonderes <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3277-1-1">Datenschutzmanagement </a> eingerichtet?',
+      inquiry: 'Haben Sie innerhalb ihres Projekts ein besonderes <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e3277-1-1" target="_blank">Datenschutzmanagement </a> eingerichtet?',
       subject: 'Frage 55',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -1094,7 +1094,7 @@ export default {
     },
     {
       id: 56,
-      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein IT-System bzw. um eine Anwendung von <a href="https://www.gesetze-im-internet.de/bsig_2009/__2.html">Komponenten oder Prozessen für Einrichtungen des Bundes?</a>',
+      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein IT-System bzw. um eine Anwendung von <a href="https://www.gesetze-im-internet.de/bsig_2009/__2.html" target="_blank">Komponenten oder Prozessen für Einrichtungen des Bundes?</a>',
       subject: 'Frage 56',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -1114,7 +1114,7 @@ export default {
     },
     {
       id: 56.1,
-      inquiry: 'Sind Ihnen die hiermit verbundenen <a href"https://www.gesetze-im-internet.de/bsig_2009/__4.html">Rechte und Pflichten des Bundesamtes bzw. des Betreibers </a> oder auch <a href="https://www.gesetze-im-internet.de/bsig_2009/__5a.html">Herstellers </a> sowie die hiermit verbundenen Eingriffe in <a href="https://www.gesetze-im-internet.de/bsig_2009/__6.html">Betroffenenrechte </a> bekannt?',
+      inquiry: 'Sind Ihnen die hiermit verbundenen <a href"https://www.gesetze-im-internet.de/bsig_2009/__4.html" target="_blank">Rechte und Pflichten des Bundesamtes bzw. des Betreibers </a> oder auch <a href="https://www.gesetze-im-internet.de/bsig_2009/__5a.html">Herstellers </a> sowie die hiermit verbundenen Eingriffe in <a href="https://www.gesetze-im-internet.de/bsig_2009/__6.html">Betroffenenrechte </a> bekannt?',
       subject: 'Frage 56.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -1134,7 +1134,7 @@ export default {
     },
     {
       id: 58,
-      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein System, welches ggfs. innerhalb <a href="https://www.gesetze-im-internet.de/bsig_2009/__8b.html">"Kritischer Infrastrukturen" </a> (sog. KRITIS, z.B. IT/TK, Energie, Wasser, Ernährung, Transport/Verkehr, Gesundheit, Finanz-/Versicherungswesen) eingesetzt wird oder werden kann?',
+      inquiry: 'Handelt es sich bei dem zu entwickelnden Produkt um ein System, welches ggfs. innerhalb <a href="https://www.gesetze-im-internet.de/bsig_2009/__8b.html" target="_blank">"Kritischer Infrastrukturen" </a> (sog. KRITIS, z.B. IT/TK, Energie, Wasser, Ernährung, Transport/Verkehr, Gesundheit, Finanz-/Versicherungswesen) eingesetzt wird oder werden kann?',
       subject: 'Frage 58',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -1174,7 +1174,7 @@ export default {
     },
     {
       id: 60,
-      inquiry: 'Enthält das zu entwickelnde Produkt eigenständig technische Maßnahmen/Vorkehrungen zur Schadensvermeidung <a href="https://www.gesetze-im-internet.de/bsig_2009/__8a.html">"nach dem Stand der Technik" (z.B. Aufzeichnungs-, Melde- oder Informationsvorgänge)?',
+      inquiry: 'Enthält das zu entwickelnde Produkt eigenständig technische Maßnahmen/Vorkehrungen zur Schadensvermeidung <a href="https://www.gesetze-im-internet.de/bsig_2009/__8a.html"> target="_blank""nach dem Stand der Technik" (z.B. Aufzeichnungs-, Melde- oder Informationsvorgänge)?',
       subject: 'Frage 60',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -1214,7 +1214,7 @@ export default {
     },
     {
       id: 61.1,
-      inquiry: 'Sind die besonderen Anforderungen an deren <a href="https://www.gesetze-im-internet.de/bsig_2009/__8c.html">"Anbieter" </a> bekannt?',
+      inquiry: 'Sind die besonderen Anforderungen an deren <a href="https://www.gesetze-im-internet.de/bsig_2009/__8c.html" target="_blank">"Anbieter" </a> bekannt?',
       subject: 'Frage 61.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
@@ -1234,7 +1234,7 @@ export default {
     },
     {
       id: 63,
-      inquiry: 'Ist bekannt, dass nicht nur das <a href="https://www.gesetze-im-internet.de/stgb/__202a.html">übermäßige Sammeln und Verarbeiten von Daten </a>, sondern auch das rechtswidrige Löschen oder Vernichten von Daten <a href="https://www.gesetze-im-internet.de/stgb/__303a.html">Straftatbestände </a> erfüllen kann?',
+      inquiry: 'Ist bekannt, dass nicht nur das <a href="https://www.gesetze-im-internet.de/stgb/__202a.html" target="_blank">übermäßige Sammeln und Verarbeiten von Daten </a>, sondern auch das rechtswidrige Löschen oder Vernichten von Daten <a href="https://www.gesetze-im-internet.de/stgb/__303a.html" target="_blank">Straftatbestände </a> erfüllen kann?',
       subject: 'Frage 63',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
