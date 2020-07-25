@@ -81,7 +81,7 @@ const router = new Router({
               },
               {
                 path: '/apps/email',
-                redirect: '/apps/email/inbox'
+                redirect: '/apps/email/all'
               },
               {
                 path: '/apps/email/:filter',
