@@ -499,6 +499,8 @@ export default {
         return;
       }
 
+      if (getters._filterCheck(mail.id) != true) { return }
+
       let risk = 0;
       let answer_value = mail.answer.answer
       // Todo: refactor: abstract/centralize
@@ -529,8 +531,6 @@ export default {
     let maximumMalus = 0;
 
     state.mails.forEach(function (mail) {
-      // Todo: check other criteria, like trashed, followup etc.
-
       // If a label is set, discard questions without this label.
       if (label !== false && !mail.labels.includes(label)) return;
 
@@ -543,7 +543,9 @@ export default {
         return;
       }
 
-      let risk = 0
+      if (getters._filterCheck(mail.id) != true) { return }
+
+      let risk = 0;
       // Todo: refactor: abstract/centralize
       let factor = 1; if (getters.getNumberOfLabels(mail.id) >= 3) factor = 2
 
@@ -581,6 +583,8 @@ export default {
       ) {
         return;
       }
+
+      if (getters._filterCheck(mail.id) != true) { return }
 
       let bonus = 0
       let answer_value = mail.answer.answer
@@ -627,7 +631,9 @@ export default {
         return;
       }
 
-      let bonus = 0
+      if (getters._filterCheck(mail.id) != true) { return }
+
+      let bonus = 0;
       // Todo: refactor: abstract/centralize
       let factor = 1; if (getters.getNumberOfLabels(mail.id) >= 3) factor = 2
 
@@ -700,4 +706,31 @@ export default {
     return state.mailTags;
   },
 
+
+  /**
+   * Returns false, if filters are set,
+   * and mailID got filtered out.
+   *
+   * Returns true if either no filters are set,
+   * or filters are set an mailID is included.
+   *
+   * @param state
+   * @param getters
+   * @returns {function(*=): boolean}
+   * @private
+   */
+  _filterCheck: (state, getters) => (mailID) => {
+    let pass = true
+
+    const filtered_questions_ids = getters.getFilteredQuestionsIDs
+
+    if (
+      (filtered_questions_ids.length > 0)
+      && !filtered_questions_ids.includes(mailID)
+    ) {
+      pass = false
+    }
+
+    return pass
+  },
 }
