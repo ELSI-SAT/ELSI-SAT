@@ -13,7 +13,7 @@
 
     <div class="vx-row">
       <div class="vx-col w-1/2 mb-base">
-        <ELSIScoreChart/>
+        <ELSIScoreChart :height="280"/>
       </div>
 
       <div class="vx-col w-1/2 mb-base">

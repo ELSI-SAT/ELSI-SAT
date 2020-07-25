@@ -7,7 +7,7 @@
       <vue-apex-charts
         v-if="quota >= 50"
         type="radialBar"
-        height="300"
+        :height="height"
         :options="radialBarChart.chartOptions"
         :series="radialBarChart.series">
       </vue-apex-charts>
@@ -25,6 +25,13 @@
 
   export default {
     name: "ELSI-Score-Chart",
+
+    props: {
+      height: {
+        type: Number,
+        required: true,
+      },
+    },
 
     computed: {
       quota() {
@@ -63,7 +70,6 @@
 
           chartOptions: {
             chart: {
-              height: 300,
               type: 'radialBar',
             },
             plotOptions: {
