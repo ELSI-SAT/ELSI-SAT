@@ -2,7 +2,7 @@
   <ul class="centerx" style="margin-bottom: 0px !important;">
     <li v-for="(item, index) in mailContent.answer.options" v-bind:key="index">
       <div class="radio-container">
-        <input :id="item.name" class="form-radio" type="radio" v-model="radios" :value="item.name">
+        <input @keydown.prevent="" :id="item.name" class="form-radio" type="radio" v-model="radios" :value="item.name">
         <label :for="item.name" class="label">{{ item.name }}</label>
       </div>
     </li>
