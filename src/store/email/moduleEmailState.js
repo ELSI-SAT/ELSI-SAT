@@ -428,7 +428,7 @@ export default {
       subject: 'Frage 21',
       message: '<p><a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1" target="_blank">Daten-Verantwortlicher</a></p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -445,7 +445,7 @@ export default {
       subject: 'Frage 22',
       message: '<p>Lorem ipsum dolor sit amet, <i>consetetur sadipscing elitr</i>, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz','Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz','Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -465,7 +465,7 @@ export default {
       subject: 'Frage 23',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -485,7 +485,7 @@ export default {
       subject: 'Frage 24',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -505,7 +505,7 @@ export default {
       subject: 'Frage 24.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -522,7 +522,7 @@ export default {
       subject: 'Frage 26',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -542,7 +542,7 @@ export default {
       subject: 'Frage 26.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -562,7 +562,7 @@ export default {
       subject: 'Frage 28',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -582,7 +582,7 @@ export default {
       subject: 'Frage 29',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -602,7 +602,7 @@ export default {
       subject: 'Frage 30',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -619,7 +619,7 @@ export default {
       subject: 'Frage 31',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -639,7 +639,7 @@ export default {
       subject: 'Frage 31.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -656,7 +656,7 @@ export default {
       subject: 'Frage 33',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -676,7 +676,7 @@ export default {
       subject: 'Frage 33.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -693,7 +693,7 @@ export default {
       subject: 'Frage 35',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -713,7 +713,7 @@ export default {
       subject: 'Frage 36',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -733,7 +733,7 @@ export default {
       subject: 'Frage 36.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -753,7 +753,7 @@ export default {
       subject: 'Frage 38',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -773,7 +773,7 @@ export default {
       subject: 'Frage 38.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -790,7 +790,7 @@ export default {
       subject: 'Frage 40',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -810,7 +810,7 @@ export default {
       subject: 'Frage 41',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
@@ -830,7 +830,7 @@ export default {
       subject: 'Frage 41.1',
       message: '<p>tbd. </p>',
       isStarred: false, // true || false
-      labels: ['Allgemein','Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
+      labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
       folder: 'inbox', // answered || draft || inbox || trash
       isTrashed: false, // true || false
