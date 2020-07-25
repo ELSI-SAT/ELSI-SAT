@@ -9,6 +9,10 @@
           Hier geht es zum <a href="#/apps/email/inbox">Fragebogen</a>.
         </vx-card>
       </div>
+
+      <div class="vx-col w-1/2 mb-base">
+        <RadarChart :height="320"/>
+      </div>
     </div>
 
     <div class="vx-row">
@@ -39,6 +43,7 @@
   import ProgressChart from "../components/charts/progress-chart";
   import HeatmapChart from "../components/charts/heatmap";
   import RiskAndAdressingChart from "../components/charts/risk-and-adressing";
+  import RadarChart from "../components/charts/radar-chart";
 
   export default {
     name: "Home",
@@ -54,6 +59,7 @@
       ProgressChart,
       HeatmapChart,
       RiskAndAdressingChart,
+      RadarChart,
     }
 
   }
