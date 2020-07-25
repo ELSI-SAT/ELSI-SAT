@@ -16,6 +16,21 @@
         </vs-list>
       </div>
 
+
+      <h2 class="mt-16 mb-4">Statistik</h2>
+
+        <div style="width: 550px">
+          <RadarChart :height="450"/>
+        </div>
+
+        <div style="width: 500px">
+          <RiskAndAdressingChart/>
+        </div>
+
+        <div style="width: 500px">
+          <HeatmapChart/>
+        </div>
+
       <h2 class="mt-10">Fragenkatalog</h2>
 
       <div
@@ -54,8 +69,22 @@
 </template>
 
 <script>
+  import ELSIScoreChart from "./charts/elsi-score";
+  import ProgressChart from "./charts/progress-chart";
+  import HeatmapChart from "./charts/heatmap";
+  import RiskAndAdressingChart from "./charts/risk-and-adressing";
+  import RadarChart from "./charts/radar-chart";
+
   export default {
     name: "pdf-export-template",
+
+    components: {
+      ELSIScoreChart,
+      ProgressChart,
+      HeatmapChart,
+      RiskAndAdressingChart,
+      RadarChart,
+    },
 
     computed: {
       allQuestions() {
@@ -114,8 +143,8 @@
 
   #pdf-export-root {
     // Hide in production.
-    display: none;
     visibility: hidden;
+    height: 0px;
   }
 
   #pdf-export-content * {
