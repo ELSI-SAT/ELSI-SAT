@@ -75,6 +75,10 @@
           chartOptions: {
             chart: {
               fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+              animations: {
+                enabled: false,
+              },
+
             },
 
             colors: ['#FF5B72', '#04E397', '#7367F0', '#FFA044'],

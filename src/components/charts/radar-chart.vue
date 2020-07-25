@@ -80,6 +80,9 @@
           chartOptions: {
             chart: {
               type: 'radar',
+              animations: {
+                enabled: false,
+              },
             },
             plotOptions: {
               radar: {

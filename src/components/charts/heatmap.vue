@@ -77,6 +77,10 @@
               height: 350,
               type: 'heatmap',
               fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+              animations: {
+                enabled: false,
+              },
+
             },
 
             plotOptions: {

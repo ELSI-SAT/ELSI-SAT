@@ -71,6 +71,9 @@
           chartOptions: {
             chart: {
               type: 'radialBar',
+              animations: {
+                enabled: false,
+              },
             },
             plotOptions: {
               radialBar: {

@@ -54,6 +54,10 @@
           chartOptions: {
             chart: {
               fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
+              animations: {
+                enabled: false,
+              },
+
             },
             colors: colors,
             legend: {
