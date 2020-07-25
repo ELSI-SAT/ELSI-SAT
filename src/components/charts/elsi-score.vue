@@ -71,6 +71,7 @@
           chartOptions: {
             chart: {
               type: 'radialBar',
+              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
               animations: {
                 enabled: false,
               },

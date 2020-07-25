@@ -80,9 +80,11 @@
           chartOptions: {
             chart: {
               type: 'radar',
+              fontFamily: 'Montserrat, Helvetica, Arial, sans-serif',
               animations: {
                 enabled: false,
               },
+
             },
             plotOptions: {
               radar: {
@@ -95,6 +97,7 @@
                 }
               }
             },
+            colors: ['#7367F0'],
             dataLabels: {
               enabled: true
             },
