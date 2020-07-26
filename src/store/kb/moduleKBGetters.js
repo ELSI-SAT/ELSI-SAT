@@ -4,4 +4,8 @@ export default {
     return state.terms
   },
 
+  getAllCategories: (state) => {
+    return state.categories
+  },
+
 }

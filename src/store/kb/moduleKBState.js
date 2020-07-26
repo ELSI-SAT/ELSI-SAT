@@ -1,6 +1,12 @@
 export default {
   terms: [
     {
+      id: -1,
+      categoryId: [1, 2],
+      term: 'Berechnung des ELSI-Scores',
+      definition: 'Lorem ipsum, Test negative ID'
+    },
+    {
       id: 1,
       categoryId: [1, 3],
       term: 'Mensch-Technik-Interaktion',
@@ -172,7 +178,7 @@ export default {
       id: 29,
       categoryId: [1, 4, 5],
       term: 'schutzbedürftige Gruppe',
-      definition: 'Eine schützbedürfige Gruppe bezeichnet natürliche Personen, die aufgrund persönlicher, physischer, psychischer, sozialer oder kultureller Einschränkungen einem erhöhten Risiko ausgesetzt sind, Benachteiligungen zu erfahren. Hierunter fallen im Anwendungsbereich der DSGVO insbesondere Kinder und Jugendliche. ',
+      definition: 'Eine schützbedürfige Gruppe bezeichnet natürliche Personen, die aufgrund persönlicher, physischer, psychischer, sozialer oder kultureller Einschränkungen einem erhöhten Risiko ausgesetzt sind, Benachteiligungen zu erfahren. Hierunter fallen im Anwendungsbereich der DSGVO insbesondere Kinder und Jugendliche.',
     },
   ],
   categories: [
