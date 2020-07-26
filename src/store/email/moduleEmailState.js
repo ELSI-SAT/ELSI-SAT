@@ -174,7 +174,7 @@ export default {
       id: 9,
       inquiry: 'Wie lernt das System?',
       subject: 'Frage 9',
-      message: '<p>tbd. </p>',
+      message: `<p>Siehe auch die Definition für <a @click.prevent="$emit('kblink', {id: 5})">"Maschinelles Lernen"</a></p>`,
       isStarred: false, // true || false
       labels: ['Allgemein'],
       time: '',
@@ -1561,7 +1561,7 @@ export default {
       id: 80,
       inquiry: 'Ist es vorstellbar, das System für ethisch unerwünschte Zwecke zu entfremden (Dual Use, z. B. LAWS) ?',
       subject: 'Frage 80',
-      message: '<p>tbd. </p>',
+      message: '<p>Definition <a @click.prevent="$emit(\'kblink\', {id: 8})">"Dual Use"</a>.</p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Schadensvermeidung'],
       time: '',

@@ -49,7 +49,11 @@
                 <div class="vx-row">
                     <div class="vx-col w-full">
                       <div class="ml-10 mr-10 items-center mt-0">
-                        <div class="mail__content break-words mt-3 mb-4" v-html="currentMail.message"></div>
+
+                        <div class="mail__content break-words mt-3 mb-4">
+                          <component :is="compiledData" @kblink="this.openAlert"/>
+                        </div>
+
                         <transition-group name="list" tag="div" class="flex mb-6">
                           <div v-for="label in currentMail.labels" :key="label" class="open-mail-label flex items-center mr-4">
                             <vs-chip :style="'color: ' + labelColor(label)">{{ label }}</vs-chip>
@@ -128,6 +132,11 @@
     },
   },
   computed: {
+    compiledData () {
+      return {
+        template: `${this.currentMail.message}`
+      }
+    },
     currentMail() {
       return this.$store.getters['email/getMail'](this.openMailId)
     },
@@ -191,11 +200,31 @@
       const payload = { mailId: this.openMailId, value: !this.currentMail.isStarred }
       this.$store.dispatch('email/toggleIsStarred', payload)
     },
+    openAlert(kbid) {
+      let term = this.$store.getters['kb/getTermById'](kbid.id)
+
+      this.colorAlert = '#7367f0'
+      this.$vs.dialog({
+        color:this.colorAlert,
+        title: term.term,
+        text: term.definition,
+        accept:this.acceptAlert,
+        acceptText: 'Schließen',
+      })
+    },
+    acceptAlert(){
+      // this.$vs.notify({
+      //   color:this.colorAlert,
+      //   title:'Accept Selected',
+      //   text:'Gingerbread soufflé biscuit oat cake.'
+      // })
+    }
   },
+
   components: {
     VuePerfectScrollbar,
     EmailMailCard,
-    TextForm
+    TextForm,
   },
 }
 
