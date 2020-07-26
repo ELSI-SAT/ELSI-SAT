@@ -20,6 +20,7 @@ import actions from "./actions"
 Vue.use(Vuex)
 
 import moduleEmail from './email/moduleEmail.js'
+import moduleKB from './kb/moduleKB.js'
 
 const vuexPersist = new VuexPersist({
   key: 'elsi-sat',
@@ -34,6 +35,7 @@ export default new Vuex.Store({
     actions,
     modules: {
         email: moduleEmail,
+        kb: moduleKB,
     },
     plugins: [vuexPersist.plugin],
     strict: process.env.NODE_ENV !== 'production'
