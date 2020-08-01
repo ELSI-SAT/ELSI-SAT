@@ -34,7 +34,7 @@
         };
 
         const element = document.getElementById('pdf-export-content');
-        
+
         html2pdf().from(element).set(opt).toPdf().get('pdf').then(function (pdf) {
           let totalPages = pdf.internal.getNumberOfPages();
 
