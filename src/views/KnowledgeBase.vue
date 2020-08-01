@@ -85,21 +85,23 @@
       },
 
       terms() {
-        console.log(this.$store.getters['kb/getAllTerms'])
         return this.$store.getters['kb/getAllTerms']
       },
 
       filteredFaq() {
-        let terms = this.terms
+        let KB = this.terms
 
-        return terms.filter((faq) => {
+        let KBFilter = KB.filter((faq) => {
           if (this.faqFilter == 1) return (faq.term.toLowerCase().includes(this.faqSearchQuery.toLowerCase()) || faq.definition.toLowerCase().includes(this.faqSearchQuery.toLowerCase()));
           else if (this.faqFilter == 2) return faq.categoryId.includes(2) && (faq.term.toLowerCase().includes(this.faqSearchQuery.toLowerCase()) || faq.definition.toLowerCase().includes(this.faqSearchQuery.toLowerCase()));
           else if (this.faqFilter == 3) return faq.categoryId.includes(3) && (faq.term.toLowerCase().includes(this.faqSearchQuery.toLowerCase()) || faq.definition.toLowerCase().includes(this.faqSearchQuery.toLowerCase()));
           else if (this.faqFilter == 4) return faq.categoryId.includes(4) && (faq.term.toLowerCase().includes(this.faqSearchQuery.toLowerCase()) || faq.definition.toLowerCase().includes(this.faqSearchQuery.toLowerCase()));
           else if (this.faqFilter == 5) return faq.categoryId.includes(5) && (faq.term.toLowerCase().includes(this.faqSearchQuery.toLowerCase()) || faq.definition.toLowerCase().includes(this.faqSearchQuery.toLowerCase()));
         });
-      }
+
+        // Lodash.
+        return _.orderBy(KBFilter, [KBEntry => KBEntry.term.toLowerCase()])
+      },
     },
     methods: {
       goto(refName) {
