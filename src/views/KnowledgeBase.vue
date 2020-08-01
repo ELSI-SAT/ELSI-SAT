@@ -47,7 +47,7 @@
 
             <div slot="header">
               <h5>
-                {{ que.term }}
+                <span v-html="que.term"></span>
 
                 <span
                   v-for="category in categories"
@@ -60,7 +60,7 @@
               </h5>
 
             </div>
-            <p>{{ que.definition }}</p>
+            <p v-html="que.definition"></p>
           </vs-collapse-item>
         </vs-collapse>
 
