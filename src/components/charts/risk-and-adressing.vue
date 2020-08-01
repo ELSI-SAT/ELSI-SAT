@@ -104,7 +104,9 @@
             yaxis: {
               title: {
                 text: ''
-              }
+              },
+              max: 100,
+              tickAmount: 5,
             },
             fill: {
               opacity: 1

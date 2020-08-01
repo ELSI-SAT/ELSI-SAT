@@ -104,6 +104,12 @@
             xaxis: {
               categories: labels
             },
+            yaxis: {
+              show: true,
+              max: 100,
+              min: 0,
+              tickAmount: 5,
+            },
           },
 
         }
