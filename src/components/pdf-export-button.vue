@@ -34,7 +34,21 @@
         };
 
         const element = document.getElementById('pdf-export-content');
-        html2pdf().set(opt).from(element).save();
+        
+        html2pdf().from(element).set(opt).toPdf().get('pdf').then(function (pdf) {
+          let totalPages = pdf.internal.getNumberOfPages();
+
+          for (let i = 1; i <= totalPages; i++) {
+            pdf.setPage(i);
+            pdf.setFontSize(10);
+            pdf.setTextColor(150);
+            pdf.text(
+              'Seite ' + i + ' von ' + totalPages,
+              pdf.internal.pageSize.getWidth() - 116,
+              pdf.internal.pageSize.getHeight() - 15
+            );
+          }
+        }).save();
 
       },
     }
