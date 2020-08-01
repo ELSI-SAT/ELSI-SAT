@@ -55,6 +55,31 @@ const router = new Router({
                 },
               },
               {
+                path: '/datenschutz',
+                name: 'Datenschutz',
+                component: () => import('./views/Datenschutz.vue'),
+                meta: {
+                  breadcrumb: [
+                    {title: 'Datenschutz', url: '/'},
+                    {title: 'Datenschutz', active: true},
+                  ],
+                  pageTitle: 'Datenschutz',
+                },
+              },
+
+              {
+                path: '/impressum',
+                name: 'Impressum',
+                component: () => import('./views/Impressum.vue'),
+                meta: {
+                  breadcrumb: [
+                    {title: 'Impressum', url: '/'},
+                    {title: 'Impressum', active: true},
+                  ],
+                  pageTitle: 'Impressum',
+                },
+              },
+              {
                 path: '/knowledge-base',
                 name: 'knowledge-base',
                 component: () => import('./views/KnowledgeBase.vue'),
