@@ -11,7 +11,7 @@
       </div>
 
       <div class="vx-col w-1/2 mb-base">
-        <RadarChart :height="320"/>
+        <RadarChart :height="420"/>
       </div>
     </div>
 
