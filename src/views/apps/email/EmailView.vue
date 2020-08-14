@@ -207,7 +207,7 @@
       this.$vs.dialog({
         color:this.colorAlert,
         title: term.term,
-        text: term.definition,
+        text: term.definition.replace(/<(.|\n)*?>/g, ''),
         accept:this.acceptAlert,
         acceptText: 'Schließen',
       })
