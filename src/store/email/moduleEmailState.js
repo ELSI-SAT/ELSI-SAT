@@ -500,7 +500,7 @@ export default {
       id: 26,
       inquiry: 'Werden in der Regel durch das zu entwickelnde Produkt sog. sensible Daten verarbeitet?',
       subject: 'Frage 26',
-      message: '<p>Zur Definition von sensiblen Daten nach der DSGVO: <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1 target="_blank">"sensible Daten"</a></p>',
+      message: '<p>Zur Definition von sensiblen Daten nach der DSGVO: <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2066-1-1" target="_blank">"sensible Daten"</a></p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
@@ -671,7 +671,7 @@ export default {
       id: 35,
       inquiry: 'Ist bekannt, dass die Grundsätze von Privacy by Design bzw. Privacy by Default auch für den Hersteller bzw. Entwickler des Produkts Anwendung finden?',
       subject: 'Frage 35',
-      message: '<p>Definition von Privacy by Design: <a href="interner Link zu Wissensdatenbank" target="_blank">Privacy by Design </a>, Definition von Privacy by Default: <a href="interner Link zu Wissensdatenbank" target="_blank"> Privacy by Default </a> </p>',
+      message: '<p>Definition von Privacy by Design: <a @click.prevent="$emit(\'kblink\', {id: 17})">Privacy by Design </a>, Definition von Privacy by Default: <a @click.prevent="$emit(\'kblink\', {id: 18})"> Privacy by Default </a> </p>',
       isStarred: false, // true || false
       labels: ['Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
@@ -1578,7 +1578,7 @@ export default {
       id: 84,
       inquiry: 'Ist sichergestellt, dass die Angemessenheit und Repräsentativität in Hinblick auf (Trainings-)Daten gewährleistet ist (sog. BIAS-Vermeidung)?',
       subject: 'Frage 84',
-      message: '<p>Zur Definition von BIAS: "interner LInk zu BIAS"</p>',
+      message: '<p>Zur Definition von BIAS: <a @click.prevent="$emit(\'kblink\', {id: 20})">BIAS</a></p>',
       isStarred: false, // true || false
       labels: ['Allgemein', 'Gerechtigkeit'],
       time: '',
