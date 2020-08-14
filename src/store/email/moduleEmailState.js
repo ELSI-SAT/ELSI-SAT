@@ -45,26 +45,6 @@ export default {
       },
     },
     {
-      id: 3,
-      inquiry: 'Sind am Forschungsprojekt Partner aus der Wirtschaft oder sonstige Private beteiligt?',
-      subject: 'Frage 3',
-      message: '<p> </p>',
-      isStarred: false, // true || false
-      labels: ['Allgemein'],
-      time: '',
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: "radio", // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [
-          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
-        ], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
       id: 4,
       inquiry: 'Bitte beschreiben Sie den Zweck des Systems und erläutern Sie, wem das Forschungsergebnis helfen oder dienen soll.',
       subject: 'Frage 4',
@@ -1497,43 +1477,6 @@ export default {
           {name: 'Ja', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
         ], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 77,
-      inquiry: 'Sind weitere Partner am Forschungsprojekt beteiligt?',
-      subject: 'Frage 77',
-      message: '<p></p>',
-      isStarred: false, // true || false
-      labels: ['Allgemein'], // tbd.
-      time: '',
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: 'followup-radio', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [
-          {name: 'Ja', followupID: 77.1, risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-        ], // Array of options for types 'radio' and 'multiple'
-        answer: '', // String
-      },
-    },
-    {
-      id: 77.1,
-      inquiry: 'Wie wird deren Eignung bzw. Zuverlässigkeit geprüft oder gewährleistet?',
-      subject: 'Frage 77.1',
-      message: '<p></p>',
-      isStarred: false, // true || false
-      labels: ['Allgemein', 'Transparenz'],
-      time: '',
-      folder: 'inbox', // answered || draft || inbox || trash
-      isTrashed: false, // true || false
-      trashingReason: '', // String
-      answer: {
-        type: 'text', // String: 'tinytext' (100) | 'text' (500) | 'bigtext' (2000) | 'radio' (mutually exclusive) | 'checkbox' (multiple) | 'filter'
-        options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
     },
