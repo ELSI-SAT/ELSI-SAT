@@ -4,7 +4,7 @@ export default {
       id: -1,
       categoryId: [1, 2],
       term: 'Berechnung des ELSI-Scores',
-      definition: 'Lorem ipsum, Test negative ID'
+      definition: 'Der ELSI-Score berechnet sich nach einer mathematischen Formel. Hierbei werden bei der Beantwortung der Fragen Risikopunkte (R) und Risiko-Adressierungspunkte (A) vergeben, die anschließend wie folgt miteinander in ein Verhältnis gesetzt werden: ELSI-Score = (1-(R-A))/2. Die grundlegenden Ausgangswerte sind die "1" oder "0" der jeweiligen Antwort-Optionen einer Frage. Bspw.: "Achten Sie auf Datenschutz?" "Nein = Risiko 1, Adressierung 0" vs. "Ja und zwar so … = Risiko 0, Adressierung 1". Diese Ausgangswerte werden zur Berechnung der Gesamtwerte (jeweils für Risiko und Adressierung) addiert und durch den maximal erreichbaren Wert geteilt. Das Ergebnis ist jeweils ein Quotient zwischen 0 und 1. Dabei gelten folgende Besonderheiten: Mehrkategorienmalus: Fragen, die mehr als 2 Labels haben, werden doppelt gewichtet. Filterfragen: herausgefilterte Fragen werden nicht berücksichtigt. Folgefragen: Werden nur dann berücksichtigt, wenn sie aktiviert wurden, d.h. abhängig von der gewählten Option der übergeordneten Frage. Anschließend gehen die Gesamtwerte für Risiko und Adressierung in die obige Formel für den Score ein. Da Gesamtwerte für jedes einzelne Label, aber auch über alle Labels hinweg berechnet werden können, kann sowohl ein Gesamt-Score als auch ein Score für jedes einzelne Label berechnet werden.'
     },
     {
       id: 1,
@@ -40,7 +40,7 @@ export default {
       id: 6,
       categoryId: [1, 3],
       term: 'Wie Systeme lernen',
-      definition: ''
+      definition: 'Beim maschinellen Lernen wird zwischen unterschiedlichen algorithmischen Ansätzen unterschieden. In Grobform lässt sich dabei das <b> überwachte Lernen (supervised learning) </b> vom <b>unüberwachten Lernen (unsupervised learning) </b> unterscheiden. Während beim überwachten Lernen eine Funktion aus gegebenen Ein-/Ausgabepaaren lernt und den korrekten Funktionswert von einem Lehrenden bereitgestellt bekommt, erzeugt der Algorithmus beim unüberwachten Lernen für die Eingaben ein statistisches Modell, das diese erkennt, Kategorien und Zusammenhänge erschließt und hieraus Vorhersagen ermöglicht werden. Die beiden Grobformen können noch detaillierter in semi-supervised, reinforcement oder active learning unterteilt werden. Weitere Informationen zu lernenden Systemen finden Sie in entsprechender Fachliteratur.'
     },
     {
       id: 7,
@@ -88,7 +88,7 @@ export default {
       id: 14,
       categoryId: [1, 4],
       term: 'sensible Daten',
-      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      definition: 'In der DSGVO sind besondere Kategorien personenbezogener Daten in Art. 9 Abs. 1 definiert. Eine Erhebung dieser "sensiblen Daten" ist nur mit einer Ausnahme nach Art. 9 Abs. 2 DSGVO zulässig. Zu diesen besonderen Kategorien gehören Daten, aus denen rassische und ethische Herkunft, politische Meinungen, religiöse oder weltanschauliche Überzeugungen oder Gewerkschaftszugehörigkeiten oder die sexuelle Orientierung hervorgehen. Zudem sind hiervon genetische und biometrische Daten sowie Gesundheitsdaten umfasst.  '
     },
     {
       id: 15,
@@ -112,7 +112,7 @@ export default {
       id: 18,
       categoryId: [1, 4],
       term: 'Privacy by Default',
-      definition: 'Als Annex zu dem Grundsatz von <i> Privacy by Design </i> besteht das in <b> Art.25 Abs. 2 DSGVO </b> geregelte Prinzip von <i> Privacy by Default </i>. Es bedeutet für den Datenverantwortlichen, dass datenschützende <b> Voreinstellungen </b>, die in der jeweiligen Anwendung implementiert sind, in Form der datensparsamsten Eisntellung (z. B. Setzen lediglich notwendiger Cookies) <b> ohne weitere Konfiguration oder Änderung </b> von Einstellung bereits zum <b> Beginn der Sitzung </b> zum Einsatz kommen. Jedoch sollte sich der Ansatz auch sitzungsübergreifend auf nutzerdefinierte, gerätespezifische (ggfs. datensparsame) Voreinstellungen erstrecken. Ebenso wie das Prinzip <i> Privacy by Design </i> bezieht sich auch dieser Grundsatz zunächst zwar nur auf Datenverantwortliche, d.h. BetreiberInnen der Anwendung oder des Tools. Über ErwGr 78 zur DSGVO werden jedoch auch <b> Hersteller und Entwickler </b> eingebunden und zur Schaffung technischer Möglichkeiten und Systemvoraussetzungen zwecks Einhaltung der Datenschutzpflichten (der datenrechtlich verantwortlichen BetreiberInnen) angehalten.'
+      definition: 'Als Annex zu dem Grundsatz von <i> Privacy by Design </i> besteht das in <b> Art.25 Abs. 2 DSGVO </b> geregelte Prinzip von <i> Privacy by Default </i>. Es bedeutet für den Datenverantwortlichen, dass datenschützende <b> Voreinstellungen </b>, die in der jeweiligen Anwendung implementiert sind, in Form der datensparsamsten Einstellung (z. B. Setzen lediglich notwendiger Cookies) <b> ohne weitere Konfiguration oder Änderung </b> von Einstellung bereits zum <b> Beginn der Sitzung </b> zum Einsatz kommen. Jedoch sollte sich der Ansatz auch sitzungsübergreifend auf nutzerdefinierte, gerätespezifische (ggfs. datensparsame) Voreinstellungen erstrecken. Ebenso wie das Prinzip <i> Privacy by Design </i> bezieht sich auch dieser Grundsatz zunächst zwar nur auf Datenverantwortliche, d.h. BetreiberInnen der Anwendung oder des Tools. Über ErwGr 78 zur DSGVO werden jedoch auch <b> Hersteller und Entwickler </b> eingebunden und zur Schaffung technischer Möglichkeiten und Systemvoraussetzungen zwecks Einhaltung der Datenschutzpflichten (der datenrechtlich verantwortlichen BetreiberInnen) angehalten.'
     },
     {
       id: 19,
