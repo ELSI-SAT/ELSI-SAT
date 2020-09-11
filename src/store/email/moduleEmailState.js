@@ -366,7 +366,7 @@ export default {
     },
     {
       id: 20,
-      inquiry: 'Werden durch das zu entwickelnde Produkt verarbeitet?',
+      inquiry: 'Werden durch das zu entwickelnde Produkt personenbezogene Daten verarbeitet?',
       subject: 'Frage 20',
       message: '<p>Zur Definition von "personenbezogenen Daten" nach der DSGVO: <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e1508-1-1" target="_blank">personenbezogene Daten</a>  </p>',
       isStarred: false, // true || false
@@ -997,7 +997,7 @@ export default {
     },
     {
       id: 52,
-      inquiry: 'Ist geplant, im Projekt Maßnahmen zur Verbesserung der Privatsphäre zu ergreifen)?',
+      inquiry: 'Ist geplant, im Projekt Maßnahmen zur Verbesserung der Privatsphäre zu ergreifen?',
       subject: 'Frage 52',
       message: '<p></p>',
       isStarred: false, // true || false
@@ -1234,7 +1234,7 @@ export default {
     },
     {
       id: 64,
-      inquiry: 'Ist bekannt, dass eine bzgl. Datensicherheit schlecht oder unzureichend gestaltete Software oder Anwendung Schadensersatzansprüche auslösen kann, die sich auch auf sog. Folgeschäden erstecken können?',
+      inquiry: 'Ist bekannt, dass eine bzgl. Datensicherheit schlecht oder unzureichend gestaltete Software oder Anwendung Schadensersatzansprüche auslösen kann, die sich auch auf sog. Folgeschäden erstrecken können?',
       subject: 'Frage 64',
       message: '<p>Zu möglichen Schadensersatzansprüchen:<a href="https://www.gesetze-im-internet.de/bgb/__823.html">Schadensersatzansprüche </a>, Zur Definition von Folgeschäden: <a href="https://www.gesetze-im-internet.de/prodhaftg/__1.html">"Folgeschäden" </a> </p>',
       isStarred: false, // true || false
