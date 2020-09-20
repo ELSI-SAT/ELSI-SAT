@@ -5,17 +5,11 @@
       title-color="black"
       subtitle="Der Fortschritt bei der Beantwortung des Fragebogens.">
       <vue-apex-charts
-        v-if="quota >= 50"
         type="bar"
         height="250"
         :options="barChart.chartOptions"
         :series="barChart.series">
       </vue-apex-charts>
-      <div
-        v-if="quota < 50"
-        style="height: 50px;">
-        <p>Zu wenige Daten zur Berechnung (ab 50 Prozent Vollständigkeit).</p>
-      </div>
     </vx-card>
   </div>
 </template>
