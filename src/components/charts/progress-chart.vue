@@ -2,7 +2,7 @@
   <div>
     <vx-card
       title="Fortschritt"
-      title-color="primary"
+      title-color="black"
       subtitle="Der Fortschritt bei der Beantwortung des Fragebogens.">
       <vue-apex-charts
         v-if="quota >= 50"

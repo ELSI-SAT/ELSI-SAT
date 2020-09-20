@@ -2,7 +2,7 @@
   <div>
     <vx-card
       title="Risiko und Adressierung"
-      title-color="primary"
+      title-color="black"
       subtitle="Die Risiko- und Adressierungs-Werte für jede Kategorie.">
       <vue-apex-charts
         v-if="quota >= 50"

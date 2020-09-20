@@ -2,7 +2,7 @@
   <div>
     <vx-card
       title="Heatmap"
-      title-color="primary"
+      title-color="black"
       subtitle="Risiko, Adressierung und ELSI-Score als Ampel für alle Kategorien.">
       <vue-apex-charts
         v-if="quota >= 50"

@@ -5,7 +5,7 @@
         <vx-card
           class="p-3"
           title="Willkommen bei ELSI-SAT!"
-          title-color="primary"
+          title-color="black"
           subtitle="Informationen über die ELSI-SAT App">
 
           <p>ELSI-SAT ist ein automatisiertes ELSI-Screening- und Assessment-Tool für Forschungsvorhaben im Feld der Mensch-Technik-Interaktion. Die Software ist das Ergebnis des vom BMBF-geförderten Projekts ELSI-SAT, das an der Hochschule der Medien und dem Institut für Digitale Ethik in Stuttgart entwickelt wurde.</p>

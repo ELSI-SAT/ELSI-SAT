@@ -2,7 +2,7 @@
   <div>
     <vx-card
       title="ELSI-Score"
-      title-color="primary"
+      title-color="black"
       subtitle="ELSI-Score gesamt und alle Kategorien.">
       <vue-apex-charts
         v-if="quota >= 50"

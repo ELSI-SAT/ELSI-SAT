@@ -4,7 +4,7 @@
       <div class="vx-col w-full mb-base">
         <vx-card
           title="ELSI-SAT Bericht als PDF erzeugen"
-          title-color="primary"
+          title-color="black"
           subtitle="">
 
           <div v-if="this.quota !== 100">
@@ -23,7 +23,7 @@
       <div class="vx-col w-full mb-base">
         <vx-card
           title="Export"
-          title-color="primary"
+          title-color="black"
           subtitle="">
           <p>Exportiert den ELSI-SAT Fragebogen als JSON-formatierte Datei.</p>
           <br>
@@ -38,7 +38,7 @@
       <div class="vx-col w-full mb-base">
         <vx-card
           title="Import"
-          title-color="primary"
+          title-color="black"
           subtitle="">
           <p>Importiert eine ELSI-SAT Datei zur weiteren Bearbeitung.</p>
           <br>
