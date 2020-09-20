@@ -402,6 +402,7 @@ export default {
     return folloupIDs.filter((item, index) =>
       folloupIDs.indexOf(item) === index
     )
+
   },
 
 
@@ -469,11 +470,6 @@ export default {
     if (triggerOption == parent.answer.answer) {
       isActiveFollowup = true
     }
-
-    // console.log('mailid: ' + mailid)
-    // console.log('triggerOption: ' + triggerOption)
-    // console.log('parent.answer.answer: ' + parent.answer.answer)
-    // console.log('isActiveFollowup: ' + isActiveFollowup)
 
     return isActiveFollowup;
   },
@@ -554,10 +550,21 @@ export default {
         return
       }
 
+      // To get the maximal possible value,
+      // store each possible value in this array,
+      // and get the max with lodash.
+      let risk_array = []
+
+      // Ignore type 'filter' for the time being.
       mail.answer.options.forEach(function (option) {
-        risk = option.risk_existence
-        maximumMalus = maximumMalus + risk * factor
+        risk_array.push(option.risk_existence)
       })
+
+      // lodash
+      risk = _.max(risk_array)
+
+      maximumMalus = maximumMalus + risk * factor
+
     })
 
     return maximumMalus
@@ -640,11 +647,18 @@ export default {
       switch (mail.answer.type) {
         case 'radio':
         case 'followup-radio':
+          // To get the maximal possible value,
+          // store each possible value in this array,
+          // and get the max with lodash.
+          let bonus_array = []
+
           // Ignore type 'filter' for the time being.
           mail.answer.options.forEach(function (option) {
-            bonus = option.risk_addressing
+            bonus_array.push(option.risk_addressing)
           })
 
+          // lodash
+          bonus = _.max(bonus_array)
           break
         case 'tinytext':
         case 'text':
@@ -653,6 +667,7 @@ export default {
           bonus = 1
           break
       }
+
 
       maximumBonus = maximumBonus + bonus * factor
     })
