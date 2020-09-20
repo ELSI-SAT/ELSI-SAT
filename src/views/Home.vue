@@ -11,7 +11,7 @@
           <p>ELSI-SAT ist ein automatisiertes ELSI-Screening- und Assessment-Tool für Forschungsvorhaben im Feld der Mensch-Technik-Interaktion. Die Software ist das Ergebnis des vom BMBF-geförderten Projekts ELSI-SAT, das an der Hochschule der Medien und dem Institut für Digitale Ethik in Stuttgart entwickelt wurde.</p>
 
           <h5 class="mt-5 mb-4">Leistungsumfang: Sensibilisierung für ELS-Implikationen</h5>
-          <p>Über einen <a href="#/apps/email/inbox">Fragenkatalog</a> ermittelt die Software relevante ELS-Gesichtspunkte des jeweiligen Forschungsvorhabens und sensibilisiert für ethische, rechtliche und soziale Aspekte (ELSI) bei ihrem Forschungsvorhaben. In einer Wissensdatenbank werden ELS-Begriffe erklärt. Am Ende des Fragebogens erhalten Sie eine Matrix, die Risikobereiche und die bisherigen Vorhaben zur Risikoadressierung Ihres Forschungsvorhabens visualisiert</p>
+          <p>Über einen <a href="#/apps/email/all">Fragenkatalog</a> ermittelt die Software relevante ELS-Gesichtspunkte des jeweiligen Forschungsvorhabens und sensibilisiert für ethische, rechtliche und soziale Aspekte (ELSI) bei ihrem Forschungsvorhaben. In einer Wissensdatenbank werden ELS-Begriffe erklärt. Am Ende des Fragebogens erhalten Sie eine Matrix, die Risikobereiche und die bisherigen Vorhaben zur Risikoadressierung Ihres Forschungsvorhabens visualisiert</p>
           <br><p>Die ELSI-SAT-Software ist eine plattformunabhängige Desktop-Anwendung, bei der die Datenhaltung lokal erfolgt. Eingaben können in mehreren Sitzungen komplettiert werden. Ergebnisse können sowohl unmittelbar in der Anwendung betrachtet als auch in standardisierter Form exportiert und den Antragsdokumenten beigefügt werden.</p>
 
           <h5 class="mt-5 mb-4">Ziel: Werteorientierte Technikgestaltung</h5>
@@ -52,7 +52,7 @@
           </vs-collapse>
 
 
-          <vs-button color="primary" type="filled" href="#/apps/email/inbox">Zum Fragebogen</vs-button>
+          <vs-button color="primary" type="filled" href="#/apps/email/all">Zum Fragebogen</vs-button>
 
 
         </vx-card>
