@@ -28,9 +28,15 @@ export default [
   },
   {
     url: "/apps/email",
-    name: "Fragenkatalog",
+    name: "Fragebogen",
     slug: "email",
     icon: "EditIcon",
+  },
+  {
+    url: "/charts",
+    name: "Charts",
+    slug: "charts",
+    icon: "PieChartIcon",
   },
   {
     url: "/knowledge-base",
@@ -40,7 +46,7 @@ export default [
   },
   {
     url: "/export-import",
-    name: "Export/Import",
+    name: "Ex/Import",
     slug: "export-import",
     icon: "RepeatIcon",
   },

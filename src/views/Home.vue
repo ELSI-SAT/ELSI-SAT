@@ -59,35 +59,10 @@
       </div>
     </div>
 
-    <div class="vx-row">
-      <div class="vx-col w-1/2 mb-base">
-        <RadarChart :height="420"/>
-      </div>
-
-      <div class="vx-col w-1/2 mb-base">
-        <ProgressChart/>
-      </div>
-    </div>
-
-    <div class="vx-row">
-      <div class="vx-col w-1/2 mb-base">
-        <HeatmapChart/>
-      </div>
-
-      <div class="vx-col w-1/2 mb-base">
-        <RiskAndAdressingChart/>
-      </div>
-    </div>
-
   </div>
 </template>
 
 <script>
-  import ELSIScoreChart from "../components/charts/elsi-score";
-  import ProgressChart from "../components/charts/progress-chart";
-  import HeatmapChart from "../components/charts/heatmap";
-  import RiskAndAdressingChart from "../components/charts/risk-and-adressing";
-  import RadarChart from "../components/charts/radar-chart";
 
   export default {
     name: "Home",
@@ -99,11 +74,6 @@
     },
 
     components: {
-      ELSIScoreChart,
-      ProgressChart,
-      HeatmapChart,
-      RiskAndAdressingChart,
-      RadarChart,
     }
 
   }

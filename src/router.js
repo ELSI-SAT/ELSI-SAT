@@ -80,6 +80,19 @@ const router = new Router({
                 },
               },
               {
+                path: '/charts',
+                name: 'charts',
+                component: () => import('./views/Charts.vue'),
+                meta: {
+                  breadcrumb: [
+                    {title: 'Home', url: '/'},
+                    {title: 'Charts', active: true},
+                  ],
+                  pageTitle: 'Charts',
+                  rule: 'editor'
+                },
+              },
+              {
                 path: '/knowledge-base',
                 name: 'knowledge-base',
                 component: () => import('./views/KnowledgeBase.vue'),
@@ -115,9 +128,9 @@ const router = new Router({
                 meta: {
                   breadcrumb: [
                     {title: 'Home', url: '/'},
-                    {title: 'Fragenkatalog', active: true},
+                    {title: 'Fragebogen', active: true},
                   ],
-                  pageTitle: 'Fragenkatalog',
+                  pageTitle: 'Fragebogen',
                   rule: 'editor',
                   parent: 'email'
                 }
