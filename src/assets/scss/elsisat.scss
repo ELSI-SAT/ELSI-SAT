@@ -55,3 +55,48 @@
 }
 
 
+#email-app #button-row .my-btn {
+  align-items:center;
+  border: 0px none;
+  border-color: $primary;
+  border-radius: 6px;
+  box-sizing:border-box;
+  color:$primary;
+  cursor:pointer;
+  display:flex;
+  font-family:Montserrat, Helvetica, Arial, sans-serif;
+  font-size:14px;
+  font-weight:400;
+  justify-content:center;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  padding-bottom:10.5px;
+  padding-left:28px;
+  padding-right:28px;
+  padding-top:10.5px;
+  text-align:center;
+  background-color: rgba(var(--vs-primary),.08);
+
+  &.disabled {
+    color: #aaaaaa;
+    background-color: #eeeeee;
+    cursor: not-allowed;
+  }
+
+  &.right{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  &.left{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 1px;
+
+    background-color: rgba(var(--vs-primary),.04);
+  }
+
+  &:hover {
+    background-color: rgba(var(--vs-primary),.2);
+  }
+}

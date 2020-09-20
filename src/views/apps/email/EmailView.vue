@@ -40,6 +40,7 @@
                             svg-classes="h-6 w-6"
                             class="cursor-pointer ml-4 hidden sm:inline-flex"
                             @click="$emit('nextMail')" />
+
                         </div>
                     </div>
                 </div>
@@ -81,6 +82,39 @@
                         <email-mail-card :mailContent="threadMail" class="mt-10" />
                       </div>
                     </div>
+
+                  <vs-row id="button-row" vs-type="flex" vs-justify="flex-end" class="mt-6 mb-4">
+                    <vs-col vs-type="flex" vs-justify="center" vs-align="center">
+                      <button
+                        id="prev"
+                        class="my-btn left"
+                        :class="[{'disabled': this.isFirstMail}, '']"
+                        @click="$emit('previousMail')">
+
+                        <feather-icon
+                          icon="ChevronsLeftIcon"
+                          svg-classes="h-4 w-4"
+                          class="cursor-pointer mr-1 hidden sm:inline-flex"
+                          @click="$emit('nextMail')" />
+
+                        vorherige Frage
+                      </button>
+
+                      <button
+                        id="next"
+                        class="my-btn right"
+                        @click="$emit('nextMail')">
+
+                        nächste Frage
+
+                        <feather-icon
+                          icon="ChevronsRightIcon"
+                          svg-classes="h-4 w-4"
+                          class="cursor-pointer ml-1 hidden sm:inline-flex"
+                          @click="$emit('nextMail')" />
+                      </button>
+                    </vs-col>
+                  </vs-row>
 
                 </div>
                 </VuePerfectScrollbar>
@@ -229,4 +263,3 @@
 }
 
 </script>
-
