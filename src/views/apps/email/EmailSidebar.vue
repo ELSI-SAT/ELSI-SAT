@@ -91,7 +91,7 @@
                 :class="{'text-primary': mailFilter == 'starred'}">
 
                 <div class="flex items-center mb-2">
-                  <feather-icon icon="StarIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'starred'}, 'h-6 w-6']"></feather-icon>
+                  <feather-icon icon="BookmarkIcon" :svgClasses="[{'text-primary stroke-current': mailFilter == 'starred'}, 'h-6 w-6']"></feather-icon>
                   <span class="text-lg ml-3">Markiert</span>
                 </div>
 

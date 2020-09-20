@@ -24,7 +24,7 @@
                         <div class="email__actions--single flex items-baseline">
                           <vx-tooltip :text="currentMail.isStarred ? 'Markierung entfernen' : 'markieren'">
                             <feather-icon
-                              icon="StarIcon"
+                              icon="BookmarkIcon"
                               class="cursor-pointer "
                               :svgClasses="[{'text-warning stroke-current stroke-current': currentMail.isStarred}, 'h-6 w-6']"
                               @click="toggleIsStarred" />

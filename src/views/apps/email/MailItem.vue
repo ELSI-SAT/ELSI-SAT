@@ -29,7 +29,7 @@
                 </div>
                 <div style="display: block">
                   <feather-icon
-                    icon="StarIcon"
+                    icon="BookmarkIcon"
                     class="cursor-pointer ml-3"
                     :svgClasses="[{'text-warning fill-current stroke-current': mail.isStarred}, 'w-5', 'h-5']">
                   </feather-icon>
