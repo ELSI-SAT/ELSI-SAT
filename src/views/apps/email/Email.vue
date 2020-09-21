@@ -62,6 +62,7 @@
             :isSidebarActive = "isSidebarActive"
             :mailFilter      = "mailFilter"
             :isFirstMail     = "isFirstMailResult"
+            :isLastMail      = "isLastMailResult"
             @removeMail      = "removeOpenMail"
             @previousMail    = "previousMail"
             @nextMail        = "nextMail"
@@ -84,6 +85,7 @@ export default {
       selectedMails        : [],
       isSidebarActive      : false,
       isFirstMailResult    : false,
+      isLastMailResult     : false,
       showThread           : false,
       clickNotClose        : true,
       isEmailSidebarActive : true,
@@ -105,7 +107,7 @@ export default {
     },
     windowWidth() {
       this.setSidebarWidth()
-    }
+    },
   },
   computed: {
     mailFilter() {
@@ -153,6 +155,8 @@ export default {
       this.openMailId = mailId
       this.isSidebarActive = true
       this.isFirstMail()
+      this.isLastMail()
+
     },
     moveTo(to) {
       const payload = { emailIds: this.selectedMails, to: to }
@@ -177,11 +181,13 @@ export default {
       const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
       if (this.mails[currentMailIndex + 1]) this.openMailId = this.mails[currentMailIndex + 1].id
       this.isFirstMail()
+      this.isLastMail()
     },
     previousMail() {
       const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
       if (this.mails[currentMailIndex - 1]) this.openMailId = this.mails[currentMailIndex - 1].id
       this.isFirstMail()
+      this.isLastMail()
     },
     isFirstMail() {
       const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
@@ -189,6 +195,15 @@ export default {
         this.isFirstMailResult = true
       } else {
         this.isFirstMailResult = false
+      }
+    },
+    isLastMail() {
+      const currentMailIndex = this.mails.findIndex((mail) => mail.id == this.openMailId)
+      const currentMailLength = _.size(this.mails) - 1
+      if (currentMailIndex === currentMailLength){
+        this.isLastMailResult = true
+      } else {
+        this.isLastMailResult = false
       }
     },
     closeMailViewSidebar() {

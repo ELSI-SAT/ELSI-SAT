@@ -6,7 +6,6 @@
   box-shadow: none !important;
 }
 
-
 .mail__details h5 {
   a {
     color: currentColor;
@@ -55,7 +54,7 @@
 }
 
 
-#email-app #button-row .my-btn {
+#email-app .my-button-row .my-btn {
   align-items:center;
   border: 0px none;
   border-color: $primary;

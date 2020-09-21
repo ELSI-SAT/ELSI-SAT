@@ -11,7 +11,7 @@
 <template>
     <div>
         <vs-sidebar click-not-close parent="#email-app" :hidden-background="true" class="full-vs-sidebar email-view-sidebar items-no-padding" v-model="isSidebarActive" position-right>
-            <div class="mail-sidebar-content px-0 sm:pb-6 h-full" v-if="currentMail">
+            <div class="mail-sidebar-content px-0 h-full" v-if="currentMail">
                 <div id="question-head" class="flex flex-no-wrap  justify-between md:px-8 px-6 sm:pb-2 sm: pt-6 d-theme-dark-bg">
                     <div class="flex-grow mb-4">
                         <div class="flex align-text-top">
@@ -83,7 +83,7 @@
                       </div>
                     </div>
 
-                  <vs-row id="button-row" vs-type="flex" vs-justify="flex-end" class="mt-6 mb-4">
+                  <vs-row class="my-button-row mt-6 mb-4" vs-type="flex" vs-justify="flex-end">
                     <vs-col vs-type="flex" vs-justify="center" vs-align="center">
                       <button
                         id="prev"
@@ -94,14 +94,14 @@
                         <feather-icon
                           icon="ChevronsLeftIcon"
                           svg-classes="h-4 w-4"
-                          class="cursor-pointer mr-1 hidden sm:inline-flex"
-                          @click="$emit('nextMail')" />
+                          class="cursor-pointer mr-1 hidden sm:inline-flex"/>
 
                         vorherige Frage
                       </button>
 
                       <button
                         id="next"
+                        :class="[{'disabled': this.isLastMail}, '']"
                         class="my-btn right"
                         @click="$emit('nextMail')">
 
@@ -110,8 +110,27 @@
                         <feather-icon
                           icon="ChevronsRightIcon"
                           svg-classes="h-4 w-4"
-                          class="cursor-pointer ml-1 hidden sm:inline-flex"
-                          @click="$emit('nextMail')" />
+                          class="cursor-pointer ml-1 hidden sm:inline-flex"/>
+                      </button>
+                    </vs-col>
+                  </vs-row>
+
+                  <vs-row class="my-button-row mt-6 mb-4" vs-type="flex" vs-justify="flex-end">
+                    <vs-col vs-type="flex" vs-justify="center" vs-align="center">
+
+                      <button
+                        id="charts"
+                        v-if="quota == 100"
+                        class="my-btn"
+                        v-bind:style="{marginBottom: '100px'}"
+                        @click="$router.push('/charts')">
+
+                        alle Fragen beantwortet: zur Auswertung
+
+                        <feather-icon
+                          icon="ChartsIcon"
+                          svg-classes="h-4 w-4"
+                          class="cursor-pointer ml-1 hidden sm:inline-flex" />
                       </button>
                     </vs-col>
                   </vs-row>
@@ -146,6 +165,10 @@
       type: Boolean,
       required: true
     },
+    isLastMail: {
+      type: Boolean,
+      required: true
+    },
     mailFilter: {
       type: String
     }
@@ -166,6 +189,9 @@
     },
   },
   computed: {
+    quota() {
+      return this.$store.getters['email/getQuota']
+    },
     compiledData () {
       return {
         template: `${this.currentMail.message}`
