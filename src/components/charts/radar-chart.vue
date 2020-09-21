@@ -74,7 +74,7 @@
 
         return {
           series: [{
-            name: 'Series 1',
+            name: 'Score',
             data: dataScore,
           }],
           chartOptions: {
