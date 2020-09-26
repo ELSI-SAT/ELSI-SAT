@@ -45,7 +45,13 @@
         let dataBonus = []
         let dataScore = []
 
+        let filteredLabels = this.$store.getters['email/getFilteredLabels']
+
         labelsObj.forEach((label) => {
+          if(filteredLabels.includes(label.value) ){
+            return
+          }
+
           labels = [...labels, label.value]
 
           let totalMalus = this.$store.getters['email/getScoreTotalMalus'](label.value)

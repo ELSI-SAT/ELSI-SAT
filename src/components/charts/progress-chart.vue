@@ -31,7 +31,13 @@
         let colors = []
         let data = []
 
+        let filteredLabels = this.$store.getters['email/getFilteredLabels']
+
         labelsObj.forEach((label) => {
+          if(filteredLabels.includes(label.value) ){
+            return
+          }
+
           let answers = this.$store.getters['email/getNumberOfAnswersWithLabel'](label.value)
           let questions = this.$store.getters['email/getNumberOfQuestionsWithLabel'](label.value)
           let quota = Math.floor((answers * 100) / questions)

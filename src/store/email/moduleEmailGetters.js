@@ -95,6 +95,41 @@ export default {
 
 
   /**
+   * Returns all deactivated filter-labels
+   * as an array of strings.
+   *
+   * @param state
+   * @returns {[]}
+   */
+  getFilteredLabels: state => {
+    let filtered_labels = []
+
+    // For each question …
+    for (let i = 0; i < state.mails.length; i++) {
+      // … that contains a filter-array.
+      if (state.mails[i].filter) {
+        // Check for each filter …
+        state.mails[i].filter.forEach(function (filter) {
+          // … if it is active.
+          if (filter.active == true) {
+            // Then for each label-array …
+            filter.excludes.forEach(function (label) {
+              // … push it to the array of all active filter-labels.
+              filtered_labels.push(label);
+            })
+          }
+        })
+      }
+    }
+
+    console.log('filtered_labels')
+    console.log(filtered_labels)
+
+    return filtered_labels
+  },
+
+
+  /**
    * Returns all positively filtered questions
    * as an array of objects.
    *

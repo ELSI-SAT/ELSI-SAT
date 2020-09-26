@@ -408,6 +408,9 @@ export default {
           includes: [
             'Allgemein',
           ],
+          excludes: [
+            'Datenschutz',
+          ],
           active: false
         },
       ],

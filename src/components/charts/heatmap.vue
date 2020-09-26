@@ -37,7 +37,13 @@
         let colors = []
         let dataHeatmap = []
 
+        let filteredLabels = this.$store.getters['email/getFilteredLabels']
+
         labelsObj.forEach((label) => {
+          if(filteredLabels.includes(label.value) ){
+            return
+          }
+
           labels = [...labels, label.value]
           colors = [...colors, label.color]
 
