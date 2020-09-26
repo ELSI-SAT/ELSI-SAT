@@ -43,7 +43,7 @@
           let quota = Math.floor((answers * 100) / questions)
 
           labels = [...labels, label.value]
-          colors = [...colors, label.color]
+          colors = [...colors, '#999']
           data = [...data, quota]
         });
 
