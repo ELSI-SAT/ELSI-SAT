@@ -2108,11 +2108,11 @@ export default {
   mailTags: [
     {text: 'Allgemein', value: 'Allgemein', color: '#5E5E5F'},
     {text: 'Datenschutz', value: 'Datenschutz', color: '#5E5E5F'},
-    {text: 'Tue Gutes', value: 'Fürsorge', color: '#7367F0'},
-    {text: 'Tue niemandem weh', value: 'Schadensvermeidung', color: '#7367F0'},
-    {text: 'Bewahre die menschliche Handlungsfähigkeit', value: 'Autonomie', color: '#7367F0'},
-    {text: 'Sei fair', value: 'Gerechtigkeit', color: '#7367F0'},
-    {text: 'Funktioniere', value: 'Transparenz', color: '#7367F0'},
+    {text: 'Tue Gutes', value: 'Fürsorge', color: '#333333'},
+    {text: 'Tue niemandem weh', value: 'Schadensvermeidung', color: '#333333'},
+    {text: 'Bewahre die menschliche Handlungsfähigkeit', value: 'Autonomie', color: '#333333'},
+    {text: 'Sei fair', value: 'Gerechtigkeit', color: '#333333'},
+    {text: 'Funktioniere', value: 'Transparenz', color: '#333333'},
   ],
 
   // Sidebar-filter for state (inbox, answered) and labels.
