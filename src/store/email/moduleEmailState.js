@@ -26,6 +26,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 2,
@@ -43,6 +44,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 4,
@@ -60,6 +62,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 5,
@@ -81,6 +84,7 @@ export default {
 
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 5.1,
@@ -101,6 +105,7 @@ export default {
         ],
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 7,
@@ -125,6 +130,7 @@ export default {
         ],
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 8,
@@ -149,6 +155,7 @@ export default {
         ],
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 9,
@@ -169,6 +176,7 @@ export default {
         ],
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 10,
@@ -198,6 +206,7 @@ export default {
         ],
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 11,
@@ -218,6 +227,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 12,
@@ -235,6 +245,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 13,
@@ -255,10 +266,11 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 13.1,
-      inquiry: 'Wenn ja: Wie stellen Sie sicher, dass die betroffene Person/Personengruppe von einer Entscheidung des Systems nicht benachteiligt wird?',
+      inquiry: 'Wie stellen Sie sicher, dass die betroffene Person/Personengruppe von einer Entscheidung des Systems nicht benachteiligt wird?',
       subject: 'Frage-ID 0013.1',
       message: '<p></p>',
       isStarred: false, // true || false
@@ -272,6 +284,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 15,
@@ -292,6 +305,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 15.1,
@@ -309,6 +323,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 15.2,
@@ -326,6 +341,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 18,
@@ -346,6 +362,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 18.1,
@@ -363,6 +380,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 20,
@@ -401,6 +419,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 21,
@@ -418,6 +437,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 22,
@@ -438,6 +458,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 23,
@@ -458,6 +479,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 24,
@@ -478,6 +500,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 24.1,
@@ -495,6 +518,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 26,
@@ -515,6 +539,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 26.1,
@@ -535,6 +560,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 28,
@@ -555,6 +581,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 29,
@@ -575,6 +602,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 30,
@@ -592,6 +620,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 31,
@@ -612,6 +641,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 31.1,
@@ -629,6 +659,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 33,
@@ -649,6 +680,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 33.1,
@@ -666,6 +698,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 35,
@@ -686,6 +719,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 36,
@@ -706,6 +740,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 36.1,
@@ -726,6 +761,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 38,
@@ -746,6 +782,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 38.1,
@@ -763,6 +800,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 40,
@@ -783,6 +821,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 41,
@@ -803,6 +842,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 41.1,
@@ -820,6 +860,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 43,
@@ -840,6 +881,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 44,
@@ -860,6 +902,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 44.1,
@@ -880,6 +923,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 44.2,
@@ -897,6 +941,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 47,
@@ -917,6 +962,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 47.1,
@@ -934,6 +980,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 49,
@@ -954,6 +1001,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 50,
@@ -974,6 +1022,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 51,
@@ -994,6 +1043,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 52,
@@ -1014,6 +1064,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 52.1,
@@ -1031,6 +1082,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 54,
@@ -1051,6 +1103,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 55,
@@ -1071,6 +1124,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 56,
@@ -1091,6 +1145,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 56.1,
@@ -1111,6 +1166,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 58,
@@ -1131,6 +1187,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 58.1,
@@ -1151,6 +1208,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 60,
@@ -1171,6 +1229,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 61,
@@ -1191,6 +1250,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 61.1,
@@ -1211,6 +1271,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 63,
@@ -1231,6 +1292,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 64,
@@ -1251,6 +1313,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 65,
@@ -1271,6 +1334,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 66,
@@ -1291,6 +1355,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 66.1,
@@ -1308,6 +1373,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 68,
@@ -1328,6 +1394,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 69,
@@ -1345,6 +1412,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 70,
@@ -1365,6 +1433,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 71,
@@ -1385,6 +1454,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 71.1,
@@ -1402,6 +1472,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 73,
@@ -1422,6 +1493,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 74,
@@ -1442,6 +1514,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 74.1,
@@ -1459,6 +1532,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 76,
@@ -1479,6 +1553,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 79,
@@ -1499,6 +1574,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 80,
@@ -1519,6 +1595,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 81,
@@ -1539,6 +1616,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 81.2,
@@ -1556,6 +1634,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 81.1,
@@ -1573,6 +1652,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 84,
@@ -1593,6 +1673,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 84.1,
@@ -1610,6 +1691,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 86,
@@ -1630,6 +1712,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 87,
@@ -1650,6 +1733,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 87.1,
@@ -1667,6 +1751,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 89,
@@ -1687,6 +1772,7 @@ export default {
         ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
 
     {
@@ -1705,6 +1791,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
 
     {
@@ -1726,6 +1813,7 @@ export default {
           ], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 91.1,
@@ -1743,6 +1831,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     {
       id: 93,
@@ -1760,6 +1849,7 @@ export default {
         options: [], // Array of options for types 'radio' and 'multiple'
         answer: '', // String
       },
+      remark: '',
     },
     // {
     //   id: 1001,
@@ -1781,6 +1871,7 @@ export default {
     //     ], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1002,
@@ -1803,6 +1894,7 @@ export default {
     //     ], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1003,
@@ -1820,6 +1912,7 @@ export default {
     //     options: [], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1004,
@@ -1837,6 +1930,7 @@ export default {
     //     options: [], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1005,
@@ -1854,6 +1948,7 @@ export default {
     //     options: [], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1006,
@@ -1884,6 +1979,7 @@ export default {
     //     options: [], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1007,
@@ -1906,6 +2002,7 @@ export default {
     //     ], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1008,
@@ -1923,6 +2020,7 @@ export default {
     //     options: [], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1009,
@@ -1940,6 +2038,7 @@ export default {
     //     options: [], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1010,
@@ -1962,6 +2061,7 @@ export default {
     //     ], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1011,
@@ -1979,6 +2079,7 @@ export default {
     //     options: [], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
     // {
     //   id: 1012,
@@ -1996,6 +2097,7 @@ export default {
     //     options: [], // Array of options for types 'radio' and 'multiple'
     //     answer: '', // String
     //   },
+    // remark: '',
     // },
   ],
 

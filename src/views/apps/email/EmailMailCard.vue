@@ -59,6 +59,13 @@
         v-if="mailContent.answer.type === 'followup-radio'"
         :mailContent="mailContent"
         class="w-full mb-4"></RadioForm>
+
+      <div v-if="isFollowupChild">
+        <TextFormRemark
+          v-if="mailContent.answer.type.includes('text')"
+          :mailContent="mailContent"
+          class="w-full"></TextFormRemark>
+      </div>
     </div>
 
     <div
@@ -92,6 +99,7 @@
   import FilterForm from './forms/FilterForm.vue'
 
   import TextForm from './forms/TextForm.vue'
+  import TextFormRemark from './forms/TextFormRemark.vue'
   import RadioForm from './forms/RadioForm.vue'
   import CheckboxForm from './forms/CheckboxForm.vue'
   import FollowupForm from './forms/FollowupForm.vue'
@@ -104,6 +112,7 @@
       FilterForm,
 
       TextForm,
+      TextFormRemark,
       RadioForm,
       CheckboxForm,
       FollowupForm,
@@ -145,3 +154,4 @@
     margin-bottom: 1rem;
   }
 </style>
+

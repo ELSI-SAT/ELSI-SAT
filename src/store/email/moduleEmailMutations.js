@@ -94,6 +94,11 @@ export default {
       state.mails.find((mail) => mail.id === payload.id).answer.answer = payload.answer.toString()
     },
 
+    UPDATE_REMARK(state, payload) {
+      // Answer ist always a string.
+      state.mails.find((mail) => mail.id === payload.id).remark = payload.remark.toString()
+    },
+
     UPDATE_TRASHREASON(state, payload) {
       state.mails.find((mail) => mail.id === payload.id).trashingReason = payload.answer
     },

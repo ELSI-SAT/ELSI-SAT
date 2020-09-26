@@ -62,6 +62,14 @@
           v-html="parseAnswer(question)">
         </p>
 
+        <div
+          v-if="question.remark"
+          class="remark">
+          <h6>Anmerkungen:</h6>
+          <br>
+          <p v-html="question.remark"></p>
+        </div>
+
       </div>
 
     </div>
@@ -167,6 +175,12 @@
         padding-left: 10px;
       }
     }
+  }
+
+  div.remark {
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #fafafa;
   }
 
   .inbox {
