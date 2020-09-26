@@ -86,9 +86,9 @@ const router = new Router({
                 meta: {
                   breadcrumb: [
                     {title: 'Home', url: '/'},
-                    {title: 'Charts', active: true},
+                    {title: 'Ergebnis', active: true},
                   ],
-                  pageTitle: 'Charts',
+                  pageTitle: 'Ergebnis',
                   rule: 'editor'
                 },
               },

@@ -22,7 +22,7 @@
         :class="[{'router-link-active': activeLink}, 'nav-link flex items-center']"
         :to="to"
         :target="target" >
-          <span class="visible xs:inline-flex sm:inline-flex md:hidden lg:inline-flex">
+          <span class="visible xs:inline-flex sm:inline-flex md:hidden xl:inline-flex">
             <vs-icon v-if="!featherIcon" :icon-pack="iconPack" :icon="icon" />
             <feather-icon v-else :class="iconClasses" :icon="icon" />
           </span>

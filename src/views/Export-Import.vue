@@ -3,25 +3,6 @@
     <div class="vx-row">
       <div class="vx-col w-full mb-base">
         <vx-card
-          title="ELSI-SAT Bericht als PDF erzeugen"
-          title-color="black"
-          subtitle="">
-
-          <div v-if="this.quota !== 100">
-            Die PDF kann erst erzeugt werden, wenn der Fragebogen vollständig beantwortet ist.
-          </div>
-          <div v-else>
-            <p>Download der Ergebnisse des ELSI-SAT Fragebogens als PDF Datei.</p>
-            <br>
-            <pdfExportButton />
-          </div>
-        </vx-card>
-      </div>
-    </div>
-
-    <div class="vx-row">
-      <div class="vx-col w-full mb-base">
-        <vx-card
           title="Export"
           title-color="black"
           subtitle="">
@@ -53,7 +34,6 @@
 <script>
   import {mapGetters} from "vuex";
   import ImportJSON from "../components/ImportJSON";
-  import pdfExportButton from "../components/pdf-export-button";
 
   export default {
     name: "Home",
@@ -75,7 +55,6 @@
 
     components: {
       ImportJSON,
-      pdfExportButton
     },
 
     methods: {

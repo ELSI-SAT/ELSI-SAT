@@ -34,7 +34,7 @@ export default [
   },
   {
     url: "/charts",
-    name: "Charts",
+    name: "Ergebnis",
     slug: "charts",
     icon: "PieChartIcon",
   },
