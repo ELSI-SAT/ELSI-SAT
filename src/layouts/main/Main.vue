@@ -68,7 +68,21 @@
 
                 <!-- DROPDOWN -->
                 <div class="ml-auto xs:block cursor-pointer">
-                  <vs-button color="primary" type="border" >{{ this.quota }} % abgeschlossen</vs-button>
+                  <vs-button
+                    v-if="quota != 100"
+                    color="primary"
+                    type="border" >
+                    {{ this.quota }} % abgeschlossen
+                  </vs-button>
+
+                  <vs-button
+                    v-if="quota == 100"
+                    color="primary"
+                    type="filled"
+                    href="#/charts">
+                    Zur Auswertung
+                  </vs-button>
+
                   <!--<vs-button color="warning" type="border" class="ml-3" >{{ this.$store.getters['email/getScoreTotalMalus'](false) }} von {{ this.$store.getters['email/getScoreMaximumMalus'](false) }} Malus</vs-button>-->
                   <!--<vs-button color="success" type="border" class="ml-3" >{{ this.$store.getters['email/getScoreTotalBonus'](false) }} von {{ this.$store.getters['email/getScoreMaximumBonus'](false) }} Bonus</vs-button>-->
                 </div>
