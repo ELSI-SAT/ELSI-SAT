@@ -76,7 +76,7 @@
         });
 
         return {
-          series: dataHeatmap,
+          series: dataHeatmap.reverse(),
 
           chartOptions: {
             chart: {
