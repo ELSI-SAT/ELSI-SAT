@@ -153,6 +153,7 @@
     // Hide in production.
     visibility: hidden;
     height: 0px;
+    overflow: hidden;
   }
 
   #pdf-export-content * {
