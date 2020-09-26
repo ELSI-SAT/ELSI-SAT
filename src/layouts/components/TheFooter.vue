@@ -15,7 +15,7 @@ Author URL: http://www.themeforest.net/user/pixinvent
     :class="classes">
 
     <span>ELSI-SAT
-      <!--<router-link to="/datenschutz">Datenschutz</router-link>-->
+      <router-link to="/datenschutz">Datenschutz</router-link>
       • <router-link to="/impressum">Impressum</router-link>
     </span>
     <span class="md:flex hidden items-center">

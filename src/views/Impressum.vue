@@ -5,7 +5,7 @@
         <vx-card
           class="p-3"
           title="Impressum"
-          title-color="primary"
+          title-color="black"
           subtitle="">
 
           <p class="mb-1">Die Software „ELSI-SAT“ ist Produkt des BMBF-Forschungsprojektes „ELSI-SAT“, das an der Hochschule der Medien Stuttgart durchgeführt wurde.</p>
