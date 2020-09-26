@@ -115,14 +115,12 @@
                     </vs-col>
                   </vs-row>
 
-                  <vs-row class="my-button-row mt-6 mb-4" vs-type="flex" vs-justify="flex-end">
+                  <vs-row class="my-button-row mt-6" vs-type="flex" vs-justify="flex-end">
                     <vs-col vs-type="flex" vs-justify="center" vs-align="center">
 
                       <button
-                        id="charts"
                         v-if="quota == 100"
                         class="my-btn"
-                        v-bind:style="{marginBottom: '100px'}"
                         @click="$router.push('/charts')">
 
                         alle Fragen beantwortet: zur Auswertung
@@ -134,6 +132,8 @@
                       </button>
                     </vs-col>
                   </vs-row>
+
+                  <div id="my-final-row"></div>
 
                 </div>
                 </VuePerfectScrollbar>
@@ -187,6 +187,10 @@
         this.$emit('closeSidebar')
       }
     },
+    openMailId() {
+      // Recalculate the header-height when the openMailId changes.
+      this.reactToHeaderHeight()
+    }
   },
   computed: {
     quota() {
@@ -278,6 +282,13 @@
       //   title:'Accept Selected',
       //   text:'Gingerbread soufflé biscuit oat cake.'
       // })
+    },
+    reactToHeaderHeight() {
+      // https://vuejs.org/v2/api/#vm-nextTick
+      this.$nextTick(function () {
+        let headerHeight = document.getElementById("question-head").offsetHeight
+        document.getElementById("my-final-row").setAttribute("style","margin-bottom:"+ (headerHeight / 1.6) + 'px')
+      });
     }
   },
 
