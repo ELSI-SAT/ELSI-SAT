@@ -61,8 +61,6 @@
       ]),
 
       quota() {
-        console.log('hey')
-        console.log(this.$store.getters['email/getQuota'])
         return [this.$store.getters['email/getQuota']]
       },
     },

@@ -122,9 +122,6 @@ export default {
       }
     }
 
-    console.log('filtered_labels')
-    console.log(filtered_labels)
-
     return filtered_labels
   },
 
