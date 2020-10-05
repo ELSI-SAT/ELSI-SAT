@@ -11,6 +11,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import VuexPersist from 'vuex-persist'
+import VuexReset from '@ianwalter/vuex-reset'
 
 import state from "./state"
 import getters from "./getters"
@@ -37,6 +38,6 @@ export default new Vuex.Store({
         email: moduleEmail,
         kb: moduleKB,
     },
-    plugins: [vuexPersist.plugin],
+    plugins: [vuexPersist.plugin, VuexReset()],
     strict: process.env.NODE_ENV !== 'production'
 })

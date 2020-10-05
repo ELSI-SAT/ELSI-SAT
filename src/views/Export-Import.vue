@@ -3,6 +3,21 @@
     <div class="vx-row">
       <div class="vx-col w-full mb-base">
         <vx-card
+          title="Daten löschen"
+          title-color="black"
+          subtitle="">
+          <p>Löscht sämtliche Eingaben und beginnt einen neuen Fragebogen.</p>
+          <br>
+          <vs-button color="primary" type="filled" v-on:click="resetstore_init()">
+            Daten löschen
+          </vs-button>
+        </vx-card>
+      </div>
+    </div>
+
+    <div class="vx-row">
+      <div class="vx-col w-full mb-base">
+        <vx-card
           title="Export"
           title-color="black"
           subtitle="">
@@ -58,6 +73,30 @@
     },
 
     methods: {
+      resetstore_init(){
+        this.$vs.dialog({
+          type:'confirm',
+          color: 'danger',
+          title: `Löschen bestätigen`,
+          text: 'Möchten Sie wirklich sämtliche Angaben löschen und mit einem neuen Fragebogen beginnen? Die Aktion kann nicht rückgängig gemacht werden.',
+          acceptText: "Löschen",
+          cancelText: "Abbrechen",
+          accept:this.resetstore_execute
+        })
+      },
+
+      resetstore_execute(){
+        this.$store.commit('email/reset')
+
+        this.$router.push({ name: 'home' })
+
+        this.$vs.notify({
+          color:'danger',
+          title:'Daten gelöscht',
+          text:'Alle Daten wurden gelöscht.'
+        })
+      },
+
       saveFile: function() {
         const data = JSON.stringify(this.$store.state.email)
         const blob = new Blob([data], {type: 'text/plain'})

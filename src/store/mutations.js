@@ -9,6 +9,7 @@
 
 
 const mutations = {
+  reset: () => {},
 
   TEXTAREA_HAS_FOCUS(state, payload) {
     state.textareaHasFocus = payload

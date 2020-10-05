@@ -9,6 +9,8 @@
 
 
 export default {
+    reset: () => {},
+
     SET_STATE(state, text) {
         const JSONparsed = JSON.parse(text)
         state.mails = JSONparsed.mails
