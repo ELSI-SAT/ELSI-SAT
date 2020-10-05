@@ -99,9 +99,9 @@ const router = new Router({
                 meta: {
                   breadcrumb: [
                     {title: 'Home', url: '/'},
-                    {title: 'KnowledgeBase', active: true},
+                    {title: 'Glossar', active: true},
                   ],
-                  pageTitle: 'FAQ',
+                  pageTitle: 'Glossar',
                   rule: 'editor'
                 },
               },
@@ -112,9 +112,9 @@ const router = new Router({
                 meta: {
                   breadcrumb: [
                     {title: 'Home', url: '/'},
-                    {title: 'Export und Import', active: true},
+                    {title: 'Verwaltung', active: true},
                   ],
-                  pageTitle: 'Export und Import',
+                  pageTitle: 'Verwaltung',
                 },
               },
               {

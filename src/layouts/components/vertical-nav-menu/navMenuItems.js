@@ -21,12 +21,6 @@
 
 export default [
   {
-    url: "/",
-    name: "Start",
-    slug: "home",
-    icon: "HomeIcon",
-  },
-  {
     url: "/apps/email",
     name: "Fragebogen",
     slug: "email",
@@ -40,13 +34,13 @@ export default [
   },
   {
     url: "/knowledge-base",
-    name: "FAQ",
+    name: "Glossar",
     slug: "knowledge-base",
     icon: "HelpCircleIcon",
   },
   {
     url: "/export-import",
-    name: "Ex/Import",
+    name: "Verwaltung",
     slug: "export-import",
     icon: "RepeatIcon",
   },
