@@ -8,6 +8,7 @@
 ========================================================================================== -->
 
 <template>
+  <div>
   <vx-card class="px-4"
     :class="{'py-1': !mailContent.isTrashed}">
     <!-- Show inquiry for isFollowupChild -->
@@ -60,12 +61,6 @@
         :mailContent="mailContent"
         class="w-full mb-4"></RadioForm>
 
-      <div v-if="isFollowupChild">
-        <TextFormRemark
-          v-if="mailContent.answer.type.includes('text')"
-          :mailContent="mailContent"
-          class="w-full"></TextFormRemark>
-      </div>
     </div>
 
     <div
@@ -93,6 +88,24 @@
       -->
     </div>
   </vx-card>
+
+    <vx-card
+      class="px-4 mt-10"
+      v-if="isFollowupChild && mailContent.answer.answer.includes('Ja')">
+
+      <div
+        class=""
+        v-if="!mailContent.isTrashed && !mailContent.filter">
+
+        <div>
+          <TextFormRemark
+            :mailContent="mailContent"
+            class="w-full"></TextFormRemark>
+        </div>
+
+      </div>
+    </vx-card>
+</div>
 </template>
 
 <script>

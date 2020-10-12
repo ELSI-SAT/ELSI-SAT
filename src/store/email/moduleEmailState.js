@@ -100,7 +100,7 @@ export default {
       answer: {
         type: "radio",
         options: [
-          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
           {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '',
@@ -280,8 +280,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -319,8 +322,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -337,8 +343,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -376,8 +385,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -507,7 +519,7 @@ export default {
     },
     {
       id: 24.1,
-      inquiry: 'Welche "angemessenen" Anstrengungen bzw. Vorkehrungen können im System getroffen werden, um sicherzustellen, dass für ein "Kind" eine notwendige Einwilligung durch den Träger der elterlichen Verantwortung erteilt wird?',
+      inquiry: 'Werden "angemessenen" Anstrengungen bzw. Vorkehrungen im System getroffen, um sicherzustellen, dass für ein "Kind" eine notwendige Einwilligung durch den Träger der elterlichen Verantwortung erteilt wird?',
       subject: 'Frage-ID 0024.1',
       message: '<p>Zur Einwilligung nach der DSGVO: <a href="https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679&from=DE#d1e2044-1-1" target="_blank">notwendige Einwilligung durch den Träger der elterlichen Verantwortung</a></p>',
       isStarred: false,
@@ -517,8 +529,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -658,8 +673,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -697,8 +715,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -759,8 +780,8 @@ export default {
       answer: {
         type: 'radio',
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '',
       },
@@ -799,8 +820,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -859,8 +883,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -921,8 +948,8 @@ export default {
       answer: {
         type: 'radio',
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '',
       },
@@ -940,8 +967,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -979,8 +1009,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -1081,8 +1114,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -1164,8 +1200,8 @@ export default {
       answer: {
         type: 'radio',
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '',
       },
@@ -1206,8 +1242,8 @@ export default {
       answer: {
         type: 'radio',
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '',
       },
@@ -1269,8 +1305,8 @@ export default {
       answer: {
         type: 'radio',
         options: [
-          {name: 'Ja', risk_contemplation: 1, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 1, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '',
       },
@@ -1372,8 +1408,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -1471,8 +1510,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -1521,7 +1563,7 @@ export default {
     },
     {
       id: 74.1,
-      inquiry: 'Wie planen Sie die Qualität der Daten und deren Sicherheit im outgesourcten Teil sicherzustellen (vgl. Art. 28 DSGVO)?',
+      inquiry: 'Planen Sie die Qualität der Daten und deren Sicherheit im outgesourcten Teil sicherzustellen (vgl. Art. 28 DSGVO)?',
       subject: 'Frage-ID 0074.1',
       message: '<p></p>',
       isStarred: false,
@@ -1531,8 +1573,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -1623,7 +1668,7 @@ export default {
     },
     {
       id: 81.2,
-      inquiry: 'Wie können Sie den Algorithmus bzw. das Ergebnis des Algorithmus dem Anwender (Laien/Nicht-Programmierer) erklärbar und transparent machen?',
+      inquiry: 'Können Sie den Algorithmus bzw. das Ergebnis des Algorithmus dem Anwender (Laien/Nicht-Programmierer) erklärbar und transparent machen?',
       subject: 'Frage-ID 0081.2',
       message: '<p></p>',
       isStarred: false,
@@ -1633,15 +1678,18 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
     },
     {
       id: 81.1,
-      inquiry: 'Was tun Sie, um das Risiko technisch und/oder organisatorisch so gering wie möglich zu halten?',
+      inquiry: 'Ergreifen Sie Maßnahmen, um das Risiko technisch und/oder organisatorisch so gering wie möglich zu halten?',
       subject: 'Frage-ID 0081.1',
       message: '<p></p>',
       isStarred: false,
@@ -1651,9 +1699,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
-        answer: '',
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
       },
       remark: '',
     },
@@ -1680,7 +1730,7 @@ export default {
     },
     {
       id: 84.1,
-      inquiry: 'Mit welchen Maßnahmen kann eine bessere Datenqualität hergestellt werden?',
+      inquiry: 'Ergreifen Sie Maßnahmen, mit denen eine bessere Datenqualität hergestellt werden?',
       subject: 'Frage-ID 0084.1',
       message: '<p></p>',
       isStarred: false,
@@ -1690,9 +1740,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
-        answer: '',
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
       },
       remark: '',
     },
@@ -1750,8 +1802,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -1790,8 +1845,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',
@@ -1830,8 +1888,11 @@ export default {
       isTrashed: false,
       trashingReason: '',
       answer: {
-        type: 'text',
-        options: [],
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
         answer: '',
       },
       remark: '',

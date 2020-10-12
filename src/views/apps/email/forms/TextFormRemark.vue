@@ -1,11 +1,11 @@
 <template>
   <div id="textarearemark">
-    <h6 class="mt-10 mb-4">Anmerkungen</h6>
+    <h5 class="mb-4">Bitte erläutern Sie</h5>
 
     <vs-textarea
-      :counter="200"
-      :maxlength="200"
-      height="70"
+      :counter="300"
+      :maxlength="300"
+      height="120"
       :placeholder="'Sollten Sie Anmerkungen zur Frage oder Hinweise haben, können Sie diese hier anfügen.'"
       label="Eingaben werden sofort gespeichert."
       :counter-danger.sync="counterDanger"
@@ -58,20 +58,4 @@ export default {
 
 <style lang="scss">
 
-#textarearemark {
-  h6 {
-    color: #444444;
-  }
-
-  textarea,
-  .vs-con-textarea,
-  .vs-textarea-primary {
-    background: #FAFAFA;
-    border: 0px solid !important;
-
-    h4 {
-      color: #777777;
-    }
-  }
-}
 </style>
