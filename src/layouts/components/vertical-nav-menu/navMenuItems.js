@@ -28,7 +28,7 @@ export default [
   },
   {
     url: "/charts",
-    name: "Ergebnis",
+    name: "Auswertung",
     slug: "charts",
     icon: "PieChartIcon",
   },

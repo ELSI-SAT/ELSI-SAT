@@ -4,7 +4,7 @@
 
       <div class="vx-row w-full mx-auto">
         <h2 class="w-full mx-auto mb-2" style="text-align: center;">Wilkommen bei ELSI-SAT</h2>
-        <p class="w-full mx-auto mb-8" style="text-align: center;">Dem automatisierten ELSI-Screening-& Assessment-Tool für MTI-Forschungsvorhaben</p>
+        <p class="w-full mx-auto mb-8" style="text-align: center;">Ein automatisiertes ELSI-Screening-& Assessment-Tool für MTI-Forschungsvorhaben</p>
       </div>
 
       <vx-card>
@@ -17,7 +17,7 @@
                   <h4 class="mb-4">Neuen Fragebogen beginnen</h4>
                   <p class="mb-10">
                     Beginnen Sie hier mit einem neuen Fragebogen, wenn Sie
-                    keine ELSI-SAT Export-Datei (<code>.json</code>) besitzen.
+                    keine ELSI-SAT-Export-Datei (<code>.json</code>) besitzen.
                   </p>
 
                   <MetaDataForm />
@@ -31,8 +31,8 @@
                 <div class="vx-card__title mb-8">
                   <h4 class="mb-4">Vorhandenen Fragebogen importieren</h4>
                   <p>
-                    Wenn Sie eine ELSI-SAT Export-Datei (<code>.json</code>) besitzen,
-                    können Sie diese hier importieren, und die Bearbeitung des
+                    Wenn Sie eine ELSI-SAT-Export-Datei (<code>.json</code>) besitzen,
+                    können Sie diese hier importieren und die Bearbeitung des
                     Fragebogens fortsetzen.
                   </p>
                 </div>

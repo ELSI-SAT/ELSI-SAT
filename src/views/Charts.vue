@@ -3,15 +3,15 @@
     <div class="vx-row">
       <div class="vx-col w-full mb-base">
         <vx-card
-          title="ELSI-SAT Bericht als PDF erzeugen"
+          title="ELSI-SAT-Auswertung als PDF-Datei"
           title-color="black"
           subtitle="">
 
           <div v-if="this.quota != 100">
-            Die PDF kann erst erzeugt werden, wenn der Fragebogen vollständig beantwortet ist.
+            Die Auswertung kann erst erzeugt werden, wenn der Fragebogen vollständig beantwortet ist.
           </div>
           <div v-else>
-            <p>Download der Ergebnisse des ELSI-SAT Fragebogens als PDF Datei.</p>
+            <p>Download der Auswertung als PDF-Datei.</p>
             <br>
             <pdfExportButton />
           </div>

@@ -21,7 +21,7 @@
           title="Export"
           title-color="black"
           subtitle="">
-          <p>Exportiert den ELSI-SAT Fragebogen als JSON-formatierte Datei.</p>
+          <p>Exportiert den ELSI-SAT-Fragebogen als JSON-formatierte Datei.</p>
           <br>
           <vs-button color="primary" type="filled" v-on:click="saveFile()">
             Export durchführen
@@ -36,7 +36,7 @@
           title="Import"
           title-color="black"
           subtitle="">
-          <p>Importiert eine ELSI-SAT Datei zur weiteren Bearbeitung.</p>
+          <p>Importiert eine ELSI-SAT-Datei zur weiteren Bearbeitung.</p>
           <br>
           <ImportJSON />
         </vx-card>
