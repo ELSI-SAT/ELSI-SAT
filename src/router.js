@@ -80,6 +80,30 @@ const router = new Router({
                 },
               },
               {
+                path: '/legal',
+                name: 'Rechtlicher Hinweis',
+                component: () => import('./views/Rechtliches.vue'),
+                meta: {
+                  breadcrumb: [
+                    {title: 'Rechtlicher Hinweis', url: '/'},
+                    {title: 'Rechtlicher Hinweis', active: true},
+                  ],
+                  pageTitle: 'Rechtlicher Hinweis',
+                },
+              },
+              {
+                path: '/gender',
+                name: 'gender',
+                component: () => import('./views/Gender.vue'),
+                meta: {
+                  breadcrumb: [
+                    {title: 'Gender-Hinweis', url: '/'},
+                    {title: 'Gender-Hinweis', active: true},
+                  ],
+                  pageTitle: 'Gender-Hinweis',
+                },
+              },
+              {
                 path: '/charts',
                 name: 'charts',
                 component: () => import('./views/Charts.vue'),
