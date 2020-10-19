@@ -65,7 +65,7 @@
         <div
           v-if="question.remark"
           class="remark">
-          <h6>Anmerkungen:</h6>
+          <h6>Erläuterungen:</h6>
           <br>
           <p v-html="question.remark"></p>
         </div>
