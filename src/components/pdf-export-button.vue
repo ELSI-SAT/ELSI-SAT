@@ -1,6 +1,6 @@
 <template>
   <div>
-    <vs-button color="primary" type="filled" v-on:click="createPDF()">
+    <vs-button :disabled="disabled" color="primary" type="filled" v-on:click="createPDF()">
       Download PDF
     </vs-button>
 
@@ -17,6 +17,12 @@
 
     components: {
       pdfExportTemplate
+    },
+
+    props: {
+      disabled: {
+        type: Boolean
+      }
     },
 
     methods: {

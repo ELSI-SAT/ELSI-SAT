@@ -21,6 +21,12 @@
 
 export default [
   {
+    url: "/stammdaten",
+    name: "Stammdaten",
+    slug: "stammdaten",
+    icon: "UserIcon",
+  },
+  {
     url: "/apps/email",
     name: "Fragebogen",
     slug: "email",
@@ -33,15 +39,9 @@ export default [
     icon: "PieChartIcon",
   },
   {
-    url: "/knowledge-base",
-    name: "Glossar",
-    slug: "knowledge-base",
-    icon: "HelpCircleIcon",
-  },
-  {
-    url: "/export-import",
-    name: "Verwaltung",
-    slug: "export-import",
-    icon: "RepeatIcon",
+    url: "/export",
+    name: "Export",
+    slug: "export",
+    icon: "DownloadIcon",
   },
 ]

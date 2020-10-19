@@ -1,25 +1,6 @@
 <template>
   <div>
     <div class="vx-row">
-      <div class="vx-col w-full mb-base">
-        <vx-card
-          title="ELSI-SAT-Auswertung als PDF-Datei"
-          title-color="black"
-          subtitle="">
-
-          <div v-if="this.quota != 100">
-            Die Auswertung kann erst erzeugt werden, wenn der Fragebogen vollständig beantwortet ist.
-          </div>
-          <div v-else>
-            <p>Download der Auswertung als PDF-Datei.</p>
-            <br>
-            <pdfExportButton />
-          </div>
-        </vx-card>
-      </div>
-    </div>
-
-    <div class="vx-row">
       <div class="vx-col vs-xs-12 vs-sm-12 vs-lg-6 mb-base">
         <ProgressChart/>
       </div>
@@ -48,7 +29,6 @@
   import HeatmapChart from "../components/charts/heatmap";
   import RiskAndAdressingChart from "../components/charts/risk-and-adressing";
   import RadarChart from "../components/charts/radar-chart";
-  import pdfExportButton from "../components/pdf-export-button";
   import {mapGetters} from "vuex";
 
   export default {
@@ -71,7 +51,6 @@
       HeatmapChart,
       RiskAndAdressingChart,
       RadarChart,
-      pdfExportButton,
     }
 
   }
