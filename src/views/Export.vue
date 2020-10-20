@@ -19,7 +19,7 @@
           title="Export als JSON"
           title-color="black"
           subtitle="">
-          <p>Exportiert das ELSI-SAT-Assessment als JSON-formatierte Datei. Diese Datei können Sie später wieder einlesen oder zur weiteren Bearbeitung an andere Personen weiterleiten.</p>
+          <p>Exportiert das ELSI-SAT-Assessment als JSON-formatierte Datei. Diese Datei können Sie später wieder importieren oder zur weiteren Bearbeitung an andere Personen weiterleiten.</p>
           <br>
           <vs-button color="primary" type="filled" v-on:click="saveFile()">
             Export durchführen
@@ -34,7 +34,7 @@
           title="Daten löschen und neu beginnen"
           title-color="black"
           subtitle="">
-          <p>Löscht sämtliche Eingaben und beginnt einen neues Assessment.</p>
+          <p>Löscht sämtliche Eingaben und beginnt ein neues Assessment.</p>
           <br>
           <vs-button color="primary" type="filled" v-on:click="resetstore_init()">
             Daten löschen
@@ -81,7 +81,7 @@
           type:'confirm',
           color: 'danger',
           title: `Löschen bestätigen`,
-          text: 'Möchten Sie wirklich sämtliche Angaben löschen und mit einem neuen Fragebogen beginnen? Die Aktion kann nicht rückgängig gemacht werden.',
+          text: 'Möchten Sie wirklich sämtliche Angaben löschen und mit einem neuen Assessment beginnen? Die Aktion kann nicht rückgängig gemacht werden.',
           acceptText: "Löschen",
           cancelText: "Abbrechen",
           accept:this.resetstore_execute
