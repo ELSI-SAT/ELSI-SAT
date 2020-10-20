@@ -1,3 +1,59 @@
+/* Custom styles for ELSI-SAT title page */
+
+.app-title {
+    font-size: 60px;
+    font-weight: 500;
+    font-family:Montserrat, Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.app-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    font-family:Montserrat, Helvetica, Arial, sans-serif;
+}
+
+.app-highlights {
+    background-color: #f0f0f0;
+}
+
+.app-heading {
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 12px;
+    color: #333;
+}
+
+.app-subheading {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.app-buzzword {
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 6px;
+}
+
+.app-logos {
+    max-height: 50px;
+}
+
+.app-icons {
+    height: 60px;
+}
+
+.app-link {
+    color: #333 !important;
+}
+
+.app-max-width {
+    max-width: 980px;
+}
+
+
+/* Other custom styles for ELSI-SAT application */
+
 .vs-sidebar--items .mail-sidebar-content #question-head {
   box-shadow: 0px 1px 1px 0px rgba(0,0,0,.1)
 }

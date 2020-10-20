@@ -135,7 +135,7 @@ export default {
       })
 
       // Go to start page.
-      this.$router.push('/')
+      this.$router.push('/stammdaten')
     }
 
   }
