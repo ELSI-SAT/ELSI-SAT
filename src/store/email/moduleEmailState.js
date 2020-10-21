@@ -90,7 +90,7 @@ export default {
       id: 4.1,
       inquiry: 'Ist die betroffene schutzbedürftige Gruppe direkt in das Forschungsprojekt involviert?',
       subject: 'Frage-ID 004.1',
-      message: '<p></p>',
+      message: '<p>z. B. durch Einbeziehung in das Forschungsprojekt als Probanden.</p>',
       isStarred: false,
       labels: ['Allgemein'],
       time: '',
@@ -333,7 +333,7 @@ export default {
     },
     {
       id: 10,
-      inquiry: 'Ist sichergestellt, dass die Repräsentativität in Hinblick auf (Trainings-)Daten gewährleistet ist?',
+      inquiry: 'Ist sichergestellt, dass die Repräsentativität in Hinblick auf Daten gewährleistet ist?',
       subject: 'Frage-ID 201',
       message: '<p>Sog. BIAS-Vermeidung: <a @click.prevent="$emit('kblink', {id: 20})">"Zur Definition eines BIAS."</a></p>',
       isStarred: false,
