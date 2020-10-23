@@ -1,181 +1,147 @@
 <template>
-  <div>
-
     <div class="vx-row">
-      <div class="vx-col w-full mb-base">
-        <vx-card
-          class="p-3"
-          title="Willkommen bei ELSI-SAT!"
-          title-color="black"
-          subtitle="Informationen über die ELSI-SAT App">
+        <div class="vx-col w-full mb-base">
+            <vx-card class="px-3 py-3 lg:py-24 mb-base flex justify-center">
+                <div class="flex flex-wrap-reverse xl:flex-no-wrap app-max-width">
+                    <div class="p-3 app-max-width">
+                        <div class="app-title">ELSI-SAT</div>
+                        <div class="app-subtitle mb-base">Mehr Ethik und Recht in Ihren Forschungs&shy;projekten</div>
+                        <p>
+                            Bei der Entwicklung von Mensch-Technik-Interaktionen (MTI) wird die Berücksichtigung ethischer, rechtlicher und sozialer Aspekte (engl. ELSI) immer relevanter. Ein Screening- und Assessment-Tool (SAT) dient dabei
+                            Forschungsinstitutionen als Orientierungshilfe.
+                        </p>
+                        <p class="mt-3">ELSI-SAT sensibilisiert Forschungsteams mithilfe eines Fragenkatalogs für ELSI und weist in Form von Ergebnis-Grafiken auf mögliche Risikobereiche in Forschungsvorhaben hin.</p>
+                        <vs-button class="mt-base" color="primary" type="filled" href="#/stammdaten">Starten</vs-button>
+                    </div>
+                    <div>
+                        <img class="p-3" style="width: 400px" :src="images.robot" />
+                    </div>
+                </div>
+            </vx-card>
 
-          <p>ELSI-SAT ist ein automatisiertes ELSI-Screening- und Assessment-Tool für Forschungsvorhaben im Feld der
-            Mensch-Technik-Interaktion. Die Software ist das Ergebnis des vom BMBF-geförderten Projekts ELSI-SAT, das an
-            der Hochschule der Medien und dem Institut für Digitale Ethik in Stuttgart entwickelt wurde.</p>
+            <vx-card class="p-3 mb-base flex flex-col items-center">
+                <div class="text-center app-max-width">
+                    <div class="app-heading">Warum eine eigene Software für ELSI?</div>
+                    <div class="app-subheading">Im Gegensatz zu einem herkömmlichen Fragebogen bietet ELSI-SAT folgende Vorteile:</div>
+                </div>
+                <div class="flex flex-wrap content-center justify-content app-max-width">
+                    <div class="flex flex-col items-center text-center p-5 w-56 md:w-1/3">
+                        <img :src="images.chart" class="m-5 app-icons" />
+                        <div class="app-buzzword">Automatische Auswertung</div>
+                        <p>Die Antworten des Fragebogens werden in Grafiken visualisiert, die auf mögliche Risiken hinweisen.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-5 w-56 md:w-1/3">
+                        <img :src="images.export" class="m-5 app-icons" />
+                        <div class="app-buzzword">Export-/Importfunktion</div>
+                        <p>Zwischenstände und das Ergebnis des Fragebogens kann an andere Personen weitergegeben werden.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-5 w-56 md:w-1/3">
+                        <img :src="images.book" class="m-5 app-icons" />
+                        <div class="app-buzzword">Nachschlagewerk</div>
+                        <p>In einem Glossar werden Begriffe des Fragenkatalogs erklärt.</p>
+                    </div>
+                </div>
+            </vx-card>
 
-          <br>
-          <vs-button color="primary" type="filled" href="#/apps/email/all">Zum Fragebogen</vs-button>
-        </vx-card>
-      </div>
+            <vx-card class="p-3 mb-base flex flex-col items-center">
+                <div class="app-max-width text-center">
+                    <div class="text-center">
+                        <div class="app-heading">Wie hilft mir ELSI-SAT bei der Antragserstellung?</div>
+                    </div>
+                    <div class="flex flex-wrap app-max-width">
+                        <ul class="flex flex-wrap items-center text-center p-5">
+                            <li class="w-1/2 p-3">
+                                <div class="app-buzzword">Schneller</div>
+                                Bessere Usabiliy durch Filterfunktionen
+                            </li>
+                            <li class="w-1/2 p-3">
+                                <div class="app-buzzword">Einfacher</div>
+                                Reduzierte Komplexität durch Kategorien
+                            </li>
+                            <li class="w-1/2 p-3">
+                                <div class="app-buzzword">Übersichtlicher</div>
+                                Grafische Auswertungen
+                            </li>
+                            <li class="w-1/2 p-3">
+                                <div class="app-buzzword">Vollständiger</div>
+                                Geführter Fragebogen
+                            </li>
+                            <li class="w-1/2 p-3">
+                                <div class="app-buzzword">Erfolgreicher</div>
+                                Systematische ELSI-Berücksichtigung
+                            </li>
+                            <li class="w-1/2 p-3">
+                                <div class="app-buzzword">Sicherer</div>
+                                Lokale Datenhaltung
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </vx-card>
+
+            <vx-card class="p-3 mb-base flex flex-col items-center">
+                <div class="text-center app-max-width">
+                    <div class="app-heading">Welche Kategorien werden betrachtet?</div>
+                    <div class="app-subheading">
+                        Jeder Frage des Fragenkatalogs ist mindestens einer Kategorie zugeordnet. Im Ergebnisteil wird jede Kategorie mit ihrer jeweiligen Risikoeinstufung und ihrer Risikoberücksichtigung in einer Grafik veranschaulicht. Die
+                        Kategorien sind folgendermaßen unterteilt:
+                    </div>
+                </div>
+                <div class="flex flex-wrap content-center justify-content app-max-width">
+                    <div class="flex flex-col items-center text-center p-5 w-56 md:w-1/3">
+                        <img :src="images.form" class="m-5 app-icons" />
+                        <div class="app-buzzword">Allgemein</div>
+                        <p>Hintergrundinformationen zu Ihrem Forschungsvorhaben fallen in die Kategorie Allgemein.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-5 w-56 md:w-1/3">
+                        <img :src="images.scale" class="m-5 app-icons" />
+                        <div class="app-buzzword">Datenschutz</div>
+                        <p>Rechtliche Aspekte werden in der Kategorie Datenschutz zusammengefasst.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center p-5 w-56 md:w-1/3">
+                        <img :src="images.compass" class="m-5 app-icons" />
+                        <div class="app-buzzword">Werte</div>
+                        <p>Ethische Aspekte sind in fünf Werte-Kategorien gegliedert: Fürsorge, Schadensvermeidung, Autonomie, Gerechtigkeit, Transparenz.</p>
+                    </div>
+                </div>
+            </vx-card>
+
+            <vx-card class="p-3 mb-3 flex flex-col items-center">
+                <div class="text-center app-max-width">
+                    <p>
+                        ELSI-SAT wurde gefördert durch das
+                        <a href="https://www.bmbf.de" target="_blank" class="app-link">Bundesministerium für Bildung und Forschung (BMBF)</a>,<br />realisiert am
+                        <a href="https://www.hdm-stuttgart.de/digitale-ethik" target="_blank" class="app-link">Institut für Digitale Ethik</a>
+                        der <a href="https://www.hdm-stuttgart.de" target="_blank" class="app-link">Hochschule der Medien</a>.
+                    </p>
+                    <div class="flex justify-center mt-8">
+                        <a href="https://www.bmbf.de" target="_blank"><img :src="images.bmbflogo" class="mx-8 app-logos" /></a>
+                        <a href="https://www.hdm-stuttgart.de/digitale-ethik" target="_blank"><img :src="images.idelogo" class="mx-8 app-logos" /></a>
+                        <a href="https://www.hdm-stuttgart.de" target="_blank"><img :src="images.hdmlogo" class="mx-8 app-logos" /></a>
+                    </div>
+                </div>
+            </vx-card>
+        </div>
     </div>
-
-    <div class="mt-2 mb-8">
-      <div class="content-area__heading pr-4 border-0 md:border-r border-solid border-grey-light">
-        <h4 class="mb-1" style="color: rgb(99, 99, 99);">Über die Software</h4>
-      </div>
-    </div>
-
-    <vs-tabs
-      :position="isSmallerScreen ? 'top' : 'left'"
-      class="tabs-shadow-none"
-      id="my-tabs"
-      :key="isSmallerScreen">
-
-      <vs-tab
-        icon-pack="feather"
-        icon="icon-chevron-right"
-        :label="!isSmallerScreen ? 'Leistungsumfang' : ''">
-        <div class="tab-text md:ml-6 md:mt-0 mt-4 ml-0">
-          <div class="vx-card no-shadow"><!---->
-            <div class="vx-card__collapsible-content vs-con-loading__container">
-              <div class="vx-card__body">
-                <div class="m-2">
-                  <h5 class="mb-4">Leistungsumfang: Sensibilisierung für ELS-Implikationen</h5>
-                  <p>Über einen <a href="#/apps/email/all">Fragenkatalog</a> ermittelt die Software relevante
-                    ELS-Gesichtspunkte des jeweiligen Forschungsvorhabens und sensibilisiert für ethische, rechtliche
-                    und soziale Aspekte (ELSI) bei ihrem Forschungsvorhaben. In einer Wissensdatenbank werden
-                    ELS-Begriffe
-                    erklärt. Am Ende des Fragebogens erhalten Sie eine Matrix, die Risikobereiche und die bisherigen
-                    Vorhaben zur Risikoadressierung Ihres Forschungsvorhabens visualisiert</p>
-                  <br>
-                  <p>Die ELSI-SAT-Software ist eine plattformunabhängige Desktop-Anwendung, bei der die Datenhaltung
-                    lokal erfolgt. Eingaben können in mehreren Sitzungen komplettiert werden. Ergebnisse können sowohl
-                    unmittelbar in der Anwendung betrachtet als auch in standardisierter Form exportiert und den
-                    Antragsdokumenten beigefügt werden.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </vs-tab>
-
-      <vs-tab
-        icon-pack="feather"
-        icon="icon-chevron-right"
-        :label="!isSmallerScreen ? 'Werteorientierung' : ''">
-        <div class="tab-text md:ml-4 md:mt-0 mt-4 ml-0">
-          <div class="vx-card no-shadow"><!---->
-            <div class="vx-card__collapsible-content vs-con-loading__container">
-              <div class="vx-card__body">
-                <div class="m-2">
-                  <h5 class="mb-4">Werteorientierte Technikgestaltung</h5>
-                  <p>Die Beantwortung des Fragenkatalogs ermöglicht eine Sensibilisierung, Reflexion und Evaluation
-                    ethischer, rechtlicher und sozialer Fragen. Dies ermöglicht Ihnen noch nicht berücksichtigte
-                    ELS-Implikationen zu erkennen und in die zu entwickelnde MTI und deren Planung miteinzubeziehen.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </vs-tab>
-
-      <vs-tab
-        icon-pack="feather"
-        icon="icon-chevron-right"
-        :label="!isSmallerScreen ? 'Vorteile' : ''">
-        <div class="tab-text md:ml-4 md:mt-0 mt-4 ml-0">
-          <div class="vx-card no-shadow"><!---->
-            <div class="vx-card__collapsible-content vs-con-loading__container">
-              <div class="vx-card__body">
-                <div class="m-2">
-
-                  <h5 class="mb-4">Zu den Vorteilen</h5>
-
-                  <p>Erstens wird der Ablehnung von Forschungsprojektanträgen aufgrund einer Nichtberücksichtigung von
-                    ELS-Aspekten entgegengewirkt. Zweitens leistet die Software einen wesentlichen Beitrag zur
-                    Technikgestaltung, die am Menschen und an Werten orientiert ist (sog. Ethics by Design), die einen
-                    Wettbewerbsvorteil darstellen kann.</p>
-                  <br>
-                  <ul style="list-style-type: disc; margin-left: 1.5rem;">
-                    <li>eine bessere Usability (durch auf den User zugeschnittene Fragen)</li>
-                    <li>eine Reduktion der Komplexität (durch eine Risiko-Matrix)</li>
-                    <li>eine übersichtliche, statistische Auswertung</li>
-                    <li>eine Überprüfung der Vollständigkeit</li>
-                    <li>Portabilität durch Weitergabe an andere ProjektmitarbeiterInnen</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </vs-tab>
-
-      <vs-tab
-        icon-pack="feather"
-        icon="icon-chevron-right"
-        :label="!isSmallerScreen ? 'Big-5' : ''">
-        <div class="tab-text md:ml-4 md:mt-0 mt-4 ml-0">
-          <div class="vx-card no-shadow"><!---->
-            <div class="vx-card__collapsible-content vs-con-loading__container">
-              <div class="vx-card__body">
-                <div class="m-2">
-
-                  <h6 class="mt-0 mb-4">Welche Informationen gibt die Matrix?</h6>
-                  <ul style="list-style-type: disc; margin-left: 1.5rem;">
-                    <li>Risikoreiche Aspekte werden übersichtlich nach fünf Wertekategorien aufgeschlüsselt</li>
-                    <li>Jede Wertekategorie kann einzeln detailliert ausgewertet und analysiert werden</li>
-                    <li>Ein Abgleich der risikoreichen Aspekte mit der Berücksichtigung des Risikos (Risikoadressierung)
-                      zeigt Verbesserungspotenziale auf
-                    </li>
-                  </ul>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </vs-tab>
-
-    </vs-tabs>
-  </div>
 </template>
 
 <script>
-
 export default {
-  components: {},
-  data() {
-    return {}
-  },
-  computed: {
-    isSmallerScreen() {
-      return this.$store.state.windowWidth < 768
-    }
-  }
-}
+    data() {
+        return {
+            images: {
+                hdmlogo: require("@/assets/images/elsisat/hdm_logo.svg"),
+                bmbflogo: require("@/assets/images/elsisat/bmbf_logo.svg"),
+                idelogo: require("@/assets/images/elsisat/ide_logo.svg"),
+                robot: require("@/assets/images/elsisat/robot.png"),
+                compass: require("@/assets/images/elsisat/compass.svg"),
+                export: require("@/assets/images/elsisat/document-export.svg"),
+                form: require("@/assets/images/elsisat/form-line.svg"),
+                chart: require("@/assets/images/elsisat/radar-chart-outlined.svg"),
+                scale: require("@/assets/images/elsisat/scale.svg"),
+                book: require("@/assets/images/elsisat/bx-book-reader.svg"),
+            },
+        };
+    },
+};
 </script>
-
-<style lang="scss">
-.vs-button {
-  padding: 0.65rem 1.4rem;
-  font-size: .95rem;
-}
-
-#my-tabs {
-  .vs-tabs--content {
-    padding: 0;
-  }
-
-  .vs-tabs--ul {
-    box-shadow: none;
-  }
-
-  .con-ul-tabs {
-    min-width: 210px;
-
-    .vs-tabs--li .vs-tabs--btn SPAN {
-      text-align: left;
-    }
-  }
-}
-</style>

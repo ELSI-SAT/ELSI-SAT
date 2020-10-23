@@ -3,14 +3,12 @@
     <div class="vx-row">
       <div class="vx-col w-full mb-base">
         <vx-card
-          title="Daten löschen"
+          title="Export als PDF"
           title-color="black"
           subtitle="">
-          <p>Löscht sämtliche Eingaben und beginnt einen neuen Fragebogen.</p>
-          <br>
-          <vs-button color="primary" type="filled" v-on:click="resetstore_init()">
-            Daten löschen
-          </vs-button>
+          <p>Sobald der Fragebogen vollständig beantwortet ist, kann das ELSI-SAT-Assessment als PDF-Datei heruntergeladen werden.</p>
+          <br> 
+          <pdfExportButton v-bind:disabled="!(this.quota >= 100)" />
         </vx-card>
       </div>
     </div>
@@ -18,10 +16,10 @@
     <div class="vx-row">
       <div class="vx-col w-full mb-base">
         <vx-card
-          title="Export"
+          title="Export als JSON"
           title-color="black"
           subtitle="">
-          <p>Exportiert den ELSI-SAT Fragebogen als JSON-formatierte Datei.</p>
+          <p>Exportiert das ELSI-SAT-Assessment als JSON-formatierte Datei. Diese Datei können Sie später wieder importieren oder zur weiteren Bearbeitung an andere Personen weiterleiten.</p>
           <br>
           <vs-button color="primary" type="filled" v-on:click="saveFile()">
             Export durchführen
@@ -33,15 +31,18 @@
     <div class="vx-row">
       <div class="vx-col w-full mb-base">
         <vx-card
-          title="Import"
+          title="Daten löschen und neu beginnen"
           title-color="black"
           subtitle="">
-          <p>Importiert eine ELSI-SAT Datei zur weiteren Bearbeitung.</p>
+          <p>Löscht sämtliche Eingaben und beginnt ein neues Assessment.</p>
           <br>
-          <ImportJSON />
+          <vs-button color="primary" type="filled" v-on:click="resetstore_init()">
+            Daten löschen
+          </vs-button>
         </vx-card>
       </div>
     </div>
+
   </div>
 
 </template>
@@ -49,6 +50,7 @@
 <script>
   import {mapGetters} from "vuex";
   import ImportJSON from "../components/ImportJSON";
+  import pdfExportButton from "../components/pdf-export-button";
 
   export default {
     name: "Home",
@@ -70,6 +72,7 @@
 
     components: {
       ImportJSON,
+      pdfExportButton,
     },
 
     methods: {
@@ -78,7 +81,7 @@
           type:'confirm',
           color: 'danger',
           title: `Löschen bestätigen`,
-          text: 'Möchten Sie wirklich sämtliche Angaben löschen und mit einem neuen Fragebogen beginnen? Die Aktion kann nicht rückgängig gemacht werden.',
+          text: 'Möchten Sie wirklich sämtliche Angaben löschen und mit einem neuen Assessment beginnen? Die Aktion kann nicht rückgängig gemacht werden.',
           acceptText: "Löschen",
           cancelText: "Abbrechen",
           accept:this.resetstore_execute
@@ -88,7 +91,7 @@
       resetstore_execute(){
         this.$store.commit('email/reset')
 
-        this.$router.push({ name: 'home' })
+        this.$router.push({ name: 'stammdaten' })
 
         this.$vs.notify({
           color:'danger',

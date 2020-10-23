@@ -9,7 +9,7 @@
          @dragenter="handleDragover"
          class="px-8 py-16 cursor-pointer text-center border-2 border-dashed d-theme-border-grey-light d-theme-dark-bg text-xl">
       <feather-icon icon="UploadCloudIcon" svgClasses="h-16 w-16 stroke-current text-grey" class="block" />
-      <span>JSON-Export ablegen oder </span>
+      <span>JSON-Export hier ablegen oder </span>
       <span class="font-medium text-primary"
             @click.stop="$refs.fileInput.click()">
         Computer durchsuchen
@@ -135,7 +135,7 @@ export default {
       })
 
       // Go to start page.
-      this.$router.push('/')
+      this.$router.push('/stammdaten')
     }
 
   }

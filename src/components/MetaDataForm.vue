@@ -9,7 +9,7 @@
             name="nameProject"
             v-model="form.nameProject"
             label="Name oder Bezeichnung des Forschungsvorhabens"
-            class="w-full"
+            class="w-full lg:w-1/2"
             :class="{'form-error': errors.length > 0}"
             icon-pack="feather"
             icon="icon-folder"
@@ -30,7 +30,7 @@
             name="nameApplicant"
             v-model="form.nameApplicant"
             label="Name der einreichenden Institution"
-            class="w-full"
+            class="w-full lg:w-1/2"
             :class="{'form-error': errors.length > 0}"
             icon-pack="feather"
             icon="icon-home"
@@ -113,7 +113,7 @@
 
           if (this.popupActive === false) {
             // Go to home.
-            this.$router.push("/");
+            this.$router.push("/apps/email/all");
           } else {
             // Close modal.
             this.$emit('popupActive', false)

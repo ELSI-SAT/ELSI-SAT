@@ -59,12 +59,12 @@
               <div v-if="$route.meta.breadcrumb || $route.meta.pageTitle" class="router-header flex flex-wrap items-center mb-6">
                 <div
                   class="content-area__heading"
-                  :class="{'pr-4 border-0 md:border-r border-solid border-grey-light' : $route.meta.breadcrumb}">
+                  :class="{'pr-4 border-0 border-solid border-grey-light' : $route.meta.breadcrumb}">
                   <h3 class="mb-1" style="color: #636363">{{ routeTitle }}</h3>
                 </div>
 
                 <!-- BREADCRUMB -->
-                <vx-breadcrumb class="ml-4 md:block hidden" v-if="$route.meta.breadcrumb" :route="$route" />
+                <!-- <vx-breadcrumb class="ml-4 md:block hidden" v-if="$route.meta.breadcrumb" :route="$route" /> -->
 
                 <!-- DROPDOWN -->
                 <div class="ml-auto xs:block cursor-pointer">
