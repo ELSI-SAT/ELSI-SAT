@@ -21,8 +21,8 @@ export default {
     {
       id: 3,
       categoryId: [1, 3],
-      term: 'ADM-Systeme',
-      definition: 'Beschreibt ganz allgemein und bereichsübergreifend Systeme oder Programme zur algorithmischen Entscheidungsfindung (Algorithm Decision Making), insbesondere zur Bewertung von Risiken (z. B. in der Banken- oder Versicherungsbranche). Die Systeme können auf vor- bzw. eingegebenen Datensätzen oder Algorithmen basieren, in einem höheren Entwicklungsstadion jedoch auch selbstlernend sein.'
+      term: 'Technikfolgenabschätzung',
+      definition: 'Als Technikfolgenabschätzung wird ein Teilgebiet der Technikphilosophie verstanden, das sich mit der Beobachtung und Analyse von Technologien und deren Auswirkungen auf gesellschaftliche Entwicklungen befasst. Dabei steht regelmäßig die Auseinandersetzung mit (potentiellen) Chancen und Risiken der Technologie in Hinblick auf gesellschaftliche Verhaltensweisen im Vordergrund.'
     },
     {
       id: 4,
@@ -33,20 +33,20 @@ export default {
     {
       id: 5,
       categoryId: [1, 3],
-      term: 'maschinelles Lernen',
-      definition: 'Maschinelles Lernen bezeichnet ein Teilgebiet der Künstlichen Intelligenz, bei dem Systeme künstliches "Wissen" aus gesammelten Erfahrungen "erlernen" sollen. Mithilfe von Lernalgorithmen werden hierbei komplexe Modelle entwickelt, die Vorhersagen oder Empfehlungen anhand einer Wissensrepräsentation von bereits "erlernten Trainingsdaten" mithilfe von mathematischer Wahrscheinlichkeitsrechung auf bislang unbekannte Daten übertragen können.'
+      term: 'Art. 3 GG',
+      definition: '1. Alle Menschen sind vor dem Gesetz gleich. 2. Männer und Frauen sind gleichberechtigt. Der Staat fördert die Durchsetzung der Gleichberechtigung von Frauen und Männern und wirkt auf die Beseitigung bestehender Nachteile hin. 3. Niemand darf wegen seines Geschlechts, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden. Niemand darf wegen seiner Behinderung benachteiligt werden.'
     },
     {
       id: 6,
       categoryId: [1, 3],
-      term: 'Wie Systeme lernen',
-      definition: 'Beim maschinellen Lernen wird zwischen unterschiedlichen algorithmischen Ansätzen unterschieden. In Grobform lässt sich dabei das <b> überwachte Lernen (supervised learning) </b> vom <b>unüberwachten Lernen (unsupervised learning) </b> unterscheiden. Während beim überwachten Lernen eine Funktion aus gegebenen Ein-/Ausgabepaaren lernt und den korrekten Funktionswert von einem Lehrenden bereitgestellt bekommt, erzeugt der Algorithmus beim unüberwachten Lernen für die Eingaben ein statistisches Modell, das diese erkennt, Kategorien und Zusammenhänge erschließt und hieraus Vorhersagen ermöglicht werden. Die beiden Grobformen können noch detaillierter in semi-supervised, reinforcement oder active learning unterteilt werden. Weitere Informationen zu lernenden Systemen finden Sie in entsprechender Fachliteratur.'
+      term: 'Ethics-by-Design',
+      definition: 'tbd..'
     },
     {
       id: 7,
       categoryId: [1, 3],
-      term: 'nicht-menschlicher Agent',
-      definition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      term: 'Art. 4. Abs. 7 DSGVO',
+      definition: '"Verantwortlicher" die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet; sind die Zwecke und Mittel dieser Verarbeitung durch das Unionsrecht der Mitgliedstaaten vorgegeben, so können der Verantwortliche beziehungsweise die bestimmten Kriterien seiner Benennung nach dem Unionsrecht oder dem Recht der Mitgliedstaaten vorgesehen werden;'
     },
     {
       id: 8,
@@ -57,8 +57,8 @@ export default {
     {
       id: 9,
       categoryId: [1, 3],
-      term: 'Lethal Autonomous Weapon Systems (LAWS)',
-      definition: '(dt. Tötliche autonome Waffensysteme) bezeichnet automatisierte Waffensysteme, die (militärische) Ziele mithilfe von Künstlicher Intellizeng ohne menschliche Einwirkung auswählen und angreifen können.'
+      term: 'Art. 26 DSGVO',
+      definition: '1. Legen zwei oder mehr Verantwortliche gemeinsam die Zwecke der und die Mittel zur Verarbeitung fest, so sind sie gemeinsam Verantwortliche. Sie legen in einer Vereinbarung in transparenter Form fest, wer von ihnen welche Verpflichtung gemäß dieser Verordnung erfüllt, insbesondere was die Wahrnehmung der Rechte der betroffenen Person angeht, und wer welchen Informationspflichten gemäß den Artikeln 13 und 14 nachkommt, sofern und soweit die jeweiligen Aufgaben der Verantwortlichen nicht durch Rechtsvorschriften der Union oder der Mitgliedstaaten, denen die Verantwortlichen unterliegen, festgelegt sind. In der Vereinbarung kann eine Anlaufstelle für die betroffenen Personen angegeben werden. 2. Die Vereinbarung gemäß Absatz 1 muss die jeweiligen tatsächlichen Funktionen und Beziehungen der gemeinsam Verantwortlichen gegenüber betroffenen Personen gebührend widerspiegeln. Das wesentliche der Vereinbarung wird der betroffenen Person zur Verfügung gestellt. 3. Ungeachtet der Einzelheiten der Vereinbarung gemäß Absatz 1 kann die betroffene Person ihre Rechte im Rahmen dieser Verordnung bei und gegenüber jedem einzelnen der Verantwortlichen geltend machen.'
     },
     {
       id: 10,
@@ -70,7 +70,7 @@ export default {
       id: 11,
       categoryId: [1, 4],
       term: 'Personenbezogene Daten',
-      definition: 'Der Begriff der <i> personenbezogenen Daten </i> ist in Art. Nr. 1 DSGVO als "Information, die sich auf eine <b> identifizierte oder identifizierbare natürlich Person </b> beziehen" gesetzliche definiert. Als identifizierbar bezeichnet die DSGVO eine natürliche Person, "die <b> direkt oder indirekt </b>, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind, identifiziert werden kann".',
+      definition: 'Der Begriff der <i> personenbezogenen Daten </i> ist in Art. Nr. 1 DSGVO als "Information, die sich auf eine <b> identifizierte oder identifizierbare natürlich Person </b> beziehen" gesetzlich definiert. Als identifizierbar bezeichnet die DSGVO eine natürliche Person, "die <b> direkt oder indirekt </b>, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung oder zu einem oder mehreren besonderen Merkmalen, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind, identifiziert werden kann".',
     },
     {
       id: 12,
@@ -179,6 +179,126 @@ export default {
       categoryId: [1, 4, 5],
       term: 'schutzbedürftige Gruppe',
       definition: 'Eine schützbedürfige Gruppe bezeichnet natürliche Personen, die aufgrund persönlicher, physischer, psychischer, sozialer oder kultureller Einschränkungen einem erhöhten Risiko ausgesetzt sind, Benachteiligungen zu erfahren. Hierunter fallen im Anwendungsbereich der DSGVO insbesondere Kinder und Jugendliche.',
+    },
+    {
+      id: 30,
+      categoryId: [1, 4, 5],
+      term: 'Art. 8 Abs. 1 DSGVO',
+      definition: 'Gilt Artikel 6 Absatz 1 Buchstabe a bei einem Angebot von Diensten der Informationsgesellschaft, das einem Kind direkt gemacht wird, so ist die Verarbeitung der personenbezogenen Daten des Kindes rechtmäßig, wenn das Kind das sechzehnte Lebensjahr vollendet hat. Hat das Kind noch nicht das sechzehnte Lebensjahr vollendet, so ist diese Verarbeitung nur rechtmäßig, sofern und soweit diese Einwilligung durch den Träger der elterlichen Verantwortung für das Kind oder mit dessen Zustimmung erteilt wird. Die Mitgliedstaaten können durch Rechtsvorschriften zu diesen Zwecken eine niedrigere Altersgrenze vorsehen, die jedoch nicht unter dem vollendeten dreizehnten Lebensjahr liegen darf.',
+    },
+    {
+      id: 31,
+      categoryId: [1, 4, 5],
+      term: 'Art. 8 Abs. 2 DSGVO',
+      definition: 'Der Verantwortliche unternimmt unter Berücksichtigung der verfügbaren Technik angemessene Anstrengungen, um sich in solchen Fällen zu vergewissern, dass die Einwilligung durch den Träger der elterlichen Verantwortung für das Kind oder mit dessen Zustimmung erteilt wurde.',
+    },
+    {
+      id: 32,
+      categoryId: [1, 4, 5],
+      term: 'Art. 9 Abs. 2 DSGVO',
+      definition: 'Absatz 1 gilt nicht in folgenden Fällen: a) Die betroffene Person hat in die Verarbeitung der genannten personenbezogenen Daten für einen oder mehrere festgelegte Zwecke ausdrücklich eingewilligt, es sei denn, nach Unionsrecht oder dem Recht der Mitgliedstaaten kann das Verbot nach Absatz 1 durch die Einwilligung der betroffenen Person nicht aufgehoben werden, b) die Verarbeitung ist erforderlich, damit der Verantwortliche oder die betroffene Person die ihm bzw. ihr aus dem Arbeitsrecht und dem Recht der sozialen Sicherheit und des Sozialschutzes erwachsenden Rechte ausüben und seinen bzw. ihren diesbezüglichen Pflichten nachkommen kann, soweit dies nach Unionsrecht oder dem Recht der Mitgliedstaaten oder einer Kollektivvereinbarung nach dem Recht der Mitgliedstaaten, das geeignete Garantien für die Grundrechte und die Interessen der betroffenen Person vorsieht, zulässig ist, c) die Verarbeitung ist zum Schutz lebenswichtiger Interessen der betroffenen Person oder einer anderen natürlichen Person erforderlich und die betroffene Person ist aus körperlichen oder rechtlichen Gründen außerstande, ihre Einwilligung zu geben, d) die Verarbeitung erfolgt auf der Grundlage geeigneter Garantien durch eine politisch, weltanschaulich, religiös oder gewerkschaftlich ausgerichtete Stiftung, Vereinigung oder sonstige Organisation ohne Gewinnerzielungsabsicht im Rahmen ihrer rechtmäßigen Tätigkeiten und unter der Voraussetzung, dass sich die Verarbeitung ausschließlich auf die Mitglieder oder ehemalige Mitglieder der Organisation oder auf Personen, die im Zusammenhang mit deren Tätigkeitszweck regelmäßige Kontakte mit ihr unterhalten, bezieht und die personenbezogenen Daten nicht ohne Einwilligung der betroffenen Personen nach außen offengelegt werden, e) die Verarbeitung bezieht sich auf personenbezogene Daten, die die betroffene Person offensichtlich öffentlich gemacht hat, f) die Verarbeitung ist zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder bei Handlungen der Gerichte im Rahmen ihrer justiziellen Tätigkeit erforderlich, g) die Verarbeitung ist auf der Grundlage des Unionsrechts oder des Rechts eines Mitgliedstaats, das in angemessenem Verhältnis zu dem verfolgten Ziel steht, den Wesensgehalt des Rechts auf Datenschutz wahrt und angemessene und spezifische Maßnahmen zur Wahrung der Grundrechte und Interessen der betroffenen Person vorsieht, aus Gründen eines erheblichen öffentlichen Interesses erforderlich, h) die Verarbeitung ist für Zwecke der Gesundheitsvorsorge oder der Arbeitsmedizin, für die Beurteilung der Arbeitsfähigkeit des Beschäftigten, für die medizinische Diagnostik, die Versorgung oder Behandlung im Gesundheits- oder Sozialbereich oder für die Verwaltung von Systemen und Diensten im Gesundheits- oder Sozialbereich auf der Grundlage des Unionsrechts oder des Rechts eines Mitgliedstaats oder aufgrund eines Vertrags mit einem Angehörigen eines Gesundheitsberufs und vorbehaltlich der in Absatz 3 genannten Bedingungen und Garantien erforderlich, i) die Verarbeitung ist aus Gründen des öffentlichen Interesses im Bereich der öffentlichen Gesundheit, wie dem Schutz vor schwerwiegenden grenzüberschreitenden Gesundheitsgefahren oder zur Gewährleistung hoher Qualitäts- und Sicherheitsstandards bei der Gesundheitsversorgung und bei Arzneimitteln und Medizinprodukten, auf der Grundlage des Unionsrechts oder des Rechts eines Mitgliedstaats, das angemessene und spezifische Maßnahmen zur Wahrung der Rechte und Freiheiten der betroffenen Person, insbesondere des Berufsgeheimnisses, vorsieht, erforderlich, oder	j) die Verarbeitung ist auf der Grundlage des Unionsrechts oder des Rechts eines Mitgliedstaats, das in angemessenem Verhältnis zu dem verfolgten Ziel steht, den Wesensgehalt des Rechts auf Datenschutz wahrt und angemessene und spezifische Maßnahmen zur Wahrung der Grundrechte und Interessen der betroffenen Person vorsieht, für im öffentlichen Interesse liegende Archivzwecke, für wissenschaftliche oder historische Forschungszwecke oder für statistische Zwecke gemäß Artikel 89 Absatz 1 erforderlich..',
+    },
+    {
+      id: 33,
+      categoryId: [1, 4, 5],
+      term: 'Art. 22 Abs. 1 DSGVO',
+      definition: 'Die betroffene Person hat das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden, die ihr gegenüber rechtliche Wirkung entfaltet oder sie in ähnlicher Weise erheblich beeinträchtigt.',
+    },
+    {
+      id: 34,
+      categoryId: [1, 4, 5],
+      term: 'Datenschutz-Folgenabschätzung',
+      definition: 'tbd.',
+    },
+    {
+      id: 35,
+      categoryId: [1, 4, 5],
+      term: 'Art. 13 Abs. 1 lit. f DSGVO',
+      definition: '[Werden personenbezogene Daten bei der betroffenen Person erhoben, so teilt der Verantwortliche der betroffenen Person zum Zeitpunkt der Erhebung dieser Daten Folgendes mit:] f) gegebenenfalls die Absicht des Verantwortlichen, die personenbezogenen Daten an ein Drittland oder eine internationale Organisation zu übermitteln, sowie das Vorhandensein oder das Fehlen eines Angemessenheitsbeschlusses der Kommission oder im Falle von Übermittlungen gemäß Artikel 46 oder Artikel 47 oder Artikel 49 Absatz 1 Unterabsatz 2 einen Verweis auf die geeigneten oder angemessenen Garantien und die Möglichkeit, wie eine Kopie von ihnen zu erhalten ist, oder wo sie verfügbar sind.',
+    },
+    {
+      id: 36,
+      categoryId: [1, 4, 5],
+      term: 'DI-RL (EU) 2019/770',
+      definition: 'tbd.',
+    },
+    {
+      id: 37,
+      categoryId: [1, 4, 5],
+      term: 'Art. 7 Abs. 3 DSGVO',
+      definition: 'Die betroffene Person hat das Recht, ihre Einwilligung jederzeit zu widerrufen. Durch den Widerruf der Einwilligung wird die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung nicht berührt. Die betroffene Person wird vor Abgabe der Einwilligung hiervon in Kenntnis gesetzt. Der Widerruf der Einwilligung muss so einfach wie die Erteilung der Einwilligung sein.',
+    },
+    {
+      id: 38,
+      categoryId: [1, 4, 5],
+      term: 'Art. 21 Abs. 6 DSGVO',
+      definition: 'Die betroffene Person hat das Recht, aus Gründen, die sich aus ihrer besonderen Situation ergeben, gegen die sie betreffende Verarbeitung sie betreffender personenbezogener Daten, die zu wissenschaftlichen oder historischen Forschungszwecken oder zu statistischen Zwecken gemäß Artikel 89 Absatz 1 erfolgt, Widerspruch einzulegen, es sei denn, die Verarbeitung ist zur Erfüllung einer im öffentlichen Interesse liegenden Aufgabe erforderlich.',
+    },
+    {
+      id: 39,
+      categoryId: [1, 4, 5],
+      term: '§202a StGB',
+      definition: 'Wer unbefugt sich oder einem anderen Zugang zu Daten, die nicht für ihn bestimmt und die gegen unberechtigten Zugang besonders gesichert sind, unter Überwindung der Zugangssicherung verschafft, wird mit Freiheitsstrafe bis zu drei Jahren oder mit Geldstrafe bestraft.',
+    },
+    {
+      id: 40,
+      categoryId: [1, 4, 5],
+      term: '§303a StGB',
+      definition: 'Wer rechtswidrig Daten (§ 202a Abs. 2) löscht, unterdrückt, unbrauchbar macht oder verändert, wird mit Freiheitsstrafe bis zu zwei Jahren oder mit Geldstrafe bestraft.',
+    },
+    {
+      id: 41,
+      categoryId: [1, 4, 5],
+      term: '§823 Abs. 1 BGB',
+      definition: 'Wer vorsätzlich oder fahrlässig das Leben, den Körper, die Gesundheit, die Freiheit, das Eigentum oder ein sonstiges Recht eines anderen widerrechtlich verletzt, ist dem anderen zum Ersatz des daraus entstehenden Schadens verpflichtet.',
+    },
+    {
+      id: 42,
+      categoryId: [1, 4, 5],
+      term: '§1 Abs. 1 ProdHaftG',
+      definition: 'Wird durch den Fehler eines Produkts jemand getötet, sein Körper oder seine Gesundheit verletzt oder eine Sache beschädigt, so ist der Hersteller des Produkts verpflichtet, dem Geschädigten den daraus entstehenden Schaden zu ersetzen. Im Falle der Sachbeschädigung gilt dies nur, wenn eine andere Sache als das fehlerhafte Produkt beschädigt wird und diese andere Sache ihrer Art nach gewöhnlich für den privaten Ge- oder Verbrauch bestimmt und hierzu von dem Geschädigten hauptsächlich verwendet worden ist.',
+    },
+    {
+      id: 43,
+      categoryId: [1, 4, 5],
+      term: 'Art. 5 Abs. 1 lit f. DSGVO',
+      definition: '[Personenbezogene Daten müssen] f) in einer Weise verarbeitet werden, die eine angemessene Sicherheit der personenbezogenen Daten gewährleistet, einschließlich Schutz vor unbefugter oder unrechtmäßiger Verarbeitung und vor unbeabsichtigtem Verlust, unbeabsichtigter Zerstörung oder unbeabsichtigter Schädigung durch geeignete technische und organisatorische Maßnahmen („Integrität und Vertraulichkeit“);',
+    },
+    {
+      id: 44,
+      categoryId: [1, 4, 5],
+      term: 'Art. 32 DSGVO',
+      definition: 'Wird durch den Fehler eines Produkts jemand getötet, sein Körper oder seine Gesundheit verletzt oder eine Sache beschädigt, so ist der Hersteller des Produkts verpflichtet, dem Geschädigten den daraus entstehenden Schaden zu ersetzen. Im Falle der Sachbeschädigung gilt dies nur, wenn eine andere Sache als das fehlerhafte Produkt beschädigt wird und diese andere Sache ihrer Art nach gewöhnlich für den privaten Ge- oder Verbrauch bestimmt und hierzu von dem Geschädigten hauptsächlich verwendet worden ist.',
+    },
+    {
+      id: 45,
+      categoryId: [1, 4, 5],
+      term: '§5a Abs. 6 BSIG',
+      definition: 'Soweit es zur Wiederherstellung der Sicherheit oder Funktionsfähigkeit des informationstechnischen Systems erforderlich ist, kann das Bundesamt vom Hersteller des informationstechnischen Systems verlangen, an der Wiederherstellung der Sicherheit oder Funktionsfähigkeit mitzuwirken.',
+    },
+    {
+      id: 46,
+      categoryId: [1, 4, 5],
+      term: 'Digitaler Dienst nach §2 Abs. 11 BSIG',
+      definition: 'Digitale Dienste im Sinne dieses Gesetzes sind Dienste im Sinne von Artikel 1 Absatz 1 Buchstabe b der Richtlinie (EU) 2015/1535 des Europäischen Parlaments und des Rates vom 9. September 2015 über ein Informationsverfahren auf dem Gebiet der technischen Vorschriften und der Vorschriften für die Dienste der Informationsgesellschaft (ABl. L 241 vom 17.9.2015, S. 1), und die 1. es Verbrauchern oder Unternehmern im Sinne des Artikels 4 Absatz 1 Buchstabe a beziehungsweise Buchstabe b der Richtlinie 2013/11/EU des Europäischen Parlaments und des Rates vom 21. Mai 2013 über die alternative Beilegung verbraucherrechtlicher Streitigkeiten und zur Änderung der Verordnung (EG) Nr. 2006/2004 und der Richtlinie 2009/22/EG (Richtlinie über alternative Streitbeilegung in Verbraucherangelegenheiten) (ABl. L 165 vom 18.6.2013, S. 63) ermöglichen, Kaufverträge oder Dienstleistungsverträge mit Unternehmern entweder auf der Webseite dieser Dienste oder auf der Webseite eines Unternehmers, die von diesen Diensten bereitgestellte Rechendienste verwendet, abzuschließen (Online-Marktplätze); 2. es Nutzern ermöglichen, Suchen grundsätzlich auf allen Webseiten oder auf Webseiten in einer bestimmten Sprache anhand einer Abfrage zu einem beliebigen Thema in Form eines Stichworts, einer Wortgruppe oder einer anderen Eingabe vorzunehmen, die daraufhin Links anzeigen, über die der Abfrage entsprechende Inhalte abgerufen werden können (Online-Suchmaschinen); 3. den Zugang zu einem skalierbaren und elastischen Pool gemeinsam nutzbarer Rechenressourcen ermöglichen (Cloud-Computing-Dienste), und nicht zum Schutz grundlegender staatlicher Funktionen eingerichtet worden sind oder für diese genutzt werden.',
+    },
+    {
+      id: 47,
+      categoryId: [1, 4, 5],
+      term: '§8c BSIG',
+      definition: 'tbd.',
+    },
+    {
+      id: 48,
+      categoryId: [1, 4, 5],
+      term: '§§ 7a, 8a, 8b BSIG',
+      definition: 'tbd.',
+    },
+    {
+      id: 49,
+      categoryId: [1, 4, 5],
+      term: '§8a Abs. 1 BSIG',
+      definition: 'Betreiber Kritischer Infrastrukturen sind verpflichtet, spätestens zwei Jahre nach Inkrafttreten der Rechtsverordnung nach § 10 Absatz 1 angemessene organisatorische und technische Vorkehrungen zur Vermeidung von Störungen der Verfügbarkeit, Integrität, Authentizität und Vertraulichkeit ihrer informationstechnischen Systeme, Komponenten oder Prozesse zu treffen, die für die Funktionsfähigkeit der von ihnen betriebenen Kritischen Infrastrukturen maßgeblich sind. Dabei soll der Stand der Technik eingehalten werden. Organisatorische und technische Vorkehrungen sind angemessen, wenn der dafür erforderliche Aufwand nicht außer Verhältnis zu den Folgen eines Ausfalls oder einer Beeinträchtigung der betroffenen Kritischen Infrastruktur steht.',
     },
   ],
   categories: [
