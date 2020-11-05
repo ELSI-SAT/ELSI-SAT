@@ -79,7 +79,7 @@ export default {
         type: "followup-radio",
         options: [
           {name: 'Ja', followupID: 4.1, risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
         ],
 
         answer: '',
@@ -1317,7 +1317,7 @@ export default {
     },
     {
       id: 42,
-      inquiry: 'Werden durch das System regelmäßig sensible Daten verarbeitet?',
+      inquiry: 'Werden durch die zu entwicklende MTI regelmäßig sensible Daten verarbeitet?',
       subject: 'Frage-ID 505',
       message: '<p><a @click.prevent="$emit(\'kblink\', {id: 14})">"Zur Definition von "sensiblen Daten" nach Art. 9 Abs. 1 DSGVO."</a></p>',
       isStarred: false,
@@ -1340,7 +1340,7 @@ export default {
       id: 42.1,
       inquiry: 'Besteht eine technische Möglichkeit zur Erteilung einer Einwilligung oder eine sonstige gesetzliche Ausnahme?',
       subject: 'Frage-ID 505.1',
-      message: '<p>Zu gesetzlichen Ausnahmen siehe: <a @click.prevent="$emit(\'kblink\', {id: 32})">"Art. 9 Abs. 2 DSGVO."</a></p>',
+      message: '<p>Zu gesetzlichen Ausnahmen siehe: <a @click.prevent="$emit(\'kblink\', {id: 32})">"Art. 9 Abs. 2 lit. a DSGVO."</a></p>',
       isStarred: false,
       labels: ['Allgemein', 'Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
@@ -1508,7 +1508,7 @@ export default {
       id: 47,
       inquiry: 'Ist den Antragstellenden bekannt, dass auch eine unzureichende/fehlerhafte Software-Architektur eines IT-Produkts Haftungs- und Gewährleistungsansprüche auslösen kann?',
       subject: 'Frage-ID 510',
-      message: '<p><a @click.prevent="$emit(\'kblink\', {id: 26})">"vgl. DI-RL (EU) 2019/770"</a></p>',
+      message: '<p></p>',
       isStarred: false,
       labels: ['Allgemein', 'Datenschutz', 'Schadensvermeidung','Autonomie','Transparenz'],
       time: '',
@@ -1560,7 +1560,7 @@ export default {
       answer: {
         type: 'radio',
         options: [
-          {name: 'Ja', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
           {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
           ],
         answer: '',
@@ -1749,8 +1749,8 @@ export default {
       answer: {
         type: 'radio',
         options: [
-          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 1},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
         ],
         answer: '',
       },
