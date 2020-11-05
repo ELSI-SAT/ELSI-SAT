@@ -39,8 +39,8 @@ export default {
     {
       id: 6,
       categoryId: [1, 3],
-      term: 'Ethics-by-Design',
-      definition: 'tbd..'
+      term: 'Ethics by Design',
+      definition: 'Ethics by Design bezeichnet ein Forschungsfeld, in dem es darum geht, ethische Prozesse bei der Konstruktion, Entwicklung  und Gestaltung von Technologien zu implementieren und deren mögliche Konsequenzen zu antizipieren. Beispielsweise könnte eine smarte Spielpuppe mit einem Ethics by Design-Ansatz so konfiguriert werden, dass die Gespräche mit dem Kind privat bleiben; das heißt, nicht von Fremden abgehört werden können und nicht an die Hersteller weitergegeben werden.'
     },
     {
       id: 7,
@@ -208,19 +208,13 @@ export default {
       id: 34,
       categoryId: [1, 4, 5],
       term: 'Datenschutz-Folgenabschätzung',
-      definition: 'tbd.',
+      definition: 'Die DSGVO regelt in Art. 35, Abs. 1 zur Datenschutz-Folgenabschätzung: "Hat eine Form der Verarbeitung, insbesondere bei Verwendung neuer Technologien, aufgrund der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung voraussichtlich ein hohes Risiko für die Rechte und Freiheiten natürlicher Personen zur Folge, so führt der Verantwortliche vorab eine Abschätzung der Folgen der vorgesehenen Verarbeitungsvorgänge für den Schutz personenbezogener Daten durch. Für die Untersuchung mehrerer ähnlicher Verarbeitungsvorgänge mit ähnlich hohen Risiken kann eine einzige Abschätzung vorgenommen werden."',
     },
     {
       id: 35,
       categoryId: [1, 4, 5],
       term: 'Art. 13 Abs. 1 lit. f DSGVO',
       definition: '[Werden personenbezogene Daten bei der betroffenen Person erhoben, so teilt der Verantwortliche der betroffenen Person zum Zeitpunkt der Erhebung dieser Daten Folgendes mit:] f) gegebenenfalls die Absicht des Verantwortlichen, die personenbezogenen Daten an ein Drittland oder eine internationale Organisation zu übermitteln, sowie das Vorhandensein oder das Fehlen eines Angemessenheitsbeschlusses der Kommission oder im Falle von Übermittlungen gemäß Artikel 46 oder Artikel 47 oder Artikel 49 Absatz 1 Unterabsatz 2 einen Verweis auf die geeigneten oder angemessenen Garantien und die Möglichkeit, wie eine Kopie von ihnen zu erhalten ist, oder wo sie verfügbar sind.',
-    },
-    {
-      id: 36,
-      categoryId: [1, 4, 5],
-      term: 'DI-RL (EU) 2019/770',
-      definition: 'tbd.',
     },
     {
       id: 37,
@@ -267,8 +261,8 @@ export default {
     {
       id: 44,
       categoryId: [1, 4, 5],
-      term: 'Art. 32 DSGVO',
-      definition: 'Wird durch den Fehler eines Produkts jemand getötet, sein Körper oder seine Gesundheit verletzt oder eine Sache beschädigt, so ist der Hersteller des Produkts verpflichtet, dem Geschädigten den daraus entstehenden Schaden zu ersetzen. Im Falle der Sachbeschädigung gilt dies nur, wenn eine andere Sache als das fehlerhafte Produkt beschädigt wird und diese andere Sache ihrer Art nach gewöhnlich für den privaten Ge- oder Verbrauch bestimmt und hierzu von dem Geschädigten hauptsächlich verwendet worden ist.',
+      term: 'Art. 32 Abs. 1 DSGVO',
+      definition: 'Unter Berücksichtigung des Stands der Technik, der Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie der unterschiedlichen Eintrittswahrscheinlichkeit und Schwere des Risikos für die Rechte und Freiheiten natürlicher Personen treffen der Verantwortliche und der Auftragsverarbeiter geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten; diese Maßnahmen schließen gegebenenfalls unter anderem Folgendes ein: a) die Pseudonymisierung und Verschlüsselung personenbezogener Daten; b) die Fähigkeit, die Vertraulichkeit, Integrität, Verfügbarkeit und Belastbarkeit der Systeme und Dienste im Zusammenhang mit der Verarbeitung auf Dauer sicherzustellen; c) die Fähigkeit, die Verfügbarkeit der personenbezogenen Daten und den Zugang zu ihnen bei einem physischen oder technischen Zwischenfall rasch wiederherzustellen; d) ein Verfahren zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der technischen und organisatorischen Maßnahmen zur Gewährleistung der Sicherheit der Verarbeitung.',
     },
     {
       id: 45,
@@ -285,14 +279,14 @@ export default {
     {
       id: 47,
       categoryId: [1, 4, 5],
-      term: '§8c BSIG',
-      definition: 'tbd.',
+      term: '§8c Abs. 1 BSIG',
+      definition: 'Anbieter digitaler Dienste haben geeignete und verhältnismäßige technische und organisatorische Maßnahmen zu treffen, um Risiken für die Sicherheit der Netz- und Informationssysteme, die sie zur Bereitstellung der digitalen Dienste innerhalb der Europäischen Union nutzen, zu bewältigen. Sie haben Maßnahmen zu treffen, um den Auswirkungen von Sicherheitsvorfällen auf innerhalb der Europäischen Union erbrachte digitale Dienste vorzubeugen oder die Auswirkungen so gering wie möglich zu halten.',
     },
     {
       id: 48,
       categoryId: [1, 4, 5],
-      term: '§§ 7a, 8a, 8b BSIG',
-      definition: 'tbd.',
+      term: '§8b Abs. 4 BSIG',
+      definition: 'Betreiber Kritischer Infrastrukturen haben die folgenden Störungen unverzüglich über die Kontaktstelle an das Bundesamt zu melden: 1.Störungen der Verfügbarkeit, Integrität, Authentizität und Vertraulichkeit ihrer informationstechnischen Systeme, Komponenten oder Prozesse, die zu einem Ausfall oder zu einer erheblichen Beeinträchtigung der Funktionsfähigkeit der von ihnen betriebenen Kritischen Infrastrukturen geführt haben, 2. erhebliche Störungen der Verfügbarkeit, Integrität, Authentizität und Vertraulichkeit ihrer informationstechnischen Systeme, Komponenten oder Prozesse, die zu einem Ausfall oder zu einer erheblichen Beeinträchtigung der Funktionsfähigkeit der von ihnen betriebenen Kritischen Infrastrukturen führen können. Die Meldung muss Angaben zu der Störung, zu möglichen grenzübergreifenden Auswirkungen sowie zu den technischen Rahmenbedingungen, insbesondere der vermuteten oder tatsächlichen Ursache, der betroffenen Informationstechnik, der Art der betroffenen Einrichtung oder Anlage sowie zur erbrachten kritischen Dienstleistung und zu den Auswirkungen der Störung auf diese Dienstleistung enthalten. Die Nennung des Betreibers ist nur dann erforderlich, wenn die Störung tatsächlich zu einem Ausfall oder einer Beeinträchtigung der Funktionsfähigkeit der Kritischen Infrastruktur geführt hat.',
     },
     {
       id: 49,
