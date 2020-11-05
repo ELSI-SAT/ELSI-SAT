@@ -1823,9 +1823,9 @@ export default {
     },
     {
       id: 56.1,
-      inquiry: 'Ist den Antragstellenden bekannt, dass hiermit auch Rechte und Pflichten des Bundesamtes bzw. des Betreibers einhergehen?',
+      inquiry: 'Hält das Produkt technische Vorkehrungen zur Schadensvermeidung vor?',
       subject: 'Frage-ID 603',
-      message: '<p><a @click.prevent="$emit(\'kblink\', {id: 26})">"vgl. §§ 7a, 8a, 8b BSIG. </p>',
+      message: '<p><a @click.prevent="$emit(\'kblink\', {id: 48})">"vgl. § 8b Abs. 4 BSIG. </p>',
       isStarred: false,
       labels: ['Allgemein', 'Fürsorge','Schadensvermeidung','Transparenz'],
       time: '',
