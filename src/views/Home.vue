@@ -1,9 +1,10 @@
 <template>
     <div class="vx-row">
         <div class="vx-col w-full mb-base">
-            <vx-card class="px-3 py-3 lg:py-24 mb-base flex justify-center">
+            <vx-card class="px-3 py-3 lg:py-20 mb-base flex justify-center">
                 <div class="flex flex-wrap-reverse xl:flex-no-wrap app-max-width">
-                    <div class="p-3 app-max-width">
+                  <div class="flex flex-wrap overflow-hidden">
+                    <div class="w-full overflow-hidden lg:w-2/3 xl:w-2/3">
                         <div class="app-title">ELSI-SAT</div>
                         <div class="app-subtitle mb-base">Mehr Ethik und Recht in Ihren Forschungs&shy;projekten</div>
                         <p>
@@ -13,10 +14,11 @@
                         <p class="mt-3">ELSI-SAT sensibilisiert Forschungsteams mithilfe eines Fragenkatalogs für ELSI und weist in Form von Ergebnis-Grafiken auf mögliche Risikobereiche in Forschungsvorhaben hin.</p>
                         <vs-button class="mt-base" color="primary" type="filled" href="#/stammdaten">Starten</vs-button>
                     </div>
-                    <div>
-                        <img class="p-3" style="width: 400px" :src="images.robot" />
+                    <div class="w-full overflow-hidden hidden lg:block lg:w-1/3 xl:w-1/3">
+                        <img class="pl-3 pt-8" :src="images.robot" style="max-width: 100%; max-height: 100%;" />
                     </div>
                 </div>
+              </div>
             </vx-card>
 
             <vx-card class="p-3 mb-base flex flex-col items-center">
