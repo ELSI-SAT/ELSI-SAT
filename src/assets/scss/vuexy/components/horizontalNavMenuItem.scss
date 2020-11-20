@@ -52,21 +52,22 @@
       }
     }
 
-    padding: .5rem .2rem;
+    padding: .5rem .5rem;
+
     a {
       border-radius: 4px;
-      padding: .5rem 1rem;
+      padding: .5rem .1rem;
     }
 
-    @media screen and (max-width: 550px) {
+    @media screen and (min-width: 550px) {
       a {
         border-radius: 4px;
-        padding: .5rem .5rem;
+        padding: .5rem .3rem;
       }
     }
 
     @media screen and (min-width: 768px) {
-      padding: .5rem .0rem;
+      padding: 0rem 0rem;
     }
 
     @media screen and (min-width: 820px) {

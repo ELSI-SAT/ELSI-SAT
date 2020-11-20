@@ -59,14 +59,14 @@
                 <span class="truncate">{{ item.name }}</span>
                 <vs-chip :color="item.tagColor" v-if="item.tag">{{item.tag}}</vs-chip>
               </h-nav-menu-item>
-              <feather-icon 
-                v-if="(navMenuItems.length > index+1)" 
-                class="xs:hidden sm:hidden md:inline-flex xl:inline-flex" 
+              <feather-icon
+                v-if="(navMenuItems.length > index+1)"
+                class="xs:inline-flex text-grey-light"
                 icon="ChevronRightIcon" />
             </div>
-             
+
           </li>
-          
+
         </ul>
 
         <!-- USER META -->
@@ -83,7 +83,7 @@
               </h-nav-menu-item>
             </div>
           </li>
-          
+
         </ul>
       </vs-navbar>
     </div>
