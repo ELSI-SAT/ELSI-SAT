@@ -87,7 +87,7 @@ export default {
     {
       id: 14,
       categoryId: [1, 4],
-      term: 'sensible Daten',
+      term: 'Sensible Daten',
       definition: 'In der DSGVO sind besondere Kategorien personenbezogener Daten in Art. 9 Abs. 1 definiert. Eine Erhebung dieser "sensiblen Daten" ist nur mit einer Ausnahme nach Art. 9 Abs. 2 DSGVO zulässig. Zu diesen besonderen Kategorien gehören Daten, aus denen rassische und ethische Herkunft, politische Meinungen, religiöse oder weltanschauliche Überzeugungen oder Gewerkschaftszugehörigkeiten oder die sexuelle Orientierung hervorgehen. Zudem sind hiervon genetische und biometrische Daten sowie Gesundheitsdaten umfasst.  '
     },
     {
