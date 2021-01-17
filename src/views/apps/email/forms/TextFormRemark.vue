@@ -1,12 +1,12 @@
 <template>
   <div id="textarearemark">
-    <h5 class="mb-4">Bitte erläutern Sie</h5>
+    <h5 class="mb-4">Zusätzliche Erläuterungen, Anmerkungen und Ergänzungen:</h5>
 
     <vs-textarea
       :counter="300"
       :maxlength="300"
       height="120"
-      :placeholder="'Sollten Sie Anmerkungen zur Frage oder Hinweise haben, können Sie diese hier anfügen.'"
+      :placeholder="'Sollten Sie zusätzliche Erläuterungen, Anmerkungen und Ergänzungen zur Frage oder Hinweise haben, können Sie diese hier anfügen.'"
       label="Eingaben werden sofort gespeichert."
       :counter-danger.sync="counterDanger"
       v-model.trim="textarea"
