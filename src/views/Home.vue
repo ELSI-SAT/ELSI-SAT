@@ -6,7 +6,7 @@
                   <div class="flex flex-wrap overflow-hidden">
                     <div class="w-full overflow-hidden lg:w-2/3 xl:w-2/3">
                         <div class="app-title">ELSI-SAT</div>
-                        <div class="app-subtitle mb-base">Mehr Ethik und Recht in Forschungs&shy;projekten</div>
+                        <div class="app-subtitle mb-base">Mehr Ethik und Recht in Ihrem Forschungsprojekt</div>
                         <p>
                             Bei der Entwicklung von Mensch-Technik-Interaktionen (MTI) wird die Berücksichtigung ethischer, rechtlicher und sozialer Aspekte (engl. ELSI) immer relevanter. Ein Screening- und Assessment-Tool (SAT) dient dabei
                             Forschungsinstitutionen als Orientierungshilfe.
