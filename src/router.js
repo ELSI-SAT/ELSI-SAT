@@ -95,18 +95,6 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/gender',
-                    name: 'gender',
-                    component: () => import('./views/Gender.vue'),
-                    meta: {
-                        breadcrumb: [
-                            { title: 'Home', url: '/' },
-                            { title: 'Gender-Hinweis', active: true },
-                        ],
-                        pageTitle: 'Gender-Hinweis',
-                    },
-                },
-                {
                     path: '/charts',
                     name: 'charts',
                     component: () => import('./views/Charts.vue'),
