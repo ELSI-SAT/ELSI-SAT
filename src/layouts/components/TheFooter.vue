@@ -17,8 +17,7 @@ Author URL: http://www.themeforest.net/user/pixinvent
     <span>ELSI-SAT
       <router-link to="/datenschutz">Datenschutz</router-link>
       • <router-link to="/impressum">Impressum</router-link>
-      • <router-link to="/legal">Rechtlicher Hinweis</router-link>
-      • <router-link to="/gender">Gender-Hinweis</router-link>
+      • <router-link to="/hinweise">Hinweise</router-link>
     </span>
     <span class="md:flex hidden items-center">
       <span>Version&nbsp;</span> {{ $options.methods.myappVersion() }}

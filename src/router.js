@@ -83,15 +83,15 @@ const router = new Router({
                     },
                 },
                 {
-                    path: '/legal',
-                    name: 'rechtlicher-hinweis',
-                    component: () => import('./views/Rechtliches.vue'),
+                    path: '/hinweise',
+                    name: 'hinweise',
+                    component: () => import('./views/Hinweise.vue'),
                     meta: {
                         breadcrumb: [
                             { title: 'Home', url: '/' },
-                            { title: 'Rechtlicher Hinweis', active: true },
+                            { title: 'Hinweise', active: true },
                         ],
-                        pageTitle: 'Rechtlicher Hinweis',
+                        pageTitle: 'Hinweise',
                     },
                 },
                 {
