@@ -1176,48 +1176,6 @@ export default {
       folder: 'inbox',
       isTrashed: false,
       trashingReason: '',
-      answer: {
-        type: 'followup-radio',
-        options: [
-          {name: 'Ja', followupID: 38.1, risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
-          ],
-        answer: '',
-      },
-      remark: '',
-    },
-    {
-      id: 38.1,
-      inquiry: 'Ist bereits absehbar, wer in einem späteren praktischen Systembetrieb als Datenverantwortlicher anzusehen wäre?',
-      subject: 'Frage-ID 501.1',
-      message: '<p>Zu <a @click.prevent="$emit(\'kblink\', {id: 7})">"Art. 4. Abs. 7 DSGVO."</a> </p>',
-      isStarred: false,
-      labels: ['Allgemein','Schadensvermeidung','Autonomie','Transparenz'],
-      time: '',
-      folder: 'inbox',
-      isTrashed: false,
-      trashingReason: '',
-      answer: {
-        type: 'radio',
-        options: [
-          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
-          {name: 'Nein', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
-        ],
-        answer: '',
-      },
-      remark: '',
-    },
-     {
-      id: 39,
-      inquiry: 'Wäre es denkbar, dass aus einer vermeintlich "anonymen" Datenverarbeitung doch ein Personenbezug hergestellt werden kann (z. B. durch technische Rekonstruktion, Datenverknüpfung, gerichtliche Herausgabeverfügung)?',
-      subject: 'Frage-ID 502',
-      message: '<p></p>',
-      isStarred: false,
-      labels: ['Allgemein','Datenschutz','Schadensvermeidung','Autonomie','Transparenz'],
-      time: '',
-      folder: 'inbox',
-      isTrashed: false,
-      trashingReason: '',
       // Filter: Optional array of objects
       filter: [
         {
@@ -1247,6 +1205,27 @@ export default {
         options: [
           {name: 'Ja', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
           {name: 'Nein', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+        ],
+        answer: '',
+      },
+      remark: '',
+    },
+    {
+      id: 39,
+      inquiry: 'Ist bereits absehbar, wer in einem späteren praktischen Systembetrieb als Datenverantwortlicher anzusehen wäre?',
+      subject: 'Frage-ID 502',
+      message: '<p>Zu <a @click.prevent="$emit(\'kblink\', {id: 7})">"Art. 4. Abs. 7 DSGVO."</a> </p>',
+      isStarred: false,
+      labels: ['Allgemein','Datenschutz','Schadensvermeidung','Autonomie','Transparenz'],
+      time: '',
+      folder: 'inbox',
+      isTrashed: false,
+      trashingReason: '',
+      answer: {
+        type: 'radio',
+        options: [
+          {name: 'Ja', risk_contemplation: 0, risk_existence: 0, risk_addressing: 0},
+          {name: 'Nein', risk_contemplation: 0, risk_existence: 1, risk_addressing: 0},
         ],
         answer: '',
       },
